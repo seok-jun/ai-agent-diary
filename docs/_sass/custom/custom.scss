@@ -2,7 +2,6 @@
 // Just the Docs imports this file after the theme styles.
 
 $archive-bg: #f6f7fb;
-$archive-panel: #ffffff;
 $archive-text: #1f2937;
 $archive-muted: #6b7280;
 $archive-border: #e5e7eb;
@@ -75,143 +74,11 @@ body {
   backdrop-filter: blur(14px);
 }
 
-.archive-hero {
-  margin: 2rem 0 2.5rem;
-  padding: 2.5rem;
-  border: 1px solid rgba(37, 99, 235, 0.14);
-  border-radius: 1.5rem;
-  background:
-    radial-gradient(circle at 85% 20%, rgba(124, 58, 237, 0.16), transparent 18rem),
-    radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.14), transparent 17rem),
-    rgba(255, 255, 255, 0.9);
-  box-shadow: 0 18px 55px rgba(15, 23, 42, 0.08);
-}
-
-.archive-eyebrow {
-  margin: 0 0 0.7rem;
-  color: $archive-primary-dark;
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.archive-hero h1 {
-  margin: 0;
-  font-size: clamp(2.2rem, 5vw, 4.2rem);
-  line-height: 0.98;
-}
-
-.archive-hero p {
-  max-width: 42rem;
-  margin: 1rem 0 0;
-  color: #4b5563;
-  font-size: 1.05rem;
-  line-height: 1.75;
-}
-
-.archive-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.35rem;
-}
-
-.archive-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.75rem 1rem;
-  border-radius: 999px;
-  font-weight: 800;
-  text-decoration: none !important;
-}
-
-.archive-button.primary {
-  background: linear-gradient(135deg, $archive-primary, $archive-accent);
-  color: #fff !important;
-  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.22);
-}
-
-.archive-button.secondary {
-  border: 1px solid $archive-border;
-  background: rgba(255, 255, 255, 0.75);
-  color: $archive-text !important;
-}
-
-.archive-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  margin: 1.3rem 0 2.2rem;
-}
-
-.archive-card {
-  padding: 1.2rem;
-  border: 1px solid $archive-border;
-  border-radius: 1.2rem;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
-}
-
-.archive-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.35rem;
-  font-size: 1.1rem;
-}
-
-.archive-card p {
-  margin: 0.35rem 0 0.75rem;
-  color: $archive-muted;
-  line-height: 1.65;
-}
-
-.archive-card ul {
-  margin-bottom: 0;
-}
-
-.archive-card li {
-  margin: 0.35rem 0;
-}
-
-.archive-section {
-  margin-top: 2.4rem;
-}
-
-.archive-list {
-  display: grid;
-  gap: 0.6rem;
-  padding: 0;
-  list-style: none;
-}
-
-.archive-list li {
-  padding: 0.85rem 1rem;
-  border: 1px solid $archive-border;
-  border-radius: 0.95rem;
-  background: rgba(255, 255, 255, 0.82);
-}
-
-.archive-meta {
-  color: $archive-muted;
-  font-size: 0.9rem;
-}
-
-@media (max-width: 720px) {
-  .archive-hero {
-    padding: 1.5rem;
-  }
-
-  .archive-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 // -------------------------------------------------------------------
-// Series / section index pages.
-// Self-contained component — intentionally NOT tied to the home layout
-// (.archive-*), so the home page can be redesigned independently.
-// Only the shared brand color tokens above are reused.
+// Series / section index pages — shared by the home and every section
+// README. A self-contained component: layout-independent building
+// blocks that reuse only the brand color tokens above, so the home can
+// later be reworked without disturbing these pages.
 // -------------------------------------------------------------------
 
 .series-hero {
