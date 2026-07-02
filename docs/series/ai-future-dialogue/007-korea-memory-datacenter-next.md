@@ -3,9 +3,12 @@ title: "7편. 한국은 우라늄 광산이 될 것인가 — 메모리, 데이�
 parent: AI에게 물어본 인간의 미래
 nav_order: 7
 permalink: /series/ai-future-dialogue/007-korea-memory-datacenter-next/
+date: 2026-06-10
 ---
 
 # 7편. 한국은 우라늄 광산이 될 것인가 — 메모리, 데이터센터, 그리고 그 다음
+
+_2026.06.10 게시_
 
 ![7편. 한국은 우라늄 광산이 될 것인가 — 메모리, 데이터센터, 그리고 그 다음]({{ '/assets/images/ai-future-dialogue/007-korea-memory-datacenter-next/thumbnail.png' | relative_url }})
 

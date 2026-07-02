@@ -3,9 +3,12 @@ title: "Agent에게 바로 개발시키지 않기 — 실무에서 AI 개발을 
 parent: Agent SDD 실무 개발
 nav_order: 2
 permalink: /series/agent-sdd/002-agent-sdd-stabilizing-ai-development/
+date: 2026-06-25
 ---
 
 # Agent에게 바로 개발시키지 않기 — 실무에서 AI 개발을 안정화한 방식
+
+_2026.06.25 게시_
 
 ![Agent에게 바로 개발시키지 않기 — 실무에서 AI 개발을 안정화한 방식]({{ '/assets/images/agent-sdd/002-agent-sdd-stabilizing-ai-development/thumbnail.png' | relative_url }})
 

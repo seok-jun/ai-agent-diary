@@ -3,9 +3,12 @@ title: "4편. 결핍이 사라진 인간은 인간일 필요가 있을까"
 parent: AI에게 물어본 인간의 미래
 nav_order: 4
 permalink: /series/ai-future-dialogue/004-humans-after-scarcity/
+date: 2026-06-10
 ---
 
 # 4편. 결핍이 사라진 인간은 인간일 필요가 있을까
+
+_2026.06.10 게시_
 
 ![4편. 결핍이 사라진 인간은 인간일 필요가 있을까]({{ '/assets/images/ai-future-dialogue/004-humans-after-scarcity/thumbnail.png' | relative_url }})
 

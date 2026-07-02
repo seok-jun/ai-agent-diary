@@ -3,9 +3,12 @@ title: "AI에게 물어본 인간의 미래 — 프롤로그"
 parent: AI에게 물어본 인간의 미래
 nav_order: 0
 permalink: /series/ai-future-dialogue/000-prologue/
+date: 2026-06-10
 ---
 
 # AI에게 물어본 인간의 미래 — 프롤로그
+
+_2026.06.10 게시_
 
 ![AI에게 물어본 인간의 미래 — 프롤로그]({{ '/assets/images/ai-future-dialogue/000-prologue/thumbnail.png' | relative_url }})
 

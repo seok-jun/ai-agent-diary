@@ -3,9 +3,12 @@ title: "3편. 차라리 기계에게 통치를 맡기면 어떨까"
 parent: AI에게 물어본 인간의 미래
 nav_order: 3
 permalink: /series/ai-future-dialogue/003-what-if-machines-govern/
+date: 2026-06-10
 ---
 
 # 3편. 차라리 기계에게 통치를 맡기면 어떨까
+
+_2026.06.10 게시_
 
 ![3편. 차라리 기계에게 통치를 맡기면 어떨까]({{ '/assets/images/ai-future-dialogue/003-what-if-machines-govern/thumbnail.png' | relative_url }})
 

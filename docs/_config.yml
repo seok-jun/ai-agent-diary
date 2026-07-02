@@ -2,6 +2,7 @@ title: seok jun.log archive
 description: >-
   Velog에 작성한 글을 GitHub Pages에서 위키처럼 탐색할 수 있도록 정리한 문서 저장소입니다.
 theme: just-the-docs
+timezone: Asia/Seoul
 
 defaults:
   - scope:

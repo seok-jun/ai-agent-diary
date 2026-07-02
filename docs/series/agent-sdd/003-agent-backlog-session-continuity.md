@@ -3,9 +3,12 @@ title: "죽은 Agent 세션, 백로그로 살리는 법"
 parent: Agent SDD 실무 개발
 nav_order: 3
 permalink: /series/agent-sdd/003-agent-backlog-session-continuity/
+date: 2026-07-02
 ---
 
 # 죽은 Agent 세션, 백로그로 살리는 법
+
+_2026.07.02 게시_
 
 ![죽은 Agent 세션, 백로그로 살리는 법]({{ '/assets/images/agent-sdd/003-agent-backlog-session-continuity/thumbnail.png' | relative_url }})
 

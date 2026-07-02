@@ -3,9 +3,12 @@ title: "1편. 도파민의 우리에 갇힌 인간 — 그리고 사라진 '다�
 parent: AI에게 물어본 인간의 미래
 nav_order: 1
 permalink: /series/ai-future-dialogue/001-dopamine-cage-and-next-industry/
+date: 2026-06-10
 ---
 
 # 1편. 도파민의 우리에 갇힌 인간 — 그리고 사라진 '다음 산업'
+
+_2026.06.10 게시_
 
 ![1편. 도파민의 우리에 갇힌 인간 — 그리고 사라진 '다음 산업']({{ '/assets/images/ai-future-dialogue/001-dopamine-cage-and-next-industry/thumbnail.png' | relative_url }})
 

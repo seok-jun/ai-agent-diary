@@ -3,9 +3,12 @@ title: "Latency Numbers Every Programmer Should Know 정리"
 parent: Standalone
 nav_order: 2
 permalink: /standalone/2026-04-28-latency-numbers-every-programmer-should-know/
+date: 2026-04-28
 ---
 
 # Latency Numbers Every Programmer Should Know 정리
+
+_2026.04.28 게시_
 
 ![Latency Numbers Every Programmer Should Know 정리]({{ '/assets/images/standalone/2026-04-28-latency-numbers-every-programmer-should-know/thumbnail.png' | relative_url }})
 

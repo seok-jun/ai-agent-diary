@@ -3,9 +3,12 @@ title: "AI한테 일을 시킬 때, 다 똑같이 다루면 안 되더라"
 parent: Agent SDD 실무 개발
 nav_order: 1
 permalink: /series/agent-sdd/001-ai-task-grading/
+date: 2026-06-25
 ---
 
 # AI한테 일을 시킬 때, 다 똑같이 다루면 안 되더라
+
+_2026.06.25 게시_
 
 ![AI한테 일을 시킬 때, 다 똑같이 다루면 안 되더라]({{ '/assets/images/agent-sdd/001-ai-task-grading/thumbnail.png' | relative_url }})
 

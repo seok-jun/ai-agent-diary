@@ -3,9 +3,12 @@ title: "2편. 일하지 않는 인간에게 누가 빵을 주는가"
 parent: AI에게 물어본 인간의 미래
 nav_order: 2
 permalink: /series/ai-future-dialogue/002-who-gives-bread-to-humans-who-do-not-work/
+date: 2026-06-10
 ---
 
 # 2편. 일하지 않는 인간에게 누가 빵을 주는가
+
+_2026.06.10 게시_
 
 ![2편. 일하지 않는 인간에게 누가 빵을 주는가]({{ '/assets/images/ai-future-dialogue/002-who-gives-bread-to-humans-who-do-not-work/thumbnail.png' | relative_url }})
 

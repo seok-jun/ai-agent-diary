@@ -3,9 +3,12 @@ title: "AI 코딩 에이전트를 제대로 통제하는 방법"
 parent: Standalone
 nav_order: 1
 permalink: /standalone/2026-05-07-controlling-ai-coding-agents/
+date: 2026-05-07
 ---
 
 # AI 코딩 에이전트를 제대로 통제하는 방법
+
+_2026.05.07 게시_
 
 ![AI 코딩 에이전트를 제대로 통제하는 방법]({{ '/assets/images/standalone/2026-05-07-controlling-ai-coding-agents/thumbnail.png' | relative_url }})
 

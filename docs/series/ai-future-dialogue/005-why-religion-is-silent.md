@@ -3,9 +3,12 @@ title: "5편. 종교는 왜 침묵하는가"
 parent: AI에게 물어본 인간의 미래
 nav_order: 5
 permalink: /series/ai-future-dialogue/005-why-religion-is-silent/
+date: 2026-06-10
 ---
 
 # 5편. 종교는 왜 침묵하는가
+
+_2026.06.10 게시_
 
 ![5편. 종교는 왜 침묵하는가]({{ '/assets/images/ai-future-dialogue/005-why-religion-is-silent/thumbnail.png' | relative_url }})
 
