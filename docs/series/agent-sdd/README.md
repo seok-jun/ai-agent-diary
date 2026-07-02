@@ -1,3 +1,10 @@
+---
+title: "Agent SDD 실무 개발"
+nav_order: 2
+has_children: true
+permalink: /series/agent-sdd/
+---
+
 # Agent SDD 실무 개발
 
 AI Agent를 실무 개발에 안정적으로 적용하기 위한 작업 등급화, SDD 흐름, 백로그 기반 세션 연속성 정리입니다.
