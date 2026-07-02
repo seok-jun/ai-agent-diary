@@ -5,33 +5,58 @@ nav_order: 1
 permalink: /
 ---
 
-# hiha12ha.log archive
+<section class="archive-hero">
+  <p class="archive-eyebrow">Velog Archive / AI Agent Diary</p>
+  <h1>hiha12ha.log archive</h1>
+  <p>
+    Velog에 쌓아둔 AI Agent, SDD, 개발 방법론, AI 시대에 대한 글을
+    GitHub Pages에서 읽기 좋게 다시 정리한 개인 기술 위키입니다.
+  </p>
+  <div class="archive-actions">
+    <a class="archive-button primary" href="./series/agent-sdd/">Agent SDD 시리즈 보기</a>
+    <a class="archive-button secondary" href="./series/ai-future-dialogue/">AI 미래 연재 보기</a>
+  </div>
+</section>
 
-Velog에 작성한 글을 GitHub에서 위키처럼 탐색할 수 있도록 정리한 문서 저장소입니다.
+<section class="archive-section">
+  <h2>시리즈</h2>
 
-## 시리즈
+  <div class="archive-grid">
+    <article class="archive-card">
+      <h3><a href="./series/agent-sdd/">Agent SDD 실무 개발</a></h3>
+      <p>AI Agent를 실무 개발에 안정적으로 붙이기 위한 작업 등급화, 문서화, 백로그, 리뷰 분리 흐름입니다.</p>
+      <ul>
+        <li><a href="./series/agent-sdd/001-ai-task-grading/">작업 등급화</a></li>
+        <li><a href="./series/agent-sdd/002-agent-sdd-stabilizing-ai-development/">바로 개발시키지 않기</a></li>
+        <li><a href="./series/agent-sdd/003-agent-backlog-session-continuity/">백로그로 세션 살리기</a></li>
+      </ul>
+    </article>
 
-- [Agent SDD 실무 개발](./series/agent-sdd/)
-  - [AI한테 일을 시킬 때, 다 똑같이 다루면 안 되더라](./series/agent-sdd/001-ai-task-grading/)
-  - [Agent에게 바로 개발시키지 않기 — 실무에서 AI 개발을 안정화한 방식](./series/agent-sdd/002-agent-sdd-stabilizing-ai-development/)
-  - [죽은 Agent 세션, 백로그로 살리는 법](./series/agent-sdd/003-agent-backlog-session-continuity/)
-- [AI에게 물어본 인간의 미래](./series/ai-future-dialogue/)
-  - [AI에게 물어본 인간의 미래 — 프롤로그](./series/ai-future-dialogue/000-prologue/)
-  - [1편. 도파민의 우리에 갇힌 인간 — 그리고 사라진 '다음 산업'](./series/ai-future-dialogue/001-dopamine-cage-and-next-industry/)
-  - [2편. 일하지 않는 인간에게 누가 빵을 주는가](./series/ai-future-dialogue/002-who-gives-bread-to-humans-who-do-not-work/)
-  - [3편. 차라리 기계에게 통치를 맡기면 어떨까](./series/ai-future-dialogue/003-what-if-machines-govern/)
-  - [4편. 결핍이 사라진 인간은 인간일 필요가 있을까](./series/ai-future-dialogue/004-humans-after-scarcity/)
-  - [5편. 종교는 왜 침묵하는가](./series/ai-future-dialogue/005-why-religion-is-silent/)
-  - [6편. AI는 무엇을 위해, 누구를 위해 발전하는가](./series/ai-future-dialogue/006-who-and-what-ai-develops-for/)
-  - [7편. 한국은 우라늄 광산이 될 것인가 — 메모리, 데이터센터, 그리고 그 다음](./series/ai-future-dialogue/007-korea-memory-datacenter-next/)
+    <article class="archive-card">
+      <h3><a href="./series/ai-future-dialogue/">AI에게 물어본 인간의 미래</a></h3>
+      <p>AI, 노동, 통치, 결핍, 종교, 데이터센터와 한국 산업의 미래를 다룬 연재입니다.</p>
+      <ul>
+        <li><a href="./series/ai-future-dialogue/000-prologue/">프롤로그</a></li>
+        <li><a href="./series/ai-future-dialogue/001-dopamine-cage-and-next-industry/">1편. 도파민의 우리에 갇힌 인간</a></li>
+        <li><a href="./series/ai-future-dialogue/007-korea-memory-datacenter-next/">7편. 한국은 우라늄 광산이 될 것인가</a></li>
+      </ul>
+    </article>
+  </div>
+</section>
 
-## 단독 글
+<section class="archive-section">
+  <h2>단독 글</h2>
+  <ul class="archive-list">
+    <li><a href="./standalone/2026-05-07-controlling-ai-coding-agents/">AI 코딩 에이전트를 제대로 통제하는 방법</a><br><span class="archive-meta">AI coding agents / instructions</span></li>
+    <li><a href="./standalone/2026-04-28-latency-numbers-every-programmer-should-know/">Latency Numbers Every Programmer Should Know 정리</a><br><span class="archive-meta">performance / latency</span></li>
+    <li><a href="./standalone/2026-04-28-ai-slop-copy-paste-risk/">AI-slop은 새로운 문제가 아니다. 더 위험해진 복붙 문제다</a><br><span class="archive-meta">AI slop / copy-paste risk</span></li>
+  </ul>
+</section>
 
-- [AI 코딩 에이전트를 제대로 통제하는 방법](./standalone/2026-05-07-controlling-ai-coding-agents/)
-- [Latency Numbers Every Programmer Should Know 정리](./standalone/2026-04-28-latency-numbers-every-programmer-should-know/)
-- [AI-slop은 새로운 문제가 아니다. 더 위험해진 복붙 문제다](./standalone/2026-04-28-ai-slop-copy-paste-risk/)
-
-## 원본
-
-- Velog: [https://velog.io/@hiha12ha/posts](https://velog.io/@hiha12ha/posts)
-- RSS: [https://v2.velog.io/rss/@hiha12ha](https://v2.velog.io/rss/@hiha12ha)
+<section class="archive-section">
+  <h2>원본</h2>
+  <ul class="archive-list">
+    <li>Velog: <a href="https://velog.io/@hiha12ha/posts">https://velog.io/@hiha12ha/posts</a></li>
+    <li>RSS: <a href="https://v2.velog.io/rss/@hiha12ha">https://v2.velog.io/rss/@hiha12ha</a></li>
+  </ul>
+</section>
