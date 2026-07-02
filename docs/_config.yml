@@ -46,6 +46,7 @@ twitter:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Only files under docs/ are Jekyll source; the rest of the repo (README, _meta)
 # is plain GitHub browsing, not part of the built site.
