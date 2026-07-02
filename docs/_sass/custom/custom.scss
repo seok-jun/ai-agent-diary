@@ -206,3 +206,259 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+// -------------------------------------------------------------------
+// Series / section index pages.
+// Self-contained component — intentionally NOT tied to the home layout
+// (.archive-*), so the home page can be redesigned independently.
+// Only the shared brand color tokens above are reused.
+// -------------------------------------------------------------------
+
+.series-hero {
+  margin: 1.5rem 0 2rem;
+  padding: 2rem 2.25rem;
+  border: 1px solid rgba(37, 99, 235, 0.14);
+  border-radius: 1.4rem;
+  background:
+    radial-gradient(circle at 88% 15%, rgba(124, 58, 237, 0.14), transparent 16rem),
+    radial-gradient(circle at 8% 12%, rgba(37, 99, 235, 0.12), transparent 15rem),
+    rgba(255, 255, 255, 0.9);
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.07);
+}
+
+.series-eyebrow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.55rem;
+  color: $archive-primary-dark;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.series-hero h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+}
+
+.series-hero p {
+  max-width: 44rem;
+  margin: 0.8rem 0 0;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.series-index {
+  margin: 1.6rem 0 1.4rem;
+  border: 1px solid $archive-border;
+  border-radius: 1.1rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.series-row {
+  display: grid;
+  grid-template-columns: 2.75rem 1fr;
+  gap: 0 1rem;
+  align-items: start;
+  padding: 1.05rem 1.35rem;
+  text-decoration: none !important;
+  color: inherit;
+  transition: background 0.15s ease;
+}
+
+.series-row + .series-row {
+  border-top: 1px solid $archive-border;
+}
+
+.series-row:hover {
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.06), rgba(124, 58, 237, 0.04));
+}
+
+.series-num {
+  font-weight: 800;
+  color: $archive-primary;
+  font-variant-numeric: tabular-nums;
+}
+
+.series-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.series-row-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.series-row-title {
+  font-weight: 700;
+  color: $archive-text;
+  letter-spacing: -0.01em;
+}
+
+.series-date {
+  color: $archive-muted;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.series-row-desc {
+  margin-top: 0.28rem;
+  color: $archive-muted;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+// Flat variant (no sequence numbers) — e.g. standalone articles.
+.series-index--flat .series-row {
+  grid-template-columns: 1fr;
+}
+
+.series-note {
+  margin: 0.4rem 0 0;
+  padding: 0.9rem 1.1rem;
+  border-left: 3px solid rgba(37, 99, 235, 0.4);
+  border-radius: 0.45rem;
+  background: rgba(37, 99, 235, 0.04);
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 720px) {
+  .series-hero {
+    padding: 1.4rem 1.25rem;
+  }
+
+  .series-row {
+    grid-template-columns: 2.2rem 1fr;
+    padding: 0.95rem 1rem;
+  }
+
+  .series-row-head {
+    flex-wrap: wrap;
+    gap: 0.15rem 0.75rem;
+  }
+}
+
+// -------------------------------------------------------------------
+// Home (index) building blocks — same design language as the series
+// index, but the pieces the landing page needs: action buttons and
+// the two series entry cards. Still self-contained from any future
+// home redesign; only shares the brand color tokens.
+// -------------------------------------------------------------------
+
+.series-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.3rem;
+}
+
+.series-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.72rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 800;
+  text-decoration: none !important;
+}
+
+.series-btn--primary {
+  background: linear-gradient(135deg, $archive-primary, $archive-accent);
+  color: #fff !important;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.22);
+}
+
+.series-btn--secondary {
+  border: 1px solid $archive-border;
+  background: rgba(255, 255, 255, 0.75);
+  color: $archive-text !important;
+}
+
+.series-section {
+  margin-top: 2.6rem;
+}
+
+.series-section > h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  letter-spacing: -0.03em;
+}
+
+.series-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.series-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem 1.5rem;
+  border: 1px solid $archive-border;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+  text-decoration: none !important;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.series-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.1);
+}
+
+.series-card-kicker {
+  color: $archive-primary-dark;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.series-card h3 {
+  margin: 0.45rem 0 0;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+  color: $archive-text;
+}
+
+.series-card p {
+  margin: 0.55rem 0 0;
+  color: $archive-muted;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.series-card-more {
+  margin-top: auto;
+  padding-top: 0.9rem;
+  color: $archive-primary-dark;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.series-origin {
+  margin: 0.4rem 0 0;
+  color: $archive-muted;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 720px) {
+  .series-cards {
+    grid-template-columns: 1fr;
+  }
+}
