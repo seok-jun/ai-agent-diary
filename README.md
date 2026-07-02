@@ -1,4 +1,4 @@
-# hiha12ha.log archive
+# seok jun.log archive
 
 Velog에 작성한 글을 GitHub에서 위키처럼 탐색할 수 있도록, 그리고 GitHub Pages로도 볼 수 있도록 정리한 문서 저장소입니다.
 
@@ -7,18 +7,18 @@ Velog에 작성한 글을 GitHub에서 위키처럼 탐색할 수 있도록, 그
 - **GitHub Pages (빌드 후)**: https://seok-jun.github.io/ai-agent-diary/
   - 저장소 Settings → Pages → Source를 "GitHub Actions"로 설정하고 `main`에 push하면 `.github/workflows/pages.yml`이 자동으로 빌드/배포합니다.
 
-## 바로가기 (GitHub에서 바로 보기)
+## 문서 구성
 
 - [전체 글 목록](./docs/index.md)
-- [Agent SDD 실무 개발](./docs/series/agent-sdd/README.md)
-- [AI에게 물어본 인간의 미래](./docs/series/ai-future-dialogue/README.md)
-- [단독 글](./docs/standalone/README.md)
+- [Agent SDD 실무 개발](./docs/series/agent-sdd/README.md) — AI Agent 실무 적용을 다룬 3편의 연재
+- [AI에게 물어본 인간의 미래](./docs/series/ai-future-dialogue/README.md) — 프롤로그와 본편 7편으로 구성된 연재
+- [단독 글](./docs/standalone/README.md) — 개발 및 AI 활용에 관한 독립 문서 3편
 
-## 정리 기준
+## 파일명 규칙
 
-- 원문 출처는 각 Markdown 파일의 front matter와 본문 상단에 보존했습니다.
-- Velog RSS에 시리즈 메타데이터가 포함되어 있지 않아, 제목 패턴과 본문 연결 관계를 기준으로 분류했습니다.
-- 연재 번호가 명확한 글은 시리즈 폴더에 묶고, 애매한 글은 `standalone`으로 분리했습니다.
+- 연재 문서는 `3자리 순번-주제-slug.md` 형식을 사용합니다.
+- 단독 문서는 `YYYY-MM-DD-주제-slug.md` 형식을 사용합니다.
+- README의 문서 제목과 링크는 실제 파일명 및 본문 제목을 기준으로 관리합니다.
 
 ## 기술 스택
 

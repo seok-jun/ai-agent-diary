@@ -7,7 +7,9 @@ permalink: /standalone/
 
 # Standalone
 
-Velog RSS에는 포함되어 있지만 명확한 연재 번호나 시리즈 연결 관계가 확인되지 않은 단독 글입니다.
+특정 시리즈에 속하지 않는 개발 및 AI 활용 관련 단독 글을 모았습니다.
+
+## 문서 목록
 
 - [AI 코딩 에이전트를 제대로 통제하는 방법](./2026-05-07-controlling-ai-coding-agents.md) — 2026-05-07
 - [Latency Numbers Every Programmer Should Know 정리](./2026-04-28-latency-numbers-every-programmer-should-know.md) — 2026-04-28
