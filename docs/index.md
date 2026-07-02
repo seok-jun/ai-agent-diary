@@ -7,7 +7,7 @@ permalink: /
 
 <section class="archive-hero">
   <p class="archive-eyebrow">Velog Archive / AI Agent Diary</p>
-  <h1>hiha12ha.log archive</h1>
+  <h1>seok jun.log archive</h1>
   <p>
     Velog에 쌓아둔 AI Agent, SDD, 개발 방법론, AI 시대에 대한 글을
     GitHub Pages에서 읽기 좋게 다시 정리한 개인 기술 위키입니다.
@@ -41,6 +41,7 @@ permalink: /
         <li><a href="./series/ai-future-dialogue/007-korea-memory-datacenter-next/">7편. 한국은 우라늄 광산이 될 것인가</a></li>
       </ul>
     </article>
+
   </div>
 </section>
 
