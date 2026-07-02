@@ -1,0 +1,39 @@
+title: hiha12ha.log archive
+description: >-
+  Velog에 작성한 글을 GitHub Pages에서 위키처럼 탐색할 수 있도록 정리한 문서 저장소입니다.
+theme: just-the-docs
+
+# GitHub Pages project-site settings — this repo is public, so this builds to
+# https://<github-username>.github.io/ai-agent-diary/
+# If you rename the repo, update baseurl to match.
+url: "https://seok-jun.github.io"
+baseurl: "/ai-agent-diary"
+
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "맨 위로"
+last_edit_timestamp: false
+gh_edit_link: true
+gh_edit_link_text: "이 페이지를 GitHub에서 수정하기"
+gh_edit_repository: "https://github.com/seok-jun/ai-agent-diary"
+gh_edit_branch: "main"
+gh_edit_view_mode: "tree"
+
+aux_links:
+  "Velog 원본":
+    - "https://velog.io/@hiha12ha/posts"
+  "GitHub repo":
+    - "https://github.com/seok-jun/ai-agent-diary"
+aux_links_new_tab: true
+
+nav_sort: case_insensitive
+
+# Only files under docs/ are Jekyll source; the rest of the repo (README, _meta)
+# is plain GitHub browsing, not part of the built site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/

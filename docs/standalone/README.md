@@ -1,3 +1,10 @@
+---
+title: "Standalone"
+nav_order: 4
+has_children: true
+permalink: /standalone/
+---
+
 # Standalone
 
 Velog RSS에는 포함되어 있지만 명확한 연재 번호나 시리즈 연결 관계가 확인되지 않은 단독 글입니다.

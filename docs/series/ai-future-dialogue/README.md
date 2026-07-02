@@ -1,3 +1,10 @@
+---
+title: "AI에게 물어본 인간의 미래"
+nav_order: 3
+has_children: true
+permalink: /series/ai-future-dialogue/
+---
+
 # AI에게 물어본 인간의 미래
 
 AI, 노동, 통치, 결핍, 종교, 데이터센터와 한국 산업의 미래를 다룬 연재입니다.
