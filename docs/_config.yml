@@ -9,6 +9,7 @@ defaults:
       path: ""
     values:
       layout: default
+      image: /assets/images/favicon.png
 # GitHub Pages project-site settings — this repo is public, so this builds to
 # https://<github-username>.github.io/ai-agent-diary/
 # If you rename the repo, update baseurl to match.
@@ -36,6 +37,15 @@ aux_links:
 aux_links_new_tab: true
 
 nav_sort: case_insensitive
+
+# Social sharing (Open Graph / Twitter cards via jekyll-seo-tag)
+author:
+  name: seok jun
+twitter:
+  card: summary_large_image
+
+plugins:
+  - jekyll-seo-tag
 
 # Only files under docs/ are Jekyll source; the rest of the repo (README, _meta)
 # is plain GitHub browsing, not part of the built site.

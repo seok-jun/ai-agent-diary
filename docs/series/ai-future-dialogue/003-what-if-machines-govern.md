@@ -4,6 +4,8 @@ parent: AI에게 물어본 인간의 미래
 nav_order: 3
 permalink: /series/ai-future-dialogue/003-what-if-machines-govern/
 date: 2026-06-10
+description: "인간 대신 기계에게 통치를 맡기면 어떻게 되는가. 알고리즘 거버넌스의 가능성과 위험을 따지는 AI 미래 연재 3편."
+image: /assets/images/ai-future-dialogue/003-what-if-machines-govern/thumbnail.png
 ---
 
 # 3편. 차라리 기계에게 통치를 맡기면 어떨까

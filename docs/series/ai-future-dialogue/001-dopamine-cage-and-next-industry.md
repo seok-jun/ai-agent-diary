@@ -4,6 +4,8 @@ parent: AI에게 물어본 인간의 미래
 nav_order: 1
 permalink: /series/ai-future-dialogue/001-dopamine-cage-and-next-industry/
 date: 2026-06-10
+description: "즉각 보상의 시대에 갇힌 인간과 더는 보이지 않는 '다음 산업'에 대하여 — AI에게 물어본 인간의 미래 1편."
+image: /assets/images/ai-future-dialogue/001-dopamine-cage-and-next-industry/thumbnail.png
 ---
 
 # 1편. 도파민의 우리에 갇힌 인간 — 그리고 사라진 '다음 산업'

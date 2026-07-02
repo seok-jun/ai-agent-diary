@@ -4,6 +4,8 @@ parent: Agent SDD 실무 개발
 nav_order: 1
 permalink: /series/agent-sdd/001-ai-task-grading/
 date: 2026-06-25
+description: "AI 코딩 작업을 규모와 리스크에 따라 다섯 등급으로 나눠, 오버·언더 프로세싱 없이 프로세스의 무게를 조절한 실무 방법."
+image: /assets/images/agent-sdd/001-ai-task-grading/thumbnail.png
 ---
 
 # AI한테 일을 시킬 때, 다 똑같이 다루면 안 되더라

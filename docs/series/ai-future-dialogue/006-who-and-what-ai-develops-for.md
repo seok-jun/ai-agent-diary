@@ -4,6 +4,8 @@ parent: AI에게 물어본 인간의 미래
 nav_order: 6
 permalink: /series/ai-future-dialogue/006-who-and-what-ai-develops-for/
 date: 2026-06-10
+description: "AI는 무엇을 위해, 누구를 위해 발전하는가. 기술 발전의 방향과 수혜자를 묻는 AI 미래 연재 6편."
+image: /assets/images/ai-future-dialogue/006-who-and-what-ai-develops-for/thumbnail.png
 ---
 
 # 6편. AI는 무엇을 위해, 누구를 위해 발전하는가

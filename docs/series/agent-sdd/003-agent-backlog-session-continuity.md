@@ -4,6 +4,8 @@ parent: Agent SDD 실무 개발
 nav_order: 3
 permalink: /series/agent-sdd/003-agent-backlog-session-continuity/
 date: 2026-07-02
+description: "맥락이 끊긴 Agent 세션을 백로그에 남긴 보류 결정과 후속 작업으로 되살려 세션 연속성을 확보하는 방법."
+image: /assets/images/agent-sdd/003-agent-backlog-session-continuity/thumbnail.png
 ---
 
 # 죽은 Agent 세션, 백로그로 살리는 법

@@ -4,6 +4,8 @@ parent: AI에게 물어본 인간의 미래
 nav_order: 7
 permalink: /series/ai-future-dialogue/007-korea-memory-datacenter-next/
 date: 2026-06-10
+description: "메모리와 데이터센터를 축으로, 한국이 AI 시대의 자원 공급지로 남을지 그다음을 그릴지 전망하는 AI 미래 연재 7편."
+image: /assets/images/ai-future-dialogue/007-korea-memory-datacenter-next/thumbnail.png
 ---
 
 # 7편. 한국은 우라늄 광산이 될 것인가 — 메모리, 데이터센터, 그리고 그 다음

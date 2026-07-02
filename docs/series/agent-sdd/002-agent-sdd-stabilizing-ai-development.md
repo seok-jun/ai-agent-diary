@@ -4,6 +4,8 @@ parent: Agent SDD 실무 개발
 nav_order: 2
 permalink: /series/agent-sdd/002-agent-sdd-stabilizing-ai-development/
 date: 2026-06-25
+description: "Agent에게 곧바로 코드를 짜게 하지 않고 명세·영향분석·검증 기준을 단계별 산출물로 만든 뒤 구현해 실무 AI 개발을 안정화한 방식."
+image: /assets/images/agent-sdd/002-agent-sdd-stabilizing-ai-development/thumbnail.png
 ---
 
 # Agent에게 바로 개발시키지 않기 — 실무에서 AI 개발을 안정화한 방식
