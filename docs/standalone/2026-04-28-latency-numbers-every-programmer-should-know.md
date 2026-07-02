@@ -5,6 +5,8 @@ nav_order: 2
 permalink: /standalone/2026-04-28-latency-numbers-every-programmer-should-know/
 ---
 
+# Latency Numbers Every Programmer Should Know 정리
+
 원본 계열 자료는 Jeff Dean이 정리한 숫자를 기반으로 하며, Peter Norvig도 유사한 맥락의 내용을 언급한 바 있습니다. ([Gist][1])
 
 ---

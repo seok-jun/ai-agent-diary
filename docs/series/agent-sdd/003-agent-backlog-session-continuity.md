@@ -5,6 +5,8 @@ nav_order: 3
 permalink: /series/agent-sdd/003-agent-backlog-session-continuity/
 ---
 
+# 죽은 Agent 세션, 백로그로 살리는 법
+
 > 이 글은 이전 글에서 다룬 “Agent에게 바로 개발시키지 않고, 단계별 산출물을 만든 뒤 구현한다”는 방식의 연장선이다.
 > 이번에는 그중에서도 **백로그를 왜 단순 TODO가 아니라 Agent의 세션 연속성을 유지하는 장치로 사용했는지**를 정리한다.
 

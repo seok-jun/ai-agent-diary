@@ -5,6 +5,8 @@ nav_order: 4
 permalink: /series/ai-future-dialogue/004-humans-after-scarcity/
 ---
 
+# 4편. 결핍이 사라진 인간은 인간일 필요가 있을까
+
 ## 질문이 닿은 곳
 
 대화가 여기까지 오자, 이상한 결론에 도달했다.

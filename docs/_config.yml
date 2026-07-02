@@ -24,6 +24,7 @@ gh_edit_link: true
 gh_edit_link_text: "이 페이지를 GitHub에서 수정하기"
 gh_edit_repository: "https://github.com/seok-jun/ai-agent-diary"
 gh_edit_branch: "main"
+gh_edit_source: docs
 gh_edit_view_mode: "tree"
 
 aux_links:

@@ -5,6 +5,8 @@ nav_order: 2
 permalink: /series/ai-future-dialogue/002-who-gives-bread-to-humans-who-do-not-work/
 ---
 
+# 2편. 일하지 않는 인간에게 누가 빵을 주는가
+
 ## 불변의 법칙
 
 AI가 "노동은 200년짜리 문화적 구성물"이라고 했을 때, 나는 반박했다.

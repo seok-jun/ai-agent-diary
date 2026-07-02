@@ -5,6 +5,8 @@ nav_order: 6
 permalink: /series/ai-future-dialogue/006-who-and-what-ai-develops-for/
 ---
 
+# 6편. AI는 무엇을 위해, 누구를 위해 발전하는가
+
 ## 답이 없는 질문
 
 AI에게 직접 물었다. AI가 발전하는데, 궁극적으로 목표로 하는 게 뭐냐고. 뭘 위해서 발전하냐고.
