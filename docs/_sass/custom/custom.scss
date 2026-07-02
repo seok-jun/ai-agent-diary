@@ -46,6 +46,21 @@ body {
   color: $archive-primary-dark;
 }
 
+// Decorative emoji on the top-level sidebar sections. Purely visual —
+// matched by link href, so no front-matter title changes and child
+// `parent:` matching stays intact. Swap the emoji freely.
+.nav-list-link[href$="/ai-agent-diary/"]::before,
+.nav-list-link[href$="/series/agent-sdd/"]::before,
+.nav-list-link[href$="/series/ai-future-dialogue/"]::before,
+.nav-list-link[href$="/standalone/"]::before {
+  margin-right: 0.5rem;
+}
+
+.nav-list-link[href$="/ai-agent-diary/"]::before { content: "🏠"; }
+.nav-list-link[href$="/series/agent-sdd/"]::before { content: "🤖"; }
+.nav-list-link[href$="/series/ai-future-dialogue/"]::before { content: "🔮"; }
+.nav-list-link[href$="/standalone/"]::before { content: "📝"; }
+
 .main-content-wrap {
   background: transparent;
 }
