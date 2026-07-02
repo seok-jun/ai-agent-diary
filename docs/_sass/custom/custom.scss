@@ -1,0 +1,208 @@
+// Custom visual layer for hiha12ha.log archive.
+// Just the Docs imports this file after the theme styles.
+
+$archive-bg: #f6f7fb;
+$archive-panel: #ffffff;
+$archive-text: #1f2937;
+$archive-muted: #6b7280;
+$archive-border: #e5e7eb;
+$archive-primary: #2563eb;
+$archive-primary-dark: #1d4ed8;
+$archive-accent: #7c3aed;
+
+body {
+  background:
+    radial-gradient(circle at 15% 0%, rgba(37, 99, 235, 0.08), transparent 32rem),
+    linear-gradient(180deg, #ffffff 0%, $archive-bg 42rem);
+  color: $archive-text;
+}
+
+.side-bar {
+  background: rgba(255, 255, 255, 0.88);
+  border-right: 1px solid $archive-border;
+  backdrop-filter: blur(16px);
+}
+
+.site-title {
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.site-title:hover {
+  background-image: linear-gradient(90deg, $archive-primary, $archive-accent);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.nav-list .nav-list-item .nav-list-link {
+  border-radius: 0.75rem;
+  color: #4b5563;
+}
+
+.nav-list .nav-list-item .nav-list-link:hover,
+.nav-list .nav-list-item .nav-list-link.active {
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.12), rgba(124, 58, 237, 0.08));
+  color: $archive-primary-dark;
+}
+
+.main-content-wrap {
+  background: transparent;
+}
+
+.main-content {
+  max-width: 56rem;
+}
+
+.main-content h1 {
+  letter-spacing: -0.05em;
+}
+
+.main-content h2 {
+  letter-spacing: -0.035em;
+}
+
+.main-content a {
+  color: $archive-primary-dark;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+.site-header {
+  background: rgba(255, 255, 255, 0.84);
+  border-bottom: 1px solid rgba(229, 231, 235, 0.85);
+  backdrop-filter: blur(14px);
+}
+
+.archive-hero {
+  margin: 2rem 0 2.5rem;
+  padding: 2.5rem;
+  border: 1px solid rgba(37, 99, 235, 0.14);
+  border-radius: 1.5rem;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(124, 58, 237, 0.16), transparent 18rem),
+    radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.14), transparent 17rem),
+    rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 55px rgba(15, 23, 42, 0.08);
+}
+
+.archive-eyebrow {
+  margin: 0 0 0.7rem;
+  color: $archive-primary-dark;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.archive-hero h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  line-height: 0.98;
+}
+
+.archive-hero p {
+  max-width: 42rem;
+  margin: 1rem 0 0;
+  color: #4b5563;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.archive-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.35rem;
+}
+
+.archive-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  font-weight: 800;
+  text-decoration: none !important;
+}
+
+.archive-button.primary {
+  background: linear-gradient(135deg, $archive-primary, $archive-accent);
+  color: #fff !important;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.22);
+}
+
+.archive-button.secondary {
+  border: 1px solid $archive-border;
+  background: rgba(255, 255, 255, 0.75);
+  color: $archive-text !important;
+}
+
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.3rem 0 2.2rem;
+}
+
+.archive-card {
+  padding: 1.2rem;
+  border: 1px solid $archive-border;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+}
+
+.archive-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  font-size: 1.1rem;
+}
+
+.archive-card p {
+  margin: 0.35rem 0 0.75rem;
+  color: $archive-muted;
+  line-height: 1.65;
+}
+
+.archive-card ul {
+  margin-bottom: 0;
+}
+
+.archive-card li {
+  margin: 0.35rem 0;
+}
+
+.archive-section {
+  margin-top: 2.4rem;
+}
+
+.archive-list {
+  display: grid;
+  gap: 0.6rem;
+  padding: 0;
+  list-style: none;
+}
+
+.archive-list li {
+  padding: 0.85rem 1rem;
+  border: 1px solid $archive-border;
+  border-radius: 0.95rem;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.archive-meta {
+  color: $archive-muted;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+  .archive-hero {
+    padding: 1.5rem;
+  }
+
+  .archive-grid {
+    grid-template-columns: 1fr;
+  }
+}
