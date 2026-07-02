@@ -7,6 +7,8 @@ permalink: /series/agent-sdd/002-agent-sdd-stabilizing-ai-development/
 
 # Agent에게 바로 개발시키지 않기 — 실무에서 AI 개발을 안정화한 방식
 
+![Agent에게 바로 개발시키지 않기 — 실무에서 AI 개발을 안정화한 방식]({{ '/assets/images/agent-sdd/002-agent-sdd-stabilizing-ai-development/thumbnail.png' | relative_url }})
+
 > 이 글은 "Agent에게 코드를 어떻게 빨리 짜게 할까"가 아니라,
 > "Agent를 실무에 안정적으로 끼워 넣으려면 어떤 절차로 굴려야 하나"에 대한 기록이다.
 

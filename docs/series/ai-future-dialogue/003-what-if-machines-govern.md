@@ -7,6 +7,8 @@ permalink: /series/ai-future-dialogue/003-what-if-machines-govern/
 
 # 3편. 차라리 기계에게 통치를 맡기면 어떨까
 
+![3편. 차라리 기계에게 통치를 맡기면 어떨까]({{ '/assets/images/ai-future-dialogue/003-what-if-machines-govern/thumbnail.png' | relative_url }})
+
 ## 내 제안
 
 전 편의 결론은 암울했다. 자본은 자발적으로 나누지 않고, 나누게 강제할 메커니즘은 약해지고 있다. 그래서 나는 하나의 질문을 던졌다.

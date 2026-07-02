@@ -7,6 +7,8 @@ permalink: /series/ai-future-dialogue/005-why-religion-is-silent/
 
 # 5편. 종교는 왜 침묵하는가
 
+![5편. 종교는 왜 침묵하는가]({{ '/assets/images/ai-future-dialogue/005-why-religion-is-silent/thumbnail.png' | relative_url }})
+
 ## 빼먹은 변수
 
 AI와 인류의 미래를 한참 논하다가 깨달았다. 내 분석은 물질, 정치, 경제, 기술의 차원이었다. 인류사 99%의 시간 동안 인간을 가장 강하게 움직인 힘 — 종교 — 가 통째로 빠져 있었다.

@@ -7,6 +7,8 @@ permalink: /series/ai-future-dialogue/001-dopamine-cage-and-next-industry/
 
 # 1편. 도파민의 우리에 갇힌 인간 — 그리고 사라진 '다음 산업'
 
+![1편. 도파민의 우리에 갇힌 인간 — 그리고 사라진 '다음 산업']({{ '/assets/images/ai-future-dialogue/001-dopamine-cage-and-next-industry/thumbnail.png' | relative_url }})
+
 ## 즉각 보상의 시대
 
 현대 사회는 즉각 보상 시스템으로 가득 차 있다. 숏폼, SNS, 게임, 배달앱, 코인 차트, 그리고 AI와의 대화까지. 인간은 점점 긴 노력 끝의 성취보다 빠르고 강한 자극에 최적화되어 가는 것처럼 보인다.

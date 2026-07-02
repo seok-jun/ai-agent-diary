@@ -7,6 +7,8 @@ permalink: /series/ai-future-dialogue/007-korea-memory-datacenter-next/
 
 # 7편. 한국은 우라늄 광산이 될 것인가 — 메모리, 데이터센터, 그리고 그 다음
 
+![7편. 한국은 우라늄 광산이 될 것인가 — 메모리, 데이터센터, 그리고 그 다음]({{ '/assets/images/ai-future-dialogue/007-korea-memory-datacenter-next/thumbnail.png' | relative_url }})
+
 이 편의 수치는 2026년 상반기 기준이며, 출처는 본문에 표기했다. 산업 전망은 빠르게 변하므로 시점에 유의해서 읽어주시길.
 
 ## 지금 벌어지고 있는 일

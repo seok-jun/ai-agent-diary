@@ -7,6 +7,8 @@ permalink: /standalone/2026-05-07-controlling-ai-coding-agents/
 
 # AI 코딩 에이전트를 제대로 통제하는 방법
 
+![AI 코딩 에이전트를 제대로 통제하는 방법]({{ '/assets/images/standalone/2026-05-07-controlling-ai-coding-agents/thumbnail.png' | relative_url }})
+
 AI 코딩 도구를 쓰다 보면 묘한 순간을 자주 만난다.
 
 간단한 수정만 요청했는데 갑자기 구조를 바꾸고,
