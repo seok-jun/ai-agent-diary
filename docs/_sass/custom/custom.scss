@@ -61,6 +61,23 @@ body {
 .nav-list-link[href$="/series/ai-future-dialogue/"]::before { content: "🔮"; }
 .nav-list-link[href$="/standalone/"]::before { content: "📝"; }
 
+// Dot marker + single-line truncation on second-level sidebar items
+// (individual posts within a series/section), so long titles don't wrap
+// across lines and blend into the next entry. Purely visual, keyed off
+// nav depth — no front-matter changes.
+.nav-list-item > .nav-list .nav-list-link {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.nav-list-item > .nav-list .nav-list-link::before {
+  content: "•";
+  margin-right: 0.45rem;
+  color: $archive-primary;
+}
+
 .main-content-wrap {
   background: transparent;
 }
