@@ -17,6 +17,7 @@ url: "https://seok-jun.github.io"
 baseurl: "/ai-agent-diary"
 
 color_scheme: light
+logo: "/assets/images/brand/wordmark-sidebar.svg"
 search_enabled: true
 heading_anchors: true
 back_to_top: true

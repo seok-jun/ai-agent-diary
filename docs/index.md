@@ -7,7 +7,7 @@ permalink: /
 
 <div class="series-hero">
   <div class="series-eyebrow"><span>AI Agent Diary</span><span>글 15편</span></div>
-  <h1>seok jun.log archive</h1>
+  <h1 class="series-hero-title"><img src="{{ '/assets/images/brand/wordmark.svg' | relative_url }}" alt="SJ archive" width="380" height="150"></h1>
   <p>AI Agent, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기를 기록하는 개인 기술 블로그입니다.</p>
 </div>
 

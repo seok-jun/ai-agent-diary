@@ -5,13 +5,13 @@ $archive-bg: #f6f7fb;
 $archive-text: #1f2937;
 $archive-muted: #6b7280;
 $archive-border: #e5e7eb;
-$archive-primary: #2563eb;
-$archive-primary-dark: #1d4ed8;
-$archive-accent: #7c3aed;
+$archive-primary: #16a34a;
+$archive-primary-dark: #15803d;
+$archive-accent: #059669;
 
 body {
   background:
-    radial-gradient(circle at 15% 0%, rgba(37, 99, 235, 0.08), transparent 32rem),
+    radial-gradient(circle at 15% 0%, rgba(22, 163, 74, 0.08), transparent 32rem),
     linear-gradient(180deg, #ffffff 0%, $archive-bg 42rem);
   color: $archive-text;
 }
@@ -35,6 +35,13 @@ body {
   color: transparent;
 }
 
+// Sidebar brand mark (set via `logo:` in _config.yml). Fixed height keeps the
+// wordmark comfortably sized and left-aligned regardless of header height.
+.site-logo {
+  height: 2.25rem;
+  background-position: left center;
+}
+
 .nav-list .nav-list-item .nav-list-link {
   border-radius: 0.75rem;
   color: #4b5563;
@@ -42,7 +49,7 @@ body {
 
 .nav-list .nav-list-item .nav-list-link:hover,
 .nav-list .nav-list-item .nav-list-link.active {
-  background: linear-gradient(90deg, rgba(37, 99, 235, 0.12), rgba(124, 58, 237, 0.08));
+  background: linear-gradient(90deg, rgba(22, 163, 74, 0.14), rgba(5, 150, 105, 0.08));
   color: $archive-primary-dark;
 }
 
@@ -115,22 +122,20 @@ body {
 
 .series-hero {
   margin: 1.5rem 0 2rem;
-  padding: 2rem 2.25rem;
-  border: 1px solid rgba(37, 99, 235, 0.14);
+  padding: 2.3rem 2.4rem 2.5rem;
+  border: 1px solid rgba(74, 222, 128, 0.2);
   border-radius: 1.4rem;
-  background:
-    radial-gradient(circle at 88% 15%, rgba(124, 58, 237, 0.14), transparent 16rem),
-    radial-gradient(circle at 8% 12%, rgba(37, 99, 235, 0.12), transparent 15rem),
-    rgba(255, 255, 255, 0.9);
-  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.07);
+  background: #1e293b url("/ai-agent-diary/assets/images/brand/hero-bg.svg") center / cover no-repeat;
+  box-shadow: 0 18px 44px rgba(15, 23, 42, 0.28);
+  color: #e2e8f0;
 }
 
 .series-eyebrow {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 0.55rem;
-  color: $archive-primary-dark;
+  margin-bottom: 0.6rem;
+  color: #4ade80;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -142,12 +147,26 @@ body {
   font-size: clamp(1.9rem, 4vw, 2.9rem);
   line-height: 1.06;
   letter-spacing: -0.04em;
+  color: #f8fafc;
+}
+
+// Home hero uses an image wordmark in place of the text title.
+.series-hero-title {
+  margin: 0;
+  line-height: 0;
+}
+
+.series-hero-title img {
+  display: block;
+  width: 100%;
+  max-width: 17rem;
+  height: auto;
 }
 
 .series-hero p {
   max-width: 44rem;
-  margin: 0.8rem 0 0;
-  color: #4b5563;
+  margin: 0.85rem 0 0;
+  color: #cbd5e1;
   line-height: 1.7;
 }
 
@@ -176,7 +195,7 @@ body {
 }
 
 .series-row:hover {
-  background: linear-gradient(90deg, rgba(37, 99, 235, 0.06), rgba(124, 58, 237, 0.04));
+  background: linear-gradient(90deg, rgba(22, 163, 74, 0.07), rgba(5, 150, 105, 0.04));
 }
 
 .series-num {
@@ -225,9 +244,9 @@ body {
 .series-note {
   margin: 0.4rem 0 0;
   padding: 0.9rem 1.1rem;
-  border-left: 3px solid rgba(37, 99, 235, 0.4);
+  border-left: 3px solid rgba(22, 163, 74, 0.45);
   border-radius: 0.45rem;
-  background: rgba(37, 99, 235, 0.04);
+  background: rgba(22, 163, 74, 0.05);
   color: #4b5563;
   font-size: 0.95rem;
   line-height: 1.65;

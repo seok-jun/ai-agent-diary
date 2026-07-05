@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 120" width="372" height="120">
+  <!-- Light-background variant for the sidebar site-title: navy badge + dark "archive". -->
+  <g transform="translate(8,10)">
+    <rect x="0" y="0" width="100" height="100" rx="22.6" fill="#1E293B"/>
+    <g fill="#4ADE80">
+      <g transform="translate(24.16,60.03) scale(0.02,-0.02)"><path d="M510 655Q287 740 208.0 833.5Q129 927 129 1085Q129 1288 259.0 1404.0Q389 1520 616 1520Q719 1520 822.0 1496.5Q925 1473 1026 1427V1139Q931 1206 833.0 1241.0Q735 1276 639 1276Q532 1276 475.0 1233.0Q418 1190 418 1110Q418 1048 459.5 1007.5Q501 967 633 918L760 870Q940 804 1025.0 695.0Q1110 586 1110 420Q1110 194 976.5 82.5Q843 -29 573 -29Q462 -29 350.5 -2.5Q239 24 135 76V381Q253 297 363.5 256.0Q474 215 582 215Q691 215 751.0 264.5Q811 314 811 403Q811 470 771.0 520.5Q731 571 655 600Z"/></g>
+      <g transform="translate(50.89,60.03) scale(0.02,-0.02)"><path d="M109 74V416Q195 328 292.5 282.0Q390 236 489 236Q605 236 659.0 294.0Q713 352 713 479V1233H352V1493H1008V479Q1008 206 893.5 88.5Q779 -29 516 -29Q421 -29 317.5 -3.0Q214 23 109 74Z"/></g>
+      <rect x="30.21" y="68.19" width="39.58" height="5.78" rx="2.89"/>
+    </g>
+  </g>
+  <text x="132" y="82" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="60" font-weight="800" letter-spacing="-2" fill="#1E293B">archive</text>
+</svg>
