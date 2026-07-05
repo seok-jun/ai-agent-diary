@@ -6,9 +6,9 @@ permalink: /
 ---
 
 <div class="series-hero">
-  <div class="series-eyebrow"><span>Velog Archive · AI Agent Diary</span><span>글 14편</span></div>
+  <div class="series-eyebrow"><span>AI Agent Diary</span><span>글 14편</span></div>
   <h1>seok jun.log archive</h1>
-  <p>Velog에 쌓아둔 AI Agent, SDD, 개발 방법론, 그리고 AI 시대에 대한 글을 GitHub Pages에서 읽기 좋게 다시 정리한 개인 기술 위키입니다.</p>
+  <p>AI Agent, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기를 기록하는 개인 기술 블로그입니다.</p>
   <div class="series-actions">
     <a class="series-btn series-btn--primary" href="./series/agent-sdd/">Agent SDD 시리즈 →</a>
     <a class="series-btn series-btn--secondary" href="./series/ai-future-dialogue/">AI 미래 연재 →</a>

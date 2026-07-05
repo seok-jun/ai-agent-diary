@@ -1,6 +1,6 @@
 # seok jun.log archive
 
-Velog에 작성한 글을 GitHub에서 위키처럼 탐색할 수 있도록, 그리고 GitHub Pages로도 볼 수 있도록 정리한 문서 저장소입니다.
+AI Agent 개발, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기를 다루는 개인 기술 블로그입니다. GitHub과 GitHub Pages에서 위키처럼 탐색할 수 있도록 정리했습니다.
 
 ## 사이트
 
