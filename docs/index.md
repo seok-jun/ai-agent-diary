@@ -6,7 +6,7 @@ permalink: /
 ---
 
 <div class="series-hero">
-  <div class="series-eyebrow"><span>AI Agent Diary</span><span>글 15편</span></div>
+  <div class="series-eyebrow"><span>AI Agent Diary</span><span>글 16편</span></div>
   <h1 class="series-hero-title"><img src="{{ '/assets/images/brand/wordmark.svg' | relative_url }}" alt="SJ archive" width="380" height="150"></h1>
   <p>AI Agent, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기를 기록하는 개인 기술 블로그입니다.</p>
 </div>
@@ -15,9 +15,9 @@ permalink: /
   <h2>시리즈</h2>
   <div class="series-cards">
     <a class="series-card" href="./series/agent-sdd/">
-      <span class="series-card-kicker">Series · 4편</span>
+      <span class="series-card-kicker">Series · 5편</span>
       <h3>Agent SDD 실무 개발</h3>
-      <p>AI Agent를 실무 개발에 안정적으로 붙이기 위한 작업 등급화, 명세 기반 구현, 백로그를 이용한 세션 연속성까지.</p>
+      <p>AI Agent를 실무 개발에 안정적으로 붙이기 위한 작업 등급화, 명세 기반 구현, 백로그를 이용한 세션 연속성, 도메인 문서로 탐색 줄이기까지.</p>
       <span class="series-card-more">시리즈 열기 →</span>
     </a>
     <a class="series-card" href="./series/ai-future-dialogue/">

@@ -7,9 +7,9 @@ permalink: /series/agent-sdd/
 ---
 
 <div class="series-hero">
-  <div class="series-eyebrow"><span>Series · 연재</span><span>총 4편</span></div>
+  <div class="series-eyebrow"><span>Series · 연재</span><span>총 5편</span></div>
   <h1>Agent SDD 실무 개발</h1>
-  <p>AI Agent를 실무 개발에 안정적으로 적용하기 위한 연재입니다. 작업의 위험도에 맞춰 절차를 조절하는 방법부터 명세 기반 구현 흐름, 백로그를 이용한 세션 연속성, 개발 완료 후 문서 정리까지 다룹니다.</p>
+  <p>AI Agent를 실무 개발에 안정적으로 적용하기 위한 연재입니다. 작업의 위험도에 맞춰 절차를 조절하는 방법부터 명세 기반 구현 흐름, 백로그를 이용한 세션 연속성, 개발 완료 후 문서 정리, 그리고 도메인 문서로 Agent의 탐색을 줄이는 실험까지 다룹니다.</p>
 </div>
 
 <div class="series-index">
@@ -41,6 +41,13 @@ permalink: /series/agent-sdd/
       <span class="series-row-desc">병합 후 작업 폴더에 남기지 않을 산출물과 도메인 옆 business 문서로 승격할 것을 가른다.</span>
     </span>
   </a>
+  <a class="series-row" href="./005-docs-cut-agent-wandering-not-tokens/">
+    <span class="series-num">05</span>
+    <span class="series-body">
+      <span class="series-row-head"><span class="series-row-title">문서는 토큰 청구서를 크게 줄이지 않는다 — 대신 Agent가 헤매는 시간을 줄인다</span><span class="series-date">2026.07.06</span></span>
+      <span class="series-row-desc">코드에 경계가 없을 때 business 문서로 경계를 만들고, 설계 단계까지 Agent의 탐색 왕복이 줄어드는지 n=1로 측정한 기록.</span>
+    </span>
+  </a>
 </div>
 
-<p class="series-note">1편에서 작업 등급을 정하고, 2편에서 Agent 작업 절차를 구성한 뒤, 3편에서 세션이 끊겨도 작업을 이어가는 방법으로, 4편에서 개발이 끝난 뒤 문서를 정리하는 방법으로 확장합니다. 순서대로 읽기를 권합니다.</p>
+<p class="series-note">1편에서 작업 등급을 정하고, 2편에서 Agent 작업 절차를 구성한 뒤, 3편에서 세션이 끊겨도 작업을 이어가는 방법으로, 4편에서 개발이 끝난 뒤 문서를 정리하는 방법으로, 5편에서 도메인 문서가 Agent의 탐색을 실제로 줄이는지 측정하는 데까지 확장합니다. 순서대로 읽기를 권합니다.</p>
