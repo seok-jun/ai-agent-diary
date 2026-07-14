@@ -9,9 +9,12 @@
 
 - 원문을 연재 7편으로 게시한다.
 - 이전 실험은 연재 5편으로 연결하고, 제공된 SVG 두 개를 사이트 자산으로 포함한다.
-- 연재 인덱스의 편수, 소개, 목록, 읽기 순서를 7편 기준으로 갱신한다.
+- 연재 인덱스와 저장소·사이트 홈의 편수 및 소개를 7편 기준으로 갱신한다.
 
 ## 영향 파일
+
+- `README.md`
+- `docs/index.md`
 
 - `docs/series/agent-sdd/007-pr-business-docs-skill.md`
 - `docs/series/agent-sdd/README.md`

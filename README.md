@@ -10,7 +10,7 @@ AI Agent 개발, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기�
 ## 문서 구성
 
 - [전체 글 목록](./docs/index.md)
-- [Agent SDD 실무 개발](./docs/series/agent-sdd/README.md) — AI Agent 실무 적용을 다룬 6편의 연재
+- [Agent SDD 실무 개발](./docs/series/agent-sdd/README.md) — AI Agent 실무 적용을 다룬 7편의 연재
 - [AI에게 물어본 인간의 미래](./docs/series/ai-future-dialogue/README.md) — 프롤로그와 본편 7편으로 구성된 연재
 - [단독 글](./docs/standalone/README.md) — 개발 및 AI 활용에 관한 독립 문서 3편
 
