@@ -10,6 +10,7 @@ permalink: /series/agent-sdd/
   <div class="series-eyebrow"><span>Series · 연재</span><span>총 7편</span></div>
   <h1>Agent SDD 실무 개발</h1>
   <p>AI Agent를 실무 개발에 안정적으로 적용하기 위한 연재입니다. 작업의 위험도에 맞춰 절차를 조절하는 방법부터 명세 기반 구현 흐름, 백로그를 이용한 세션 연속성, 개발 완료 후 문서 정리, 도메인 문서로 Agent의 탐색을 줄이는 실험, SDD 문서 뼈대를 skill로 고정하려다 마주친 지시-예시 충돌, PR에서 business 문서를 안전하게 갱신하는 절차까지 다룹니다.</p>
+  <p>시리즈에서 사용한 규칙과 Skill은 <a href="https://github.com/seok-jun/agent-sdd-kit">agent-sdd-kit</a>으로 공개했습니다.</p>
 </div>
 
 <div class="series-index">
