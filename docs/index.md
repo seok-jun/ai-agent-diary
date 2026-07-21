@@ -6,7 +6,7 @@ permalink: /
 ---
 
 <div class="series-hero">
-  <div class="series-eyebrow"><span>AI Agent Diary</span><span>글 18편</span></div>
+  <div class="series-eyebrow"><span>AI Agent Diary</span><span>글 19편</span></div>
   <h1 class="series-hero-title"><img src="{{ '/assets/images/brand/wordmark.svg' | relative_url }}" alt="SJ archive" width="380" height="150"></h1>
   <p>AI Agent, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기를 기록하는 개인 기술 블로그입니다.</p>
 </div>
@@ -32,6 +32,12 @@ permalink: /
 <section class="series-section">
   <h2>단독 글</h2>
   <div class="series-index series-index--flat">
+    <a class="series-row" href="./standalone/2026-07-21-human-ai-judgment/">
+      <span class="series-body">
+        <span class="series-row-head"><span class="series-row-title">이해하지 못하는 결정을 승인한다는 것</span><span class="series-date">2026.07.21</span></span>
+        <span class="series-row-desc">AI가 판단하고 인간이 승인할 때, 검증 능력과 책임은 누구에게 남는지 묻다.</span>
+      </span>
+    </a>
     <a class="series-row" href="./standalone/2026-05-07-controlling-ai-coding-agents/">
       <span class="series-body">
         <span class="series-row-head"><span class="series-row-title">AI 코딩 에이전트를 제대로 통제하는 방법</span><span class="series-date">2026.05.07</span></span>

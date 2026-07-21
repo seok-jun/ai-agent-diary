@@ -1,7 +1,7 @@
 ---
 title: "AI-slop은 새로운 문제가 아니다. 더 위험해진 복붙 문제다"
 parent: Standalone
-nav_order: 3
+nav_order: 4
 permalink: /standalone/2026-04-28-ai-slop-copy-paste-risk/
 date: 2026-04-28
 description: "AI-slop은 새로운 문제가 아니라 더 빠르고 그럴듯하게 확장된 복붙 문제다. 그 위험과 대응을 정리한 글."

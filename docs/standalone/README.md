@@ -7,12 +7,18 @@ permalink: /standalone/
 ---
 
 <div class="series-hero">
-  <div class="series-eyebrow"><span>Standalone · 단독 글</span><span>총 3편</span></div>
+  <div class="series-eyebrow"><span>Standalone · 단독 글</span><span>총 4편</span></div>
   <h1>단독 글</h1>
   <p>특정 시리즈에 속하지 않는 개발 및 AI 활용 관련 단독 글을 모았습니다. 관심 있는 주제부터 자유롭게 읽으세요.</p>
 </div>
 
 <div class="series-index series-index--flat">
+  <a class="series-row" href="./2026-07-21-human-ai-judgment/">
+    <span class="series-body">
+      <span class="series-row-head"><span class="series-row-title">이해하지 못하는 결정을 승인한다는 것</span><span class="series-date">2026.07.21</span></span>
+      <span class="series-row-desc">AI가 판단하고 인간이 승인할 때, 검증 능력과 책임은 누구에게 남는지 묻다.</span>
+    </span>
+  </a>
   <a class="series-row" href="./2026-05-07-controlling-ai-coding-agents/">
     <span class="series-body">
       <span class="series-row-head"><span class="series-row-title">AI 코딩 에이전트를 제대로 통제하는 방법</span><span class="series-date">2026.05.07</span></span>
