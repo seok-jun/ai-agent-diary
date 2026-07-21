@@ -242,4 +242,4 @@ AI 시대의 가장 큰 문제가 AI가 틀린 답을 낼 수 있다는 사실�
 
 [^4]: [Birgitta Böckeler, _Harness engineering for coding agent users_](https://martinfowler.com/articles/harness-engineering.html) — 코딩 에이전트의 결과를 자동으로 통제하고 검증하기 위한 하네스와 그 한계를 다룬다.
 
-[^5]: [Lisanne Bainbridge, _Ironies of Automation_](https://www.sciencedirect.com/science/article/abs/pii/0005109883900468) — 자동화가 인간에게 예외 상황의 책임을 남겨두면서도 개입에 필요한 능력과 맥락을 약화시키는 문제를 다룬다.
+[^5]: Lisanne Bainbridge, [『Ironies of Automation』](https://doi.org/10.1016/0005-1098(83)90046-8), *Automatica*, Vol. 19, No. 6, 1983, pp. 775–779. ([공개 PDF](https://maritimesafetyinnovationlab.org/wp-content/uploads/2020/06/Ironies-of-Automation-Bainbridge-1983.pdf)) — 자동화가 인간을 예외 상황의 최종 책임자로 남겨두면서도 대처 능력은 약화시키며, 인간에게 자동화된 판단을 감시하도록 요구하는 것을 ‘불가능한 과업’으로 지적한다.
