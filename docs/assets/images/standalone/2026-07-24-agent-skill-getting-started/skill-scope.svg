@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340" role="img" aria-label="스킬은 개인, 프로젝트, 플러그인 위치에 둘 수 있고 이름이 겹치면 정해진 우선순위로 덮어쓴다">
+  <style>
+    .t  { font-family: Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    .m  { font-family: SFMono-Regular, Consolas, "Liberation Mono", monospace; }
+    .hd { font-size: 15px; font-weight: 700; fill: #1f2328; }
+    .pt { font-size: 11.5px; fill: #1f2328; }
+    .bd { font-size: 12.5px; fill: #424a53; }
+    .eg { font-size: 12px; font-weight: 700; fill: #8c959f; letter-spacing: .4px; }
+    .pr { font-size: 13px; fill: #424a53; }
+    .tag{ font-size: 11px; font-weight: 700; }
+  </style>
+
+  <text class="t eg" x="30" y="30">스킬을 어디에 두느냐가 “누가 쓸 수 있느냐”를 정한다</text>
+
+  <!-- Personal -->
+  <rect x="30" y="46" width="222" height="176" rx="8" fill="#fff8c5" stroke="#d4a72c"/>
+  <rect x="46" y="62" width="52" height="20" rx="10" fill="#ffffff" stroke="#d4a72c"/>
+  <text class="t tag" x="72" y="76" text-anchor="middle" fill="#9a6700">개인</text>
+  <text class="t hd" x="46" y="108">내 모든 프로젝트</text>
+  <rect x="46" y="122" width="190" height="30" rx="5" fill="#ffffff" stroke="#d4a72c"/>
+  <text class="m pt" x="56" y="141">~/.claude/skills/이름/</text>
+  <text class="t bd" x="46" y="176">내 컴퓨터에만 있다.</text>
+  <text class="t bd" x="46" y="196">개인 작업 습관을 담기 좋다.</text>
+
+  <!-- Project -->
+  <rect x="268" y="46" width="222" height="176" rx="8" fill="#ddf4ff" stroke="#54aeff"/>
+  <rect x="284" y="62" width="66" height="20" rx="10" fill="#ffffff" stroke="#54aeff"/>
+  <text class="t tag" x="317" y="76" text-anchor="middle" fill="#0969da">프로젝트</text>
+  <text class="t hd" x="284" y="108">이 저장소에서만</text>
+  <rect x="284" y="122" width="190" height="30" rx="5" fill="#ffffff" stroke="#54aeff"/>
+  <text class="m pt" x="294" y="141">.claude/skills/이름/</text>
+  <text class="t bd" x="284" y="176">git에 커밋하면</text>
+  <text class="t bd" x="284" y="196">팀 전체가 같은 스킬을 쓴다.</text>
+
+  <!-- Plugin -->
+  <rect x="506" y="46" width="222" height="176" rx="8" fill="#dafbe1" stroke="#4ac26b"/>
+  <rect x="522" y="62" width="66" height="20" rx="10" fill="#ffffff" stroke="#4ac26b"/>
+  <text class="t tag" x="555" y="76" text-anchor="middle" fill="#1a7f37">플러그인</text>
+  <text class="t hd" x="522" y="108">플러그인이 켜진 곳</text>
+  <rect x="522" y="122" width="190" height="30" rx="5" fill="#ffffff" stroke="#4ac26b"/>
+  <text class="m pt" x="532" y="141">플러그인/skills/이름/</text>
+  <text class="t bd" x="522" y="176">여러 저장소에 배포할 때.</text>
+  <text class="t bd" x="522" y="196">이름 충돌이 없다.</text>
+
+  <!-- priority bar -->
+  <rect x="30" y="242" width="698" height="66" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="t eg" x="48" y="268">이름이 겹치면</text>
+  <text class="t pr" x="160" y="269">엔터프라이즈  ›  개인  ›  프로젝트  순으로 덮어쓴다</text>
+  <text class="t bd" x="48" y="292">같은 이름의 스킬을 개인 폴더에 두면, 프로젝트에 커밋된 팀 공용 스킬 대신 내 것이 쓰인다.</text>
+</svg>

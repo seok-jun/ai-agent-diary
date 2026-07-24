@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" role="img" aria-label="Skill은 메타데이터, 지시문, 리소스 세 단계로 나뉘어 필요한 시점에만 컨텍스트에 로드된다">
+  <defs>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/>
+    </marker>
+    <style>
+      .t  { font-family: Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+      .m  { font-family: SFMono-Regular, Consolas, "Liberation Mono", monospace; }
+      .hd { font-size: 12px; font-weight: 700; fill: #8c959f; letter-spacing: .4px; }
+      .lv { font-size: 15px; font-weight: 700; fill: #1f2328; }
+      .bd { font-size: 13px; fill: #424a53; }
+      .tk { font-size: 13px; font-weight: 700; }
+      .ax { font-size: 12px; fill: #8c959f; }
+      .ft { font-size: 12px; fill: #8c959f; }
+    </style>
+  </defs>
+
+  <!-- column headers -->
+  <text class="t hd" x="60" y="40">단계</text>
+  <text class="t hd" x="280" y="40">언제 컨텍스트에 들어오나</text>
+  <text class="t hd" x="520" y="40">토큰 비용</text>
+  <line x1="40" y1="52" x2="720" y2="52" stroke="#d0d7de"/>
+
+  <!-- axis -->
+
+  <!-- Level 1 -->
+  <rect x="40" y="66" width="680" height="76" rx="8" fill="#fff8c5" stroke="#d4a72c"/>
+  <text class="t lv" x="60" y="96">Level 1 · 메타데이터</text>
+  <text class="m bd" x="60" y="120">name + description</text>
+  <text class="t bd" x="280" y="96">세션 시작 시 무조건</text>
+  <text class="t bd" x="280" y="120">안 쓰는 스킬도 올라간다</text>
+  <text class="t tk" x="520" y="96" fill="#9a6700">Skill당 ~100 토큰</text>
+  <text class="t bd" x="520" y="120">많이 깔아도 부담 적음</text>
+
+  <!-- Level 2 -->
+  <rect x="40" y="152" width="680" height="76" rx="8" fill="#ddf4ff" stroke="#54aeff"/>
+  <text class="t lv" x="60" y="182">Level 2 · 지시문</text>
+  <text class="m bd" x="60" y="206">SKILL.md 본문</text>
+  <text class="t bd" x="280" y="182">스킬이 호출됐을 때</text>
+  <text class="t bd" x="280" y="206">Claude가 파일을 읽어 들인다</text>
+  <text class="t tk" x="520" y="182" fill="#0969da">보통 5천 토큰 미만</text>
+  <text class="t bd" x="520" y="206">들어오면 계속 남는다</text>
+
+  <!-- Level 3 -->
+  <rect x="40" y="238" width="680" height="76" rx="8" fill="#dafbe1" stroke="#4ac26b"/>
+  <text class="t lv" x="60" y="268">Level 3 · 리소스</text>
+  <text class="m bd" x="60" y="292">reference.md, scripts/*.py</text>
+  <text class="t bd" x="280" y="268">그 파일이 실제로 필요할 때</text>
+  <text class="t bd" x="280" y="292">스크립트는 결과만 들어온다</text>
+  <text class="t tk" x="520" y="268" fill="#1a7f37">읽기 전에는 0</text>
+  <text class="t bd" x="520" y="292">분량 제한이 사실상 없다</text>
+
+  <text class="t ft" x="40" y="348">핵심: 스킬을 아무리 많이 깔아도, 안 쓰는 스킬은 이름과 설명 한 줄만큼만 비용이 든다.</text>
+  <text class="t ft" x="40" y="370">토큰 수치는 2026년 7월 기준 Anthropic 공식 문서의 값이며, 제품 버전에 따라 달라질 수 있다.</text>
+</svg>

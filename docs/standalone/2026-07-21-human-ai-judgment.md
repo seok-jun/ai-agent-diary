@@ -1,7 +1,7 @@
 ---
 title: "이해하지 못하는 결정을 승인한다는 것"
 parent: Standalone
-nav_order: 2
+nav_order: 3
 permalink: /standalone/2026-07-21-human-ai-judgment/
 date: 2026-07-21
 description: "AI의 판단을 인간이 충분히 이해하지 못하는 순간에도 인간을 최종 판단자라고 부를 수 있는지, 판단의 위임과 검증·책임의 경계를 묻는 글."

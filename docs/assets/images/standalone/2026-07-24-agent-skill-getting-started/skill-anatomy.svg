@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 370" width="760" height="370" role="img" aria-label="Skill은 SKILL.md를 담은 폴더 하나이며, SKILL.md는 메타데이터와 지시문 두 부분으로 나뉜다">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+    <style>
+      .t  { font-family: Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+      .m  { font-family: SFMono-Regular, Consolas, "Liberation Mono", monospace; }
+      .lb { font-size: 13px; font-weight: 700; fill: #57606a; letter-spacing: .3px; }
+      .cd { font-size: 13px; fill: #1f2328; }
+      .cp { font-size: 12.5px; fill: #57606a; }
+      .bg { font-size: 11px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- Panel A -->
+  <rect x="20" y="50" width="330" height="290" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="t lb" x="38" y="78">폴더 하나 = Skill 하나</text>
+
+  <text class="m cd" x="38" y="112">my-skill/</text>
+  <text class="m cd" x="38" y="144">├─ SKILL.md</text>
+  <text class="m cd" x="38" y="176">├─ reference.md</text>
+  <text class="m cd" x="38" y="208">├─ examples.md</text>
+  <text class="m cd" x="38" y="240">└─ scripts/</text>
+  <text class="m cd" x="38" y="272">      └─ helper.py</text>
+
+  <rect x="228" y="130" width="46" height="20" rx="10" fill="#ffebe9" stroke="#ff8182"/>
+  <text class="t bg" x="251" y="144" text-anchor="middle" fill="#cf222e">필수</text>
+  <rect x="228" y="162" width="46" height="20" rx="10" fill="#eaeef2"/>
+  <text class="t bg" x="251" y="176" text-anchor="middle" fill="#57606a">선택</text>
+  <rect x="228" y="194" width="46" height="20" rx="10" fill="#eaeef2"/>
+  <text class="t bg" x="251" y="208" text-anchor="middle" fill="#57606a">선택</text>
+  <rect x="228" y="258" width="46" height="20" rx="10" fill="#eaeef2"/>
+  <text class="t bg" x="251" y="272" text-anchor="middle" fill="#57606a">선택</text>
+
+  <text class="t cp" x="38" y="308">SKILL.md만 있으면 동작한다.</text>
+  <text class="t cp" x="38" y="326">나머지는 필요할 때만 읽힌다.</text>
+
+  <!-- Arrow -->
+  <line x1="356" y1="140" x2="394" y2="140" stroke="#57606a" stroke-width="1.6" marker-end="url(#a1)"/>
+
+  <!-- Panel B -->
+  <rect x="410" y="50" width="330" height="290" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <text class="t lb" x="428" y="78">SKILL.md 안쪽</text>
+
+  <rect x="426" y="90" width="298" height="86" rx="6" fill="#fff8c5" stroke="#d4a72c"/>
+  <text class="m cd" x="440" y="114">name: my-skill</text>
+  <text class="m cd" x="440" y="136">description: 무엇을 하고,</text>
+  <text class="m cd" x="440" y="158">             언제 쓰는지</text>
+  <text class="t cp" x="426" y="196">① 메타데이터 — 세션 시작 시 항상 로드</text>
+
+  <rect x="426" y="210" width="298" height="86" rx="6" fill="#ddf4ff" stroke="#54aeff"/>
+  <text class="m cd" x="440" y="234"># My Skill</text>
+  <text class="m cd" x="440" y="256">1. 먼저 이것을 확인한다</text>
+  <text class="m cd" x="440" y="278">2. 그다음 이렇게 처리한다</text>
+  <text class="t cp" x="426" y="316">② 지시문 — 호출될 때만 로드</text>
+</svg>

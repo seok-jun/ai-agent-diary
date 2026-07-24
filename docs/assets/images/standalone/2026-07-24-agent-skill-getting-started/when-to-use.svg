@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" role="img" aria-label="무엇을 추가하고 싶은지에 따라 CLAUDE.md, Skill, MCP, Subagent 중 무엇을 쓸지 갈린다">
+  <defs>
+    <marker id="a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/>
+    </marker>
+    <style>
+      .t  { font-family: Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+      .m  { font-family: SFMono-Regular, Consolas, "Liberation Mono", monospace; }
+      .q  { font-size: 13.5px; fill: #1f2328; }
+      .ex { font-size: 12px; fill: #8c959f; }
+      .an { font-size: 14px; font-weight: 700; }
+      .eg { font-size: 12px; font-weight: 700; fill: #8c959f; letter-spacing: .4px; }
+    </style>
+  </defs>
+
+  <text class="t eg" x="30" y="30">에이전트에게 뭔가를 더 알려주고 싶을 때, 어디에 쓸까</text>
+  <line x1="42" y1="46" x2="42" y2="336" stroke="#d0d7de" stroke-width="1.5"/>
+
+  <!-- row 1 -->
+  <circle cx="42" cy="78" r="5" fill="#8c959f"/>
+  <text class="t q" x="64" y="72">항상 참인 짧은 사실인가?</text>
+  <text class="t ex" x="64" y="92">“이 프로젝트는 pnpm을 쓴다” 같은 한 줄</text>
+  <line x1="470" y1="78" x2="518" y2="78" stroke="#8c959f" stroke-width="1.4" marker-end="url(#a5)"/>
+  <rect x="526" y="60" width="202" height="36" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="m an" x="627" y="84" text-anchor="middle" fill="#57606a">CLAUDE.md</text>
+
+  <!-- row 2 -->
+  <circle cx="42" cy="150" r="5" fill="#d4a72c"/>
+  <text class="t q" x="64" y="144">매번 똑같이 붙여넣는 절차·체크리스트인가?</text>
+  <text class="t ex" x="64" y="164">“배포 전에 이 순서대로 확인해라” 같은 여러 단계</text>
+  <line x1="470" y1="150" x2="518" y2="150" stroke="#8c959f" stroke-width="1.4" marker-end="url(#a5)"/>
+  <rect x="526" y="132" width="202" height="36" rx="8" fill="#fff8c5" stroke="#d4a72c"/>
+  <text class="m an" x="627" y="156" text-anchor="middle" fill="#9a6700">Skill</text>
+
+  <!-- row 3 -->
+  <circle cx="42" cy="222" r="5" fill="#54aeff"/>
+  <text class="t q" x="64" y="216">외부 시스템의 데이터나 기능이 필요한가?</text>
+  <text class="t ex" x="64" y="236">사내 API, 이슈 트래커, DB에 실제로 접속해야 한다</text>
+  <line x1="470" y1="222" x2="518" y2="222" stroke="#8c959f" stroke-width="1.4" marker-end="url(#a5)"/>
+  <rect x="526" y="204" width="202" height="36" rx="8" fill="#ddf4ff" stroke="#54aeff"/>
+  <text class="m an" x="627" y="228" text-anchor="middle" fill="#0969da">MCP</text>
+
+  <!-- row 4 -->
+  <circle cx="42" cy="294" r="5" fill="#4ac26b"/>
+  <text class="t q" x="64" y="288">지금 대화와 분리된 곳에서 굴리고 싶은 작업인가?</text>
+  <text class="t ex" x="64" y="308">컨텍스트를 더럽히지 않고 조사·리뷰만 따로 시키고 싶다</text>
+  <line x1="470" y1="294" x2="518" y2="294" stroke="#8c959f" stroke-width="1.4" marker-end="url(#a5)"/>
+  <rect x="526" y="276" width="202" height="36" rx="8" fill="#dafbe1" stroke="#4ac26b"/>
+  <text class="m an" x="627" y="300" text-anchor="middle" fill="#1a7f37">Subagent</text>
+
+  <text class="t ex" x="30" y="360">배타적인 선택은 아니다. Skill에 context: fork를 붙이면 Subagent로 실행되고,</text>
+  <text class="t ex" x="30" y="380">Skill 안에서 MCP 도구를 쓰게 할 수도 있다.</text>
+</svg>
