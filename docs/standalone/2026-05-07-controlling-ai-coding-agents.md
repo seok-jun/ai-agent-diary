@@ -1,7 +1,7 @@
 ---
 title: "AI 코딩 에이전트를 제대로 통제하는 방법"
 parent: Standalone
-nav_order: 2
+nav_order: 3
 permalink: /standalone/2026-05-07-controlling-ai-coding-agents/
 date: 2026-05-07
 description: "AI 코딩 에이전트를 신뢰하되 통제하는 실무 원칙 — 에이전트를 안전하게 다루기 위한 지침 정리."
