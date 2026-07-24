@@ -1,13 +1,15 @@
 ---
 title: "AI Engineer World's Fair 2026, Agentic Engineering 세션에서 나온 이야기들"
 parent: Standalone
-nav_order: 2
-permalink: /standalone/2026-06-29-ai-engineer-worlds-fair-2026-agentic-engineering/
-date: 2026-06-29
+nav_order: 1
+permalink: /standalone/2026-07-24-ai-engineer-worlds-fair-2026-agentic-engineering/
+date: 2026-07-24
 description: "AI Engineer World's Fair 2026의 Agentic Engineering 세션 여덟 개를 Harness, Skill, Agentic SDLC, Eval, Sandbox 관점에서 정리한 글."
 ---
 
 # AI Engineer World's Fair 2026, Agentic Engineering 세션에서 나온 이야기들
+
+_2026.07.24 게시_
 
 2026년 6월 29일부터 7월 2일까지 샌프란시스코 Moscone West에서 AI Engineer World's Fair 2026이 열렸다. 이 글은 그중 Agentic Engineering 계열 세션 여덟 개를 정리한 것이다.
 

@@ -13,16 +13,16 @@ permalink: /standalone/
 </div>
 
 <div class="series-index series-index--flat">
+  <a class="series-row" href="./2026-07-24-ai-engineer-worlds-fair-2026-agentic-engineering/">
+    <span class="series-body">
+      <span class="series-row-head"><span class="series-row-title">AI Engineer World's Fair 2026, Agentic Engineering 세션에서 나온 이야기들</span><span class="series-date">2026.07.24</span></span>
+      <span class="series-row-desc">여덟 개 세션을 통해 Harness, Skill, Agentic SDLC, Eval, Sandbox의 흐름을 짚는다.</span>
+    </span>
+  </a>
   <a class="series-row" href="./2026-07-21-human-ai-judgment/">
     <span class="series-body">
       <span class="series-row-head"><span class="series-row-title">이해하지 못하는 결정을 승인한다는 것</span><span class="series-date">2026.07.21</span></span>
       <span class="series-row-desc">AI가 판단하고 인간이 승인할 때, 검증 능력과 책임은 누구에게 남는지 묻다.</span>
-    </span>
-  </a>
-  <a class="series-row" href="./2026-06-29-ai-engineer-worlds-fair-2026-agentic-engineering/">
-    <span class="series-body">
-      <span class="series-row-head"><span class="series-row-title">AI Engineer World's Fair 2026, Agentic Engineering 세션에서 나온 이야기들</span><span class="series-date">2026.06.29</span></span>
-      <span class="series-row-desc">여덟 개 세션을 통해 Harness, Skill, Agentic SDLC, Eval, Sandbox의 흐름을 짚는다.</span>
     </span>
   </a>
   <a class="series-row" href="./2026-05-07-controlling-ai-coding-agents/">
