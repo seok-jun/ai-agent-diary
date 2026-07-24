@@ -1,7 +1,7 @@
 ---
 title: "Latency Numbers Every Programmer Should Know 정리"
 parent: Standalone
-nav_order: 3
+nav_order: 4
 permalink: /standalone/2026-04-28-latency-numbers-every-programmer-should-know/
 date: 2026-04-28
 description: "Jeff Dean의 'Latency Numbers Every Programmer Should Know'를 한국어로 정리하고 최신 감각으로 되짚은 참고 자료."
