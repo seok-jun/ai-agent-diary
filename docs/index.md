@@ -57,6 +57,12 @@ permalink: /
 <section class="series-section">
   <h2>단독 글</h2>
   <div class="series-index series-index--flat">
+    <a class="series-row" href="./standalone/2026-07-24-agent-skill-getting-started/">
+      <span class="series-body">
+        <span class="series-row-head"><span class="series-row-title">매번 붙여넣던 지시를 폴더 하나로 — Agent Skill 입문</span><span class="series-date">2026.07.24</span></span>
+        <span class="series-row-desc">Skill이 무엇이고 왜 그렇게 생겼는지, 처음 하나 만들어보는 것까지.</span>
+      </span>
+    </a>
     <a class="series-row" href="./standalone/2026-07-24-ai-engineer-worlds-fair-2026-agentic-engineering/">
       <span class="series-body">
         <span class="series-row-head"><span class="series-row-title">AI Engineer World's Fair 2026, Agentic Engineering 세션에서 나온 이야기들</span><span class="series-date">2026.07.24</span></span>

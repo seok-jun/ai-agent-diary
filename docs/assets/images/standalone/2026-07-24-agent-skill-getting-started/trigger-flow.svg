@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" width="760" height="470" role="img" aria-label="스킬은 description 매칭으로 자동 호출되거나 슬래시 명령으로 직접 호출된다">
+  <defs>
+    <marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+    <style>
+      .t  { font-family: Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+      .m  { font-family: SFMono-Regular, Consolas, "Liberation Mono", monospace; }
+      .bx { font-size: 13.5px; fill: #1f2328; }
+      .sm { font-size: 12px; fill: #57606a; }
+      .eg { font-size: 12px; font-weight: 700; fill: #8c959f; letter-spacing: .4px; }
+      .yn { font-size: 12px; font-weight: 700; fill: #57606a; }
+    </style>
+  </defs>
+
+  <text class="t eg" x="30" y="28">경로 A — Claude가 알아서 부른다</text>
+  <text class="t eg" x="530" y="28">경로 B — 내가 직접 부른다</text>
+  <line x1="500" y1="14" x2="500" y2="440" stroke="#eaeef2" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- A1 -->
+  <rect x="30" y="44" width="430" height="52" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="t bx" x="50" y="68">세션 시작</text>
+  <text class="t sm" x="50" y="86">설치된 모든 스킬의 name + description만 컨텍스트에 올라간다</text>
+  <line x1="245" y1="96" x2="245" y2="118" stroke="#57606a" stroke-width="1.6" marker-end="url(#a3)"/>
+
+  <!-- A2 -->
+  <rect x="30" y="124" width="430" height="46" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <text class="t bx" x="50" y="153">사용자 요청 — “이번에 뭐 바뀌었는지 정리해줘”</text>
+  <line x1="245" y1="170" x2="245" y2="192" stroke="#57606a" stroke-width="1.6" marker-end="url(#a3)"/>
+
+  <!-- A3 decision -->
+  <rect x="120" y="198" width="250" height="46" rx="23" fill="#fff8c5" stroke="#d4a72c"/>
+  <text class="t bx" x="245" y="227" text-anchor="middle">description과 맞는 스킬이 있나?</text>
+
+  <!-- branches -->
+  <path d="M170 244 L170 274 L136 274" fill="none" stroke="#57606a" stroke-width="1.6" marker-end="url(#a3)"/>
+  <text class="t yn" x="176" y="266">아니오</text>
+  <path d="M340 244 L340 274 L380 274" fill="none" stroke="#57606a" stroke-width="1.6" marker-end="url(#a3)"/>
+  <text class="t yn" x="316" y="266">예</text>
+
+  <rect x="26" y="254" width="102" height="40" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="t sm" x="77" y="279" text-anchor="middle">아무 일 없음</text>
+
+  <rect x="384" y="254" width="76" height="40" rx="8" fill="#ddf4ff" stroke="#54aeff"/>
+  <text class="t sm" x="422" y="279" text-anchor="middle">호출됨</text>
+  <line x1="424" y1="294" x2="424" y2="316" stroke="#57606a" stroke-width="1.6" marker-end="url(#a3)"/>
+
+  <!-- B1 -->
+  <rect x="530" y="124" width="200" height="46" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <text class="m bx" x="630" y="153" text-anchor="middle">/summarize-changes</text>
+  <text class="t sm" x="630" y="188" text-anchor="middle">매칭 단계를 건너뛴다</text>
+  <path d="M630 200 L630 300 L470 300 L470 316" fill="none" stroke="#57606a" stroke-width="1.6" marker-end="url(#a3)"/>
+
+  <!-- merged -->
+  <rect x="120" y="322" width="430" height="52" rx="8" fill="#ddf4ff" stroke="#54aeff"/>
+  <text class="t bx" x="140" y="346">SKILL.md 본문을 읽어 컨텍스트에 넣는다</text>
+  <text class="t sm" x="140" y="364">여기서부터 토큰을 쓴다. 세션이 끝날 때까지 남는다.</text>
+  <line x1="335" y1="374" x2="335" y2="396" stroke="#57606a" stroke-width="1.6" marker-end="url(#a3)"/>
+
+  <rect x="120" y="402" width="430" height="40" rx="8" fill="#dafbe1" stroke="#4ac26b"/>
+  <text class="t bx" x="335" y="427" text-anchor="middle">지시문대로 작업 수행</text>
+</svg>
