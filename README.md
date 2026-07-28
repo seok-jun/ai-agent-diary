@@ -20,6 +20,12 @@ AI Agent 개발, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기�
 - 단독 문서는 `YYYY-MM-DD-주제-slug.md` 형식을 사용합니다.
 - README의 문서 제목과 링크는 실제 파일명 및 본문 제목을 기준으로 관리합니다.
 
+## 글 수정일 규칙
+
+- 본문, 설명, 링크처럼 독자에게 보이는 내용을 의미 있게 수정한 글에만 front matter의 `last_modified_at: YYYY-MM-DD`를 추가하거나 갱신합니다.
+- 게시일을 수정일로 일괄 복사하지 않습니다.
+- 오탈자나 서식만 바로잡은 경우, 또는 사이트를 빌드한 경우에는 수정일을 갱신하지 않습니다.
+
 ## 기술 스택
 
 - [Jekyll](https://jekyllrb.com/) + [Just the Docs](https://just-the-docs.com/) 테마

@@ -4,6 +4,7 @@ parent: Agent SDD 실무 개발
 nav_order: 6
 permalink: /series/agent-sdd/006-example-stronger-than-instruction/
 date: 2026-07-09
+last_modified_at: 2026-07-28
 description: "SDD 문서 뼈대를 매번 같은 형태로 찍어내려고 sdd-doc-scaffold skill을 만들었다가, skill이 매크로가 아니라 Agent가 해석하는 문서라는 사실을 확인한 기록. skill 안에서 지시가 서로 충돌하고, 채워질 예시 값이 그대로 복사되는 문제를 v1.x → v2 → v2-fix로 좁혀갔다."
 image: /assets/images/agent-sdd/006-example-stronger-than-instruction/thumbnail.png
 ---
@@ -632,3 +633,10 @@ README가 진입점이 되고, 문서 간 링크가 고정되고, 다음 세션�
 그래서 4차 실행은 돌리지 않았다.
 
 이번에는 여기서 멈추는 게 맞다고 봤다.
+
+---
+
+## 관련 글
+
+- [매번 붙여넣던 지시를 폴더 하나로 — Agent Skill 입문]({{ '/standalone/2026-07-24-agent-skill-getting-started/' | relative_url }}) — Skill의 구조와 트리거부터 처음 만드는 과정까지 정리한 입문 글
+- [Skill 검증을 위한 Eval, 직접 돌려보았다]({{ '/series/agent-sdd/008-skill-eval-validation/' | relative_url }}) — 이 Skill의 Trigger·Non-trigger·Procedure를 검증한 후속 기록
