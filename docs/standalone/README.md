@@ -7,12 +7,18 @@ permalink: /standalone/
 ---
 
 <div class="series-hero">
-  <div class="series-eyebrow"><span>Standalone · 단독 글</span><span>총 6편</span></div>
+  <div class="series-eyebrow"><span>Standalone · 단독 글</span><span>총 7편</span></div>
   <h1>단독 글</h1>
   <p>특정 시리즈에 속하지 않는 개발 및 AI 활용 관련 단독 글을 모았습니다. 관심 있는 주제부터 자유롭게 읽으세요.</p>
 </div>
 
 <div class="series-index series-index--flat">
+  <a class="series-row" href="./2026-07-28-agent-scaffolding-history/">
+    <span class="series-body">
+      <span class="series-row-head"><span class="series-row-title">흡수된 것들과 흡수되지 않은 하나 — 에이전트 도구사 3년</span><span class="series-date">2026.07.28</span></span>
+      <span class="series-row-desc">모델의 약점을 보정하던 구조물이 어떻게 흡수되고 걷혔는지, 끝까지 남는 검증층은 무엇인지.</span>
+    </span>
+  </a>
   <a class="series-row" href="./2026-07-24-agent-skill-getting-started/">
     <span class="series-body">
       <span class="series-row-head"><span class="series-row-title">매번 붙여넣던 지시를 폴더 하나로 — Agent Skill 입문</span><span class="series-date">2026.07.24</span></span>
