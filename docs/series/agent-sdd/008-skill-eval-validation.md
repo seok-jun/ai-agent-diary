@@ -4,6 +4,7 @@ parent: Agent SDD 실무 개발
 nav_order: 8
 permalink: /series/agent-sdd/008-skill-eval-validation/
 date: 2026-07-22
+last_modified_at: 2026-07-28
 description: "sdd-doc-scaffold Skill의 오작동을 계기로 Trigger·Non-trigger·Procedure Eval을 직접 실행하고, 베이스라인과 검증 비용, 실행형 테스트의 부작용까지 확인한 기록."
 image: /assets/images/agent-sdd/008-skill-eval-validation/thumbnail.png
 ---
@@ -383,6 +384,11 @@ Eval은 Skill을 알아서 안정화해주는 설정 파일은 아니었다.
 대신 Skill을 바꾼 뒤 같은 실수를 반복하지 않았는지 확인할 수 있는 테스트 기준이었다. 그리고 그 기준을 제대로 사용하려면 실행 방법뿐 아니라 베이스라인, 비용, 부작용까지 함께 설계해야 했다.
 
 이번에는 Skill을 테스트하려다가 Eval 자체를 어떻게 테스트해야 하는지부터 배우게 됐다.
+
+## 관련 글
+
+- [매번 붙여넣던 지시를 폴더 하나로 — Agent Skill 입문]({{ '/standalone/2026-07-24-agent-skill-getting-started/' | relative_url }}) — Skill의 구조와 트리거를 처음부터 정리한 입문 글
+- [business 문서를 PR에서 갱신해보기]({{ '/series/agent-sdd/007-pr-business-docs-skill/' | relative_url }}) — Eval 대상이 된 PR 문서 갱신 Skill의 첫 실행 기록
 
 ## 참고
 

@@ -10,6 +10,10 @@ defaults:
     values:
       layout: default
       image: /assets/images/favicon/favicon-512.png
+  - scope:
+      path: "google324e868b431a4f00.html"
+    values:
+      sitemap: false
 # GitHub Pages project-site settings — this repo is public, so this builds to
 # https://<github-username>.github.io/ai-agent-diary/
 # If you rename the repo, update baseurl to match.
