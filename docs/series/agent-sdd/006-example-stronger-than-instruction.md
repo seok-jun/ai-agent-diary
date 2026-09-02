@@ -638,5 +638,10 @@ README가 진입점이 되고, 문서 간 링크가 고정되고, 다음 세션�
 
 ## 관련 글
 
-- [매번 붙여넣던 지시를 폴더 하나로 — Agent Skill 입문]({{ '/standalone/2026-07-24-agent-skill-getting-started/' | relative_url }}) — Skill의 구조와 트리거부터 처음 만드는 과정까지 정리한 입문 글
-- [Skill 검증을 위한 Eval, 직접 돌려보았다]({{ '/series/agent-sdd/008-skill-eval-validation/' | relative_url }}) — 이 Skill의 Trigger·Non-trigger·Procedure를 검증한 후속 기록
+> Skill의 구조와 트리거부터 처음 하나를 만드는 과정까지 정리한 입문 글이다.
+
+**Link -** [매번 붙여넣던 지시를 폴더 하나로 — Agent Skill 입문]({{ '/standalone/2026-07-24-agent-skill-getting-started/' | relative_url }})
+
+> 이 Skill을 Trigger·Non-trigger·Procedure로 나눠 검증한 후속 실험 기록이다.
+
+**Link -** [Skill 검증을 위한 Eval, 직접 돌려보았다]({{ '/series/agent-sdd/008-skill-eval-validation/' | relative_url }})

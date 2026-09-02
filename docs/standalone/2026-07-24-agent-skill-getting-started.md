@@ -236,8 +236,13 @@ allowed-tools: Bash(git diff *)
 
 ## 관련 글
 
-- [예시가 지시보다 강할 때가 있다]({{ '/series/agent-sdd/006-example-stronger-than-instruction/' | relative_url }}) — Skill의 지시 충돌과 예시 복사 문제를 실제 실험으로 좁혀간 기록
-- [Skill 검증을 위한 Eval, 직접 돌려보았다]({{ '/series/agent-sdd/008-skill-eval-validation/' | relative_url }}) — Trigger·Non-trigger·Procedure를 나눠 Skill을 검증한 기록
+> Skill의 지시 충돌과 예시 복사 문제를 실제 실험으로 좁혀간 기록이다.
+
+**Link -** [예시가 지시보다 강할 때가 있다]({{ '/series/agent-sdd/006-example-stronger-than-instruction/' | relative_url }})
+
+> Trigger·Non-trigger·Procedure를 나눠 Skill의 실제 동작과 오작동을 검증한 기록이다.
+
+**Link -** [Skill 검증을 위한 Eval, 직접 돌려보았다]({{ '/series/agent-sdd/008-skill-eval-validation/' | relative_url }})
 
 ---
 

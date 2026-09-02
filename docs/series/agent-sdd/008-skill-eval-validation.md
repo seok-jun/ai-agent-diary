@@ -387,8 +387,13 @@ Eval은 Skill을 알아서 안정화해주는 설정 파일은 아니었다.
 
 ## 관련 글
 
-- [매번 붙여넣던 지시를 폴더 하나로 — Agent Skill 입문]({{ '/standalone/2026-07-24-agent-skill-getting-started/' | relative_url }}) — Skill의 구조와 트리거를 처음부터 정리한 입문 글
-- [business 문서를 PR에서 갱신해보기]({{ '/series/agent-sdd/007-pr-business-docs-skill/' | relative_url }}) — Eval 대상이 된 PR 문서 갱신 Skill의 첫 실행 기록
+> Skill의 구조와 트리거, 처음 하나를 만드는 과정까지 정리한 입문 글이다.
+
+**Link -** [매번 붙여넣던 지시를 폴더 하나로 — Agent Skill 입문]({{ '/standalone/2026-07-24-agent-skill-getting-started/' | relative_url }})
+
+> PR diff와 호출 관계를 따라 오래된 business 문서를 찾고 갱신하는 Skill의 첫 실행 기록이다. 이 글에서 검증한 Eval의 대상이기도 하다.
+
+**Link -** [business 문서를 PR에서 갱신해보기]({{ '/series/agent-sdd/007-pr-business-docs-skill/' | relative_url }})
 
 ## 참고
 

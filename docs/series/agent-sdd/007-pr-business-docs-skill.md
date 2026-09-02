@@ -22,7 +22,11 @@ _2026.07.14 게시_
 
 이 문서는 설계 문서라기보다 Agent를 위한 분석 결과 요약에 가깝다. 실제 코드는 계속 기준으로 남겨두되, 다음 작업에서는 business 문서를 먼저 읽고 필요한 코드만 확인하도록 하는 방식이다.
 
-[이전 실험]({{ '/series/agent-sdd/005-docs-cut-agent-wandering-not-tokens/' | relative_url }})에서는 business 문서가 있을 때 로직형 작업에서 아래와 같은 차이가 있었다. 각 조건 1회 실행 결과다.
+> 이전 글은 business 문서가 Agent의 탐색 왕복과 토큰 비용에 어떤 차이를 만드는지 설계 단계까지 측정한 실험이다.
+
+**Link -** [문서는 토큰 청구서를 크게 줄이지 않는다 — 대신 Agent가 헤매는 시간을 줄인다]({{ '/series/agent-sdd/005-docs-cut-agent-wandering-not-tokens/' | relative_url }})
+
+그 실험에서 business 문서가 있을 때 로직형 작업에서는 아래와 같은 차이가 있었다. 각 조건 1회 실행 결과다.
 
 | 지표 | 문서 있음 | 문서 없음 | 차이 |
 |---|---|---|---|
