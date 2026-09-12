@@ -12,7 +12,7 @@ permalink: /
 <div class="series-hero">
   <div class="series-eyebrow"><span>AI Agent Diary</span><span>최근 업데이트 {{ latest_page.date | date: "%Y.%m.%d" }} · 글 {{ dated_pages.size }}편</span></div>
   <h1 class="series-hero-title"><img src="{{ '/assets/images/brand/wordmark.svg' | relative_url }}" alt="SJ archive" width="380" height="150"></h1>
-  <p>AI Agent, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기를 기록하는 개인 기술 블로그입니다.</p>
+  <p>AI 코딩 에이전트를 실무에 붙이면서 남긴 기록입니다. 개발 방법론, 검증, 문서화, 그리고 그 과정에서 마주친 판단들.</p>
 </div>
 
 <section class="series-section home-latest">
