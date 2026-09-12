@@ -5,7 +5,7 @@ nav_order: 1
 permalink: /
 ---
 
-{% assign dated_pages = site.pages | where_exp: "item", "item.date != nil" | sort: "date" | reverse %}
+{% assign dated_pages = site.pages | where_exp: "item", "item.date != nil" | where_exp: "item", "item.parent != 'AI에게 물어본 인간의 미래'" | sort: "date" | reverse %}
 {% assign recent_pages = dated_pages | slice: 0, 4 %}
 {% assign latest_page = recent_pages | first %}
 
@@ -43,12 +43,6 @@ permalink: /
       <span class="series-card-kicker">Series · 10편</span>
       <h3>Agent SDD 실무 개발</h3>
       <p>AI Agent를 실무 개발에 안정적으로 붙이기 위한 작업 등급화, 명세 기반 구현, 백로그를 이용한 세션 연속성, 도메인 문서로 탐색 줄이기, skill의 지시-예시 충돌, PR에서 business 문서를 안전하게 갱신하는 절차, Skill Eval 검증, 멀티 Agent 작업 격리와 검증 Gate, 그리고 방법론을 강요하지 않고 공유하는 구조까지.</p>
-      <span class="series-card-more">시리즈 열기 →</span>
-    </a>
-    <a class="series-card" href="./series/ai-future-dialogue/">
-      <span class="series-card-kicker">Series · 프롤로그 + 7편</span>
-      <h3>AI에게 물어본 인간의 미래</h3>
-      <p>노동과 분배, 통치, 결핍, 종교, 기술 발전의 목적, 그리고 한국 산업의 미래까지 질문을 확장하는 대화 연재.</p>
       <span class="series-card-more">시리즈 열기 →</span>
     </a>
   </div>
