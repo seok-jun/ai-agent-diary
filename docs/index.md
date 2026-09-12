@@ -40,9 +40,9 @@ permalink: /
   <h2>시리즈</h2>
   <div class="series-cards">
     <a class="series-card" href="./series/agent-sdd/">
-      <span class="series-card-kicker">Series · 8편</span>
+      <span class="series-card-kicker">Series · 10편</span>
       <h3>Agent SDD 실무 개발</h3>
-      <p>AI Agent를 실무 개발에 안정적으로 붙이기 위한 작업 등급화, 명세 기반 구현, 백로그를 이용한 세션 연속성, 도메인 문서로 탐색 줄이기, skill의 지시-예시 충돌, PR에서 business 문서를 안전하게 갱신하는 절차와 Skill Eval 검증까지.</p>
+      <p>AI Agent를 실무 개발에 안정적으로 붙이기 위한 작업 등급화, 명세 기반 구현, 백로그를 이용한 세션 연속성, 도메인 문서로 탐색 줄이기, skill의 지시-예시 충돌, PR에서 business 문서를 안전하게 갱신하는 절차, Skill Eval 검증, 멀티 Agent 작업 격리와 검증 Gate, 그리고 방법론을 강요하지 않고 공유하는 구조까지.</p>
       <span class="series-card-more">시리즈 열기 →</span>
     </a>
     <a class="series-card" href="./series/ai-future-dialogue/">
