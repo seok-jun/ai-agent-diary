@@ -5,11 +5,14 @@ nav_order: 11
 permalink: /series/agent-sdd/011-adaptive-sdd-work-project/
 date: 2026-09-21
 description: "Adaptive SDD를 실무 프로젝트에 다시 적용하며 리뷰 요청과 반환 형식, 스냅샷 기준, 사람이 실행하는 검증 문서를 손본 기록."
+image: /assets/images/agent-sdd/011-adaptive-sdd-work-project/thumbnail.png
 ---
 
 # Adaptive SDD를 실무 프로젝트에 다시 적용하면서 손본 것들
 
 _2026.09.21 게시_
+
+![Adaptive SDD — 다시 실무로: Agent와 사람이 명세와 검증 결과를 주고받는 모습]({{ '/assets/images/agent-sdd/011-adaptive-sdd-work-project/thumbnail.png' | relative_url }})
 
 개인 프로젝트에서 고도화했던 Adaptive SDD를 실무 프로젝트에 다시 적용해봤다.
 
