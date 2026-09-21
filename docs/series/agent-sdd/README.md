@@ -7,9 +7,9 @@ permalink: /series/agent-sdd/
 ---
 
 <div class="series-hero">
-  <div class="series-eyebrow"><span>Series · 연재</span><span>총 10편</span></div>
+  <div class="series-eyebrow"><span>Series · 연재</span><span>총 11편</span></div>
   <h1>Agent SDD 실무 개발</h1>
-  <p>AI Agent를 실무 개발에 안정적으로 적용하기 위한 연재입니다. 작업의 위험도에 맞춰 절차를 조절하는 방법부터 명세 기반 구현 흐름, 백로그를 이용한 세션 연속성, 개발 완료 후 문서 정리, 도메인 문서로 Agent의 탐색을 줄이는 실험, SDD 문서 뼈대를 skill로 고정하려다 마주친 지시-예시 충돌, PR에서 business 문서를 안전하게 갱신하는 절차, Skill Eval을 이용한 검증, 멀티 Agent 작업 격리와 검증 Gate 운영, 그리고 방법론을 강요하지 않고 공유하기 위해 프로젝트 공통 규칙과 개발 방법론을 분리한 구상까지 다룹니다.</p>
+  <p>AI Agent를 실무 개발에 안정적으로 적용하기 위한 연재입니다. 작업의 위험도에 맞춰 절차를 조절하는 방법부터 명세 기반 구현 흐름, 백로그를 이용한 세션 연속성, 개발 완료 후 문서 정리, 도메인 문서로 Agent의 탐색을 줄이는 실험, SDD 문서 뼈대를 skill로 고정하려다 마주친 지시-예시 충돌, PR에서 business 문서를 안전하게 갱신하는 절차, Skill Eval을 이용한 검증, 멀티 Agent 작업 격리와 검증 Gate 운영, 그리고 방법론을 강요하지 않고 공유하기 위해 프로젝트 공통 규칙과 개발 방법론을 분리한 구상, 실무 재적용에서 다듬은 리뷰 요청·스냅샷·사람 실행 검증까지 다룹니다.</p>
   <p>시리즈에서 사용한 규칙과 Skill은 <a href="https://github.com/seok-jun/agent-sdd-kit">agent-sdd-kit</a>으로, 워크플로 전체는 <a href="https://github.com/seok-jun/adaptive-agentic-sdd-ko">adaptive-agentic-sdd-ko</a>로 공개했습니다.</p>
 </div>
 
@@ -84,6 +84,13 @@ permalink: /series/agent-sdd/
       <span class="series-row-desc">모두가 지켜야 할 공통 규칙과 개발자가 선택하는 방법론을 가르고, .agentics로 연결 정보만 프로젝트에 남기는 구상.</span>
     </span>
   </a>
+  <a class="series-row" href="./011-adaptive-sdd-work-project/">
+    <span class="series-num">11</span>
+    <span class="series-body">
+      <span class="series-row-head"><span class="series-row-title">Adaptive SDD를 실무 프로젝트에 다시 적용하면서 손본 것들</span><span class="series-date">2026.09.21</span></span>
+      <span class="series-row-desc">실무에 다시 적용하며 리뷰 요청과 반환 형식, 스냅샷 기준, 사람이 실행하는 검증 문서를 다듬은 기록.</span>
+    </span>
+  </a>
 </div>
 
-<p class="series-note">1편에서 작업 등급을 정하고, 2편에서 Agent 작업 절차를 구성한 뒤, 3편에서 세션이 끊겨도 작업을 이어가는 방법으로, 4편에서 개발이 끝난 뒤 문서를 정리하는 방법으로, 5편에서 도메인 문서가 Agent의 탐색을 실제로 줄이는지 측정하고, 6편에서 그 문서 뼈대를 skill로 고정할 때 생기는 지시-예시 충돌을 살펴봅니다. 7편에서는 PR의 실제 구현을 기준으로 business 문서를 안전하게 갱신하는 절차까지 확장하고, 8편에서는 Skill의 트리거와 실행 절차를 Eval로 검증합니다. 9편에서는 멀티 Agent를 실제 운영하며 작업 격리, 제한된 탐색, 위험도별 검증 Gate로 확장합니다. 10편에서는 이렇게 만든 방법론을 다른 개발자에게 강요하지 않고 공유하는 구조를 고민합니다. 순서대로 읽기를 권합니다.</p>
+<p class="series-note">1편에서 작업 등급을 정하고, 2편에서 Agent 작업 절차를 구성한 뒤, 3편에서 세션이 끊겨도 작업을 이어가는 방법으로, 4편에서 개발이 끝난 뒤 문서를 정리하는 방법으로, 5편에서 도메인 문서가 Agent의 탐색을 실제로 줄이는지 측정하고, 6편에서 그 문서 뼈대를 skill로 고정할 때 생기는 지시-예시 충돌을 살펴봅니다. 7편에서는 PR의 실제 구현을 기준으로 business 문서를 안전하게 갱신하는 절차까지 확장하고, 8편에서는 Skill의 트리거와 실행 절차를 Eval로 검증합니다. 9편에서는 멀티 Agent를 실제 운영하며 작업 격리, 제한된 탐색, 위험도별 검증 Gate로 확장합니다. 10편에서는 이렇게 만든 방법론을 다른 개발자에게 강요하지 않고 공유하는 구조를 고민합니다. 11편에서는 Adaptive SDD를 실무 프로젝트에 다시 적용하며 무엇을 넘기고 무엇을 돌려받을지 정리합니다. 순서대로 읽기를 권합니다.</p>
