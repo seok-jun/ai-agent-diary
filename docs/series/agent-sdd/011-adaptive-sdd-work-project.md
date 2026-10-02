@@ -12,8 +12,6 @@ image: /assets/images/agent-sdd/011-adaptive-sdd-work-project/thumbnail.png
 
 _2026.09.21 게시_
 
-{% include agent-sdd-notice.html %}
-
 ![Adaptive SDD — 다시 실무로: Agent와 사람이 명세와 검증 결과를 주고받는 모습]({{ '/assets/images/agent-sdd/011-adaptive-sdd-work-project/thumbnail.png' | relative_url }})
 
 개인 프로젝트에서 고도화했던 Adaptive SDD를 실무 프로젝트에 다시 적용해봤다.

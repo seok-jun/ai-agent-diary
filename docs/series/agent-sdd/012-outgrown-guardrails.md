@@ -12,8 +12,6 @@ image: /assets/images/agent-sdd/012-outgrown-guardrails/thumbnail.png
 
 _2026.10.02 게시_
 
-{% include agent-sdd-notice.html %}
-
 ![모델은 좋아졌는데 가드레일은 그대로였다 — 4월의 모델과 10월의 모델, 그대로인 가드레일]({{ '/assets/images/agent-sdd/012-outgrown-guardrails/thumbnail.png' | relative_url }})
 
 개인 프로젝트를 하다가 뭔가 달라졌다는 걸 느꼈다.

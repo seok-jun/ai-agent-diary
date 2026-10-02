@@ -12,8 +12,6 @@ image: /assets/images/agent-sdd/003-agent-backlog-session-continuity/thumbnail.p
 
 _2026.07.02 게시_
 
-{% include agent-sdd-notice.html %}
-
 ![죽은 Agent 세션, 백로그로 살리는 법]({{ '/assets/images/agent-sdd/003-agent-backlog-session-continuity/thumbnail.png' | relative_url }})
 
 > 이 글은 이전 글에서 다룬 “Agent에게 바로 개발시키지 않고, 단계별 산출물을 만든 뒤 구현한다”는 방식의 연장선이다.

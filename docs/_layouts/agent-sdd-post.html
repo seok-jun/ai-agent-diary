@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{%- comment -%}
+  Agent SDD series post layout.
+  When `series_notice` is true (set by front matter defaults in _config.yml),
+  insert the shared notice right after the "_YYYY.MM.DD 게시_" date line.
+  If a post has no date line, the notice goes above the content instead.
+{%- endcomment -%}
+{%- if page.series_notice -%}
+  {%- capture notice -%}{% include agent-sdd-notice.html %}{%- endcapture -%}
+  {%- assign date_marker = "게시</em></p>" -%}
+  {%- if content contains date_marker -%}
+    {%- assign marker_with_notice = date_marker | append: notice -%}
+{{ content | replace_first: date_marker, marker_with_notice }}
+  {%- else -%}
+{{ notice }}
+{{ content }}
+  {%- endif -%}
+{%- else -%}
+{{ content }}
+{%- endif -%}

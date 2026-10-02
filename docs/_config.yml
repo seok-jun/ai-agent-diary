@@ -17,6 +17,19 @@ defaults:
       path: "google324e868b431a4f00.html"
     values:
       sitemap: false
+  # Agent SDD series posts: render the time-of-writing notice from one place
+  # (_layouts/agent-sdd-post.html + _includes/agent-sdd-notice.html).
+  - scope:
+      path: "series/agent-sdd"
+    values:
+      layout: agent-sdd-post
+      series_notice: true
+  # The series index page is not a post, so it gets no notice.
+  - scope:
+      path: "series/agent-sdd/README.md"
+    values:
+      layout: default
+      series_notice: false
 # GitHub Pages project-site settings — this repo is public, so this builds to
 # https://<github-username>.github.io/ai-agent-diary/
 # If you rename the repo, update baseurl to match.
@@ -51,6 +64,16 @@ nav_sort: case_insensitive
 # jekyll-seo-tag still emits twitter:card=summary_large_image when a page has an image.
 author:
   name: seok jun
+
+# The Just the Docs theme Sass still uses @import and darken()/lighten(),
+# which Dart Sass reports as deprecations on every build. Silence those
+# theme-side deprecations so real build warnings stay visible.
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
 
 plugins:
   - jekyll-seo-tag

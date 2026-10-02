@@ -12,8 +12,6 @@ image: /assets/images/agent-sdd/009-adaptive-agentic-sdd/thumbnail.png
 
 _2026.09.01 게시_
 
-{% include agent-sdd-notice.html %}
-
 ![Adaptive Agentic SDD]({{ '/assets/images/agent-sdd/009-adaptive-agentic-sdd/thumbnail.png' | relative_url }})
 
 예전 글에서 멀티 Agent 병렬 개발을 다음 단계로 적어둔 적이 있다.
