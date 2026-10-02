@@ -12,6 +12,8 @@ image: /assets/images/agent-sdd/014-isolation-stopped-the-experiment/thumbnail.p
 
 _2026.10.02 게시_
 
+{% include agent-sdd-notice.html %}
+
 ![실험을 멈춘 건 모델이 아니었다 — 첫 번째 실험은 52초 만에 편집 0건, 두 번째 실험은 앞 후보의 파일이 읽혀서 중단]({{ '/assets/images/agent-sdd/014-isolation-stopped-the-experiment/thumbnail.png' | relative_url }})
 
 [지난 글]({{ '/series/agent-sdd/013-removing-one-guardrail/' | relative_url }})의 실험에서 첫 번째 실행은 52초 만에 아무것도 고치지 못하고 끝났다. 그 뒤에 한 두 번째 실험은 한 번 돌리고 멈췄다.

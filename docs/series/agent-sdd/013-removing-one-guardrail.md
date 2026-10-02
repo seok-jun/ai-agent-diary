@@ -12,6 +12,8 @@ image: /assets/images/agent-sdd/013-removing-one-guardrail/thumbnail.png
 
 _2026.10.02 게시_
 
+{% include agent-sdd-notice.html %}
+
 ![가드레일 하나만 빼고 돌려봤다 — 조건 A와 B 모두 17/17 통과, 결론은 아직 모른다]({{ '/assets/images/agent-sdd/013-removing-one-guardrail/thumbnail.png' | relative_url }})
 
 [지난 글]({{ '/series/agent-sdd/012-outgrown-guardrails/' | relative_url }})에서 순서를 하나 정했다. 가드레일을 고치기 전에 먼저 재본다. 지금 쓰는 모델이 그 절차 없이도 누락을 안 하는지 보고, 그다음에 줄일지 말지를 정한다.

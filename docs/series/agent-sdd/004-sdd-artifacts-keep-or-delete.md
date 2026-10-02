@@ -12,6 +12,8 @@ image: /assets/images/agent-sdd/004-sdd-artifacts-keep-or-delete/thumbnail.png
 
 _2026.07.05 게시_
 
+{% include agent-sdd-notice.html %}
+
 ![개발이 끝난 SDD 문서, 지울 것과 도메인에 남길 것]({{ '/assets/images/agent-sdd/004-sdd-artifacts-keep-or-delete/thumbnail.png' | relative_url }})
 
 > 이전 글에서는 백로그가 세션 연속성을 위한 영속 컨텍스트라고 정리했다.

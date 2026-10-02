@@ -465,6 +465,17 @@ body {
   font-weight: 700;
 }
 
+.series-notice {
+  margin: 0.25rem 0 1.25rem;
+  padding: 0.7rem 0.95rem;
+  border-left: 3px solid $archive-primary;
+  border-radius: 0 0.6rem 0.6rem 0;
+  background: rgba(22, 163, 74, 0.06);
+  color: $archive-muted;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 .series-origin {
   margin: 0.4rem 0 0;
   color: $archive-muted;
