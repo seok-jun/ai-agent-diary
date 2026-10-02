@@ -12,8 +12,6 @@ image: /assets/images/agent-sdd/010-agentics-sharing-methodology/thumbnail.png
 
 _2026.09.13 게시_
 
-{% include agent-sdd-notice.html %}
-
 ![방법론을 강요하지 않고 공유하는 방법]({{ '/assets/images/agent-sdd/010-agentics-sharing-methodology/thumbnail.png' | relative_url }})
 
 개발 방법론을 실제 프로젝트에 적용하다 보니 조금 걸리는 부분이 생겼다.

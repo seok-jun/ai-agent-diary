@@ -12,8 +12,6 @@ image: /assets/images/agent-sdd/005-docs-cut-agent-wandering-not-tokens/thumbnai
 
 _2026.07.06 게시_
 
-{% include agent-sdd-notice.html %}
-
 ![문서는 토큰 청구서를 크게 줄이지 않는다 — 대신 Agent가 헤매는 시간을 줄인다]({{ '/assets/images/agent-sdd/005-docs-cut-agent-wandering-not-tokens/thumbnail.png' | relative_url }})
 
 ## 들어가며

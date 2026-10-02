@@ -12,8 +12,6 @@ image: /assets/images/agent-sdd/007-pr-business-docs-skill/thumbnail.png
 
 _2026.07.14 게시_
 
-{% include agent-sdd-notice.html %}
-
 ![business 문서를 PR에서 갱신해보기]({{ '/assets/images/agent-sdd/007-pr-business-docs-skill/thumbnail.png' | relative_url }})
 
 레거시 시스템을 운영하다 보면 같은 비즈니스 로직을 반복해서 분석하게 된다.

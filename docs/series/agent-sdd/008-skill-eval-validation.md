@@ -13,8 +13,6 @@ image: /assets/images/agent-sdd/008-skill-eval-validation/thumbnail.png
 
 _2026.07.22 게시_
 
-{% include agent-sdd-notice.html %}
-
 ![Skill 검증을 위한 Eval, 직접 돌려보았다]({{ '/assets/images/agent-sdd/008-skill-eval-validation/thumbnail.png' | relative_url }})
 
 Skill을 만들고 나면 한 가지 문제가 생긴다.
