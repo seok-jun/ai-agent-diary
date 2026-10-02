@@ -1,7 +1,7 @@
 ---
 title: "매번 붙여넣던 지시를 폴더 하나로 — Agent Skill 입문"
 parent: Standalone
-nav_order: 2
+nav_order: 3
 permalink: /standalone/2026-07-24-agent-skill-getting-started/
 date: 2026-07-24
 last_modified_at: 2026-07-28

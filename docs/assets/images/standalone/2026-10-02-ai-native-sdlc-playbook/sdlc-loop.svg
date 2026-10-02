@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" width="820" height="440" role="img" aria-label="AI-native SDLC의 여섯 단계는 직선이 아니라 고리다. 기획의 intent.md, 설계의 spec.md, 구현의 plan.md와 코드, 테스트 결과, PR과 리뷰, 운영 진단이 차례로 커밋되고, 운영에서 발견한 문제는 새 intent.md가 되어 기획으로 돌아간다">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+    <style>
+      .t  { font-family: Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+      .m  { font-family: SFMono-Regular, Consolas, "Liberation Mono", monospace; }
+      .ti { font-size: 15px; font-weight: 700; fill: #1f2328; }
+      .af { font-size: 13px; fill: #0550ae; font-weight: 600; }
+      .gt { font-size: 12px; fill: #57606a; }
+      .tr { font-size: 11.5px; fill: #57606a; }
+      .cn { font-size: 13px; fill: #424a53; }
+      .cb { font-size: 13.5px; font-weight: 700; fill: #1f2328; }
+      .hd { font-size: 12px; font-weight: 700; fill: #8c959f; letter-spacing: .4px; }
+    </style>
+  </defs>
+  <text class="t hd" x="30" y="40">각 단계는 산출물을 커밋하며 끝나고, 다음 단계는 그 산출물을 읽으며 시작한다</text>
+
+  <rect x="30" y="70" width="200" height="110" rx="8" fill="#fff8c5" stroke="#d4a72c" stroke-width="1.4"/>
+  <text class="t ti" x="46" y="100">1 · 기획 Plan</text>
+  <text class="m af" x="46" y="130">intent.md</text>
+  <text class="t gt" x="46" y="160">판단: 제품 오너가 수락</text>
+  <rect x="310" y="70" width="200" height="110" rx="8" fill="#fbefff" stroke="#c297ff" stroke-width="1.4"/>
+  <text class="t ti" x="326" y="100">2 · 설계 Design</text>
+  <text class="m af" x="326" y="130">spec.md</text>
+  <text class="t gt" x="326" y="160">판단: 제품 오너가 승인</text>
+  <rect x="590" y="70" width="200" height="110" rx="8" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.4"/>
+  <text class="t ti" x="606" y="100">3 · 구현 Build</text>
+  <text class="m af" x="606" y="130">plan.md → 코드·테스트</text>
+  <text class="t gt" x="606" y="160">판단: 엔지니어가 계획 승인</text>
+  <rect x="590" y="290" width="200" height="110" rx="8" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/>
+  <text class="t ti" x="606" y="320">4 · 테스트 Test</text>
+  <text class="m af" x="606" y="350">테스트 결과 · eval</text>
+  <text class="t gt" x="606" y="380">AI가 먼저 스스로 검증</text>
+  <rect x="310" y="290" width="200" height="110" rx="8" fill="#ffebe9" stroke="#ff8182" stroke-width="1.4"/>
+  <text class="t ti" x="326" y="320">5 · 배포 Deploy</text>
+  <text class="m af" x="326" y="350">PR + 리뷰 결과</text>
+  <text class="t gt" x="326" y="380">판단: 코드 오너가 승인</text>
+  <rect x="30" y="290" width="200" height="110" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.4"/>
+  <text class="t ti" x="46" y="320">6 · 운영 Maintain</text>
+  <text class="m af" x="46" y="350">진단 → 새 intent.md</text>
+  <text class="t gt" x="46" y="380">판단: 서비스 오너가 분류</text>
+  <line x1="234" y1="125" x2="306" y2="125" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="514" y1="125" x2="586" y2="125" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <g class="t tr" text-anchor="middle"><text x="270" y="110">intent</text><text x="270" y="145">수락</text><text x="550" y="110">spec</text><text x="550" y="145">승인</text></g>
+  <line x1="690" y1="184" x2="690" y2="286" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <g class="t tr" text-anchor="end"><text x="680" y="232">코드·테스트</text><text x="680" y="248">완성</text></g>
+  <line x1="586" y1="345" x2="514" y2="345" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="306" y1="345" x2="234" y2="345" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <g class="t tr" text-anchor="middle"><text x="550" y="330">PR</text><text x="550" y="365">생성</text><text x="270" y="330">merge</text><text x="270" y="365">· 배포</text></g>
+  <line x1="130" y1="286" x2="130" y2="184" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <g class="t tr"><text x="140" y="232">문제 발견 시</text><text x="140" y="248">새 intent.md로</text></g>
+  <g class="t" text-anchor="middle">
+    <text class="cb" x="410" y="218">산출물의 사슬 = 감사 기록</text>
+    <text class="cn" x="410" y="240">누가 무엇을 요청했고</text>
+    <text class="cn" x="410" y="258">AI가 무엇을 만들었고, 누가 승인했는지</text>
+  </g>
+  <text class="t gt" x="410" y="428" text-anchor="middle">원문: Anthropic, The AI-native SDLC playbook (2026.08.21)을 바탕으로 재구성</text>
+</svg>

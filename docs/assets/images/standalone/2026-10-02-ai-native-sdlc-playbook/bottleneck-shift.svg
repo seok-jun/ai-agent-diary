@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-label="AI로 구현 단계만 빨라지면 기획, 설계, 테스트, 배포는 여전히 사람 속도로 남아 전체 기간이 크게 줄지 않는다. AI-native SDLC는 앞뒤 단계도 함께 바꾸는 것을 목표로 한다">
+  <defs>
+    <style>
+      .t  { font-family: Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+      .hd { font-size: 12px; font-weight: 700; fill: #8c959f; letter-spacing: .4px; }
+      .rl { font-size: 14px; font-weight: 700; fill: #1f2328; }
+      .rs { font-size: 12px; fill: #57606a; }
+      .bl { font-size: 12px; fill: #1f2328; }
+      .nt { font-size: 12.5px; font-weight: 700; }
+      .ft { font-size: 12px; fill: #8c959f; }
+    </style>
+  </defs>
+
+  <!-- legend -->
+  <g class="t" font-size="12" fill="#424a53">
+    <rect x="200" y="22" width="14" height="14" rx="3" fill="#fff8c5" stroke="#d4a72c"/><text x="220" y="34">기획</text>
+    <rect x="270" y="22" width="14" height="14" rx="3" fill="#fbefff" stroke="#c297ff"/><text x="290" y="34">설계</text>
+    <rect x="340" y="22" width="14" height="14" rx="3" fill="#ddf4ff" stroke="#54aeff"/><text x="360" y="34">구현</text>
+    <rect x="410" y="22" width="14" height="14" rx="3" fill="#dafbe1" stroke="#4ac26b"/><text x="430" y="34">테스트·리뷰</text>
+    <rect x="510" y="22" width="14" height="14" rx="3" fill="#ffebe9" stroke="#ff8182"/><text x="530" y="34">배포·운영 승인</text>
+  </g>
+  <line x1="30" y1="52" x2="730" y2="52" stroke="#d0d7de"/>
+
+  <!-- row 1: traditional -->
+  <text class="t rl" x="30" y="92">전통 SDLC</text>
+  <text class="t rs" x="30" y="111">구현이 가장 오래 걸림</text>
+  <g class="t bl" text-anchor="middle">
+    <rect x="190" y="74" width="70" height="40" rx="4" fill="#fff8c5" stroke="#d4a72c"/><text x="225" y="99">기획</text>
+    <rect x="262" y="74" width="70" height="40" rx="4" fill="#fbefff" stroke="#c297ff"/><text x="297" y="99">설계</text>
+    <rect x="334" y="74" width="230" height="40" rx="4" fill="#ddf4ff" stroke="#54aeff"/><text x="449" y="99">구현 (사람이 직접 작성)</text>
+    <rect x="566" y="74" width="80" height="40" rx="4" fill="#dafbe1" stroke="#4ac26b"/><text x="606" y="99">테스트</text>
+    <rect x="648" y="74" width="70" height="40" rx="4" fill="#ffebe9" stroke="#ff8182"/><text x="683" y="99">배포</text>
+  </g>
+
+  <!-- row 2: only build accelerated -->
+  <text class="t rl" x="30" y="172">코드만 AI로</text>
+  <text class="t rs" x="30" y="191">구현만 몇 시간으로 줄어듦</text>
+  <g class="t bl" text-anchor="middle">
+    <rect x="190" y="154" width="70" height="40" rx="4" fill="#fff8c5" stroke="#d4a72c"/><text x="225" y="179">기획</text>
+    <rect x="262" y="154" width="70" height="40" rx="4" fill="#fbefff" stroke="#c297ff"/><text x="297" y="179">설계</text>
+    <rect x="334" y="154" width="30" height="40" rx="4" fill="#ddf4ff" stroke="#54aeff"/>
+    <rect x="366" y="154" width="80" height="40" rx="4" fill="#dafbe1" stroke="#4ac26b"/><text x="406" y="179">테스트</text>
+    <rect x="448" y="154" width="70" height="40" rx="4" fill="#ffebe9" stroke="#ff8182"/><text x="483" y="179">배포</text>
+  </g>
+  <path d="M190,206 L190,214 L518,214 L518,206" fill="none" stroke="#cf222e" stroke-width="1.4"/>
+  <text class="t nt" x="354" y="232" text-anchor="middle" fill="#cf222e">구현 앞뒤는 여전히 사람 속도 → 여기가 새 병목</text>
+
+  <!-- row 3: AI-native -->
+  <text class="t rl" x="30" y="282">AI-native SDLC</text>
+  <text class="t rs" x="30" y="301">앞뒤 단계도 함께 재설계</text>
+  <g>
+    <rect x="190" y="264" width="30" height="40" rx="4" fill="#fff8c5" stroke="#d4a72c"/>
+    <rect x="222" y="264" width="30" height="40" rx="4" fill="#fbefff" stroke="#c297ff"/>
+    <rect x="254" y="264" width="30" height="40" rx="4" fill="#ddf4ff" stroke="#54aeff"/>
+    <rect x="286" y="264" width="34" height="40" rx="4" fill="#dafbe1" stroke="#4ac26b"/>
+    <rect x="322" y="264" width="34" height="40" rx="4" fill="#ffebe9" stroke="#ff8182"/>
+  </g>
+  <text class="t rs" x="370" y="282">AI가 각 단계를 수행하고,</text>
+  <text class="t rs" x="370" y="300">사람은 단계 사이의 승인 지점(게이트)에서 판단에 집중</text>
+
+  <text class="t ft" x="380" y="344" text-anchor="middle">막대 길이는 개념을 보여주기 위한 것으로 실제 측정 비율이 아니다</text>
+</svg>

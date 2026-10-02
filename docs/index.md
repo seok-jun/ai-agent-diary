@@ -51,6 +51,12 @@ permalink: /
 <section class="series-section">
   <h2>단독 글</h2>
   <div class="series-index series-index--flat">
+    <a class="series-row" href="./standalone/2026-10-02-ai-native-sdlc-playbook/">
+      <span class="series-body">
+        <span class="series-row-head"><span class="series-row-title">코드는 더 이상 병목이 아니다 — AI-Native SDLC 쉽게 읽기</span><span class="series-date">2026.10.02</span></span>
+        <span class="series-row-desc">Anthropic의 AI-native SDLC 플레이북을 도식과 표로 풀어, 여섯 단계가 하나의 고리가 되는 방식을 정리.</span>
+      </span>
+    </a>
     <a class="series-row" href="./standalone/2026-07-28-agent-scaffolding-history/">
       <span class="series-body">
         <span class="series-row-head"><span class="series-row-title">흡수된 것들과 흡수되지 않은 하나 — 에이전트 도구사 3년</span><span class="series-date">2026.07.28</span></span>
