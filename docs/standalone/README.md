@@ -7,12 +7,18 @@ permalink: /standalone/
 ---
 
 <div class="series-hero">
-  <div class="series-eyebrow"><span>Standalone · 단독 글</span><span>총 8편</span></div>
+  <div class="series-eyebrow"><span>Standalone · 단독 글</span><span>총 9편</span></div>
   <h1>단독 글</h1>
   <p>특정 시리즈에 속하지 않는 개발 및 AI 활용 관련 단독 글을 모았습니다. 관심 있는 주제부터 자유롭게 읽으세요.</p>
 </div>
 
 <div class="series-index series-index--flat">
+  <a class="series-row" href="./2026-10-02-why-ai-agents-need-evals/">
+    <span class="series-body">
+      <span class="series-row-head"><span class="series-row-title">감으로는 고칠 수 없다 — AI 에이전트에 Eval이 필요한 이유</span><span class="series-date">2026.10.02</span></span>
+      <span class="series-row-desc">Anthropic의 evals 가이드를 바탕으로, AI 에이전트에 왜 시험지가 필요한지를 비유와 도식, 표로 풀어 정리.</span>
+    </span>
+  </a>
   <a class="series-row" href="./2026-10-02-ai-native-sdlc-playbook/">
     <span class="series-body">
       <span class="series-row-head"><span class="series-row-title">코드는 더 이상 병목이 아니다 — AI-Native SDLC 쉽게 읽기</span><span class="series-date">2026.10.02</span></span>
