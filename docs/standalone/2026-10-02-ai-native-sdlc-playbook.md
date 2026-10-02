@@ -1,7 +1,7 @@
 ---
 title: "코드는 더 이상 병목이 아니다 — AI-Native SDLC 쉽게 읽기"
 parent: Standalone
-nav_order: 1
+nav_order: 2
 permalink: /standalone/2026-10-02-ai-native-sdlc-playbook/
 date: 2026-10-02
 description: "Anthropic의 AI-native SDLC 플레이북을 처음 접하는 사람도 따라올 수 있게 도식과 표로 정리한 글. 병목이 어디로 옮겨갔는지, 여섯 단계가 어떻게 하나의 고리가 되는지, 사람은 어디에 남는지."

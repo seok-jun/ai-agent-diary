@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" width="820" height="430" role="img" aria-label="스위스 치즈 모델. 자동 eval, 운영 모니터링, A/B 테스트, 사용자 피드백, 대화 기록 검토, 사람 평가라는 여섯 장의 치즈에는 각각 구멍이 있다. 문제 A는 첫 장의 구멍을 지나 두 번째 장에서, 문제 B는 세 장을 지나 네 번째 장에서, 문제 C는 첫 장에서 잡힌다. 한 층만으로는 모든 문제를 막지 못하지만 겹쳐 두면 잡힌다">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#cf222e"/>
+    </marker>
+    <style>
+      .t  { font-family: Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+      .hd { font-size: 12px; font-weight: 700; fill: #8c959f; letter-spacing: .4px; }
+      .nm { font-size: 13px; font-weight: 700; fill: #1f2328; }
+      .wh { font-size: 11.5px; fill: #57606a; }
+      .hz { font-size: 12.5px; font-weight: 700; fill: #a40e26; }
+      .ct { font-size: 11.5px; font-weight: 700; fill: #a40e26; }
+      .cn { font-size: 13px; fill: #424a53; }
+      .ft { font-size: 12px; fill: #8c959f; }
+    </style>
+    <mask id="m0"><rect x="120" y="76" width="80" height="200" rx="10" fill="#fff"/><circle cx="154" cy="108" r="13" fill="#000"/><circle cx="154" cy="168" r="13" fill="#000"/><circle cx="168" cy="250" r="10" fill="#000"/></mask>
+    <mask id="m1"><rect x="235" y="76" width="80" height="200" rx="10" fill="#fff"/><circle cx="283" cy="92" r="11" fill="#000"/><circle cx="269" cy="168" r="13" fill="#000"/><circle cx="283" cy="232" r="12" fill="#000"/></mask>
+    <mask id="m2"><rect x="350" y="76" width="80" height="200" rx="10" fill="#fff"/><circle cx="384" cy="126" r="10" fill="#000"/><circle cx="384" cy="168" r="13" fill="#000"/><circle cx="384" cy="246" r="12" fill="#000"/></mask>
+    <mask id="m3"><rect x="465" y="76" width="80" height="200" rx="10" fill="#fff"/><circle cx="499" cy="104" r="12" fill="#000"/><circle cx="513" cy="214" r="13" fill="#000"/><circle cx="513" cy="252" r="9" fill="#000"/></mask>
+    <mask id="m4"><rect x="580" y="76" width="80" height="200" rx="10" fill="#fff"/><circle cx="628" cy="134" r="12" fill="#000"/><circle cx="628" cy="190" r="10" fill="#000"/><circle cx="614" cy="244" r="12" fill="#000"/></mask>
+    <mask id="m5"><rect x="695" y="76" width="80" height="200" rx="10" fill="#fff"/><circle cx="743" cy="98" r="11" fill="#000"/><circle cx="729" cy="160" r="12" fill="#000"/><circle cx="729" cy="224" r="13" fill="#000"/></mask>
+  </defs>
+  <text class="t hd" x="24" y="30">어떤 층도 모든 문제를 막지 못한다. 겹쳐 두면 한 층을 빠져나간 문제를 다음 층이 잡는다</text>
+  <text class="t cn" x="24" y="56">← 출시 전</text><text class="t cn" x="796" y="56" text-anchor="end">출시 후·상시 →</text>
+  <line x1="70" y1="108" x2="231" y2="108" stroke="#cf222e" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="70" y1="168" x2="461" y2="168" stroke="#cf222e" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="70" y1="232" x2="116" y2="232" stroke="#cf222e" stroke-width="2" marker-end="url(#ar)"/>
+  <rect x="120" y="76" width="80" height="200" rx="10" fill="#fff1b8" stroke="#d4a72c" stroke-width="1.4" mask="url(#m0)"/>
+  <rect x="120" y="76" width="80" height="200" rx="10" fill="none" stroke="#d4a72c" stroke-width="1.4"/>
+  <circle cx="154" cy="108" r="13" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <circle cx="154" cy="168" r="13" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <circle cx="168" cy="250" r="10" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <rect x="235" y="76" width="80" height="200" rx="10" fill="#fff1b8" stroke="#d4a72c" stroke-width="1.4" mask="url(#m1)"/>
+  <rect x="235" y="76" width="80" height="200" rx="10" fill="none" stroke="#d4a72c" stroke-width="1.4"/>
+  <circle cx="283" cy="92" r="11" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <circle cx="269" cy="168" r="13" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <circle cx="283" cy="232" r="12" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <rect x="350" y="76" width="80" height="200" rx="10" fill="#fff1b8" stroke="#d4a72c" stroke-width="1.4" mask="url(#m2)"/>
+  <rect x="350" y="76" width="80" height="200" rx="10" fill="none" stroke="#d4a72c" stroke-width="1.4"/>
+  <circle cx="384" cy="126" r="10" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <circle cx="384" cy="168" r="13" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <circle cx="384" cy="246" r="12" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <rect x="465" y="76" width="80" height="200" rx="10" fill="#fff1b8" stroke="#d4a72c" stroke-width="1.4" mask="url(#m3)"/>
+  <rect x="465" y="76" width="80" height="200" rx="10" fill="none" stroke="#d4a72c" stroke-width="1.4"/>
+  <circle cx="499" cy="104" r="12" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <circle cx="513" cy="214" r="13" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <circle cx="513" cy="252" r="9" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <rect x="580" y="76" width="80" height="200" rx="10" fill="#fff1b8" stroke="#d4a72c" stroke-width="1.4" mask="url(#m4)"/>
+  <rect x="580" y="76" width="80" height="200" rx="10" fill="none" stroke="#d4a72c" stroke-width="1.4"/>
+  <circle cx="628" cy="134" r="12" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <circle cx="628" cy="190" r="10" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <circle cx="614" cy="244" r="12" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <rect x="695" y="76" width="80" height="200" rx="10" fill="#fff1b8" stroke="#d4a72c" stroke-width="1.4" mask="url(#m5)"/>
+  <rect x="695" y="76" width="80" height="200" rx="10" fill="none" stroke="#d4a72c" stroke-width="1.4"/>
+  <circle cx="743" cy="98" r="11" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <circle cx="729" cy="160" r="12" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <circle cx="729" cy="224" r="13" fill="none" stroke="#d4a72c" stroke-width="1.2"/>
+  <text class="t nm" x="160" y="302" text-anchor="middle">자동 eval</text>
+  <text class="t wh" x="160" y="320" text-anchor="middle">출시 전 · 매 변경</text>
+  <text class="t nm" x="275" y="302" text-anchor="middle">운영 모니터링</text>
+  <text class="t wh" x="275" y="320" text-anchor="middle">출시 후</text>
+  <text class="t nm" x="390" y="302" text-anchor="middle">A/B 테스트</text>
+  <text class="t wh" x="390" y="320" text-anchor="middle">큰 변경 검증</text>
+  <text class="t nm" x="505" y="302" text-anchor="middle">사용자 피드백</text>
+  <text class="t wh" x="505" y="320" text-anchor="middle">상시</text>
+  <text class="t nm" x="620" y="302" text-anchor="middle">대화 기록 검토</text>
+  <text class="t wh" x="620" y="320" text-anchor="middle">매주 표본</text>
+  <text class="t nm" x="735" y="302" text-anchor="middle">사람 평가</text>
+  <text class="t wh" x="735" y="320" text-anchor="middle">채점자 보정</text>
+  <text class="t hz" x="20" y="112">문제 A</text>
+  <g stroke="#cf222e" stroke-width="2.5" stroke-linecap="round"><line x1="239" y1="101" x2="253" y2="115"/><line x1="239" y1="115" x2="253" y2="101"/></g>
+  <text class="t ct" x="257" y="112">잡힘</text>
+  <text class="t hz" x="20" y="172">문제 B</text>
+  <g stroke="#cf222e" stroke-width="2.5" stroke-linecap="round"><line x1="469" y1="161" x2="483" y2="175"/><line x1="469" y1="175" x2="483" y2="161"/></g>
+  <text class="t ct" x="487" y="172">잡힘</text>
+  <text class="t hz" x="20" y="236">문제 C</text>
+  <g stroke="#cf222e" stroke-width="2.5" stroke-linecap="round"><line x1="124" y1="225" x2="138" y2="239"/><line x1="124" y1="239" x2="138" y2="225"/></g>
+  <text class="t ct" x="142" y="236">잡힘</text>
+  <text class="t cn" x="410" y="352" text-anchor="middle">자동 eval은 첫 방어선일 뿐이다. 빠르고 반복 가능하지만, 실제 사용과 어긋나면 "괜찮다"는 착각을 만든다.</text>
+  <text class="t ft" x="410" y="418" text-anchor="middle">원문: Anthropic, Demystifying evals for AI agents (2026.01.09)의 방법 비교와 Swiss Cheese Model 비유를 바탕으로 재구성. 구멍 위치는 예시</text>
+</svg>

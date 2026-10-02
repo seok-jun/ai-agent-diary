@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" width="820" height="420" role="img" aria-label="Eval이 없으면 사용자 불만, 손으로 재현, 버그 수정, 배포하고 기도하기를 반복하는 두더지 잡기가 된다. Eval이 있으면 실패를 시험 문제로 추가하고, 바꿀 때마다 전체 시험을 돌리고, 점수를 보고 배포하는 고리가 되어 같은 실수가 다시 통과하지 못한다">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+    <style>
+      .t  { font-family: Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+      .hd { font-size: 12px; font-weight: 700; fill: #8c959f; letter-spacing: .4px; }
+      .pt { font-size: 16px; font-weight: 700; fill: #1f2328; }
+      .ps { font-size: 12.5px; fill: #57606a; }
+      .ti { font-size: 14px; font-weight: 700; fill: #1f2328; }
+      .gt { font-size: 12px; fill: #57606a; }
+      .cn { font-size: 13px; fill: #424a53; }
+      .bad  { font-size: 13px; font-weight: 700; fill: #a40e26; }
+      .good { font-size: 13px; font-weight: 700; fill: #116329; }
+      .ft { font-size: 12px; fill: #8c959f; }
+    </style>
+  </defs>
+  <text class="t hd" x="24" y="30">같은 "고치기"라도, 시험지가 있느냐 없느냐에 따라 고리의 모양이 달라진다</text>
+
+  <!-- left panel: without evals -->
+  <rect x="16" y="44" width="386" height="330" rx="10" fill="#fffafa" stroke="#ffcecb"/>
+  <text class="t pt" x="36" y="74">Eval 없이: 두더지 잡기</text>
+  <text class="t ps" x="36" y="94">문제가 사용자에게 닿고 나서야 알게 된다</text>
+
+  <rect x="36" y="112" width="160" height="62" rx="8" fill="#ffebe9" stroke="#ff8182" stroke-width="1.4"/>
+  <text class="t ti" x="50" y="138">① 사용자 불만</text>
+  <text class="t gt" x="50" y="159">"요즘 좀 이상해요"</text>
+  <rect x="226" y="112" width="160" height="62" rx="8" fill="#ffebe9" stroke="#ff8182" stroke-width="1.4"/>
+  <text class="t ti" x="240" y="138">② 손으로 재현</text>
+  <text class="t gt" x="240" y="159">어떤 상황이었지?</text>
+  <rect x="226" y="236" width="160" height="62" rx="8" fill="#ffebe9" stroke="#ff8182" stroke-width="1.4"/>
+  <text class="t ti" x="240" y="262">③ 버그 수정</text>
+  <text class="t gt" x="240" y="283">프롬프트 한 줄 고침</text>
+  <rect x="36" y="236" width="160" height="62" rx="8" fill="#ffebe9" stroke="#ff8182" stroke-width="1.4"/>
+  <text class="t ti" x="50" y="262">④ 배포하고 기도</text>
+  <text class="t gt" x="50" y="283">다른 데는 괜찮겠지…</text>
+
+  <line x1="198" y1="143" x2="222" y2="143" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="306" y1="176" x2="306" y2="232" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="224" y1="267" x2="200" y2="267" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="116" y1="234" x2="116" y2="178" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <text class="t cn" x="211" y="210" text-anchor="middle">↻ 같은 자리를 맴돈다</text>
+
+  <text class="t bad" x="36" y="330">고친 곳 옆에서 새 문제가 튀어나와도</text>
+  <text class="t bad" x="36" y="350">사용자가 다시 말해주기 전까지는 모른다</text>
+
+  <!-- right panel: with evals -->
+  <rect x="418" y="44" width="386" height="330" rx="10" fill="#f7fdf8" stroke="#aceebb"/>
+  <text class="t pt" x="438" y="74">Eval과 함께: 실패가 시험 문제가 된다</text>
+  <text class="t ps" x="438" y="94">문제가 사용자에게 닿기 전에 보인다</text>
+
+  <rect x="438" y="112" width="160" height="62" rx="8" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/>
+  <text class="t ti" x="452" y="138">① 실패 발견</text>
+  <text class="t gt" x="452" y="159">불만·버그·직접 테스트</text>
+  <rect x="628" y="112" width="160" height="62" rx="8" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/>
+  <text class="t ti" x="642" y="138">② 시험 문제로 추가</text>
+  <text class="t gt" x="642" y="159">입력 + 합격 기준</text>
+  <rect x="628" y="236" width="160" height="62" rx="8" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/>
+  <text class="t ti" x="642" y="262">③ 매번 전체 시험</text>
+  <text class="t gt" x="642" y="283">시나리오 수백 개 채점</text>
+  <rect x="438" y="236" width="160" height="62" rx="8" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/>
+  <text class="t ti" x="452" y="262">④ 점수 보고 배포</text>
+  <text class="t gt" x="452" y="283">오른 곳·떨어진 곳 확인</text>
+
+  <line x1="600" y1="143" x2="624" y2="143" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="708" y1="176" x2="708" y2="232" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="626" y1="267" x2="602" y2="267" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="518" y1="234" x2="518" y2="178" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <text class="t cn" x="613" y="210" text-anchor="middle">↻ 돌 때마다 시험지가 두꺼워진다</text>
+
+  <text class="t good" x="438" y="330">한 번 잡힌 실수는 시험 문제로 남아</text>
+  <text class="t good" x="438" y="350">다시는 조용히 통과하지 못한다</text>
+
+  <text class="t ft" x="410" y="404" text-anchor="middle">원문: Anthropic, Demystifying evals for AI agents (2026.01.09)의 설명을 바탕으로 재구성</text>
+</svg>
