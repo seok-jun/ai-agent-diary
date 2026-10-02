@@ -3,7 +3,7 @@ title: "모델은 좋아졌는데 가드레일은 그대로였다"
 parent: Agent SDD 실무 개발
 nav_order: 12
 permalink: /series/agent-sdd/012-outgrown-guardrails/
-date: 2026-10-02
+date: 2026-10-02 14:00:00 +0900
 description: "프론티어급 모델을 쓰면서 기존 방법론의 가드레일이 오히려 걸림돌이 된 건 아닌지 의심하게 됐다. 걷어내기 전에 먼저 재보기로 한 이유와, 방법론을 프로젝트 밖으로 빼기로 한 이유."
 image: /assets/images/agent-sdd/012-outgrown-guardrails/thumbnail.png
 ---
