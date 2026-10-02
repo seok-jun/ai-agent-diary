@@ -3,7 +3,7 @@ title: "실험을 멈춘 건 모델이 아니었다"
 parent: Agent SDD 실무 개발
 nav_order: 14
 permalink: /series/agent-sdd/014-isolation-stopped-the-experiment/
-date: 2026-10-02
+date: 2026-10-02 14:02:00 +0900
 description: "가드레일 비교 실험이 두 번 멈췄다. 두 번 다 모델이 못해서가 아니라 실험 환경의 격리 때문이었다. 사전 검사는 통과했는데 왜 실제로는 막혔는지, 멈춘 뒤에 무엇을 지켰는지 정리한 기록."
 image: /assets/images/agent-sdd/014-isolation-stopped-the-experiment/thumbnail.png
 ---
