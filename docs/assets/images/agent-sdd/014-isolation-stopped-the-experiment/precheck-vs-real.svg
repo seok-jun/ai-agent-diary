@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 402" width="820" height="402" role="img" aria-label="두 번의 실험 모두 사전 검사는 통과했지만 실제로 돌리니 달랐다. 첫 번째 실험은 Python 직접 실행과 작업 폴더 하나의 차단을 확인했으나, 모델이 실제로 쓰는 PowerShell은 차단해둔 폴더 안에 있었고 앞 검사에서 건 차단이 다음 작업 폴더에 남아 있었다. 두 번째 실험은 초기 상태에서 앞 후보 폴더 차단을 확인했으나, 후보가 파일을 쓴 뒤 그 파일에 허용 권한이 남아 다음 후보가 읽을 수 있었다" font-family='Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif'>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#cf222e"/></marker>
+    <style>
+      .hd { font-size: 13.5px; font-weight: 700; fill: #57606a; }
+      .ti { font-size: 16px; font-weight: 700; fill: #1f2328; }
+      .af { font-size: 12.5px; font-weight: 600; fill: #0550ae; }
+      .gt { font-size: 13px; fill: #57606a; }
+      .cb { font-size: 14px; font-weight: 700; fill: #1f2328; }
+      .cn { font-size: 13px; fill: #424a53; }
+      .ft { font-size: 12px; fill: #8c959f; }
+      .big { font-size: 24px; font-weight: 800; }
+    </style>
+  </defs>
+  <rect width="820" height="402" fill="#ffffff"/>
+  <text class="hd" x="24" y="30">두 번 다 사전 검사는 통과했다</text>
+  <text class="cb" x="144" y="62">미리 검사한 것</text>
+  <text class="cb" x="478" y="62">실제로 돌려보니</text>
+  <rect x="24" y="74" width="108" height="112" rx="8" fill="#f6f8fa" stroke="#d0d7de"/><text class="cb" x="78" y="126" text-anchor="middle">첫 번째</text><text class="cb" x="78" y="146" text-anchor="middle">실험</text>
+  <rect x="144" y="74" width="322" height="112" rx="8" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/><text class="cn" x="160" y="104">· Python을 직접 실행 → 됨</text><text class="cn" x="160" y="132">· 작업 폴더 하나에서</text><text class="cn" x="171" y="154">차단 확인 → 됨</text>
+  <rect x="478" y="74" width="318" height="112" rx="8" fill="#ffebe9" stroke="#ff8182" stroke-width="1.4"/><text class="cn" x="494" y="104">· 모델이 실제로 쓰는 PowerShell은</text><text class="cn" x="505" y="126">차단해둔 폴더 안에 있었다</text><text class="cn" x="494" y="148">· 앞 검사에서 건 차단이</text><text class="cn" x="505" y="170">다음 작업 폴더에 남아 있었다</text>
+  <rect x="24" y="198" width="108" height="112" rx="8" fill="#f6f8fa" stroke="#d0d7de"/><text class="cb" x="78" y="250" text-anchor="middle">두 번째</text><text class="cb" x="78" y="270" text-anchor="middle">실험</text>
+  <rect x="144" y="198" width="322" height="112" rx="8" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/><text class="cn" x="160" y="228">· 아무도 쓰지 않은 초기 상태에서</text><text class="cn" x="171" y="250">앞 후보 폴더 차단 확인 → 됨</text>
+  <rect x="478" y="198" width="318" height="112" rx="8" fill="#ffebe9" stroke="#ff8182" stroke-width="1.4"/><text class="cn" x="494" y="228">· 후보가 파일을 쓰고 나니</text><text class="cn" x="505" y="250">그 파일에 허용 권한이 남았다</text><text class="cn" x="494" y="272">· 다음 후보가 그 파일을</text><text class="cn" x="505" y="294">읽을 수 있었다</text>
+  <rect x="24" y="326" width="772" height="60" rx="10" fill="#fff8c5" stroke="#d4a72c"/>
+  <text class="cb" x="44" y="351">검사한 상태와 실제로 쓰는 상태가 달랐다.</text>
+  <text class="cn" x="44" y="373">한 번 쓰고 나서 다음으로 넘어가는 순간까지 검사했어야 했다.</text>
+</svg>

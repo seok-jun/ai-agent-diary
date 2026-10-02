@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 352" width="820" height="352" role="img" aria-label="자전거에 빗댄 그림. 헬멧과 브레이크는 통제에 해당하며 권한과 수정 범위, 승인, 필수 검증은 아무리 잘 타도 벗지 않는다. 보조바퀴는 보조 절차에 해당하며 지금도 필요한지 타보고 정한다" font-family='Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif'>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#cf222e"/></marker>
+    <style>
+      .hd { font-size: 13.5px; font-weight: 700; fill: #57606a; }
+      .ti { font-size: 16px; font-weight: 700; fill: #1f2328; }
+      .af { font-size: 12.5px; font-weight: 600; fill: #0550ae; }
+      .gt { font-size: 13px; fill: #57606a; }
+      .cb { font-size: 14px; font-weight: 700; fill: #1f2328; }
+      .cn { font-size: 13px; fill: #424a53; }
+      .ft { font-size: 12px; fill: #8c959f; }
+      .big { font-size: 24px; font-weight: 800; }
+    </style>
+  </defs>
+  <rect width="820" height="352" fill="#ffffff"/>
+  <text class="hd" x="24" y="30">자전거로 치면 헬멧은 계속 쓰고, 보조바퀴는 떼도 되는지 본다</text>
+
+  <rect x="24" y="46" width="374" height="250" rx="10" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.4"/>
+  <path d="M48,112 a28,28 0 0 1 56,0 z" fill="#54aeff"/>
+  <rect x="44" y="112" width="70" height="7" rx="3.5" fill="#0969da"/>
+  <text class="ti" x="130" y="96">헬멧 · 브레이크</text>
+  <text class="af" x="130" y="117">통제</text>
+  <text class="cn" x="48" y="162">· 권한과 수정 범위</text>
+  <text class="cn" x="48" y="188">· 승인</text>
+  <text class="cn" x="48" y="214">· 꼭 돌려야 하는 검증</text>
+  <line x1="48" y1="236" x2="374" y2="236" stroke="#54aeff" stroke-width="1" opacity="0.6"/>
+  <text class="cb" x="48" y="268">아무리 잘 타도 벗지 않는다</text>
+
+  <rect x="422" y="46" width="374" height="250" rx="10" fill="#fff8c5" stroke="#d4a72c" stroke-width="1.4"/>
+  <line x1="478" y1="94" x2="452" y2="112" stroke="#bf8700" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="478" y1="94" x2="504" y2="112" stroke="#bf8700" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="478" cy="94" r="19" fill="#fff8c5" stroke="#bf8700" stroke-width="3"/>
+  <circle cx="478" cy="94" r="3" fill="#bf8700"/>
+  <circle cx="450" cy="113" r="7" fill="#fff8c5" stroke="#bf8700" stroke-width="2.5"/>
+  <circle cx="506" cy="113" r="7" fill="#fff8c5" stroke="#bf8700" stroke-width="2.5"/>
+  <text class="ti" x="528" y="96">보조바퀴</text>
+  <text class="af" x="528" y="117" style="fill:#9a6700">보조 절차</text>
+  <text class="cn" x="446" y="162">· 편집 전에 변경 목록 쓰기</text>
+  <text class="cn" x="446" y="188">· 단계마다 붙는 추가 분석</text>
+  <text class="cn" x="446" y="214">· 중간에 끼워 넣은 추가 검토</text>
+  <line x1="446" y1="236" x2="772" y2="236" stroke="#d4a72c" stroke-width="1" opacity="0.7"/>
+  <text class="cb" x="446" y="268">지금도 필요한지 타보고 정한다</text>
+
+  <text class="ft" x="410" y="328" text-anchor="middle">모델이 좋아졌다고 줄일 수 있는 건 오른쪽뿐이다. 왼쪽은 작업이 위험한 만큼 그대로 둔다.</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 372" width="820" height="372" role="img" aria-label="왼쪽은 방법론이 실제 프로젝트 안에 코드, 업무 문서, 프로젝트 규칙과 함께 들어 있어서 방법론을 바꾸면 프로젝트 규칙 검토가 같이 따라오는 구조. 오른쪽은 프로젝트에 연결 정보만 남기고 방법론을 바깥에 두어 모델이 바뀌면 바깥 것만 바꾸는 구조" font-family='Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif'>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#cf222e"/></marker>
+    <style>
+      .hd { font-size: 13.5px; font-weight: 700; fill: #57606a; }
+      .ti { font-size: 16px; font-weight: 700; fill: #1f2328; }
+      .af { font-size: 12.5px; font-weight: 600; fill: #0550ae; }
+      .gt { font-size: 13px; fill: #57606a; }
+      .cb { font-size: 14px; font-weight: 700; fill: #1f2328; }
+      .cn { font-size: 13px; fill: #424a53; }
+      .ft { font-size: 12px; fill: #8c959f; }
+      .big { font-size: 24px; font-weight: 800; }
+    </style>
+  </defs>
+  <rect width="820" height="372" fill="#ffffff"/>
+  <text class="hd" x="24" y="30">방법론이 프로젝트 안에 있으면, 방법론을 고칠 때마다 프로젝트를 같이 뜯는다</text>
+
+  <rect x="24" y="46" width="374" height="270" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="ti" x="44" y="76">지금까지</text>
+  <rect x="44" y="92" width="334" height="160" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="1.3"/>
+  <text class="cb" x="60" y="118">실제 프로젝트</text>
+  <rect x="60" y="132" width="94" height="38" rx="6" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.3" /><text class="cn" x="107.0" y="155.5" text-anchor="middle">코드</text>
+  <rect x="164" y="132" width="94" height="38" rx="6" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.3" /><text class="cn" x="211.0" y="155.5" text-anchor="middle">업무 문서</text>
+  <rect x="268" y="132" width="94" height="38" rx="6" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.3" /><text class="cn" x="315.0" y="155.5" text-anchor="middle">프로젝트 규칙</text>
+  <rect x="60" y="184" width="302" height="50" rx="6" fill="#fff8c5" stroke="#d4a72c" stroke-width="1.3" /><text class="cn" x="211.0" y="213.5" text-anchor="middle">방법론 (등급 · 절차 · 가드레일)</text>
+  <text class="gt" x="44" y="282">방법론을 바꾸면 프로젝트 규칙 검토가</text>
+  <text class="gt" x="44" y="302">같이 따라온다</text>
+
+  <rect x="422" y="46" width="374" height="270" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="ti" x="442" y="76">분리한 뒤</text>
+  <rect x="442" y="92" width="176" height="160" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="1.3"/>
+  <text class="cb" x="456" y="118">실제 프로젝트</text>
+  <rect x="456" y="130" width="148" height="30" rx="6" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.3" /><text class="cn" x="530.0" y="149.5" text-anchor="middle">코드 · 업무 문서</text>
+  <rect x="456" y="168" width="148" height="30" rx="6" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.3" /><text class="cn" x="530.0" y="187.5" text-anchor="middle">프로젝트 규칙</text>
+  <rect x="456" y="206" width="148" height="30" rx="6" fill="#ffffff" stroke="#54aeff" stroke-width="1.3" stroke-dasharray="4 3"/><text class="cn" x="530.0" y="225.5" text-anchor="middle">연결 정보</text>
+  <line x1="606" y1="221" x2="644" y2="221" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <rect x="648" y="92" width="128" height="160" rx="8" fill="#fff8c5" stroke="#d4a72c" stroke-width="1.3"/>
+  <text class="cb" x="662" y="118">방법론</text>
+  <text class="ft" x="662" y="136">프로젝트 밖</text>
+  <rect x="662" y="150" width="100" height="30" rx="6" fill="#ffffff" stroke="#d4a72c" stroke-width="1.3" /><text class="cn" x="712.0" y="169.5" text-anchor="middle">지금 버전</text>
+  <rect x="662" y="206" width="100" height="30" rx="6" fill="#fff8c5" stroke="#d4a72c" stroke-width="1.3" stroke-dasharray="4 3"/><text class="cn" x="712.0" y="225.5" text-anchor="middle">다음 버전</text>
+  <text class="gt" x="442" y="282">모델이 바뀌면 바깥 것만 바꾼다</text>
+  <text class="gt" x="442" y="302">프로젝트는 그대로 둔다</text>
+
+  <text class="ft" x="410" y="348" text-anchor="middle">분리 구상 자체는 10편에서 다뤘다. 이번에 이유가 하나 더 붙었다.</text>
+</svg>
