@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 372" width="820" height="372" role="img" aria-label="네 번의 실행 결과. 첫 번째 조건 A는 52초 만에 편집을 시작하지 못하고 끝나 판정 불가였고, 두 번째와 세 번째 조건 B는 81초와 89초에 17개 검사를 모두 통과했으며 목록 없이 작업했다. 네 번째 조건 A는 98초에 17개 검사를 모두 통과했고 목록을 쓰고 작업했다. 첫 쌍은 비교 불가, 둘째 쌍은 차이를 보지 못했다" font-family='Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif'>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#cf222e"/></marker>
+    <style>
+      .hd { font-size: 13.5px; font-weight: 700; fill: #57606a; }
+      .ti { font-size: 16px; font-weight: 700; fill: #1f2328; }
+      .af { font-size: 12.5px; font-weight: 600; fill: #0550ae; }
+      .gt { font-size: 13px; fill: #57606a; }
+      .cb { font-size: 14px; font-weight: 700; fill: #1f2328; }
+      .cn { font-size: 13px; fill: #424a53; }
+      .ft { font-size: 12px; fill: #8c959f; }
+      .big { font-size: 24px; font-weight: 800; }
+    </style>
+  </defs>
+  <rect width="820" height="372" fill="#ffffff"/>
+  <text class="hd" x="24" y="30">네 번 돌린 결과 (순서는 A → B → B → A)</text>
+  <rect x="24" y="48" width="178" height="176" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.4"/>
+  <text class="ft" x="40" y="74">1번째</text>
+  <text class="cb" x="40" y="97">조건 A</text>
+  <text class="big" x="40" y="140" fill="#57606a">판정 불가</text>
+  <text class="gt" x="40" y="172">52초</text>
+  <text class="gt" x="40" y="194">편집을 시작하지 못함</text>
+  <rect x="222" y="48" width="178" height="176" rx="10" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/>
+  <text class="ft" x="238" y="74">2번째</text>
+  <text class="cb" x="238" y="97">조건 B</text>
+  <text class="big" x="238" y="140" fill="#1a7f37">17 / 17</text>
+  <text class="gt" x="238" y="172">81초</text>
+  <text class="gt" x="238" y="194">목록 없이 바로 작업</text>
+  <rect x="420" y="48" width="178" height="176" rx="10" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/>
+  <text class="ft" x="436" y="74">3번째</text>
+  <text class="cb" x="436" y="97">조건 B</text>
+  <text class="big" x="436" y="140" fill="#1a7f37">17 / 17</text>
+  <text class="gt" x="436" y="172">89초</text>
+  <text class="gt" x="436" y="194">목록 없이 바로 작업</text>
+  <rect x="618" y="48" width="178" height="176" rx="10" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/>
+  <text class="ft" x="634" y="74">4번째</text>
+  <text class="cb" x="634" y="97">조건 A</text>
+  <text class="big" x="634" y="140" fill="#1a7f37">17 / 17</text>
+  <text class="gt" x="634" y="172">98초</text>
+  <text class="gt" x="634" y="194">목록을 쓰고 작업</text>
+  <path d="M24,236 v10 h376 v-10" fill="none" stroke="#8c959f" stroke-width="1.4"/>
+  <text class="cb" x="212" y="268" text-anchor="middle">첫 쌍</text>
+  <text class="gt" x="212" y="288" text-anchor="middle">환경 문제로 비교할 수 없음</text>
+  <path d="M420,236 v10 h376 v-10" fill="none" stroke="#8c959f" stroke-width="1.4"/>
+  <text class="cb" x="608" y="268" text-anchor="middle">둘째 쌍</text>
+  <text class="gt" x="608" y="288" text-anchor="middle">양쪽 다 통과. 차이를 못 봄</text>
+  <rect x="24" y="304" width="772" height="56" rx="10" fill="#fff8c5" stroke="#d4a72c"/>
+  <text class="cb" x="44" y="328">쓸 수 있는 비교는 한 쌍뿐이다.</text>
+  <text class="cn" x="44" y="349">미리 적어둔 규칙대로 판정은 보류했고, 이 가드레일은 그대로 둔다.</text>
+</svg>

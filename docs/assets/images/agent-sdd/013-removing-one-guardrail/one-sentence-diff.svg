@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 398" width="820" height="398" role="img" aria-label="조건 A와 조건 B는 공통 규칙과 과제가 같고, A에만 편집 전에 변경할 파일과 심볼과 순서를 짧은 목록으로 쓰라는 문장 하나가 추가되어 있다" font-family='Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif'>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#cf222e"/></marker>
+    <style>
+      .hd { font-size: 13.5px; font-weight: 700; fill: #57606a; }
+      .ti { font-size: 16px; font-weight: 700; fill: #1f2328; }
+      .af { font-size: 12.5px; font-weight: 600; fill: #0550ae; }
+      .gt { font-size: 13px; fill: #57606a; }
+      .cb { font-size: 14px; font-weight: 700; fill: #1f2328; }
+      .cn { font-size: 13px; fill: #424a53; }
+      .ft { font-size: 12px; fill: #8c959f; }
+      .big { font-size: 24px; font-weight: 800; }
+    </style>
+  </defs>
+  <rect width="820" height="398" fill="#ffffff"/>
+  <text class="hd" x="24" y="30">두 조건의 차이는 문장 하나다</text>
+  <text class="ti" x="60" y="72">조건 A</text>
+  <rect x="60" y="86" width="320" height="62" rx="8" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.4"/>
+  <text class="cb" x="76" y="112">공통 규칙</text>
+  <text class="gt" x="76" y="134">권한 · 수정 범위 · 검사 · 정직한 보고</text>
+  <rect x="60" y="158" width="320" height="62" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.4"/>
+  <text class="cb" x="76" y="184">과제</text>
+  <text class="gt" x="76" y="206">완료 조건 11개 · 검사 17개</text>
+  <rect x="60" y="230" width="320" height="72" rx="8" fill="#fff8c5" stroke="#d4a72c" stroke-width="2.2"/>
+  <text class="cb" x="76" y="260">편집 전에 변경할 파일·심볼·순서를</text>
+  <text class="cb" x="76" y="282">짧은 목록으로 쓴다</text>
+
+  <text class="ti" x="440" y="72">조건 B</text>
+  <rect x="440" y="86" width="320" height="62" rx="8" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.4"/>
+  <text class="cb" x="456" y="112">공통 규칙</text>
+  <text class="gt" x="456" y="134">권한 · 수정 범위 · 검사 · 정직한 보고</text>
+  <rect x="440" y="158" width="320" height="62" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.4"/>
+  <text class="cb" x="456" y="184">과제</text>
+  <text class="gt" x="456" y="206">완료 조건 11개 · 검사 17개</text>
+  <rect x="440" y="230" width="320" height="72" rx="8" fill="#ffffff" stroke="#8c959f" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text class="gt" x="600" y="262" text-anchor="middle">(추가한 문장 없음)</text>
+  <text class="ft" x="600" y="283" text-anchor="middle">스스로 계획하는 건 막지 않았다</text>
+
+  <text x="410" y="124" text-anchor="middle" font-size="20" font-weight="700" fill="#8c959f">=</text>
+  <text x="410" y="196" text-anchor="middle" font-size="20" font-weight="700" fill="#8c959f">=</text>
+  <text x="410" y="273" text-anchor="middle" font-size="22" font-weight="800" fill="#bf8700">≠</text>
+
+  <rect x="24" y="322" width="772" height="60" rx="10" fill="#dafbe1" stroke="#4ac26b"/>
+  <text class="cb" x="44" y="347">목록을 쓰라고 요구하면 결과가 달라지는지를 본다</text>
+  <text class="cn" x="44" y="369">모델이 속으로 계획을 하는지는 재지 않았다. 볼 수도 없다.</text>
+</svg>
