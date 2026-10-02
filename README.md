@@ -31,7 +31,9 @@ AI Agent 개발, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기�
 - [Jekyll](https://jekyllrb.com/) + [Just the Docs](https://just-the-docs.com/) 테마
 - 소스는 `docs/` 폴더, 배포는 GitHub Actions (`.github/workflows/pages.yml`)
 
-## 원본
+## Velog에도 게시
+
+이 저장소의 GitHub Pages 사이트가 정본이며, 같은 글을 Velog에도 게시합니다.
 
 - Velog: https://velog.io/@hiha12ha/posts
 - RSS: https://v2.velog.io/rss/@hiha12ha

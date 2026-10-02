@@ -38,7 +38,7 @@ gh_edit_source: docs
 gh_edit_view_mode: "tree"
 
 aux_links:
-  "Velog 원본":
+  "Velog":
     - "https://velog.io/@hiha12ha/posts"
   "GitHub repo":
     - "https://github.com/seok-jun/ai-agent-diary"
