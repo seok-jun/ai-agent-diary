@@ -465,6 +465,26 @@ body {
   font-weight: 700;
 }
 
+// Series index page: reading groups (same split as the home series card).
+.series-group-section {
+  margin-top: 2.2rem;
+}
+
+.series-group-section .series-section-heading h2 {
+  margin-bottom: 0.35rem;
+}
+
+.series-group-intro {
+  margin: 0 0 0.9rem;
+  color: $archive-muted;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.series-group-section .series-index {
+  margin-top: 0;
+}
+
 .series-notice {
   margin: 0.25rem 0 1.25rem;
   padding: 0.7rem 0.95rem;
