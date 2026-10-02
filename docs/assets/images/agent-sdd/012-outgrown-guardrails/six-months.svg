@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 150" width="820" height="150" role="img" aria-label="2026년 4월 SDD를 처음 접하고, 6월에 연재를 시작하고, 9월에 방법론 분리를 구상하고, 10월에 차세대를 시작하기까지 반년이 걸렸다는 타임라인" font-family='Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif'>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#cf222e"/></marker>
+    <style>
+      .hd { font-size: 13.5px; font-weight: 700; fill: #57606a; }
+      .ti { font-size: 16px; font-weight: 700; fill: #1f2328; }
+      .af { font-size: 12.5px; font-weight: 600; fill: #0550ae; }
+      .gt { font-size: 13px; fill: #57606a; }
+      .cb { font-size: 14px; font-weight: 700; fill: #1f2328; }
+      .cn { font-size: 13px; fill: #424a53; }
+      .ft { font-size: 12px; fill: #8c959f; }
+      .big { font-size: 24px; font-weight: 800; }
+    </style>
+  </defs>
+  <rect width="820" height="150" fill="#ffffff"/>
+  <line x1="80" y1="64" x2="740" y2="64" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="80" cy="64" r="7" fill="#54aeff"/><circle cx="300" cy="64" r="7" fill="#54aeff"/><circle cx="520" cy="64" r="7" fill="#54aeff"/><circle cx="740" cy="64" r="7" fill="#d4a72c"/>
+  <text class="cb" x="80" y="42" text-anchor="middle">2026.04</text>
+  <text class="cb" x="300" y="42" text-anchor="middle">06</text>
+  <text class="cb" x="520" y="42" text-anchor="middle">09</text>
+  <text class="cb" x="740" y="42" text-anchor="middle">10</text>
+  <text class="gt" x="80" y="92" text-anchor="middle">SDD를 처음 접함</text>
+  <text class="gt" x="300" y="92" text-anchor="middle">연재 시작 (1편)</text>
+  <text class="gt" x="520" y="92" text-anchor="middle">방법론 분리 구상 (10편)</text>
+  <text class="gt" x="740" y="92" text-anchor="middle">차세대 시작</text>
+  <path d="M80,112 v8 h660 v-8" fill="none" stroke="#d0d7de" stroke-width="1.4"/>
+  <text class="ft" x="410" y="140" text-anchor="middle">여기까지 반년</text>
+</svg>
