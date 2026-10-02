@@ -12,6 +12,8 @@ image: /assets/images/agent-sdd/001-ai-task-grading/thumbnail.png
 
 _2026.06.25 게시_
 
+{% include agent-sdd-notice.html %}
+
 ![AI한테 일을 시킬 때, 다 똑같이 다루면 안 되더라]({{ '/assets/images/agent-sdd/001-ai-task-grading/thumbnail.png' | relative_url }})
 
 AI 코딩 도구를 처음 실무에 들였을 때는 바이브 코딩하듯 그냥 대화로 개발했다. "이거 해줘", "저기 고쳐줘" 하는 식으로. 빠른 것 같았는데 한계가 금방 드러났다. 맥락이 유지되지 않아 같은 설명을 반복하게 되고, 한 군데 고치면 다른 데가 틀어져서 수정이 끝없이 반복됐다.

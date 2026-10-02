@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "AI Agent Diary"
 layout: home
 nav_order: 1
 permalink: /
@@ -10,9 +10,10 @@ permalink: /
 {% assign latest_page = recent_pages | first %}
 
 <div class="series-hero">
-  <div class="series-eyebrow"><span>AI Agent Diary</span><span>최근 업데이트 {{ latest_page.date | date: "%Y.%m.%d" }} · 글 {{ dated_pages.size }}편</span></div>
-  <h1 class="series-hero-title"><img src="{{ '/assets/images/brand/wordmark.svg' | relative_url }}" alt="SJ archive" width="380" height="150"></h1>
+  <div class="series-eyebrow"><span>seok jun의 개인 기술 블로그</span><span>최근 업데이트 {{ latest_page.date | date: "%Y.%m.%d" }} · 글 {{ dated_pages.size }}편</span></div>
+  <h1 class="series-hero-title"><img src="{{ '/assets/images/brand/wordmark.svg' | relative_url }}" alt="AI Agent Diary" width="640" height="150"></h1>
   <p>AI 코딩 에이전트를 실무에 붙이면서 남긴 기록입니다. 개발 방법론, 검증, 문서화, 그리고 그 과정에서 마주친 판단들.</p>
+  <p class="series-hero-about"><a href="./about/">글쓴이 소개 →</a></p>
 </div>
 
 <section class="series-section home-latest">
@@ -26,7 +27,7 @@ permalink: /
       <span class="series-body">
         <span class="series-row-meta">
           {% if forloop.first %}<span class="latest-badge">NEW</span>{% endif %}
-          <span class="series-row-category">{% if article.parent == "Standalone" %}단독 글{% else %}{{ article.parent }}{% endif %}</span>
+          <span class="series-row-category">{{ article.parent }}</span>
         </span>
         <span class="series-row-head"><span class="series-row-title">{{ article.title }}</span><span class="series-date">{{ article.date | date: "%Y.%m.%d" }}</span></span>
         {% if article.description %}<span class="series-row-desc">{{ article.description }}</span>{% endif %}
@@ -39,12 +40,29 @@ permalink: /
 <section class="series-section">
   <h2>시리즈</h2>
   <div class="series-cards">
-    <a class="series-card" href="./series/agent-sdd/">
+    <div class="series-card series-card--grouped">
       <span class="series-card-kicker">Series · 14편</span>
-      <h3>Agent SDD 실무 개발</h3>
-      <p>AI Agent를 실무 개발에 안정적으로 붙이기 위한 작업 등급화, 명세 기반 구현, 백로그를 이용한 세션 연속성, 도메인 문서로 탐색 줄이기, skill의 지시-예시 충돌, PR에서 business 문서를 안전하게 갱신하는 절차, Skill Eval 검증, 멀티 Agent 작업 격리와 검증 Gate, 그리고 방법론을 강요하지 않고 공유하는 구조, 실무 재적용에서 다듬은 리뷰와 검증 절차, 모델이 좋아진 뒤 가드레일을 다시 재보는 과정까지.</p>
-      <span class="series-card-more">시리즈 열기 →</span>
-    </a>
+      <h3><a href="./series/agent-sdd/">Agent SDD 실무 개발</a></h3>
+      <p>AI Agent를 실무 개발에 붙이면서 겪은 일을 쓴 순서대로 정리한 연재입니다. 처음이라면 아래 세 묶음의 첫 글부터 읽으면 됩니다.</p>
+      <ol class="series-groups">
+        <li>
+          <span class="series-group-head"><span class="series-group-range">1~4편</span><strong>기초</strong></span>
+          <span class="series-group-desc">작업을 위험도로 나누고, 명세를 먼저 쓰고, 백로그로 세션을 잇고, 끝난 문서를 정리하는 기본 흐름.</span>
+          <a class="series-group-link" href="./series/agent-sdd/001-ai-task-grading/">여기부터 →</a>
+        </li>
+        <li>
+          <span class="series-group-head"><span class="series-group-range">5~8편</span><strong>문서와 Skill</strong></span>
+          <span class="series-group-desc">도메인 문서와 Skill로 Agent가 헤매는 시간을 줄이고, PR에서 문서를 갱신하고, Eval로 Skill을 검증한 기록.</span>
+          <a class="series-group-link" href="./series/agent-sdd/005-docs-cut-agent-wandering-not-tokens/">여기부터 →</a>
+        </li>
+        <li>
+          <span class="series-group-head"><span class="series-group-range">9~14편</span><strong>방법론과 재검증</strong></span>
+          <span class="series-group-desc">멀티 Agent 운영을 방법론으로 묶어 공유하고, 실무에 다시 적용하고, 모델이 좋아진 뒤 가드레일을 다시 재본 과정.</span>
+          <a class="series-group-link" href="./series/agent-sdd/009-adaptive-agentic-sdd/">여기부터 →</a>
+        </li>
+      </ol>
+      <a class="series-card-more" href="./series/agent-sdd/">시리즈 전체 보기 →</a>
+    </div>
   </div>
 </section>
 
@@ -109,6 +127,6 @@ permalink: /
 </section>
 
 <section class="series-section">
-  <h2>원본</h2>
-  <p class="series-origin">Velog · <a href="https://velog.io/@hiha12ha/posts">@hiha12ha/posts</a><br>RSS · <a href="https://v2.velog.io/rss/@hiha12ha">v2.velog.io/rss/@hiha12ha</a></p>
+  <h2>Velog에도 게시</h2>
+  <p class="series-origin">이 사이트가 정본이며, 같은 글을 Velog에도 게시합니다.<br>Velog · <a href="https://velog.io/@hiha12ha/posts">@hiha12ha/posts</a><br>RSS · <a href="https://v2.velog.io/rss/@hiha12ha">v2.velog.io/rss/@hiha12ha</a></p>
 </section>

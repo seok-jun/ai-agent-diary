@@ -1,4 +1,4 @@
-# seok jun.log archive
+# AI Agent Diary
 
 AI Agent 개발, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기를 다루는 개인 기술 블로그입니다. GitHub과 GitHub Pages에서 위키처럼 탐색할 수 있도록 정리했습니다.
 
@@ -13,6 +13,7 @@ AI Agent 개발, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기�
 - [Agent SDD 실무 개발](./docs/series/agent-sdd/README.md) — AI Agent 실무 적용을 다룬 14편의 연재
 - [단독 글](./docs/standalone/README.md) — 개발 및 AI 활용에 관한 독립 문서 9편
 - [AI에게 물어본 인간의 미래](./docs/series/ai-future-dialogue/README.md) — 프롤로그와 본편 7편으로 구성된 연재
+- [소개](./docs/about.md) — 글쓴이와 이 사이트에서 다루는 내용
 
 ## 파일명 규칙
 
@@ -31,7 +32,9 @@ AI Agent 개발, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기�
 - [Jekyll](https://jekyllrb.com/) + [Just the Docs](https://just-the-docs.com/) 테마
 - 소스는 `docs/` 폴더, 배포는 GitHub Actions (`.github/workflows/pages.yml`)
 
-## 원본
+## Velog에도 게시
+
+이 저장소의 GitHub Pages 사이트가 정본이며, 같은 글을 Velog에도 게시합니다.
 
 - Velog: https://velog.io/@hiha12ha/posts
 - RSS: https://v2.velog.io/rss/@hiha12ha

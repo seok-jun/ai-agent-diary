@@ -13,6 +13,8 @@ image: /assets/images/agent-sdd/006-example-stronger-than-instruction/thumbnail.
 
 _2026.07.09 게시_
 
+{% include agent-sdd-notice.html %}
+
 ![예시가 지시보다 강할 때가 있다]({{ '/assets/images/agent-sdd/006-example-stronger-than-instruction/thumbnail.png' | relative_url }})
 
 신규 기능 개발을 시작할 때마다 SDD 문서를 만든다.

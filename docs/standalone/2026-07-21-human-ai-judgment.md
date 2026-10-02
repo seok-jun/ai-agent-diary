@@ -1,6 +1,6 @@
 ---
 title: "이해하지 못하는 결정을 승인한다는 것"
-parent: Standalone
+parent: "단독 글"
 nav_order: 6
 permalink: /standalone/2026-07-21-human-ai-judgment/
 date: 2026-07-21
