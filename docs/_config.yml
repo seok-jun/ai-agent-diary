@@ -65,6 +65,16 @@ nav_sort: case_insensitive
 author:
   name: seok jun
 
+# The Just the Docs theme Sass still uses @import and darken()/lighten(),
+# which Dart Sass reports as deprecations on every build. Silence those
+# theme-side deprecations so real build warnings stay visible.
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
