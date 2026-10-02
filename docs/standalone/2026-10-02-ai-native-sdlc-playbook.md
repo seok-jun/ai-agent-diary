@@ -5,12 +5,15 @@ nav_order: 1
 permalink: /standalone/2026-10-02-ai-native-sdlc-playbook/
 date: 2026-10-02
 description: "Anthropic의 AI-native SDLC 플레이북을 처음 접하는 사람도 따라올 수 있게 도식과 표로 정리한 글. 병목이 어디로 옮겨갔는지, 여섯 단계가 어떻게 하나의 고리가 되는지, 사람은 어디에 남는지."
+image: /assets/images/standalone/2026-10-02-ai-native-sdlc-playbook/thumbnail.png
 ---
 
 # 코드는 더 이상 병목이 아니다 — AI-Native SDLC 쉽게 읽기
 {: .no_toc }
 
 _2026.10.02 게시_
+
+![코드는 더 이상 병목이 아니다 — AI-Native SDLC 쉽게 읽기]({{ '/assets/images/standalone/2026-10-02-ai-native-sdlc-playbook/thumbnail.png' | relative_url }})
 
 AI가 코드를 몇 시간 만에 써주는데, 왜 기능 하나가 나가는 데는 여전히 몇 주가 걸릴까.
 

@@ -32,4 +32,11 @@
 
 ## 백로그
 
-- 전용 섬네일(`image`)은 만들지 않았다. 필요하면 후속 작업으로 추가한다.
+- 현재 보류된 결정이나 후속 작업 없음.
+
+## 후속 변경: 섬네일 추가
+
+- AS-IS: 새 글에 전용 섬네일이 없고 공유 이미지도 사이트 기본값을 사용한다.
+- TO-BE: 제목과 여섯 단계 고리를 담은 1600×900 섬네일을 글 상단과 front matter `image`에 연결한다.
+- 영향 파일: 게시글, `docs/assets/images/standalone/2026-10-02-ai-native-sdlc-playbook/thumbnail.png`, `_meta/image-prompts/2026-10-02-ai-native-sdlc-playbook.md`.
+- 검증 기준: 문자와 구성을 검토하고, 이미지 경로·공유 메타데이터가 빌드 결과에 반영됐는지 확인한다.
