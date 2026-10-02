@@ -476,6 +476,20 @@ body {
   line-height: 1.6;
 }
 
+.series-hero .series-hero-about {
+  margin-top: 0.6rem;
+}
+
+.series-hero .series-hero-about a {
+  color: #4ade80;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.series-hero .series-hero-about a:hover {
+  text-decoration: underline;
+}
+
 .series-origin {
   margin: 0.4rem 0 0;
   color: $archive-muted;
