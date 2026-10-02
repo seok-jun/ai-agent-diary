@@ -1,6 +1,6 @@
 ---
 title: "코드는 더 이상 병목이 아니다 — AI-Native SDLC 쉽게 읽기"
-parent: Standalone
+parent: "단독 글"
 nav_order: 2
 permalink: /standalone/2026-10-02-ai-native-sdlc-playbook/
 date: 2026-10-02

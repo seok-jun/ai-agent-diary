@@ -1,15 +1,18 @@
-title: seok jun.log archive
+title: AI Agent Diary
 description: >-
   AI Agent 개발, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기를 다루는 개인 기술 블로그입니다.
 theme: just-the-docs
 timezone: Asia/Seoul
+lang: ko
+locale: ko_KR
 
 defaults:
   - scope:
       path: ""
     values:
       layout: default
-      image: /assets/images/favicon/favicon-512.png
+      # Share image fallback (1200×630) for pages without their own `image:`.
+      image: /assets/images/brand/og-default.png
   - scope:
       path: "google324e868b431a4f00.html"
     values:
@@ -43,11 +46,11 @@ aux_links_new_tab: true
 
 nav_sort: case_insensitive
 
-# Social sharing (Open Graph / Twitter cards via jekyll-seo-tag)
+# Social sharing (Open Graph / Twitter cards via jekyll-seo-tag).
+# No `twitter:` block: without a real account it renders empty `@` handles.
+# jekyll-seo-tag still emits twitter:card=summary_large_image when a page has an image.
 author:
   name: seok jun
-twitter:
-  card: summary_large_image
 
 plugins:
   - jekyll-seo-tag

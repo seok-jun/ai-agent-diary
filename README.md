@@ -1,4 +1,4 @@
-# seok jun.log archive
+# AI Agent Diary
 
 AI Agent 개발, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기를 다루는 개인 기술 블로그입니다. GitHub과 GitHub Pages에서 위키처럼 탐색할 수 있도록 정리했습니다.
 

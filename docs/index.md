@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "AI Agent Diary"
 layout: home
 nav_order: 1
 permalink: /
@@ -10,8 +10,8 @@ permalink: /
 {% assign latest_page = recent_pages | first %}
 
 <div class="series-hero">
-  <div class="series-eyebrow"><span>AI Agent Diary</span><span>최근 업데이트 {{ latest_page.date | date: "%Y.%m.%d" }} · 글 {{ dated_pages.size }}편</span></div>
-  <h1 class="series-hero-title"><img src="{{ '/assets/images/brand/wordmark.svg' | relative_url }}" alt="SJ archive" width="380" height="150"></h1>
+  <div class="series-eyebrow"><span>seok jun의 개인 기술 블로그</span><span>최근 업데이트 {{ latest_page.date | date: "%Y.%m.%d" }} · 글 {{ dated_pages.size }}편</span></div>
+  <h1 class="series-hero-title"><img src="{{ '/assets/images/brand/wordmark.svg' | relative_url }}" alt="AI Agent Diary" width="640" height="150"></h1>
   <p>AI 코딩 에이전트를 실무에 붙이면서 남긴 기록입니다. 개발 방법론, 검증, 문서화, 그리고 그 과정에서 마주친 판단들.</p>
 </div>
 
@@ -26,7 +26,7 @@ permalink: /
       <span class="series-body">
         <span class="series-row-meta">
           {% if forloop.first %}<span class="latest-badge">NEW</span>{% endif %}
-          <span class="series-row-category">{% if article.parent == "Standalone" %}단독 글{% else %}{{ article.parent }}{% endif %}</span>
+          <span class="series-row-category">{{ article.parent }}</span>
         </span>
         <span class="series-row-head"><span class="series-row-title">{{ article.title }}</span><span class="series-date">{{ article.date | date: "%Y.%m.%d" }}</span></span>
         {% if article.description %}<span class="series-row-desc">{{ article.description }}</span>{% endif %}

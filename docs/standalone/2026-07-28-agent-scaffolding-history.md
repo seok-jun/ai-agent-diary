@@ -1,6 +1,6 @@
 ---
 title: "흡수된 것들과 흡수되지 않은 하나 — 에이전트 도구사 3년"
-parent: Standalone
+parent: "단독 글"
 nav_order: 3
 permalink: /standalone/2026-07-28-agent-scaffolding-history/
 date: 2026-07-28

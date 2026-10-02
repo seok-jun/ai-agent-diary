@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 120" width="372" height="120">
-  <!-- Light-background variant for the sidebar site-title: navy badge + dark "archive". -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 120" width="620" height="120">
+  <!-- Light-background variant for the sidebar site-title: navy badge + dark "AI Agent Diary". -->
   <g transform="translate(8,10)">
     <rect x="0" y="0" width="100" height="100" rx="22.6" fill="#1E293B"/>
     <g fill="#4ADE80">
@@ -8,5 +8,5 @@
       <rect x="30.21" y="68.19" width="39.58" height="5.78" rx="2.89"/>
     </g>
   </g>
-  <text x="132" y="82" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="60" font-weight="800" letter-spacing="-2" fill="#1E293B">archive</text>
+  <text x="132" y="82" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="60" font-weight="800" letter-spacing="-2" fill="#1E293B">AI Agent Diary</text>
 </svg>

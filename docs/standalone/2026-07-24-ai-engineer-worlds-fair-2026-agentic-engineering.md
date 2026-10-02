@@ -1,6 +1,6 @@
 ---
 title: "AI Engineer World's Fair 2026, Agentic Engineering 세션에서 나온 이야기들"
-parent: Standalone
+parent: "단독 글"
 nav_order: 5
 permalink: /standalone/2026-07-24-ai-engineer-worlds-fair-2026-agentic-engineering/
 date: 2026-07-24
