@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 258" width="820" height="258" role="img" aria-label="온라인 모델과 요청·응답을 주고받는 것은 호스트다. 호스트는 모델 연결과 인증을 맡고, 격리된 후보 환경과는 제한된 명령만 중계한다. 파일 읽기와 수정, 테스트는 격리된 후보 환경 안에서 실행된다. 모델 자체를 격리된 환경에 넣은 것은 아니다" font-family='Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif'>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#cf222e"/></marker>
+    <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+    <style>
+      .hd { font-size: 13.5px; font-weight: 700; fill: #57606a; }
+      .ti { font-size: 16px; font-weight: 700; fill: #1f2328; }
+      .af { font-size: 12.5px; font-weight: 600; fill: #0550ae; }
+      .gt { font-size: 13px; fill: #57606a; }
+      .cb { font-size: 14px; font-weight: 700; fill: #1f2328; }
+      .cn { font-size: 13px; fill: #424a53; }
+      .ft { font-size: 12px; fill: #8c959f; }
+      .big { font-size: 24px; font-weight: 800; }
+    </style>
+  </defs>
+  <rect width="820" height="258" fill="#ffffff"/>
+  <text class="hd" x="24" y="30">모델 연결은 밖에, 작업 도구는 안에</text>
+
+  <rect x="24" y="62" width="170" height="96" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text class="cb" x="109" y="106" text-anchor="middle">온라인 모델</text>
+  <text class="gt" x="109" y="128" text-anchor="middle">인터넷이 필요함</text>
+
+  <text class="af" x="242" y="98" text-anchor="middle">요청 · 응답</text>
+  <line x1="200" y1="110" x2="284" y2="110" stroke="#57606a" stroke-width="1.6" marker-start="url(#ar2)" marker-end="url(#ar2)"/>
+
+  <rect x="290" y="62" width="190" height="96" rx="8" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.4"/>
+  <text class="cb" x="385" y="106" text-anchor="middle">호스트</text>
+  <text class="gt" x="385" y="128" text-anchor="middle">모델 연결 · 인증</text>
+
+  <text class="af" x="545" y="98" text-anchor="middle">제한된 명령 중계</text>
+  <line x1="486" y1="110" x2="604" y2="110" stroke="#57606a" stroke-width="1.6" marker-start="url(#ar2)" marker-end="url(#ar2)"/>
+
+  <rect x="610" y="62" width="186" height="96" rx="8" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <text class="cb" x="703" y="106" text-anchor="middle">격리된 후보 환경</text>
+  <text class="gt" x="703" y="128" text-anchor="middle">파일 읽기 · 수정 · 테스트</text>
+
+  <rect x="24" y="180" width="772" height="62" rx="10" fill="#fff8c5" stroke="#d4a72c"/>
+  <text class="cb" x="44" y="206">모델 자체를 격리된 환경에 넣은 것은 아니다.</text>
+  <text class="cn" x="44" y="228">모델이 쓰는 작업 도구만 그 안에서 실행하고, 인증 정보와 정답은 넘기지 않는다.</text>
+</svg>

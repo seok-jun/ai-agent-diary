@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 318" width="820" height="318" role="img" aria-label="앞선 실험에서는 같은 컴퓨터의 폴더에서 후보 A가 작업한 뒤 파일과 권한이 남아 후보 B가 읽을 수 있었다. 후속 실험장에서는 새 환경에서 A가 작업하고, 결과를 회수하고 종료를 확인한 뒤, 새 환경에서 B를 시작한다. 앞 환경에서 만든 파일이 다음 환경에 없는지 직접 확인했다" font-family='Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif'>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#cf222e"/></marker>
+    <style>
+      .hd { font-size: 13.5px; font-weight: 700; fill: #57606a; }
+      .ti { font-size: 16px; font-weight: 700; fill: #1f2328; }
+      .af { font-size: 12.5px; font-weight: 600; fill: #0550ae; }
+      .gt { font-size: 13px; fill: #57606a; }
+      .cb { font-size: 14px; font-weight: 700; fill: #1f2328; }
+      .cn { font-size: 13px; fill: #424a53; }
+      .ft { font-size: 12px; fill: #8c959f; }
+      .big { font-size: 24px; font-weight: 800; }
+    </style>
+  </defs>
+  <rect width="820" height="318" fill="#ffffff"/>
+  <text class="hd" x="24" y="30">실행이 끝나면 환경째로 버리고, 다음은 새 환경에서 시작한다</text>
+
+  <rect x="24" y="48" width="108" height="80" rx="8" fill="#f6f8fa" stroke="#d0d7de"/><text class="cb" x="78" y="84" text-anchor="middle">앞선</text><text class="cb" x="78" y="104" text-anchor="middle">실험</text>
+  <rect x="148" y="48" width="196" height="80" rx="8" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.4"/><text class="cb" x="246" y="83" text-anchor="middle">후보 A 작업</text><text class="gt" x="246" y="105" text-anchor="middle">같은 컴퓨터의 폴더</text>
+  <line x1="347" y1="88" x2="371" y2="88" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <rect x="374" y="48" width="196" height="80" rx="8" fill="#fff8c5" stroke="#d4a72c" stroke-width="1.4"/><text class="cb" x="472" y="83" text-anchor="middle">파일과 권한이 남음</text><text class="gt" x="472" y="105" text-anchor="middle">작업이 끝난 뒤에도</text>
+  <line x1="573" y1="88" x2="597" y2="88" stroke="#cf222e" stroke-width="1.6" marker-end="url(#arr)"/>
+  <rect x="600" y="48" width="196" height="80" rx="8" fill="#ffebe9" stroke="#ff8182" stroke-width="1.4"/><text class="cb" x="698" y="83" text-anchor="middle">후보 B가 읽을 수 있었음</text><text class="gt" x="698" y="105" text-anchor="middle">비교할 수 없게 됨</text>
+
+  <rect x="24" y="144" width="108" height="80" rx="8" fill="#f6f8fa" stroke="#d0d7de"/><text class="cb" x="78" y="180" text-anchor="middle">후속</text><text class="cb" x="78" y="200" text-anchor="middle">실험장</text>
+  <rect x="148" y="144" width="196" height="80" rx="8" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.4"/><text class="cb" x="246" y="179" text-anchor="middle">새 환경에서 A 작업</text><text class="gt" x="246" y="201" text-anchor="middle">실행마다 새로 만듦</text>
+  <line x1="347" y1="184" x2="371" y2="184" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <rect x="374" y="144" width="196" height="80" rx="8" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/><text class="cb" x="472" y="179" text-anchor="middle">결과 회수 · 종료 확인</text><text class="gt" x="472" y="201" text-anchor="middle">환경째로 사라짐</text>
+  <line x1="573" y1="184" x2="597" y2="184" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <rect x="600" y="144" width="196" height="80" rx="8" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/><text class="cb" x="698" y="179" text-anchor="middle">새 환경에서 B 시작</text><text class="gt" x="698" y="201" text-anchor="middle">A가 만든 파일이 없음</text>
+
+  <rect x="24" y="242" width="772" height="60" rx="10" fill="#fff8c5" stroke="#d4a72c"/>
+  <text class="cb" x="44" y="267">새 환경이라는 이름만 믿지는 않았다.</text>
+  <text class="cn" x="44" y="289">앞 환경에서 파일을 만들고 종료한 뒤, 다음 환경에 그 파일이 없는지 직접 확인했다.</text>
+</svg>

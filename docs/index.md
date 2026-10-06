@@ -41,7 +41,7 @@ permalink: /
   <h2>시리즈</h2>
   <div class="series-cards">
     <div class="series-card series-card--grouped">
-      <span class="series-card-kicker">Series · 14편</span>
+      <span class="series-card-kicker">Series · 15편</span>
       <h3><a href="./series/agent-sdd/">Agent SDD 실무 개발</a></h3>
       <p>AI Agent를 실무 개발에 붙이면서 겪은 일을 쓴 순서대로 정리한 연재입니다. 처음이라면 아래 세 묶음의 첫 글부터 읽으면 됩니다.</p>
       <ol class="series-groups">
@@ -56,7 +56,7 @@ permalink: /
           <a class="series-group-link" href="./series/agent-sdd/005-docs-cut-agent-wandering-not-tokens/">여기부터 →</a>
         </li>
         <li>
-          <span class="series-group-head"><span class="series-group-range">9~14편</span><strong>방법론과 재검증</strong></span>
+          <span class="series-group-head"><span class="series-group-range">9~15편</span><strong>방법론과 재검증</strong></span>
           <span class="series-group-desc">멀티 Agent 운영을 방법론으로 묶어 공유하고, 실무에 다시 적용하고, 모델이 좋아진 뒤 가드레일을 다시 재본 과정.</span>
           <a class="series-group-link" href="./series/agent-sdd/009-adaptive-agentic-sdd/">여기부터 →</a>
         </li>
