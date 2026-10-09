@@ -110,18 +110,20 @@ for i,(title,sub,color,fill) in enumerate(items):
 b+=text(28,554,'화살표마다 확인이 필요하다 · 알림 사례는 가상',20,MUTED)
 save('effort-to-mission.svg','노력에서 공동의 목적으로','개발 시간과 비용, 알림 기능, 고객 행동 변화, 안심하고 주문한다는 목적의 흐름. 앞 단계를 달성해도 다음 단계는 자동으로 달성되지 않는다.',b,580)
 
-b=text(28,40,'비교해서 가져갈 작업 흐름',25,weight=700)+text(28,73,'공식 절차의 복제가 아닌, 이 글의 적용 제안',20,MUTED)
+b=text(28,40,'보류한 합의는 다음 작업으로 이어질까',25,weight=700)+text(28,73,'AI 에이전트와의 협업에서 내게 남은 질문',20,MUTED)
 for y,title,sub,color,fill in [
-    (98,'문제와 인수 조건','사용자에게 무엇이 달라져야 하나',BLUE,'#edf5ff'),
-    (213,'위험에 맞춘 분석·구현·검증','현재 동작을 확인하고 실제 증거를 남긴다',BLUE,'#edf5ff'),
-    (328,'다음 변경의 여지 확인','필요한 정리는 범위 갱신 또는 별도 작업',GREEN,'#eff8f2'),
-    (443,'허가된 배포 후 사용자 결과 확인','배운 것은 다음 작업과 명세로 돌려보낸다','#7653a4','#f5f0fc')
+    (98,'기획·구현 중 문제를 발견한다','지금 필요한 수정과 앞으로의 우려를 살핀다',BLUE,'#edf5ff'),
+    (213,'지금은 보류하기로 합의한다','예상 문제 · 보류 이유 · 다시 판단할 시점',BLUE,'#edf5ff'),
+    (427,'다음 관련 작업에서 합의를 다시 본다','다음 에이전트도 앞의 판단을 이해할 수 있게',GREEN,'#eff8f2'),
+    (542,'현재 상황에 맞춰 다시 판단한다','계속 보류할지, 변경을 계획할지 결정한다',GREEN,'#eff8f2')
 ]:
-    b+=rect(70,y,542,92,fill)+text(91,y+36,title,23,color,weight=700)+text(91,y+68,sub,20)
-    if y<443:b+=line(341,y+96,341,y+110,arrow=True)
-b+='<path d="M69,490 H28 V144 H63" fill="none" stroke="#576574" stroke-width="2.5" marker-end="url(#arrow)"/>'
-b+=text(28,580,'각 단계의 발견으로 앞의 판단을 다시 볼 수 있어야 한다',20,MUTED)
-save('adaptive-loop.svg','Adaptive SDD와 강연을 함께 적용한 제안','사용자 문제에서 위험에 맞춘 실행, 변경 여지 검토, 허가된 배포 후 결과 확인을 거쳐 다음 작업으로 되돌아간다. 공식 v0.2 워크플로를 대체하지 않는다.',b,607)
+    b+=rect(28,y,584,92,fill)+text(49,y+36,title,23,color,weight=700)+text(49,y+68,sub,20)
+    if y in (98,427):b+=line(320,y+96,320,y+110,arrow=True)
+b+=line(320,309,320,330,color=RED,dash=True)
+b+=rect(47,337,546,57,'#fff4f2','#edc4bf')+text(320,373,'누가, 언제 이 합의를 다시 연결할까?',22,RED,'middle',700)
+b+=line(320,399,320,422,color=RED,arrow=True,dash=True)
+b+=text(28,678,'기록의 보관에서 다음 판단까지, 연결이 필요하다',20,MUTED)
+save('adaptive-loop.svg','보류한 합의와 다음 에이전트의 판단 사이','기획과 구현 중 발견한 문제를 보류하기로 합의한다. 누가 언제 이 합의를 다음 관련 작업에 전달할지 점선으로 묻고, 현재 상황에 맞게 다시 판단하는 연결을 그렸다.',b,706)
 
 b=rect(0,0,1200,630,'#eef3ec','#eef3ec')
 b+=text(72,82,'AI AGENT DIARY  /  STANDALONE',22,GREEN,weight=700)
