@@ -110,20 +110,18 @@ for i,(title,sub,color,fill) in enumerate(items):
 b+=text(28,554,'화살표마다 확인이 필요하다 · 알림 사례는 가상',20,MUTED)
 save('effort-to-mission.svg','노력에서 공동의 목적으로','개발 시간과 비용, 알림 기능, 고객 행동 변화, 안심하고 주문한다는 목적의 흐름. 앞 단계를 달성해도 다음 단계는 자동으로 달성되지 않는다.',b,580)
 
-b=text(28,40,'보류한 합의는 다음 작업으로 이어질까',25,weight=700)+text(28,73,'AI 에이전트와의 협업에서 내게 남은 질문',20,MUTED)
+b=text(28,40,'기능 추가 전에, 현재 코드를 다시 본다',25,weight=700)+text(28,73,'Adaptive Agentic SDD의 기존 절차를 사례에 대입',20,MUTED)
 for y,title,sub,color,fill in [
-    (98,'기획·구현 중 문제를 발견한다','지금 필요한 수정과 앞으로의 우려를 살핀다',BLUE,'#edf5ff'),
-    (213,'지금은 보류하기로 합의한다','예상 문제 · 보류 이유 · 다시 판단할 시점',BLUE,'#edf5ff'),
-    (427,'다음 관련 작업에서 합의를 다시 본다','다음 에이전트도 앞의 판단을 이해할 수 있게',GREEN,'#eff8f2'),
-    (542,'현재 상황에 맞춰 다시 판단한다','계속 보류할지, 변경을 계획할지 결정한다',GREEN,'#eff8f2')
+    (98,'현재 코드와 의존성 분석','B를 추가할 때 기존 A와의 연결을 확인한다',BLUE,'#edf5ff'),
+    (213,'문제와 변경 영향 파악','새 위험과 유지해야 할 동작을 살핀다',BLUE,'#edf5ff'),
+    (328,'필요한 판단과 계획 갱신','사람의 판단이 필요한 변경은 함께 결정한다',GREEN,'#eff8f2'),
+    (443,'구현·검증 후 다음 작업','새 발견이나 다음 변경은 다시 분석에서 출발',GREEN,'#eff8f2')
 ]:
-    b+=rect(28,y,584,92,fill)+text(49,y+36,title,23,color,weight=700)+text(49,y+68,sub,20)
-    if y in (98,427):b+=line(320,y+96,320,y+110,arrow=True)
-b+=line(320,309,320,330,color=RED,dash=True)
-b+=rect(47,337,546,57,'#fff4f2','#edc4bf')+text(320,373,'누가, 언제 이 합의를 다시 연결할까?',22,RED,'middle',700)
-b+=line(320,399,320,422,color=RED,arrow=True,dash=True)
-b+=text(28,678,'기록의 보관에서 다음 판단까지, 연결이 필요하다',20,MUTED)
-save('adaptive-loop.svg','보류한 합의와 다음 에이전트의 판단 사이','기획과 구현 중 발견한 문제를 보류하기로 합의한다. 누가 언제 이 합의를 다음 관련 작업에 전달할지 점선으로 묻고, 현재 상황에 맞게 다시 판단하는 연결을 그렸다.',b,706)
+    b+=rect(60,y,552,92,fill)+text(81,y+36,title,23,color,weight=700)+text(81,y+68,sub,20)
+    if y<443:b+=line(336,y+96,336,y+110,arrow=True)
+b+='<path d="M59,490 H28 V144 H53" fill="none" stroke="#576574" stroke-width="2.5" marker-end="url(#arrow)"/>'
+b+=text(28,580,'분석과 검토가 실제 이해와 필요한 개선으로 이어지는가',20,MUTED)
+save('adaptive-loop.svg','기존 분석과 검토가 다음 변경을 준비하는 흐름','현재 코드와 의존성을 분석하고 새 위험과 변경 영향을 파악한다. 필요한 사람의 판단을 거쳐 계획을 갱신하고 구현과 검증을 수행한다. 새로운 발견이나 다음 변경에서는 다시 분석한다.',b,607)
 
 b=rect(0,0,1200,630,'#eef3ec','#eef3ec')
 b+=text(72,82,'AI AGENT DIARY  /  STANDALONE',22,GREEN,weight=700)
