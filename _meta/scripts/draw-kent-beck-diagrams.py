@@ -110,18 +110,26 @@ for i,(title,sub,color,fill) in enumerate(items):
 b+=text(28,554,'화살표마다 확인이 필요하다 · 알림 사례는 가상',20,MUTED)
 save('effort-to-mission.svg','노력에서 공동의 목적으로','개발 시간과 비용, 알림 기능, 고객 행동 변화, 안심하고 주문한다는 목적의 흐름. 앞 단계를 달성해도 다음 단계는 자동으로 달성되지 않는다.',b,580)
 
-b=text(28,40,'기능 추가 전에, 현재 코드를 다시 본다',25,weight=700)+text(28,73,'Adaptive Agentic SDD의 기존 절차를 사례에 대입',20,MUTED)
-for y,title,sub,color,fill in [
-    (98,'현재 코드와 의존성 분석','B를 추가할 때 기존 A와의 연결을 확인한다',BLUE,'#edf5ff'),
-    (213,'문제와 변경 영향 파악','새 위험과 유지해야 할 동작을 살핀다',BLUE,'#edf5ff'),
-    (328,'필요한 판단과 계획 갱신','사람의 판단이 필요한 변경은 함께 결정한다',GREEN,'#eff8f2'),
-    (443,'구현·검증 후 다음 작업','새 발견이나 다음 변경은 다시 분석에서 출발',GREEN,'#eff8f2')
-]:
-    b+=rect(60,y,552,92,fill)+text(81,y+36,title,23,color,weight=700)+text(81,y+68,sub,20)
-    if y<443:b+=line(336,y+96,336,y+110,arrow=True)
-b+='<path d="M59,490 H28 V144 H53" fill="none" stroke="#576574" stroke-width="2.5" marker-end="url(#arrow)"/>'
-b+=text(28,580,'분석과 검토가 실제 이해와 필요한 개선으로 이어지는가',20,MUTED)
-save('adaptive-loop.svg','기존 분석과 검토가 다음 변경을 준비하는 흐름','현재 코드와 의존성을 분석하고 새 위험과 변경 영향을 파악한다. 필요한 사람의 판단을 거쳐 계획을 갱신하고 구현과 검증을 수행한다. 새로운 발견이나 다음 변경에서는 다시 분석한다.',b,607)
+b=text(28,40,'정리를 실행하는 절차와 선택하는 판단',25,weight=700)
+b+=text(28,73,'정리의 필요를 발견한 뒤, 할 일로 선택하는 과정',20,MUTED)
+b+=rect(28,102,278,150,'#edf5ff')+text(48,137,'새 기능 요청',22,BLUE,weight=700)
+b+=text(48,183,'기존 코드 분석',21)+text(48,218,'필요한 정리 발견',21)
+b+=rect(334,102,278,150,'#fff8ed')+text(354,137,'기능 요청이 없는 영역',22,'#8b5b24',weight=700)
+b+=text(354,183,'반복 수정·검증 부담',21)+text(354,218,'정리할 근거가 있는가',21)
+b+=line(167,257,167,288,arrow=True)
+b+=line(473,257,473,288,arrow=True,dash=True)
+b+=rect(28,296,278,68,'#edf5ff')+text(167,337,'선행 정리 작업으로 분리',21,BLUE,'middle',700)
+b+='<rect x="334" y="296" width="278" height="68" rx="12" fill="#fff8ed" stroke="#8b5b24" stroke-width="2" stroke-dasharray="6 5"/>'
+b+=text(473,337,'누가, 언제 선택할까?',21,'#8b5b24','middle',700)
+b+='<path d="M167,369 V394 H305 V417" fill="none" stroke="#576574" stroke-width="2.5" marker-end="url(#arrow)"/>'
+b+='<path d="M473,369 V394 H335 V417" fill="none" stroke="#576574" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#arrow)"/>'
+b+=rect(60,425,520,92,'#eff8f2')+text(320,461,'선택된 구조 정리 작업',23,GREEN,'middle',700)
+b+=text(320,494,'목표·범위·유지할 동작·검증 조건',21,anchor='middle')
+b+=line(320,522,320,549,arrow=True)
+b+=rect(60,557,520,92,'#eff8f2')+text(320,593,'기존 SDD 절차로 수행',23,GREEN,'middle',700)
+b+=text(320,626,'분석 → 검토 → 구현 → 검증',21,anchor='middle')
+b+=text(28,688,'실선: PR #54의 흐름  ·  점선: 더 살펴볼 작업 선택',20,MUTED)
+save('adaptive-loop.svg','구조 정리 작업의 선택과 실행','왼쪽 실선은 새 기능을 위한 기존 코드 분석에서 정리를 발견하고 선행 작업으로 분리한 PR 54의 흐름이다. 오른쪽 점선은 기능 요청이 없어도 반복 수정과 검증 부담을 근거로 정리를 선택하는 경로이며, 누가 언제 우선할지 판단이 필요하다. 선택된 정리 작업은 목표와 범위, 유지할 동작과 검증 조건을 정해 기존 SDD 절차로 수행할 수 있다.',b,715)
 
 b=rect(0,0,1200,630,'#eef3ec','#eef3ec')
 b+=text(72,82,'AI AGENT DIARY  /  STANDALONE',22,GREEN,weight=700)
