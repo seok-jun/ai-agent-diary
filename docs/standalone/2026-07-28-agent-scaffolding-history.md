@@ -1,7 +1,7 @@
 ---
 title: "흡수된 것들과 흡수되지 않은 하나 — 에이전트 도구사 3년"
 parent: "단독 글"
-nav_order: 3
+nav_order: 4
 permalink: /standalone/2026-07-28-agent-scaffolding-history/
 date: 2026-07-28
 description: "에이전트 도구사 3년을 돌아보며 모델의 약점을 보정하던 구조물이 어떻게 흡수되고 걷혔는지, 끝까지 남는 검증층은 무엇인지 정리한 글."

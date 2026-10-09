@@ -1,7 +1,7 @@
 ---
 title: "감으로는 고칠 수 없다 — AI 에이전트에 Eval이 필요한 이유"
 parent: "단독 글"
-nav_order: 1
+nav_order: 2
 permalink: /standalone/2026-10-02-why-ai-agents-need-evals/
 date: 2026-10-02
 description: "Eval을 처음 접하는 사람도 따라올 수 있게, AI 에이전트에 왜 시험지가 필요한지를 Anthropic의 글을 바탕으로 비유와 도식, 표로 풀어 쓴 글."

@@ -7,12 +7,18 @@ permalink: /standalone/
 ---
 
 <div class="series-hero">
-  <div class="series-eyebrow"><span>Standalone · 단독 글</span><span>총 9편</span></div>
+  <div class="series-eyebrow"><span>Standalone · 단독 글</span><span>총 10편</span></div>
   <h1>단독 글</h1>
   <p>특정 시리즈에 속하지 않는 개발 및 AI 활용 관련 단독 글을 모았습니다. 관심 있는 주제부터 자유롭게 읽으세요.</p>
 </div>
 
 <div class="series-index series-index--flat">
+  <a class="series-row" href="./2026-10-08-kent-beck-features-futures/">
+    <span class="series-body">
+      <span class="series-row-head"><span class="series-row-title">기능은 늘었는데, 왜 고치기는 어려워졌을까 — 켄트 백의 AI 시대 개발 이야기</span><span class="series-date">2026.10.08</span></span>
+      <span class="series-row-desc">Features와 Futures 그래프를 쉽게 풀고, 명세·검증·다음 변경의 관계를 Adaptive Agentic SDD와 비교.</span>
+    </span>
+  </a>
   <a class="series-row" href="./2026-10-02-why-ai-agents-need-evals/">
     <span class="series-body">
       <span class="series-row-head"><span class="series-row-title">감으로는 고칠 수 없다 — AI 에이전트에 Eval이 필요한 이유</span><span class="series-date">2026.10.02</span></span>
