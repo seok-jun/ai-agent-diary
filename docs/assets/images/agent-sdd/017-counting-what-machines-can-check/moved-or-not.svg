@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" width="820" height="300" role="img" aria-label="넘긴 것은 승인 위조로, 사람이 키로 서명한 것만 승인으로 본다. 일부러 넘기지 않은 것은 병합 강제로, 비공개 저장소의 보호 규칙에는 유료 요금제가 필요하다. 아직 정하지 않은 것은 되돌릴 수 없는 명령의 차단으로, 차단 목록을 어디에 둘지가 남았다. 통과했지만 요구를 증명하지 못한 검사는 기계로 넘길 대상이 아니며 감사와 실환경 확인으로 잡는다" font-family='Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif'>
+  <defs>
+    <style>
+      .hd { font-size: 13.5px; font-weight: 700; fill: #57606a; }
+      .tg { font-size: 12.5px; font-weight: 700; }
+      .cb { font-size: 15px; font-weight: 700; fill: #1f2328; }
+      .gt { font-size: 12.5px; fill: #57606a; }
+    </style>
+  </defs>
+  <rect width="820" height="300" fill="#ffffff"/>
+  <text class="hd" x="24" y="30">기록이 뒷받침한 후보와 지금 상태</text>
+
+  <rect x="24" y="46" width="378" height="112" rx="10" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/>
+  <text class="tg" x="44" y="72" fill="#1a7f37">넘겼다</text>
+  <text class="cb" x="44" y="98">승인 위조</text>
+  <text class="gt" x="44" y="122">사람이 키로 서명한 것만 승인으로 본다.</text>
+  <text class="gt" x="44" y="141">Agent는 서명을 만들 수 없다. Large 이상에 적용</text>
+
+  <rect x="418" y="46" width="378" height="112" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.4"/>
+  <text class="tg" x="438" y="72" fill="#57606a">일부러 넘기지 않았다</text>
+  <text class="cb" x="438" y="98">병합 강제</text>
+  <text class="gt" x="438" y="122">비공개 저장소의 보호 규칙은 유료 요금제가 필요하다.</text>
+  <text class="gt" x="438" y="141">서명 승인은 서명 없는 병합까지 막지는 않는다</text>
+
+  <rect x="24" y="172" width="378" height="112" rx="10" fill="#fff8c5" stroke="#d4a72c" stroke-width="1.4"/>
+  <text class="tg" x="44" y="198" fill="#7d4e00">아직 정하지 않았다</text>
+  <text class="cb" x="44" y="224">되돌릴 수 없는 명령 차단</text>
+  <text class="gt" x="44" y="248">막는 게 맞다는 데까지는 왔다.</text>
+  <text class="gt" x="44" y="267">차단 목록을 방법론과 프로젝트 중 어디에 둘지 미정</text>
+
+  <rect x="418" y="172" width="378" height="112" rx="10" fill="#ffebe9" stroke="#ff8182" stroke-width="1.4"/>
+  <text class="tg" x="438" y="198" fill="#a40e26">기계로 넘길 대상이 아니다</text>
+  <text class="cb" x="438" y="224">통과했지만 요구를 증명 못 한 검사</text>
+  <text class="gt" x="438" y="248">두 기록 모두에서 가장 많은 유형.</text>
+  <text class="gt" x="438" y="267">따로 돌린 감사와 실환경 확인이 찾아냈다</text>
+</svg>
