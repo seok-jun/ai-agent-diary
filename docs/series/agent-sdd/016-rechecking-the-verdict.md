@@ -3,7 +3,7 @@ title: "열세 번 돌리고, 판정을 다시 봤다"
 parent: Agent SDD 실무 개발
 nav_order: 16
 permalink: /series/agent-sdd/016-rechecking-the-verdict/
-date: 2026-10-13
+date: 2026-10-13 14:00:00 +0900
 description: "아직 안 쓴 과제로 한 쌍을 더 돌려봤지만 이번에도 답은 나오지 않았다. 그 과정에서 15편의 판정을 다시 봤더니, 검사 결과는 그대로였지만 몇 칸은 생각보다 근거가 약했다. 짧은 실험 노트."
 image: /assets/images/agent-sdd/016-rechecking-the-verdict/thumbnail.png
 ---
