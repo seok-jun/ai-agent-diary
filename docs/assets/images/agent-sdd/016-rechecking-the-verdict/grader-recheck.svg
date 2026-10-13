@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 388" width="820" height="388" role="img" aria-label="지난 글 진단 과제의 숨긴 검사 세 개를 다시 봤다. 결과는 그대로 다시 나왔다. 취소는 A와 B가 실패했지만 다른 건 내부 표시 하나뿐이라 요구사항을 어겼다고 보기 어려워졌다. 재시도는 A와 B가 실패했지만 정답 코드도 어떤 경우에는 계속 다시 시도해서 요구사항을 어떻게 읽느냐에 달렸다. 예외는 A가 화면이 진행 중으로 남아 그대로 실패다. A가 쓴 목록에는 실패한 부분이 아예 없었다" font-family='Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif'>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+    <style>
+      .hd { font-size: 13.5px; font-weight: 700; fill: #57606a; }
+      .ch { font-size: 12.5px; font-weight: 700; fill: #8c959f; }
+      .cb { font-size: 14px; font-weight: 700; fill: #1f2328; }
+      .gt { font-size: 12.5px; fill: #57606a; }
+      .cn { font-size: 13px; fill: #424a53; }
+    </style>
+  </defs>
+  <rect width="820" height="388" fill="#ffffff"/>
+  <text class="hd" x="24" y="30">결과는 그대로 다시 나왔다. 다르게 읽어야 할 칸이 생겼다</text>
+
+  <text class="ch" x="84" y="60" text-anchor="middle">숨긴 검사</text>
+  <text class="ch" x="245" y="60" text-anchor="middle">지난 글 판정</text>
+  <text class="ch" x="580" y="60" text-anchor="middle">다시 보니</text>
+
+  <rect x="24" y="72" width="120" height="64" rx="8" fill="#f6f8fa" stroke="#d0d7de"/><text class="cb" x="84" y="109" text-anchor="middle">취소</text>
+  <rect x="160" y="72" width="170" height="64" rx="8" fill="#ffebe9" stroke="#ff8182" stroke-width="1.4"/><text class="cb" x="245" y="109" text-anchor="middle">A · B 실패</text>
+  <line x1="334" y1="104" x2="360" y2="104" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <rect x="364" y="72" width="432" height="64" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.4"/><text class="cb" x="384" y="99">어겼다고 보기 어려워짐</text><text class="gt" x="384" y="120">네 코드 모두 다시 쓸 수 있었다. 다른 건 내부 표시 하나</text>
+
+  <rect x="24" y="148" width="120" height="64" rx="8" fill="#f6f8fa" stroke="#d0d7de"/><text class="cb" x="84" y="185" text-anchor="middle">재시도</text>
+  <rect x="160" y="148" width="170" height="64" rx="8" fill="#ffebe9" stroke="#ff8182" stroke-width="1.4"/><text class="cb" x="245" y="185" text-anchor="middle">A · B 실패</text>
+  <line x1="334" y1="180" x2="360" y2="180" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <rect x="364" y="148" width="432" height="64" rx="8" fill="#fff8c5" stroke="#d4a72c" stroke-width="1.4"/><text class="cb" x="384" y="175">요구사항을 어떻게 읽느냐에 달림</text><text class="gt" x="384" y="196">정답 코드도 어떤 경우에는 계속 다시 시도했다</text>
+
+  <rect x="24" y="224" width="120" height="64" rx="8" fill="#f6f8fa" stroke="#d0d7de"/><text class="cb" x="84" y="261" text-anchor="middle">예외</text>
+  <rect x="160" y="224" width="170" height="64" rx="8" fill="#ffebe9" stroke="#ff8182" stroke-width="1.4"/><text class="cb" x="245" y="261" text-anchor="middle">A 실패</text>
+  <line x1="334" y1="256" x2="360" y2="256" stroke="#57606a" stroke-width="1.6" marker-end="url(#ar)"/>
+  <rect x="364" y="224" width="432" height="64" rx="8" fill="#ffebe9" stroke="#ff8182" stroke-width="1.4"/><text class="cb" x="384" y="251">그대로 실패</text><text class="gt" x="384" y="272">A는 화면이 진행 중으로 남았다</text>
+
+  <rect x="24" y="306" width="772" height="64" rx="10" fill="#fff8c5" stroke="#d4a72c"/>
+  <text class="cb" x="44" y="332">A가 쓴 목록에는 실패한 부분이 아예 없었다.</text>
+  <text class="cn" x="44" y="354">과제마다 한 쌍이고 순서도 정해져 있어서, 칸 하나로 목록이 방해했다고 말할 수는 없다.</text>
+</svg>
