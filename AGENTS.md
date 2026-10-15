@@ -24,7 +24,7 @@ bundle exec jekyll build --baseurl "/ai-agent-diary"
 
 ## 에이전트용 SDD 작업 절차
 
-공통 Priority·SDD 등급 판정은 some-you 방법론의 고정 버전 `fcd0c167fd3a9ba2d9b48a3b6d14c3bfe29081f5`에 있는 [공통 이슈 분류](https://github.com/seok-jun/some-you-adaptive-agentic-sdd/blob/fcd0c167fd3a9ba2d9b48a3b6d14c3bfe29081f5/process/issue-priority.md)와 [SDD grade·일반 자동 격상](https://github.com/seok-jun/some-you-adaptive-agentic-sdd/blob/fcd0c167fd3a9ba2d9b48a3b6d14c3bfe29081f5/process/sdd-workflow.md#sdd-grade)을 참조한다. 이 두 공통 분류 절을 적용하며 다른 제품의 전용 Skill·모듈 조건을 블로그에 도입하지 않는다. 공통 등급표는 이 저장소에 복제하지 않는다.
+공통 Priority·SDD 등급 판정은 some-you 방법론의 고정 버전 `ba9df19dd2b8e20c2eded86bd0304db3ea3d42a0`에 있는 [공통 이슈 분류](https://github.com/seok-jun/some-you-adaptive-agentic-sdd/blob/ba9df19dd2b8e20c2eded86bd0304db3ea3d42a0/process/issue-priority.md)와 [SDD grade·일반 자동 격상](https://github.com/seok-jun/some-you-adaptive-agentic-sdd/blob/ba9df19dd2b8e20c2eded86bd0304db3ea3d42a0/process/sdd-workflow.md#sdd-grade)을 참조한다. 이 두 공통 분류 절을 적용하며 다른 제품의 전용 Skill·모듈 조건을 블로그에 도입하지 않는다. 공통 등급표는 이 저장소에 복제하지 않는다.
 
 블로그별 적용 조건으로 공통 등급 판정 결과가 Medium 이상이면 구현 전에 AS-IS·TO-BE·영향 파일·제약·검증 기준의 짧은 명세를 작성한다. 단순 오타처럼 공통 Trivial 조건을 충족하면 직접 수정할 수 있다. 보류된 결정과 후속 작업은 백로그에 기록한다. 사이트 영향 판단에는 Pages 워크플로·내비게이션·데이터 구조·검색·`_config.yml`을 포함한다. 영향이 큰 변경은 구현과 리뷰를 분리한다. 이 분류 참조는 아래 Jekyll 검증 조건을 대체하지 않는다.
 
