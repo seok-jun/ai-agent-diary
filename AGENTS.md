@@ -24,7 +24,9 @@ bundle exec jekyll build --baseurl "/ai-agent-diary"
 
 ## 에이전트용 SDD 작업 절차
 
-Medium 이상 변경은 구현 전에 AS-IS, TO-BE, 영향 파일, 제약 조건, 검증 기준을 짧은 명세로 작성한다. 단순 오타 같은 Trivial 작업은 직접 수정할 수 있다. 보류된 결정과 후속 작업은 백로그에 남긴다. 워크플로, 내비게이션, 데이터 구조처럼 영향이 큰 변경은 구현과 리뷰를 분리한다.
+공통 Priority·SDD 등급 판정은 some-you 방법론의 고정 버전 `be5e77efd916e7162246d398dd0a431b66eade1d`에 있는 [공통 이슈 분류](https://github.com/seok-jun/some-you-adaptive-agentic-sdd/blob/be5e77efd916e7162246d398dd0a431b66eade1d/process/issue-priority.md)와 [SDD grade·일반 자동 격상](https://github.com/seok-jun/some-you-adaptive-agentic-sdd/blob/be5e77efd916e7162246d398dd0a431b66eade1d/process/sdd-workflow.md#sdd-grade)을 참조한다. 이 두 공통 분류 절을 적용하며 다른 제품의 전용 Skill·모듈 조건을 블로그에 도입하지 않는다. 공통 등급표는 이 저장소에 복제하지 않는다.
+
+블로그별 적용 조건으로 공통 등급 판정 결과가 Medium 이상이면 구현 전에 AS-IS·TO-BE·영향 파일·제약·검증 기준의 짧은 명세를 작성한다. 단순 오타처럼 공통 Trivial 조건을 충족하면 직접 수정할 수 있다. 보류된 결정과 후속 작업은 백로그에 기록한다. 사이트 영향 판단에는 Pages 워크플로·내비게이션·데이터 구조·검색·`_config.yml`을 포함한다. 영향이 큰 변경은 구현과 리뷰를 분리한다. 이 분류 참조는 아래 Jekyll 검증 조건을 대체하지 않는다.
 
 ## 테스트 지침
 

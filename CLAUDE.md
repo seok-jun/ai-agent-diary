@@ -38,4 +38,4 @@ bundle exec jekyll build --baseurl "/ai-agent-diary" # 프로덕션과 동일한
 
 ## 작업 절차 (AGENTS.md 기준)
 
-Medium 이상 변경은 구현 전에 짧은 명세(AS-IS, TO-BE, 영향 파일, 제약 조건, 검증 기준)를 작성한다. 오타 같은 Trivial 작업은 직접 수정할 수 있다. Pages 워크플로, 내비게이션, `_config.yml`, 검색, 데이터 구조처럼 영향이 큰 변경은 리뷰 대상으로 명확히 표시한다.
+공통 분류의 고정 방법론 버전·링크와 블로그별 적용 조건은 [AGENTS.md의 에이전트용 SDD 작업 절차](AGENTS.md#에이전트용-sdd-작업-절차)를 따른다. 별도의 등급 기준을 이 파일에 복제하지 않는다.
