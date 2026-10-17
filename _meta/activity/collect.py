@@ -223,12 +223,14 @@ class GitHub:
         raise SafeError()
 
 
-def discover_authenticated_repositories(api, since, with_lines=False):
+def discover_authenticated_repositories(api, since, with_lines=False, expected_login=None):
     """Only token-visible GitHub repositories; never serialize their identities."""
     identity = api.get("/user")
     require(type(identity) is dict)
     login = identity.get("login")
     require(type(login) is str and re.fullmatch(r"[A-Za-z0-9-]{1,39}", login))
+    if expected_login is not None:
+        require(type(expected_login) is str and login.casefold() == expected_login.casefold())
 
     # GET /user/repos is permission-scoped for fine-grained PATs and includes
     # owner, collaborator and organization-member repositories. Fetch ALL pages.
@@ -399,7 +401,8 @@ def update(args):
         require(type(codex) is dict and len(codex.get("daily", [])) > 0)
         since = codex["daily"][0]["date"]
         api = GitHub(os.environ.get("ACTIVITY_READ_TOKEN"))
-        config, private_count = discover_authenticated_repositories(api, since)
+        config, private_count = discover_authenticated_repositories(
+            api, since, expected_login=os.environ.get("ACTIVITY_EXPECTED_GITHUB_LOGIN"))
         data["github"] = collect_github(api, config, args.through)
         print("GitHub collected from %d token-accessible repositories (%d private)."
               % (len(config["repositories"]), private_count))
