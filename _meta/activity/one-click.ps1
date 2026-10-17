@@ -188,18 +188,18 @@ try {
     Write-Host ''
     Write-Host '[1/4] Codex 통계 실시간 조회 및 검증'
     $analyzer = Initialize-AnalyzerShim
-    Invoke-Collector $python @('codex', '--analyzer', $analyzer)
+    Invoke-Collector -python $python -arguments @('codex', '--analyzer', $analyzer)
 
     Write-Host '[2/4] GitHub 공개·비공개 저장소 활동 집계 (완료된 KST 날짜)'
     $env:ACTIVITY_READ_TOKEN = Get-PrivateSecret $readTokenFile
     try {
-        Invoke-Collector $python @('github', '--config', $configFile)
+        Invoke-Collector -python $python -arguments @('github', '--config', $configFile)
     } finally {
         Remove-Item Env:ACTIVITY_READ_TOKEN -ErrorAction SilentlyContinue
     }
 
     Write-Host '[3/4] 공개 숫자만 최종 검증'
-    Invoke-Collector $python @('validate')
+    Invoke-Collector -python $python -arguments @('validate')
 
     Write-Host '[4/4] 블로그에 자동 게시'
     Publish-SafeJson
