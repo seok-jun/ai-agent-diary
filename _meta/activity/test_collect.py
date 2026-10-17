@@ -229,5 +229,114 @@ class GitHubTests(unittest.TestCase):
             c.validate(data)
 
 
+
+class AutoDiscoveryTests(unittest.TestCase):
+    class FakeAuthenticatedAPI(FakeAPI):
+        def __init__(self, repositories=None, login="sample-user", commits=None):
+            super().__init__(commits)
+            self.repos = repositories if repositories is not None else [
+                {"full_name": "PrivateCompany/Internal", "private": True},
+                {"full_name": "Sample/Open", "private": False},
+            ]
+            self.login = login
+            self.discovery_params = None
+
+        def get(self, path, params=None):
+            if path == "/user":
+                return {"login": self.login, "email": CANARY}
+            return super().get(path, params)
+
+        def pages(self, path, params=None, stop_before=None):
+            if path == "/user/repos":
+                self.discovery_params = params
+                return iter(self.repos)
+            return super().pages(path, params, stop_before)
+
+    def test_all_token_visible_public_and_private_repos_are_discovered(self):
+        api = self.FakeAuthenticatedAPI()
+        config, private_count = c.discover_authenticated_repositories(api, DAY)
+        self.assertEqual(config["login"], "sample-user")
+        self.assertEqual(config["repositories"],
+                         ["PrivateCompany/Internal", "Sample/Open"])
+        self.assertEqual(private_count, 1)
+        self.assertEqual(config["since"], DAY)
+        self.assertFalse(config["withLines"])
+        self.assertIn("organization_member", api.discovery_params["affiliation"])
+        self.assertEqual(api.discovery_params["visibility"], "all")
+        aggregated = c.collect_github(api, config, DAY, "2026-10-02")
+        document = json.dumps(aggregated)
+        for secret in (CANARY, "PrivateCompany", "Internal", "Sample/Open"):
+            self.assertNotIn(secret, document)
+        self.assertEqual(aggregated["daily"][0]["commits"], 1)
+        self.assertEqual(aggregated["daily"][0]["mergedPrs"], 2)
+
+    def test_auto_mode_uses_codex_oldest_date_without_any_manual_config(self):
+        with tempfile.TemporaryDirectory() as folder:
+            public_path = Path(folder) / "data.json"
+            base = {"schemaVersion": 1, "timezone": "Asia/Seoul",
+                    "codex": c.sanitize_codex(codex()), "github": None}
+            c.save_public(base, public_path)
+            api = self.FakeAuthenticatedAPI()
+            stdout = io.StringIO()
+            with patch.object(c, "OUTPUT", public_path), \
+                    patch.object(c, "GitHub", return_value=api), \
+                    patch.dict(c.os.environ, {"ACTIVITY_READ_TOKEN": "secret"}), \
+                    contextlib.redirect_stdout(stdout):
+                self.assertEqual(c.main(["github-auto", "--through", DAY]), 0)
+            saved = json.loads(public_path.read_text())
+            self.assertEqual(saved["github"]["from"], DAY)
+            self.assertEqual(saved["github"]["through"], DAY)
+            self.assertIn("2 token-accessible repositories (1 private)", stdout.getvalue())
+            for secret in (CANARY, "PrivateCompany", "Internal"):
+                self.assertNotIn(secret, public_path.read_text())
+
+    def test_auto_mode_without_codex_reference_fails_without_publishing(self):
+        with tempfile.TemporaryDirectory() as folder:
+            public_path = Path(folder) / "data.json"
+            base = {"schemaVersion": 1, "timezone": "Asia/Seoul",
+                    "codex": None, "github": None}
+            c.save_public(base, public_path)
+            original = public_path.read_bytes()
+            with patch.object(c, "OUTPUT", public_path), \
+                    patch.dict(c.os.environ, {"ACTIVITY_READ_TOKEN": "secret"}), \
+                    contextlib.redirect_stderr(io.StringIO()):
+                self.assertEqual(c.main(["github-auto", "--through", DAY]), 1)
+            self.assertEqual(public_path.read_bytes(), original)
+
+    def test_invalid_or_duplicate_discovery_fails_closed(self):
+        cases = [
+            self.FakeAuthenticatedAPI(login="wrong user"),
+            self.FakeAuthenticatedAPI(repositories=[]),
+            self.FakeAuthenticatedAPI(repositories=[
+                {"full_name": "Sample/A", "private": True},
+                {"full_name": "sample/a", "private": False}]),
+            self.FakeAuthenticatedAPI(repositories=[
+                {"full_name": "Sample/A", "private": "yes"}]),
+        ]
+        for api in cases:
+            with self.subTest(api=api):
+                with self.assertRaises(c.SafeError):
+                    c.discover_authenticated_repositories(api, DAY)
+
+    def test_automatic_publisher_commit_is_not_counted(self):
+        auto_commit = commit()
+        auto_commit["commit"]["message"] = "Update safe AI development activity aggregates"
+        result = c.collect_github(
+            FakeAPI([auto_commit]),
+            config(False),
+            DAY,
+            "2026-10-02",
+        )
+        self.assertEqual(result["daily"][0]["commits"], 0)
+
+    def test_empty_repository_still_allows_issue_and_pr_count(self):
+        class EmptyFake(FakeAPI):
+            def get(self, path, params=None):
+                return {"default_branch": None}
+        result = c.collect_github(EmptyFake(), config(False), DAY, "2026-10-02")
+        self.assertEqual(result["daily"][0]["commits"], 0)
+        self.assertEqual(result["daily"][0]["closedIssues"], 1)
+
+
 if __name__ == "__main__":
     unittest.main()
