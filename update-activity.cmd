@@ -4,7 +4,7 @@ chcp 65001 >nul
 cd /d "%~dp0"
 set "ARGS="
 if /I "%~1"=="--scheduled" set "ARGS=-Scheduled"
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0_meta\activity\one-click.ps1" %ARGS%
+powershell.exe -NoProfile -ExecutionPolicy RemoteSigned -File "%~dp0_meta\activity\one-click.ps1" %ARGS%
 set "RESULT=%ERRORLEVEL%"
 if "%RESULT%"=="0" (
   echo.
