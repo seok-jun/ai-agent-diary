@@ -183,7 +183,7 @@ class GitHub:
         self.token, self.budget = token, budget
 
     def get(self, path, params=None):
-        require(self.budget > 0 and path.startswith("/repos/"))
+        require(self.budget > 0 and (path.startswith("/repos/") or path in ("/user", "/user/repos")))
         self.budget -= 1
         url = "https://api.github.com" + path
         if params:
@@ -200,6 +200,11 @@ class GitHub:
         try:
             with urllib.request.build_opener(NoRedirect).open(request, timeout=30) as response:
                 return decode(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as error:
+            # GitHub returns 409 for commits on an uninitialized repository.
+            if error.code == 409 and path.endswith("/commits"):
+                return []
+            raise SafeError() from None
         except (urllib.error.URLError, OSError, UnicodeError):
             raise SafeError() from None
 
@@ -218,11 +223,49 @@ class GitHub:
         raise SafeError()
 
 
+def discover_authenticated_repositories(api, since, with_lines=False):
+    """Only token-visible GitHub repositories; never serialize their identities."""
+    identity = api.get("/user")
+    require(type(identity) is dict)
+    login = identity.get("login")
+    require(type(login) is str and re.fullmatch(r"[A-Za-z0-9-]{1,39}", login))
+
+    # GET /user/repos is permission-scoped for fine-grained PATs and includes
+    # owner, collaborator and organization-member repositories. Fetch ALL pages.
+    found = {}
+    for row in api.pages("/user/repos", {
+        "affiliation": "owner,collaborator,organization_member",
+        "visibility": "all",
+        "sort": "full_name",
+        "direction": "asc",
+    }):
+        require(type(row) is dict)
+        name = row.get("full_name")
+        private = row.get("private")
+        require(type(name) is str and re.fullmatch(
+            r"[A-Za-z0-9-]+/[A-Za-z0-9_.-]+", name))
+        require(type(private) is bool)
+        key = name.casefold()
+        require(key not in found)
+        found[key] = (name, private)
+
+    require(1 <= len(found) <= 1000)
+    config = {
+        "login": login,
+        "repositories": sorted((value[0] for value in found.values()),
+                               key=str.casefold),
+        "since": date(since),
+        "withLines": with_lines,
+    }
+    parse_config(config)
+    return config, sum(private for _, private in found.values())
+
+
 def parse_config(raw):
     keys(raw, ("login", "repositories", "since", "withLines"))
     require(type(raw["login"]) is str and re.fullmatch(r"[A-Za-z0-9-]{1,39}", raw["login"]))
     repos = raw["repositories"]
-    require(type(repos) is list and 1 <= len(repos) <= 100)
+    require(type(repos) is list and 1 <= len(repos) <= 1000)
     for repo in repos:
         require(type(repo) is str and re.fullmatch(r"[A-Za-z0-9-]+/[A-Za-z0-9_.-]+", repo))
         require(repo.split("/")[1] not in (".", ".."))
@@ -256,12 +299,20 @@ def collect_github(api, config, through, as_of=None):
         base = "/repos/" + repo
         # Fail on inaccessible or empty repos rather than silently publishing partial counts.
         meta = api.get(base)
-        require(type(meta) is dict and type(meta.get("default_branch")) is str)
-        commits = api.pages(base + "/commits", {"author": config["login"],
-            "sha": meta["default_branch"], "since": start.isoformat(),
+        require(type(meta) is dict)
+        default_branch = meta.get("default_branch")
+        require(default_branch is None or (type(default_branch) is str and default_branch))
+        commits = (api.pages(base + "/commits", {"author": config["login"],
+            "sha": default_branch, "since": start.isoformat(),
             "until": (end - dt.timedelta(seconds=1)).isoformat()})
+                   if default_branch else ())
         for commit in commits:
             if not mine(commit.get("author")):
+                continue
+            # The dashboard publisher commits with the user PAT. Exclude this
+            # bookkeeping commit so it does not inflate development activity.
+            if commit.get("commit", {}).get("message", "").splitlines()[0:1] == [
+                    "Update safe AI development activity aggregates"] :
                 continue
             row = bucket(commit["commit"]["committer"]["date"])
             sha = commit.get("sha")
@@ -301,6 +352,10 @@ def parser():
     source = codex.add_mutually_exclusive_group(required=True)
     source.add_argument("--input", help="Private JSON file outside checkout")
     source.add_argument("--analyzer", help="Already installed, trusted executable path")
+    auto = commands.add_parser("github-auto",
+                               help="Automatically collect every token-accessible repository")
+    auto.add_argument("--through",
+                      default=(dt.datetime.now(KST).date()-dt.timedelta(days=1)).isoformat())
     github = commands.add_parser("github")
     github.add_argument("--config", help="Private config file outside checkout; otherwise ACTIVITY_CONFIG_JSON")
     github.add_argument("--through", default=(dt.datetime.now(KST).date()-dt.timedelta(days=1)).isoformat())
@@ -337,6 +392,17 @@ def update(args):
             require(process.returncode == 0)
             raw = process.stdout.decode("utf-8-sig")
         data["codex"] = sanitize_codex(decode(raw))
+    elif args.command == "github-auto":
+        # Align GitHub daily stats to the oldest *live* Codex activity bucket.
+        # No username, repository list or start date is requested from the user.
+        codex = data.get("codex")
+        require(type(codex) is dict and len(codex.get("daily", [])) > 0)
+        since = codex["daily"][0]["date"]
+        api = GitHub(os.environ.get("ACTIVITY_READ_TOKEN"))
+        config, private_count = discover_authenticated_repositories(api, since)
+        data["github"] = collect_github(api, config, args.through)
+        print("GitHub collected from %d token-accessible repositories (%d private)."
+              % (len(config["repositories"]), private_count))
     elif args.command == "github":
         raw = (private_file(args.config).read_text(encoding="utf-8-sig")
                if args.config else os.environ.get("ACTIVITY_CONFIG_JSON", ""))
