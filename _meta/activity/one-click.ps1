@@ -43,7 +43,7 @@ function Get-PrivateSecret([string]$source) {
 
 function Add-DailySchedule {
     try {
-        $actionArgs = '-NoProfile -ExecutionPolicy Bypass -File "' + $PSCommandPath + '" -Scheduled'
+        $actionArgs = '-NoProfile -ExecutionPolicy RemoteSigned -File "' + $PSCommandPath + '" -Scheduled'
         $action = New-ScheduledTaskAction -Execute "$env:WINDIR\System32\WindowsPowerShell\v1.0\powershell.exe" -Argument $actionArgs
         $trigger = New-ScheduledTaskTrigger -Daily -At '23:30'
         $settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Minutes 30)
@@ -137,7 +137,7 @@ function Publish-SafeJson {
     }
     $uri = 'https://api.github.com/repos/' + $targetRepo + '/contents/' + $targetPath
     try {
-        $remote = Invoke-RestMethod -Uri ($uri + '?ref=' + $targetBranch) -Headers $headers -Method Get -TimeoutSec 30
+        $remote = Invoke-RestMethod -Uri ($uri + '?ref=' + $targetBranch) -Headers $headers -Method Get -MaximumRedirection 0 -TimeoutSec 30
         if (-not $remote.sha -or -not $remote.content) { throw 'invalid remote data' }
         $remote64 = [regex]::Replace([string]$remote.content, '\s', '')
         if ($remote64 -eq $base64) {
@@ -150,7 +150,7 @@ function Publish-SafeJson {
             sha = [string]$remote.sha
             branch = $targetBranch
         } | ConvertTo-Json -Depth 5 -Compress
-        $result = Invoke-RestMethod -Uri $uri -Headers $headers -Method Put -ContentType 'application/json; charset=utf-8' -Body ([Text.Encoding]::UTF8.GetBytes($body)) -TimeoutSec 60
+        $result = Invoke-RestMethod -Uri $uri -Headers $headers -Method Put -ContentType 'application/json; charset=utf-8' -Body ([Text.Encoding]::UTF8.GetBytes($body)) -MaximumRedirection 0 -TimeoutSec 60
         if (-not $result.commit.sha) { throw 'missing commit confirmation' }
         Write-Host '게시 완료! main의 숫자 통계가 갱신되었습니다. Pages 배포는 GitHub가 처리합니다.'
     } catch {
@@ -177,10 +177,12 @@ try {
 
     Write-Host '[2/4] GitHub 계정 및 접근 가능 저장소 자동 검색 후 활동 집계'
     $env:ACTIVITY_READ_TOKEN = Get-PrivateSecret $readTokenFile
+    $env:ACTIVITY_EXPECTED_GITHUB_LOGIN = ($targetRepo -split '/')[0]
     try {
         Invoke-Collector -python $python -arguments @('github-auto')
     } finally {
         Remove-Item Env:ACTIVITY_READ_TOKEN -ErrorAction SilentlyContinue
+        Remove-Item Env:ACTIVITY_EXPECTED_GITHUB_LOGIN -ErrorAction SilentlyContinue
     }
 
     Write-Host '[3/4] 공개 숫자만 최종 검증'
@@ -198,4 +200,5 @@ try {
     exit 1
 } finally {
     Remove-Item Env:ACTIVITY_READ_TOKEN -ErrorAction SilentlyContinue
+    Remove-Item Env:ACTIVITY_EXPECTED_GITHUB_LOGIN -ErrorAction SilentlyContinue
 }
