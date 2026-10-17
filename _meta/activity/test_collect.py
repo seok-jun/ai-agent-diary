@@ -270,6 +270,15 @@ class AutoDiscoveryTests(unittest.TestCase):
         self.assertEqual(aggregated["daily"][0]["commits"], 1)
         self.assertEqual(aggregated["daily"][0]["mergedPrs"], 2)
 
+    def test_wrong_authenticated_identity_stops_before_private_listing(self):
+        api = self.FakeAuthenticatedAPI(login="sample-user")
+        with patch.object(api, "pages", wraps=api.pages) as list_pages:
+            with self.assertRaises(c.SafeError):
+                c.discover_authenticated_repositories(
+                    api, DAY, expected_login="another-user"
+                )
+            list_pages.assert_not_called()
+
     def test_auto_mode_uses_codex_oldest_date_without_any_manual_config(self):
         with tempfile.TemporaryDirectory() as folder:
             public_path = Path(folder) / "data.json"
