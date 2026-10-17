@@ -14,6 +14,7 @@ AI Agent 개발, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기�
 - [단독 글](./docs/standalone/README.md) — 개발 및 AI 활용에 관한 독립 문서 10편
 - [AI에게 물어본 인간의 미래](./docs/series/ai-future-dialogue/README.md) — 프롤로그와 본편 7편으로 구성된 연재
 - [소개](./docs/about.md) — 글쓴이와 이 사이트에서 다루는 내용
+- [AI 개발 활동](./docs/activity.md) — Codex 토큰과 GitHub 합산 집계 ([로컬 수집·인증·스케줄 안내](./_meta/activity/README.md))
 
 ## 파일명 규칙
 

@@ -1,0 +1,9 @@
+docs/_site/
+docs/.jekyll-cache/
+docs/.bundle/
+docs/vendor/
+docs/Gemfile.lock
+__pycache__/
+*.pyc
+.activity-private/
+docs/assets/activity/.collect.lock

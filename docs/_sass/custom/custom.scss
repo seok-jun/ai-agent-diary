@@ -9,6 +9,48 @@ $archive-primary: #16a34a;
 $archive-primary-dark: #15803d;
 $archive-accent: #059669;
 
+// Activity dashboard: scope all styles to avoid changing article layouts.
+.activity-dashboard {
+  margin: 2rem 0;
+  [hidden] { display: none !important; }
+  #activity-status, .activity-muted { color: #526159; font-size: 0.85rem; }
+  .activity-hero {
+    padding: 2rem;
+    background: linear-gradient(135deg, #e7f6ec, #f3faf5);
+    border: 1px solid #b6d9c1;
+    border-radius: 1.1rem;
+    h2 { margin: 1rem 0 0.5rem; font-size: 1rem; }
+    p { margin-bottom: 0; color: #526159; font-size: 0.85rem; }
+  }
+  .activity-eyebrow { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; color: #267146; }
+  .activity-total { display: block; font-size: clamp(1.8rem, 5vw, 3.1rem); letter-spacing: -0.04em; color: #174a2c; overflow-wrap: anywhere; }
+  .activity-records, .activity-metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; margin: 1rem 0 2rem; }
+  .activity-card {
+    padding: 1rem; border: 1px solid #d7e3db; border-radius: 0.8rem; background: #fff;
+    .activity-card-title { font-size: 0.8rem; color: #526159; }
+    strong { display: block; margin: 0.35rem 0; font-size: 1.2rem; color: #20392a; overflow-wrap: anywhere; }
+    small { display: block; color: #526159; font-size: 0.7rem; }
+  }
+  .activity-controls { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+  label { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; }
+  input, select { min-height: 2.5rem; max-width: 100%; padding: 0.4rem; border: 1px solid #acbdb2; border-radius: 0.4rem; background: white; color: #20392a; font: inherit; }
+  input:focus-visible, select:focus-visible, .activity-table-wrap:focus-visible { outline: 3px solid #267146; outline-offset: 3px; }
+  .activity-chart { padding: 1rem; border: 1px solid #d7e3db; border-radius: 0.8rem; background: #fff; }
+  .activity-bars { height: 150px; display: flex; align-items: flex-end; gap: 3px; border-bottom: 1px solid #acbdb2; }
+  .activity-bar { flex: 1; min-width: 0; background: #29844a; border-radius: 3px 3px 0 0; }
+  .activity-bar--missing { background: #dce4df; }
+  .activity-chart-axis { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.65rem; color: #526159; }
+  .activity-table-wrap { max-height: 30rem; overflow: auto; margin-bottom: 2rem; }
+  .activity-table { display: table; min-width: 38rem; width: 100%; font-size: 0.75rem; margin: 0; }
+  .activity-table caption { text-align: left; padding: 0.75rem 0; color: #526159; }
+  .activity-table th, .activity-table td { white-space: nowrap; text-align: right; }
+  .activity-table th:first-child { text-align: left; }
+  @media (max-width: 480px) {
+    .activity-hero { padding: 1.25rem; }
+    .activity-card { padding: 0.75rem; strong { font-size: 1rem; } }
+  }
+}
+
 body {
   background:
     radial-gradient(circle at 15% 0%, rgba(22, 163, 74, 0.08), transparent 32rem),
