@@ -8,7 +8,6 @@ $root = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..'))
 $collector = Join-Path $PSScriptRoot 'collect.py'
 $dataFile = Join-Path $root 'docs\assets\activity\data.json'
 $privateDir = Join-Path $env:LOCALAPPDATA 'AIActivityDashboard'
-$configFile = Join-Path $privateDir 'github.json'
 $readTokenFile = Join-Path $privateDir 'read-token.dpapi'
 $writeTokenFile = Join-Path $privateDir 'publish-token.dpapi'
 $consentFile = Join-Path $privateDir 'publish-consent.txt'
@@ -62,32 +61,18 @@ function Initialize-Settings {
     Write-Host ''
     Write-Host '=== AI 활동 대시보드: 최초 1회 설정 ==='
     Write-Host '아래 설정과 토큰은 이 PC의 개인 폴더에만 저장됩니다.'
+    Write-Host 'GitHub 사용자와 Public/Private 저장소는 키로 자동 조회합니다.'
     Write-Host '프로젝트명, PR 제목, 커밋 메시지는 공개하지 않습니다.'
-    $login = Ask-Default 'GitHub 사용자 ID' 'seok-jun'
-    if ($login -notmatch '^[A-Za-z0-9-]{1,39}$') { throw '유효한 GitHub 사용자 ID를 입력해 주세요.' }
-    $reposValue = Ask-Default '집계할 저장소 (owner/name, 여러 개면 쉼표)' 'seok-jun/ai-agent-diary'
-    $repositories = @($reposValue -split '[,;\s]+' | Where-Object { -not [string]::IsNullOrWhiteSpace($_) })
-    if ($repositories.Count -lt 1) { throw '집계할 저장소가 없습니다.' }
-    foreach ($repo in $repositories) {
-        if ($repo -notmatch '^[A-Za-z0-9-]+/[A-Za-z0-9_.-]+$') { throw '저장소는 owner/name 형식이어야 합니다.' }
-    }
-    $since = Ask-Default 'GitHub 집계 시작일 (YYYY-MM-DD)' '2026-09-01'
-    $dateValue = [datetime]::MinValue
-    if (-not [datetime]::TryParseExact($since, 'yyyy-MM-dd', [Globalization.CultureInfo]::InvariantCulture, [Globalization.DateTimeStyles]::None, [ref]$dateValue)) {
-        throw '시작일은 YYYY-MM-DD 형식으로 입력해 주세요.'
-    }
-    $lines = (Ask-Default '코드 추가/삭제 줄 수까지 수집할까요? (요청량 증가) y/N' 'N') -match '^[yY]'
-    $config = @{ login = $login; repositories = $repositories; since = $since; withLines = $lines } | ConvertTo-Json -Depth 4
     Write-Host ''
     Write-Host '브라우저에서 GitHub Fine-grained PAT 2개를 준비하세요.'
-    Write-Host '  A. 읽기 전용: 선택 저장소 Contents / Pull requests / Issues = Read'
+    Write-Host '  A. 읽기 전용: 집계할 모든 저장소 Contents / Pull requests / Issues = Read'
+    Write-Host '       토큰이 허용한 저장소만 자동 발견됩니다. All repositories 권한 설정을 확인하세요.'
     Write-Host '  B. 게시 전용: ai-agent-diary 하나만 Contents = Read and write'
     Write-Host '토큰은 공용 저장소가 아닌 이 PC 사용자 계정 DPAPI로 암호화합니다.'
     $consent = Ask-Default '검증된 날짜/숫자 집계를 공개 블로그 main에 자동 게시할까요? y/N' 'N'
     if ($consent -notmatch '^[yY]$') { throw '공개 게시 동의가 없어 설정을 취소했습니다.' }
     Save-PrivateSecret 'A. 집계용 읽기 전용 PAT' $readTokenFile
     Save-PrivateSecret 'B. 블로그 게시 전용 PAT' $writeTokenFile
-    [IO.File]::WriteAllText($configFile, $config, (New-Object System.Text.UTF8Encoding($false)))
     [IO.File]::WriteAllText($consentFile, 'approved')
     Write-Host '개인 설정이 저장되었습니다.'
     $schedule = Ask-Default '매일 23:30 자동 갱신을 예약할까요? y/N' 'N'
@@ -181,7 +166,7 @@ try {
         if ($Scheduled) { throw '최초 설정이 필요합니다. update-activity.cmd를 직접 실행하세요.' }
         Initialize-Settings
     }
-    foreach ($file in @($readTokenFile, $writeTokenFile, $configFile, $consentFile)) {
+    foreach ($file in @($readTokenFile, $writeTokenFile, $consentFile)) {
         if (-not (Test-Path -LiteralPath $file)) { throw '개인 설정이 불완전합니다. configure-activity.cmd를 실행하세요.' }
     }
     $python = Get-Python
@@ -190,10 +175,10 @@ try {
     $analyzer = Initialize-AnalyzerShim
     Invoke-Collector -python $python -arguments @('codex', '--analyzer', $analyzer)
 
-    Write-Host '[2/4] GitHub 공개·비공개 저장소 활동 집계 (완료된 KST 날짜)'
+    Write-Host '[2/4] GitHub 계정 및 접근 가능 저장소 자동 검색 후 활동 집계'
     $env:ACTIVITY_READ_TOKEN = Get-PrivateSecret $readTokenFile
     try {
-        Invoke-Collector -python $python -arguments @('github', '--config', $configFile)
+        Invoke-Collector -python $python -arguments @('github-auto')
     } finally {
         Remove-Item Env:ACTIVITY_READ_TOKEN -ErrorAction SilentlyContinue
     }
