@@ -4,7 +4,7 @@ parent: Agent SDD 개발 일지
 nav_order: 21
 permalink: /series/agent-sdd/021-published-twice-in-two-hours/
 date: 2026-10-18 21:00:00 +0900
-description: "개인 프로젝트에만 쓰던 하네스 방법론을 회사 일에도 붙여 두 곳에서 데이터를 모으려고, 처음으로 공개 저장소에 냈다. 문서만 담은 preview.1을 새벽 2시 23분에 냈고, 바로 구멍 세 개가 나왔다. 글만으로는 Agent에게 일을 시킬 수 없어서, 앱에서 다듬어 온 절차와 Skill을 옮겨 4시 26분에 preview.2를 다시 냈다."
+description: "하네스 방법론을 회사 일에도 붙여 두 곳에서 데이터를 모으려고 처음 공개 저장소에 냈다. 문서만 담은 preview.1에서 바로 구멍 세 개가 나왔고, 앱에서 다듬어 온 절차와 Skill을 옮겨 두 시간 뒤 preview.2를 다시 냈다."
 summary: "문서만 담은 첫 공개본을 내고, 구멍과 빈자리를 보고 두 시간 만에 절차·Skill·설치 도구까지 담아 다시 낸 과정."
 image: /assets/images/agent-sdd/021-published-twice-in-two-hours/thumbnail.png
 ---
