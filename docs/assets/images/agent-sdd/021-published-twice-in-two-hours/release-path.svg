@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 380" width="820" height="380" role="img" aria-label="공개 경로. 연구 저장소의 공통 원칙은 검토한 파일만 공개 저장소의 v1-preview branch로 옮겨 10월 17일 2시 23분에 preview.1 태그를 달았다. 문서 세 개와 안내뿐이었다. 두 시간 뒤 4시 26분, 앱 전용 규칙 저장소의 실행 절차와 Skill, eval을 제품 종속 부분만 덜어 내 옮기고 설치 도구와 B1~B3 수정을 더해 preview.2 태그를 달았다. 공개 main은 v0.2 그대로다. 회사 프로젝트는 10월 19일부터 태그를 고정해 복사하고 설치 도구로 프로젝트 문서를 생성한다. 고정 사본은 고치지 않고 프로젝트 값만 채우며 작업 기록은 회사에 남는다. 공통에 빠진 것은 회사 공개 정책을 확인한 뒤 일반화한 것만 다음 preview로 올린다. 프로젝트가 연구 저장소를 직접 읽는 길은 없다" font-family='Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif'>
+  <defs>
+    <style>
+      .bt { font-size: 13px; font-weight: 700; }
+      .tx { font-size: 12px; fill: #424a53; }
+      .dt { font-size: 12px; fill: #57606a; }
+      .cp { font-size: 12px; fill: #57606a; }
+    </style>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="820" height="380" fill="#ffffff"/>
+
+  <!-- sources -->
+  <rect x="24" y="84" width="176" height="64" rx="10" fill="#fff8c5" stroke="#d4a72c" stroke-width="1.4"/>
+  <text class="bt" x="40" y="104" fill="#7d4e00">연구 저장소</text>
+  <text class="tx" x="40" y="122">공통 원칙 · 관측 규칙</text>
+  <text class="dt" x="40" y="140">비공개 · 설계와 검증</text>
+
+  <rect x="24" y="158" width="176" height="86" rx="10" fill="#fbefff" stroke="#c297ff" stroke-width="1.4"/>
+  <text class="bt" x="40" y="178" fill="#6639ba">앱 전용 규칙 저장소</text>
+  <text class="tx" x="40" y="196">실행 절차 · Skill · eval</text>
+  <text class="tx" x="40" y="214">한 프로젝트에서 다듬음</text>
+  <text class="dt" x="40" y="232">비공개</text>
+
+  <!-- sources -> public -->
+  <line x1="202" y1="116" x2="286" y2="116" stroke="#57606a" stroke-width="1.6" marker-end="url(#ah)"/>
+  <text class="cp" x="234" y="106" text-anchor="middle">검토한</text>
+  <text class="cp" x="234" y="134" text-anchor="middle">파일만</text>
+  <line x1="202" y1="201" x2="286" y2="201" stroke="#57606a" stroke-width="1.6" marker-end="url(#ah)"/>
+  <text class="cp" x="238" y="191" text-anchor="middle">종속 부분</text>
+  <text class="cp" x="238" y="219" text-anchor="middle">덜어 내고</text>
+
+  <!-- public repo -->
+  <rect x="276" y="20" width="236" height="300" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.2"/>
+  <text class="bt" x="290" y="42" fill="#1f2328">공개 저장소</text>
+  <rect x="290" y="54" width="208" height="200" rx="8" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/>
+  <text class="bt" x="302" y="74" fill="#1a7f37">v1-preview branch</text>
+
+  <rect x="302" y="84" width="184" height="64" rx="7" fill="#ffffff" stroke="#8ddb9f"/>
+  <text class="bt" x="314" y="104" fill="#1f2328">v1.0.0-preview.1</text>
+  <text class="dt" x="314" y="122">10/17 02:23</text>
+  <text class="tx" x="314" y="140">문서 3개 + 안내</text>
+
+  <rect x="302" y="158" width="184" height="86" rx="7" fill="#ffffff" stroke="#4ac26b" stroke-width="1.6"/>
+  <text class="bt" x="314" y="178" fill="#1f2328">v1.0.0-preview.2</text>
+  <text class="dt" x="314" y="196">04:26 · 두 시간 뒤</text>
+  <text class="tx" x="314" y="214">+ 절차 · Skill · eval</text>
+  <text class="tx" x="314" y="232">+ 설치 도구 · B1~B3 수정</text>
+
+  <rect x="290" y="264" width="208" height="44" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <text class="bt" x="302" y="283" fill="#424a53">main</text>
+  <text class="tx" x="302" y="300">v0.2 그대로</text>
+
+  <!-- public -> company -->
+  <line x1="514" y1="162" x2="596" y2="162" stroke="#57606a" stroke-width="1.6" marker-end="url(#ah)"/>
+  <text class="cp" x="555" y="152" text-anchor="middle">태그 고정</text>
+  <text class="cp" x="555" y="180" text-anchor="middle">복사 후 생성</text>
+
+  <!-- company project -->
+  <rect x="600" y="110" width="196" height="104" rx="10" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.4"/>
+  <text class="bt" x="616" y="134" fill="#0550ae">회사 프로젝트</text>
+  <text class="dt" x="726" y="134">10/19~</text>
+  <text class="tx" x="616" y="156">고정 사본: 고치지 않는다</text>
+  <text class="tx" x="616" y="174">project.json: 프로젝트 값</text>
+  <text class="dt" x="616" y="196">작업 기록은 회사에 남는다</text>
+
+  <!-- return path: company -> next preview -->
+  <path d="M698,216 L698,354 L400,354 L400,326" fill="none" stroke="#57606a" stroke-width="1.4" stroke-dasharray="5 3" marker-end="url(#ah)"/>
+  <text class="cp" x="549" y="346" text-anchor="middle">공개 정책 확인 뒤 일반화한 것만</text>
+  <text class="cp" x="392" y="346" text-anchor="end">다음 preview</text>
+
+  <!-- no direct read -->
+  <text class="dt" x="24" y="278" fill="#cf222e">프로젝트가 연구 저장소를</text>
+  <text class="dt" x="24" y="296" fill="#cf222e">직접 읽는 길은 없다 (18편)</text>
+</svg>
