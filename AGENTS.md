@@ -18,7 +18,9 @@ bundle exec jekyll build --baseurl "/ai-agent-diary"
 
 ## Markdown 스타일 및 이름 규칙
 
-파일은 UTF-8을 사용하고 YAML과 SCSS는 공백 두 칸으로 들여쓴다. 모든 게시 글은 front matter에 `title`, `parent`, `nav_order`, `permalink`를 정의하고, 바로 아래에 `title`과 동일한 H1 제목을 둔다. 연재 글은 `001-ai-task-grading.md`처럼 3자리 순번을 사용한다. 단독 글은 `YYYY-MM-DD-topic-slug.md` 형식을 따른다.
+파일은 UTF-8을 사용하고 YAML과 SCSS는 공백 두 칸으로 들여쓴다. 모든 게시 글은 front matter에 `title`, `parent`, `nav_order`, `permalink`를 정의하고, 바로 아래에 `title`과 동일한 H1 제목을 둔다.
+
+홈, 연재 목차, 단독 글 목차의 글 목록과 편수는 front matter에서 자동으로 만든다(`docs/_includes/post-row.html`). 목록에 쓰는 한 줄 설명은 `summary`에 적고, 없으면 `description`을 쓴다. 목록에서만 제목을 줄이려면 `list_title`을 쓴다. 연재 글은 `nav_order`가 편 번호이고, 단독 글은 `nav_order` 1이 가장 최근 글이다. 새 단독 글을 올릴 때는 기존 단독 글의 `nav_order`를 하나씩 뒤로 민다. 연재 목차의 묶음(기초 1~4편, 문서와 Skill 5~8편, 방법론과 재검증 9편 이후)은 `docs/series/agent-sdd/README.md`와 `docs/index.md`에 있다. 연재 글은 `001-ai-task-grading.md`처럼 3자리 순번을 사용한다. 단독 글은 `YYYY-MM-DD-topic-slug.md` 형식을 따른다.
 
 배포 페이지 링크는 `./001-ai-task-grading/`처럼 permalink와 후행 슬래시를 사용한다. `.md` 주소로 링크하지 않는다. 별도 요청이 없다면 한국어 본문과 출처 표기를 보존한다.
 

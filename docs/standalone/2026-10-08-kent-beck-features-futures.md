@@ -6,6 +6,7 @@ permalink: /standalone/2026-10-08-kent-beck-features-futures/
 date: 2026-10-08
 last_modified_at: 2026-10-09
 description: "켄트 백의 Prodacity 2026 강연을 기능과 변경 가능성 그래프, 가상 사례, 도식으로 풀어 읽는다. 후반에는 Adaptive Agentic SDD와 비교하며 명세, 검증, 다음 변경의 관계를 짚는다."
+summary: "Features와 Futures 그래프를 쉽게 풀고, 명세·검증·다음 변경의 관계를 Adaptive Agentic SDD와 비교."
 image: /assets/images/standalone/2026-10-08-kent-beck-features-futures/thumbnail.png
 ---
 

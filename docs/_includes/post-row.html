@@ -1,0 +1,14 @@
+{%- comment -%}
+  One row of a post list. Pass `post`; add `number=true` for series numbering.
+  Title: `list_title`, then `title`. Description: `summary`, then `description`.
+{%- endcomment -%}
+{%- assign row_post = include.post -%}
+<a class="series-row" href="{{ row_post.url | relative_url }}">
+  {%- if include.number %}
+  <span class="series-num">{{ row_post.nav_order | prepend: "0" | slice: -2, 2 }}</span>
+  {%- endif %}
+  <span class="series-body">
+    <span class="series-row-head"><span class="series-row-title">{{ row_post.list_title | default: row_post.title }}</span><span class="series-date">{{ row_post.date | date: "%Y.%m.%d" }}</span></span>
+    <span class="series-row-desc">{{ row_post.summary | default: row_post.description }}</span>
+  </span>
+</a>

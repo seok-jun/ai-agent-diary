@@ -5,6 +5,7 @@ nav_order: 19
 permalink: /series/agent-sdd/019-letting-agents-improve-the-method/
 date: 2026-10-16 12:30:00 +0900
 description: "Agent가 실제 작업에서 본 것을 근거로 방법론을 고치게 해 봤다. 고치려고 보니 근거가 될 기록부터 없었고, 정기 점검을 만들려다 손으로 먼저 해 보고 접었다. 남은 장치는 끝날 때 도는 한 줄짜리 점검이었다. 그 사이 17편에서 기계로 넘긴 서명 승인은 이틀 만에 뺐다."
+summary: "관측으로 방법론을 고치는 한 바퀴, 손으로 먼저 해 본 점검, 실제 15회 결과, 그리고 이틀 만에 뺀 서명 승인."
 image: /assets/images/agent-sdd/019-letting-agents-improve-the-method/thumbnail.png
 ---
 

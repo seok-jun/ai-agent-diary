@@ -6,6 +6,7 @@ permalink: /series/agent-sdd/008-skill-eval-validation/
 date: 2026-07-22
 last_modified_at: 2026-07-28
 description: "sdd-doc-scaffold Skill의 오작동을 계기로 Trigger·Non-trigger·Procedure Eval을 직접 실행하고, 베이스라인과 검증 비용, 실행형 테스트의 부작용까지 확인한 기록."
+summary: "Trigger·Non-trigger·Procedure 케이스를 직접 실행하며 베이스라인, 검증 비용, 실행형 테스트의 부작용을 확인하다."
 image: /assets/images/agent-sdd/008-skill-eval-validation/thumbnail.png
 ---
 

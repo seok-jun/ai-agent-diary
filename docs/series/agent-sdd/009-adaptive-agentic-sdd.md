@@ -5,6 +5,7 @@ nav_order: 9
 permalink: /series/agent-sdd/009-adaptive-agentic-sdd/
 date: 2026-09-01
 description: "기존 SDD 방식에 멀티 Agent 병렬 개발, 작업 격리, 검증 Gate를 실제로 적용해보면서 바뀐 운영 방식을 정리한 기록."
+summary: "멀티 Agent 병렬 개발과 작업 격리, 위험도별 검증 Gate를 실제 운영하며 바뀐 기준을 정리한 기록."
 image: /assets/images/agent-sdd/009-adaptive-agentic-sdd/thumbnail.png
 ---
 

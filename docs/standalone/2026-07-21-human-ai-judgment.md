@@ -5,6 +5,7 @@ nav_order: 7
 permalink: /standalone/2026-07-21-human-ai-judgment/
 date: 2026-07-21
 description: "AI의 판단을 인간이 충분히 이해하지 못하는 순간에도 인간을 최종 판단자라고 부를 수 있는지, 판단의 위임과 검증·책임의 경계를 묻는 글."
+summary: "AI가 판단하고 인간이 승인할 때, 검증 능력과 책임은 누구에게 남는지 묻다."
 image: /assets/images/standalone/2026-07-21-human-ai-judgment/thumbnail.png
 ---
 

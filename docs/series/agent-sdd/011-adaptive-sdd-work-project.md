@@ -5,6 +5,7 @@ nav_order: 11
 permalink: /series/agent-sdd/011-adaptive-sdd-work-project/
 date: 2026-09-21
 description: "Adaptive SDD를 실무 프로젝트에 다시 적용하며 리뷰 요청과 반환 형식, 스냅샷 기준, 사람이 실행하는 검증 문서를 손본 기록."
+summary: "실무에 다시 적용하며 리뷰 요청과 반환 형식, 스냅샷 기준, 사람이 실행하는 검증 문서를 다듬은 기록."
 image: /assets/images/agent-sdd/011-adaptive-sdd-work-project/thumbnail.png
 ---
 

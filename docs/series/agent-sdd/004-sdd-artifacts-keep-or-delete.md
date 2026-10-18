@@ -5,6 +5,7 @@ nav_order: 4
 permalink: /series/agent-sdd/004-sdd-artifacts-keep-or-delete/
 date: 2026-07-05
 description: "SDD로 개발하며 쌓인 requirements·plan·backlog 같은 산출물을, 병합 후 작업 폴더에 남기지 않을 것과 도메인 옆에 남길 것으로 나누는 기준."
+summary: "병합 후 작업 폴더에 남기지 않을 산출물과 도메인 옆 business 문서로 승격할 것을 가른다."
 image: /assets/images/agent-sdd/004-sdd-artifacts-keep-or-delete/thumbnail.png
 ---
 
