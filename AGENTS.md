@@ -22,6 +22,15 @@ bundle exec jekyll build --baseurl "/ai-agent-diary"
 
 배포 페이지 링크는 `./001-ai-task-grading/`처럼 permalink와 후행 슬래시를 사용한다. `.md` 주소로 링크하지 않는다. 별도 요청이 없다면 한국어 본문과 출처 표기를 보존한다.
 
+## 글의 근거와 코드 인용
+
+글의 근거가 어디서 왔는지에 따라 공개 범위가 다르다.
+
+- **회사 실무**(예: 1~11편의 제휴사 작업): 코드·스키마·도메인 세부를 싣지 않고 추상화해서 쓴다.
+- **작성자의 개인 프로젝트**(안드로이드 앱, 방법론 연구 저장소, 앱 전용 규칙 저장소 등): 코드, 규칙 원문, diff, 도구 출력을 직접 인용할 수 있다. 근거 저장소가 비공개라도 링크만 넣지 않을 뿐, 독자가 실물을 볼 수 있게 본문에 발췌해 싣는 쪽을 기본으로 한다.
+
+개인 프로젝트를 인용할 때도 키·토큰·키 지문, 개인 로컬 경로, 비공개 저장소 링크는 가린다. 본문이 일반 이름(앱 저장소, 연구 저장소, 앱 전용 규칙 저장소)으로 부르는 저장소는 발췌 안에서도 같은 이름으로 바꿔 적고, 긴 해시와 반복 항목은 `…`로 줄인다. 글마다 쓰는 게시 명세(`_meta/specs/`)에 공개 범위 제약을 적을 때는 앞 글의 추상도를 그대로 이어받지 말고 이 기준으로 다시 정한다.
+
 ## 에이전트용 SDD 작업 절차
 
 공통 Priority·SDD 등급 판정은 some-you 방법론의 고정 버전 `ba9df19dd2b8e20c2eded86bd0304db3ea3d42a0`에 있는 [공통 이슈 분류](https://github.com/seok-jun/some-you-adaptive-agentic-sdd/blob/ba9df19dd2b8e20c2eded86bd0304db3ea3d42a0/process/issue-priority.md)와 [SDD grade·일반 자동 격상](https://github.com/seok-jun/some-you-adaptive-agentic-sdd/blob/ba9df19dd2b8e20c2eded86bd0304db3ea3d42a0/process/sdd-workflow.md#sdd-grade)을 참조한다. 이 두 공통 분류 절을 적용하며 다른 제품의 전용 Skill·모듈 조건을 블로그에 도입하지 않는다. 공통 등급표는 이 저장소에 복제하지 않는다.
