@@ -22,6 +22,11 @@ $archive-accent: #059669;
     h2 { margin: 1rem 0 0.5rem; font-size: 1rem; }
     p { margin-bottom: 0; color: #526159; font-size: 0.85rem; }
   }
+  .activity-heroes { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 0.75rem; }
+  .activity-heroes .activity-total { font-size: clamp(1.6rem, 3vw, 2.3rem); overflow-wrap: normal; }
+  .activity-hero--claude { background: linear-gradient(135deg, #fbefe7, #fdf7f3); border-color: #e6c3ad; }
+  .activity-hero--claude .activity-eyebrow { color: #a24d24; }
+  .activity-hero--claude .activity-total { color: #6b2f13; }
   .activity-eyebrow { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; color: #267146; }
   .activity-total { display: block; font-size: clamp(1.8rem, 5vw, 3.1rem); letter-spacing: -0.04em; color: #174a2c; overflow-wrap: anywhere; }
   .activity-records, .activity-metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; margin: 1rem 0 2rem; }
@@ -45,7 +50,7 @@ $archive-accent: #059669;
   .activity-bars--closedIssues .activity-bar:not(.activity-bar--missing) { background: #9566b5; }
   .activity-chart-axis { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.65rem; color: #526159; }
   .activity-table-wrap { max-height: 30rem; overflow: auto; margin-bottom: 2rem; }
-  .activity-table { display: table; min-width: 38rem; width: 100%; font-size: 0.75rem; margin: 0; }
+  .activity-table { display: table; min-width: 44rem; width: 100%; font-size: 0.75rem; margin: 0; }
   .activity-table caption { text-align: left; padding: 0.75rem 0; color: #526159; }
   .activity-table th, .activity-table td { white-space: nowrap; text-align: right; }
   .activity-table th:first-child { text-align: left; }

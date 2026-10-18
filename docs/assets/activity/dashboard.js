@@ -16,14 +16,18 @@
   function select(data, mode, value) {
     const [start, end] = bounds(mode, value);
     const c = data.codex;
+    const a = data.claude;
     const g = data.github;
     const codexStart = c && c.daily.length ? c.daily[0].date : null;
+    const claudeStart = a && a.daily.length ? a.daily[0].date : null;
     const cCovered = c && codexStart && start <= c.asOf && end >= codexStart;
+    const aCovered = a && claudeStart && start <= a.asOf && end >= claudeStart;
     const gCovered = g && start <= g.through && end >= g.from;
     const cRows = cCovered ? c.daily.filter(r => start <= r.date && r.date <= end) : [];
     const gRows = gCovered ? g.daily.filter(r => start <= r.date && r.date <= end) : [];
     return {
       tokens: cCovered ? sum(cRows, "tokens") : null,
+      claudeTokens: aCovered ? sum(a.daily.filter(r => start <= r.date && r.date <= end), "tokens") : null,
       commits: gCovered ? sum(gRows, "commits") : null,
       mergedPrs: gCovered ? sum(gRows, "mergedPrs") : null,
       closedIssues: gCovered ? sum(gRows, "closedIssues") : null,
@@ -31,6 +35,7 @@
       deletions: gCovered && gRows.every(r => r.deletions !== null) ? sum(gRows, "deletions") : null,
       measured: sum(gRows, "measuredCommits"),
       partialCodex: !!(cCovered && mode !== "all" && (start < codexStart || end > c.asOf)),
+      partialClaude: !!(aCovered && mode !== "all" && (start < claudeStart || end > a.asOf)),
       partialGithub: !!(gCovered && mode !== "all" && (start < g.from || end > g.through))
     };
   }
@@ -39,7 +44,7 @@
     if (mode === "month") {
       const [start, end] = bounds(mode, value);
       const result = [];
-      const latest = [data.codex?.asOf, data.github?.through].filter(Boolean).sort().pop();
+      const latest = [data.codex?.asOf, data.claude?.asOf, data.github?.through].filter(Boolean).sort().pop();
       const last = latest && start <= latest && latest < end ? Number(latest.slice(-2)) : Number(end.slice(-2));
       for (let d = Number(start.slice(-2)); d <= last; d++) {
         const day = value + "-" + String(d).padStart(2, "0");
@@ -47,21 +52,24 @@
       }
       return result.reverse();
     }
-    const months = new Set([...(data.codex?.daily || []), ...(data.github?.daily || [])]
+    const months = new Set([...(data.codex?.daily || []), ...(data.claude?.daily || []), ...(data.github?.daily || [])]
       .map(r => r.date.slice(0, 7)));
     return Array.from(months).sort().reverse().map(month => ({label: month, ...select(data, "month", month)}));
   }
-  function comparison(data, mode, value) {
+  const SOURCES = {codex: ["codex"], claude: ["claude"], total: ["codex", "claude"]};
+  function comparison(data, mode, value, source = "codex") {
     const [requestedStart, requestedEnd] = bounds(mode, value);
-    const c = data.codex;
+    const tokenSources = SOURCES[source].map(key => data[key]);
     const g = data.github;
     const empty = {from: null, through: null, tokens: null, mergedPrs: null,
       closedIssues: null, prsPerMillion: null, issuesPerMillion: null};
-    if (!c?.daily.length || !g?.daily.length) return empty;
-    const from = [requestedStart, c.daily[0].date, g.from].sort().pop();
-    const through = [requestedEnd, c.asOf, g.through].sort()[0];
+    if (tokenSources.some(t => !t?.daily.length) || !g?.daily.length) return empty;
+    // A combined source compares only dates that Codex, Claude Code and GitHub all cover.
+    const from = [requestedStart, g.from, ...tokenSources.map(t => t.daily[0].date)].sort().pop();
+    const through = [requestedEnd, g.through, ...tokenSources.map(t => t.asOf)].sort()[0];
     if (from > through) return empty;
-    const tokens = sum(c.daily.filter(r => from <= r.date && r.date <= through), "tokens");
+    const tokens = tokenSources.reduce((total, t) =>
+      total + sum(t.daily.filter(r => from <= r.date && r.date <= through), "tokens"), 0);
     const github = g.daily.filter(r => from <= r.date && r.date <= through);
     const mergedPrs = sum(github, "mergedPrs");
     const closedIssues = sum(github, "closedIssues");
@@ -95,6 +103,7 @@
       const data = await response.json();
       if (data.schemaVersion !== 1 || data.timezone !== "Asia/Seoul") throw new Error();
       const c = data.codex;
+      const a = data.claude;
       const g = data.github;
       el("lifetime").textContent = c ? count(c.summary.lifetimeTokens) : "미수집";
       el("codex-date").textContent = c ? c.asOf + " 기준 · 프로필 전체 기록" : "Codex 로컬 수집을 기다리고 있습니다.";
@@ -106,38 +115,52 @@
           card("하루 최대 토큰", count(c.summary.peakDailyTokens), "프로필 기록")
         );
       }
-      const latest = [c?.asOf, g?.through].filter(Boolean).sort().pop();
+      el("claude-total").textContent = a ? count(a.summary.totalTokens) : "미수집";
+      el("claude-date").textContent = a
+        ? (a.daily.length ? a.daily[0].date + " ~ " : "") + a.asOf + " · 이 PC에 남은 기록부터 수집"
+        : "Claude Code 로컬 수집을 기다리고 있습니다.";
+      if (a) {
+        el("records").append(
+          card("Claude 활동일", count(a.summary.activeDays) + "일", "토큰을 사용한 날"),
+          card("Claude 하루 최대 토큰", count(a.summary.peakDailyTokens), "수집 기록")
+        );
+      }
+      const latest = [c?.asOf, a?.asOf, g?.through].filter(Boolean).sort().pop();
       if (!latest) throw new Error();
       el("day").value = latest;
       el("month").value = latest.slice(0, 7);
       const today = new Intl.DateTimeFormat("sv-SE", {timeZone: "Asia/Seoul"}).format(new Date());
-      const notes = [c ? "Codex " + c.asOf : "Codex 미수집", g ? "GitHub " + g.from + " ~ " + g.through : "GitHub 미수집 · 대상·인증 설정 후 갱신"];
-      if (c && c.asOf < today) notes.push("오늘의 실시간 사용량이 아닙니다");
+      const notes = [c ? "Codex " + c.asOf : "Codex 미수집", a ? "Claude Code " + a.asOf : "Claude Code 미수집", g ? "GitHub " + g.from + " ~ " + g.through : "GitHub 미수집 · 대상·인증 설정 후 갱신"];
+      if ([c?.asOf, a?.asOf].some(day => day && day < today)) notes.push("오늘의 실시간 사용량이 아닙니다");
       el("status").textContent = notes.join(" / ");
       el("content").hidden = false;
 
       function render() {
         const mode = el("period").value;
         const value = mode === "day" ? el("day").value : el("month").value;
+        const source = el("source").value;
+        const sourceName = {codex: "Codex", claude: "Claude Code", total: "Codex + Claude Code"}[source];
         if (mode !== "all" && !/^\d{4}-\d{2}(-\d{2})?$/.test(value)) return;
         el("day-label").hidden = mode !== "day";
         el("month-label").hidden = mode !== "month";
         const selected = select(data, mode, value);
         const partial = [];
         if (selected.partialCodex) partial.push("Codex 일부 수집");
+        if (selected.partialClaude) partial.push("Claude 일부 수집");
         if (selected.partialGithub) partial.push("GitHub 일부 수집");
-        el("period-note").textContent = (mode === "all" ? "Codex 전체 기록 · GitHub 수집 구간 내 누적" : value) + (partial.length ? " · " + partial.join(" / ") : "") + " · —는 미수집";
+        el("period-note").textContent = (mode === "all" ? "Codex·Claude 수집 기록 전체 · GitHub 수집 구간 내 누적" : value) + (partial.length ? " · " + partial.join(" / ") : "") + " · —는 미수집";
         el("metrics").replaceChildren(
-          card("사용 토큰", count(selected.tokens), selected.tokens === null ? "미수집" : "선택 기간"),
+          card("Codex 토큰", count(selected.tokens), selected.tokens === null ? "미수집" : "선택 기간"),
+          card("Claude 토큰", count(selected.claudeTokens), selected.claudeTokens === null ? "미수집" : "선택 기간"),
           card("커밋", count(selected.commits), "기본 브랜치 · 본인 작성"),
           card("병합 PR", count(selected.mergedPrs), "본인 작성 PR"),
           card("완료 이슈", count(selected.closedIssues), "본인 작성 · completed")
         );
         const rows = history(data, mode, value);
-        const compared = comparison(data, mode, value);
+        const compared = comparison(data, mode, value, source);
         el("comparison-note").textContent = compared.from
-          ? "공통 수집 기간 " + compared.from + " ~ " + compared.through + " · 이 기간의 총건수 ÷ 총토큰 × 100만"
-          : "선택한 기간에 두 기록이 함께 수집된 날짜가 없습니다.";
+          ? sourceName + " 기준 · 공통 수집 기간 " + compared.from + " ~ " + compared.through + " · 이 기간의 총건수 ÷ 총토큰 × 100만"
+          : "선택한 기간에 " + sourceName + " 토큰과 GitHub 기록이 함께 수집된 날짜가 없습니다.";
         const rateDetail = !compared.from ? "공통 수집 기간 없음" : compared.tokens === 0 ? "사용 토큰이 0이므로 계산하지 않음" : "공통 기간 합계 기준";
         el("rates").replaceChildren(
           card("100만 토큰당 병합 PR", rate(compared.prsPerMillion), rateDetail),
@@ -146,26 +169,26 @@
         el("table-caption").textContent = mode === "all" ? "월별 내역 · 일부 수집된 월은 * 표시" : value + " 내역";
         const body = rows.map(row => {
           const tr = node("tr");
-          const heading = node("th", row.label + (row.partialCodex || row.partialGithub ? " *" : ""));
+          const heading = node("th", row.label + (row.partialCodex || row.partialClaude || row.partialGithub ? " *" : ""));
           heading.scope = "row";
           tr.append(heading);
-          [row.tokens, row.commits, row.mergedPrs, row.closedIssues].forEach(v => tr.append(node("td", count(v))));
+          [row.tokens, row.claudeTokens, row.commits, row.mergedPrs, row.closedIssues].forEach(v => tr.append(node("td", count(v))));
           return tr;
         });
         el("history").replaceChildren(...body);
         const chartRows = rows.slice().reverse().map(row => ({label: row.label,
-          ...comparison(data, mode === "all" ? "month" : "day", row.label)}));
-        draw(chartRows);
+          ...comparison(data, mode === "all" ? "month" : "day", row.label, source)}));
+        draw(chartRows, sourceName);
         el("chart-note").textContent = (mode === "all" ? "월별" : "일별") + " 공통 기간 합계 · 세 그래프의 날짜 순서는 같고 세로축 단위·최댓값은 다릅니다. 빈 구간은 미수집입니다.";
       }
-      function draw(rows) {
+      function draw(rows, sourceName) {
         const chart = el("chart");
         chart.replaceChildren();
         if (!rows.some(r => r.from !== null)) {
           chart.append(node("p", "이 기간에는 비교할 공통 수집 기록이 없습니다."));
           return;
         }
-        for (const [key, title, unit] of [["tokens", "사용 토큰", "토큰"], ["mergedPrs", "병합 PR", "건"], ["closedIssues", "완료 이슈", "건"]]) {
+        for (const [key, title, unit] of [["tokens", "사용 토큰 · " + sourceName, "토큰"], ["mergedPrs", "병합 PR", "건"], ["closedIssues", "완료 이슈", "건"]]) {
           const panel = node("div", undefined, "activity-chart-panel");
           panel.append(node("h3", title));
           const peak = Math.max(...rows.map(r => r[key] || 0));
@@ -184,7 +207,7 @@
           chart.append(panel);
         }
       }
-      ["period", "day", "month"].forEach(id => el(id).addEventListener("change", render));
+      ["period", "day", "month", "source"].forEach(id => el(id).addEventListener("change", render));
       render();
     } catch (_) {
       el("content").hidden = true;

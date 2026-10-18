@@ -83,3 +83,33 @@ test("partial months and Codex end dates constrain the comparison", () => {
   assert.equal(result.mergedPrs, 2);
   assert.equal(comparison(sample, "day", "2026-10-02").tokens, null);
 });
+
+test("Claude tokens are a separate source with their own coverage", () => {
+  const sample = {...structuredClone(data), claude: {asOf: "2026-10-02", daily: [{date: "2026-10-02", tokens: 7}]}};
+  assert.equal(select(sample, "day", "2026-10-01").claudeTokens, null);
+  assert.equal(select(sample, "day", "2026-10-02").claudeTokens, 7);
+  assert.equal(select(sample, "month", "2026-10").claudeTokens, 7);
+  assert.equal(select(sample, "month", "2026-10").partialClaude, true);
+  assert.equal(select(sample, "month", "2026-10").tokens, 20);
+  assert.equal(select(data, "all", "").claudeTokens, null);
+  assert.equal(history(sample, "month", "2026-10")[0].label, "2026-10-16");
+});
+
+test("comparison can use Claude Code or the combined token total", () => {
+  const sample = {...structuredClone(data), claude: {asOf: "2026-10-02", daily: [
+    {date: "2026-10-01", tokens: 30}, {date: "2026-10-02", tokens: 50}]}};
+  assert.equal(comparison(sample, "all", "").tokens, 20);
+  const claude = comparison(sample, "all", "", "claude");
+  assert.equal(claude.tokens, 80);
+  assert.equal(claude.mergedPrs, 2);
+  assert.equal(claude.prsPerMillion, 25000);
+  const total = comparison(sample, "all", "", "total");
+  assert.equal(total.from, "2026-10-01");
+  assert.equal(total.tokens, 100); // Codex 20 + Claude 80 within shared coverage.
+  sample.claude.daily.shift();
+  // The combined total starts only when every source is collected.
+  assert.equal(comparison(sample, "all", "", "total").from, "2026-10-02");
+  assert.equal(comparison(sample, "all", "", "total").tokens, 50);
+  assert.equal(comparison(data, "all", "", "claude").tokens, null);
+  assert.equal(comparison(data, "all", "", "total").tokens, null);
+});

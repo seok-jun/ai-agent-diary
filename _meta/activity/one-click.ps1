@@ -124,6 +124,19 @@ function Initialize-AnalyzerShim {
     return $analyzerShim
 }
 
+function Get-ClaudeConfigDirs {
+    # Claude Code keeps transcripts under <config>\projects. Paths stay local.
+    $candidates = @($env:CLAUDE_CONFIG_DIR, (Join-Path $env:USERPROFILE '.claude'))
+    $found = @()
+    foreach ($candidate in $candidates) {
+        if ([string]::IsNullOrWhiteSpace($candidate)) { continue }
+        if (-not (Test-Path -LiteralPath (Join-Path $candidate 'projects') -PathType Container)) { continue }
+        $full = [IO.Path]::GetFullPath($candidate).TrimEnd([char]92)
+        if ($found -notcontains $full) { $found += $full }
+    }
+    return ,$found
+}
+
 function Publish-SafeJson {
     $publicData = [IO.File]::ReadAllBytes($dataFile)
     $base64 = [Convert]::ToBase64String($publicData)
@@ -171,11 +184,21 @@ try {
     }
     $python = Get-Python
     Write-Host ''
-    Write-Host '[1/4] Codex 통계 실시간 조회 및 검증'
+    Write-Host '[1/5] Codex 통계 실시간 조회 및 검증'
     $analyzer = Initialize-AnalyzerShim
     Invoke-Collector -python $python -arguments @('codex', '--analyzer', $analyzer)
 
-    Write-Host '[2/4] GitHub 계정 및 접근 가능 저장소 자동 검색 후 활동 집계'
+    Write-Host '[2/5] Claude Code 로컬 대화 기록의 토큰 집계'
+    $claudeDirs = Get-ClaudeConfigDirs
+    if ($claudeDirs.Count -gt 0) {
+        $claudeArgs = @('claude')
+        foreach ($dir in $claudeDirs) { $claudeArgs += @('--config-dir', $dir) }
+        Invoke-Collector -python $python -arguments $claudeArgs
+    } else {
+        Write-Host 'Claude Code 기록 폴더가 없어 건너뜁니다. 기존 Claude 공개 기록은 유지됩니다.'
+    }
+
+    Write-Host '[3/5] GitHub 계정 및 접근 가능 저장소 자동 검색 후 활동 집계'
     $env:ACTIVITY_READ_TOKEN = Get-PrivateSecret $readTokenFile
     $env:ACTIVITY_EXPECTED_GITHUB_LOGIN = ($targetRepo -split '/')[0]
     try {
@@ -185,10 +208,10 @@ try {
         Remove-Item Env:ACTIVITY_EXPECTED_GITHUB_LOGIN -ErrorAction SilentlyContinue
     }
 
-    Write-Host '[3/4] 공개 숫자만 최종 검증'
+    Write-Host '[4/5] 공개 숫자만 최종 검증'
     Invoke-Collector -python $python -arguments @('validate')
 
-    Write-Host '[4/4] 블로그에 자동 게시'
+    Write-Host '[5/5] 블로그에 자동 게시'
     Publish-SafeJson
     Write-Host '완료: https://seok-jun.github.io/ai-agent-diary/activity/'
     exit 0

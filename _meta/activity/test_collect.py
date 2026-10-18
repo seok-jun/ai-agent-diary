@@ -90,7 +90,7 @@ class PublicDataTests(unittest.TestCase):
                     c.sanitize_codex(raw)
 
     def test_closed_public_schema_rejects_unknown_fields(self):
-        base = {"schemaVersion": 1, "timezone": "Asia/Seoul", "codex": c.sanitize_codex(codex()), "github": None}
+        base = {"schemaVersion": 1, "timezone": "Asia/Seoul", "codex": c.sanitize_codex(codex()), "claude": None, "github": None}
         for target in [base, base["codex"], base["codex"]["summary"], base["codex"]["daily"][0]]:
             target["private"] = CANARY
             with self.assertRaises(c.SafeError):
@@ -105,7 +105,7 @@ class PublicDataTests(unittest.TestCase):
     def test_atomic_idempotent_write_and_failures_preserve_file(self):
         with tempfile.TemporaryDirectory() as folder:
             path = Path(folder) / "public.json"
-            data = {"schemaVersion": 1, "timezone": "Asia/Seoul", "codex": c.sanitize_codex(codex()), "github": None}
+            data = {"schemaVersion": 1, "timezone": "Asia/Seoul", "codex": c.sanitize_codex(codex()), "claude": None, "github": None}
             self.assertTrue(c.save_public(data, path))
             original = path.read_bytes()
             self.assertFalse(c.save_public(data, path))
@@ -124,7 +124,7 @@ class PublicDataTests(unittest.TestCase):
     def test_errors_do_not_log_arguments_upstream_body_or_paths(self):
         with tempfile.TemporaryDirectory() as folder:
             path = Path(folder) / "public.json"
-            base = {"schemaVersion": 1, "timezone": "Asia/Seoul", "codex": c.sanitize_codex(codex()), "github": None}
+            base = {"schemaVersion": 1, "timezone": "Asia/Seoul", "codex": c.sanitize_codex(codex()), "claude": None, "github": None}
             c.save_public(base, path)
             original = path.read_bytes()
             for argv in [["codex", "--input", CANARY], ["github", "--unknown-" + CANARY], ["github"]]:
@@ -183,7 +183,7 @@ class GitHubTests(unittest.TestCase):
         self.assertEqual((row["commits"], row["mergedPrs"], row["closedIssues"]), (1, 1, 1))
         self.assertEqual((row["additions"], row["deletions"], row["measuredCommits"]), (8, 3, 1))
         self.assertNotIn(CANARY, json.dumps(result))
-        c.validate({"schemaVersion": 1, "timezone": "Asia/Seoul", "codex": None, "github": result})
+        c.validate({"schemaVersion": 1, "timezone": "Asia/Seoul", "codex": None, "claude": None, "github": result})
 
     def test_merge_count_but_no_merge_lines_and_cross_repo_sha_dedup(self):
         api = FakeAPI([commit(), commit("b"*40, parents=2)])
@@ -217,7 +217,7 @@ class GitHubTests(unittest.TestCase):
             c.GitHub("test-token", budget=0).get("/repos/sample/repo")
 
     def test_complete_dense_coverage_and_strict_github_fields(self):
-        data = {"schemaVersion": 1, "timezone": "Asia/Seoul", "codex": None,
+        data = {"schemaVersion": 1, "timezone": "Asia/Seoul", "codex": None, "claude": None,
                 "github": c.collect_github(FakeAPI([]), config(), "2026-10-02", "2026-10-03")}
         c.validate(data)
         data["github"]["daily"][0]["repo"] = CANARY
@@ -283,7 +283,7 @@ class AutoDiscoveryTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             public_path = Path(folder) / "data.json"
             base = {"schemaVersion": 1, "timezone": "Asia/Seoul",
-                    "codex": c.sanitize_codex(codex()), "github": None}
+                    "codex": c.sanitize_codex(codex()), "claude": None, "github": None}
             c.save_public(base, public_path)
             api = self.FakeAuthenticatedAPI()
             stdout = io.StringIO()
@@ -303,7 +303,7 @@ class AutoDiscoveryTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             public_path = Path(folder) / "data.json"
             base = {"schemaVersion": 1, "timezone": "Asia/Seoul",
-                    "codex": None, "github": None}
+                    "codex": None, "claude": None, "github": None}
             c.save_public(base, public_path)
             original = public_path.read_bytes()
             with patch.object(c, "OUTPUT", public_path), \
@@ -345,6 +345,105 @@ class AutoDiscoveryTests(unittest.TestCase):
         result = c.collect_github(EmptyFake(), config(False), DAY, "2026-10-02")
         self.assertEqual(result["daily"][0]["commits"], 0)
         self.assertEqual(result["daily"][0]["closedIssues"], 1)
+
+
+def claude_line(stamp, tokens, message_id="msg_1", request_id="req_1", **extra):
+    usage = dict(zip(c.CLAUDE_USAGE, tokens))
+    return json.dumps({"type": "assistant", "timestamp": stamp, "requestId": request_id,
+                       "cwd": CANARY, "sessionId": CANARY, **extra,
+                       "message": {"id": message_id, "model": "claude-" + CANARY,
+                                   "content": [{"type": "text", "text": CANARY}],
+                                   "usage": {**usage, "service_tier": CANARY}}})
+
+
+class ClaudeTests(unittest.TestCase):
+    def write(self, folder, project, lines):
+        path = Path(folder) / "projects" / project / "session.jsonl"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    def test_kst_days_dedup_and_private_canary(self):
+        with tempfile.TemporaryDirectory() as folder:
+            self.write(folder, "a", [
+                json.dumps({"type": "user", "message": {"content": CANARY}}),
+                claude_line("2026-09-30T14:59:59Z", (1, 2, 3, 4)),
+                # Same response streamed again with its final output count.
+                claude_line("2026-09-30T14:59:59Z", (1, 5, 3, 4)),
+                claude_line("2026-09-30T15:00:00Z", (10, 0, 0, 0), "msg_2", "req_2"),
+                json.dumps({"type": "assistant", "timestamp": "2026-10-01T00:00:00Z",
+                            "message": {"model": "<synthetic>", "usage": {}}}),
+                '{"type": "assistant", "partial'])
+            # A resumed session copies an earlier response into another file.
+            self.write(folder, "b", [claude_line("2026-09-30T14:59:59Z", (1, 5, 3, 4))])
+            result = c.collect_claude([folder], as_of="2026-10-02")
+        self.assertEqual(result["daily"], [{"date": "2026-09-30", "tokens": 13},
+                                           {"date": "2026-10-01", "tokens": 10}])
+        self.assertEqual(result["summary"], {"totalTokens": 23, "peakDailyTokens": 13,
+                                             "activeDays": 2})
+        self.assertNotIn(CANARY, json.dumps(result))
+        c.validate({"schemaVersion": 1, "timezone": "Asia/Seoul", "codex": None,
+                    "claude": result, "github": None})
+
+    def test_pruned_transcripts_never_lower_published_days(self):
+        previous = c.claude_document("2026-10-01", {"2026-09-01": 100, "2026-10-01": 5})
+        with tempfile.TemporaryDirectory() as folder:
+            self.write(folder, "a", [claude_line("2026-10-01T01:00:00Z", (1, 1, 1, 1)),
+                                     claude_line("2026-10-02T01:00:00Z", (7, 0, 0, 0), "m2", "r2")])
+            result = c.collect_claude([folder], previous, as_of="2026-10-02")
+        self.assertEqual([row["tokens"] for row in result["daily"]], [100, 5, 7])
+
+    def test_malformed_usage_inside_or_missing_input_fails(self):
+        for bad in [claude_line("2026-10-01T00:00:00Z", (1, -1, 0, 0)),
+                    claude_line("2026-10-01T00:00:00Z", (1, True, 0, 0)),
+                    claude_line("2026-10-01", (1, 1, 0, 0))]:
+            with self.subTest(line=bad), tempfile.TemporaryDirectory() as folder:
+                self.write(folder, "a", [bad])
+                with self.assertRaises(c.SafeError):
+                    c.collect_claude([folder], as_of="2026-10-02")
+        with tempfile.TemporaryDirectory() as folder:
+            with self.assertRaises(c.SafeError):
+                c.collect_claude([folder], as_of="2026-10-02")
+        with self.assertRaises(c.SafeError):
+            c.collect_claude([str(c.ROOT)], as_of="2026-10-02")
+
+    def test_public_claude_block_is_closed_and_derived(self):
+        base = {"schemaVersion": 1, "timezone": "Asia/Seoul", "codex": None, "github": None,
+                "claude": c.claude_document("2026-10-02", {"2026-10-01": 5, "2026-10-02": 3})}
+        c.validate(base)
+        for mutate in [lambda d: d["summary"].update(totalTokens=9),
+                       lambda d: d["summary"].update(activeDays=1),
+                       lambda d: d["daily"].reverse(),
+                       lambda d: d["daily"][0].update(tokens=0),
+                       lambda d: d["daily"][0].update(model=CANARY),
+                       lambda d: d.update(asOf="2026-10-01")]:
+            with self.subTest(mutation=mutate):
+                sample = copy.deepcopy(base)
+                mutate(sample["claude"])
+                with self.assertRaises(c.SafeError):
+                    c.validate(sample)
+
+    def test_older_public_file_without_claude_still_loads(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "data.json"
+            path.write_text(json.dumps({"schemaVersion": 1, "timezone": "Asia/Seoul",
+                                        "codex": None, "github": None}), encoding="utf-8")
+            self.assertIsNone(c.load_public(path)["claude"])
+            path.write_text(json.dumps({"schemaVersion": 1, "timezone": "Asia/Seoul",
+                                        "codex": None, "github": None, "x": 1}), encoding="utf-8")
+            with self.assertRaises(c.SafeError):
+                c.load_public(path)
+
+    def test_cli_collects_claude_into_public_file(self):
+        with tempfile.TemporaryDirectory() as folder, tempfile.TemporaryDirectory() as config_dir:
+            public_path = Path(folder) / "data.json"
+            self.write(config_dir, "a", [claude_line("2026-10-01T00:00:00Z", (1, 2, 3, 4))])
+            stdout = io.StringIO()
+            with patch.object(c, "OUTPUT", public_path), contextlib.redirect_stdout(stdout):
+                self.assertEqual(c.main(["claude", "--config-dir", config_dir]), 0)
+            saved = json.loads(public_path.read_text(encoding="utf-8"))
+            self.assertEqual(list(saved), list(c.TOP_LEVEL))
+            self.assertEqual(saved["claude"]["summary"]["totalTokens"], 10)
+            self.assertNotIn(config_dir, stdout.getvalue())
 
 
 if __name__ == "__main__":

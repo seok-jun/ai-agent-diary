@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "timezone": "Asia/Seoul",
   "codex": {
-    "asOf": "2026-10-16",
+    "asOf": "2026-10-18",
     "summary": {
-      "lifetimeTokens": 6221527557,
-      "peakDailyTokens": 382523191,
+      "lifetimeTokens": 6628435334,
+      "peakDailyTokens": 385210248,
       "longestRunningTurnSec": 14297,
-      "currentStreakDays": 19,
-      "longestStreakDays": 19
+      "currentStreakDays": 20,
+      "longestStreakDays": 20
     },
     "daily": [
       {
@@ -509,9 +509,2453 @@
       },
       {
         "date": "2026-10-16",
-        "tokens": 17877204
+        "tokens": 385210248
+      },
+      {
+        "date": "2026-10-17",
+        "tokens": 39574733
       }
     ]
   },
-  "github": null
+  "claude": {
+    "asOf": "2026-10-18",
+    "summary": {
+      "totalTokens": 6554061627,
+      "peakDailyTokens": 1293574512,
+      "activeDays": 30
+    },
+    "daily": [
+      {
+        "date": "2026-09-04",
+        "tokens": 54051243
+      },
+      {
+        "date": "2026-09-05",
+        "tokens": 120300869
+      },
+      {
+        "date": "2026-09-09",
+        "tokens": 87524929
+      },
+      {
+        "date": "2026-09-11",
+        "tokens": 116955
+      },
+      {
+        "date": "2026-09-12",
+        "tokens": 38304626
+      },
+      {
+        "date": "2026-09-19",
+        "tokens": 257371692
+      },
+      {
+        "date": "2026-09-20",
+        "tokens": 269344171
+      },
+      {
+        "date": "2026-09-23",
+        "tokens": 1231558
+      },
+      {
+        "date": "2026-09-24",
+        "tokens": 1293574512
+      },
+      {
+        "date": "2026-09-25",
+        "tokens": 817179046
+      },
+      {
+        "date": "2026-09-26",
+        "tokens": 477883979
+      },
+      {
+        "date": "2026-09-27",
+        "tokens": 652056995
+      },
+      {
+        "date": "2026-09-28",
+        "tokens": 204397515
+      },
+      {
+        "date": "2026-09-29",
+        "tokens": 143480347
+      },
+      {
+        "date": "2026-09-30",
+        "tokens": 331146779
+      },
+      {
+        "date": "2026-10-01",
+        "tokens": 149319549
+      },
+      {
+        "date": "2026-10-05",
+        "tokens": 5684138
+      },
+      {
+        "date": "2026-10-06",
+        "tokens": 77177591
+      },
+      {
+        "date": "2026-10-07",
+        "tokens": 1497043
+      },
+      {
+        "date": "2026-10-08",
+        "tokens": 4502364
+      },
+      {
+        "date": "2026-10-09",
+        "tokens": 94961367
+      },
+      {
+        "date": "2026-10-10",
+        "tokens": 419896640
+      },
+      {
+        "date": "2026-10-11",
+        "tokens": 449178695
+      },
+      {
+        "date": "2026-10-12",
+        "tokens": 65652869
+      },
+      {
+        "date": "2026-10-13",
+        "tokens": 89609072
+      },
+      {
+        "date": "2026-10-14",
+        "tokens": 12189563
+      },
+      {
+        "date": "2026-10-15",
+        "tokens": 11059667
+      },
+      {
+        "date": "2026-10-16",
+        "tokens": 81385745
+      },
+      {
+        "date": "2026-10-17",
+        "tokens": 308419745
+      },
+      {
+        "date": "2026-10-18",
+        "tokens": 35562363
+      }
+    ]
+  },
+  "github": {
+    "asOf": "2026-10-18",
+    "from": "2026-02-04",
+    "through": "2026-10-17",
+    "daily": [
+      {
+        "date": "2026-02-04",
+        "commits": 2,
+        "mergedPrs": 1,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-05",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-06",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-07",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-08",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-09",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-10",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-11",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-12",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-13",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-14",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-15",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-16",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-17",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-18",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-19",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-20",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-21",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-22",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-23",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-24",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-25",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-26",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-27",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-02-28",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-01",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-02",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-03",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-04",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-05",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-06",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-07",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-08",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-09",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-10",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-11",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-12",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-13",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-14",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-15",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-16",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-17",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-18",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-19",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-20",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-21",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-22",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-23",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-24",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-25",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-26",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-27",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-28",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-29",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-30",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-03-31",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-01",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-02",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-03",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-04",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-05",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-06",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-07",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-08",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-09",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-10",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-11",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-12",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-13",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-14",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-15",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-16",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-17",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-18",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-19",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-20",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-21",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-22",
+        "commits": 3,
+        "mergedPrs": 1,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-23",
+        "commits": 1,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-24",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-25",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-26",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-27",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-28",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-29",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-04-30",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-01",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-02",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-03",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-04",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-05",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-06",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-07",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-08",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-09",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-10",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-11",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-12",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-13",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-14",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-15",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-16",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-17",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-18",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-19",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-20",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-21",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-22",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-23",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-24",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-25",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-26",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-27",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-28",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-29",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-30",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-05-31",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-01",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-02",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-03",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-04",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-05",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-06",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-07",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-08",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-09",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-10",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-11",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-12",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-13",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-14",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-15",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-16",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-17",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-18",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-19",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-20",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-21",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-22",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-23",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-24",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-25",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-26",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-27",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-28",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-29",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-06-30",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-01",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-02",
+        "commits": 16,
+        "mergedPrs": 1,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-03",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-04",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-05",
+        "commits": 7,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-06",
+        "commits": 2,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-07",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-08",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-09",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-10",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-11",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-12",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-13",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-14",
+        "commits": 5,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-15",
+        "commits": 2,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-16",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-17",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-18",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-19",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-20",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-21",
+        "commits": 6,
+        "mergedPrs": 1,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-22",
+        "commits": 35,
+        "mergedPrs": 7,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-23",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-24",
+        "commits": 3,
+        "mergedPrs": 3,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-25",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-26",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-27",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-28",
+        "commits": 4,
+        "mergedPrs": 3,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-29",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-30",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-07-31",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-01",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-02",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-03",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-04",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-05",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-06",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-07",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-08",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-09",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-10",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-11",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-12",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-13",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-14",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-15",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-16",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-17",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-18",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-19",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-20",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-21",
+        "commits": 68,
+        "mergedPrs": 11,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-22",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-23",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-24",
+        "commits": 10,
+        "mergedPrs": 5,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-25",
+        "commits": 4,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-26",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-27",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-28",
+        "commits": 31,
+        "mergedPrs": 18,
+        "closedIssues": 15,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-29",
+        "commits": 129,
+        "mergedPrs": 23,
+        "closedIssues": 19,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-30",
+        "commits": 46,
+        "mergedPrs": 19,
+        "closedIssues": 16,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-08-31",
+        "commits": 13,
+        "mergedPrs": 13,
+        "closedIssues": 11,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-01",
+        "commits": 59,
+        "mergedPrs": 23,
+        "closedIssues": 22,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-02",
+        "commits": 30,
+        "mergedPrs": 23,
+        "closedIssues": 29,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-03",
+        "commits": 6,
+        "mergedPrs": 6,
+        "closedIssues": 6,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-04",
+        "commits": 3,
+        "mergedPrs": 2,
+        "closedIssues": 2,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-05",
+        "commits": 14,
+        "mergedPrs": 11,
+        "closedIssues": 11,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-06",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-07",
+        "commits": 5,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-08",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-09",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-10",
+        "commits": 1,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-11",
+        "commits": 3,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-12",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-13",
+        "commits": 7,
+        "mergedPrs": 3,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-14",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-15",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-16",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-17",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-18",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-19",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-20",
+        "commits": 5,
+        "mergedPrs": 4,
+        "closedIssues": 4,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-21",
+        "commits": 2,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-22",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-23",
+        "commits": 1,
+        "mergedPrs": 1,
+        "closedIssues": 1,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-24",
+        "commits": 4,
+        "mergedPrs": 3,
+        "closedIssues": 3,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-25",
+        "commits": 9,
+        "mergedPrs": 9,
+        "closedIssues": 9,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-26",
+        "commits": 4,
+        "mergedPrs": 4,
+        "closedIssues": 4,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-27",
+        "commits": 6,
+        "mergedPrs": 6,
+        "closedIssues": 6,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-28",
+        "commits": 1,
+        "mergedPrs": 1,
+        "closedIssues": 1,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-29",
+        "commits": 1,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-09-30",
+        "commits": 4,
+        "mergedPrs": 2,
+        "closedIssues": 3,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-01",
+        "commits": 6,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-02",
+        "commits": 17,
+        "mergedPrs": 7,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-03",
+        "commits": 5,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-04",
+        "commits": 10,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-05",
+        "commits": 10,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-06",
+        "commits": 12,
+        "mergedPrs": 7,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-07",
+        "commits": 9,
+        "mergedPrs": 9,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-08",
+        "commits": 21,
+        "mergedPrs": 12,
+        "closedIssues": 10,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-09",
+        "commits": 85,
+        "mergedPrs": 14,
+        "closedIssues": 12,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-10",
+        "commits": 87,
+        "mergedPrs": 24,
+        "closedIssues": 14,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-11",
+        "commits": 93,
+        "mergedPrs": 19,
+        "closedIssues": 17,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-12",
+        "commits": 32,
+        "mergedPrs": 10,
+        "closedIssues": 7,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-13",
+        "commits": 59,
+        "mergedPrs": 14,
+        "closedIssues": 11,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-14",
+        "commits": 28,
+        "mergedPrs": 19,
+        "closedIssues": 13,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-15",
+        "commits": 49,
+        "mergedPrs": 15,
+        "closedIssues": 11,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-16",
+        "commits": 63,
+        "mergedPrs": 29,
+        "closedIssues": 22,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-17",
+        "commits": 60,
+        "mergedPrs": 19,
+        "closedIssues": 10,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      }
+    ]
+  }
 }
