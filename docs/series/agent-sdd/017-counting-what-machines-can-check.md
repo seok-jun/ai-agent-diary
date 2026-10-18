@@ -4,6 +4,7 @@ parent: Agent SDD 개발 일지
 nav_order: 17
 permalink: /series/agent-sdd/017-counting-what-machines-can-check/
 date: 2026-10-13 14:01:00 +0900
+last_modified_at: 2026-10-18
 description: "하네스의 산문 규칙이 너무 많아져서, 기계가 판단할 수 있는 건 기계에 넘기기로 했다. 넘기기 전에 규칙 370줄과 실제 사고 기록을 세어 봤더니, 온전히 넘길 수 있는 건 16줄이었고 제일 많이 터진 문제는 애초에 넘길 수 없는 거였다."
 summary: "규칙 370줄 중 온전히 판정 가능한 건 16줄이었고, 사고 기록에서 가장 많은 유형은 애초에 기계로 넘길 수 없는 것이었다."
 image: /assets/images/agent-sdd/017-counting-what-machines-can-check/thumbnail.png
@@ -12,6 +13,9 @@ image: /assets/images/agent-sdd/017-counting-what-machines-can-check/thumbnail.p
 # 규칙을 기계에 넘기려고 세어 봤다
 
 _2026.10.13 게시_
+
+**이후 변경** · "실제로 넘긴 것, 안 넘긴 것" 표의 "승인 위조: 넘겼다" 줄은 지금은 사실과 다르다. 앱의 키 서명 승인은 이 글을 올리고 이틀 뒤인 10월 15일에 뺐다. 이유는 [19편]({{ '/series/agent-sdd/019-letting-agents-improve-the-method/' | relative_url }})과 [20편]({{ '/series/agent-sdd/020-approvals-grew-lighter/' | relative_url }})에 적었다. 본문은 그때 기록으로 그대로 둔다.
+{: .update-notice }
 
 ![규칙을 기계에 넘기려고 세어 봤다 — 규칙 370줄 중 온전히 판정 가능한 것은 16줄, 사고 기록에서 가장 많은 유형은 통과했지만 요구를 증명하지 못한 검사]({{ '/assets/images/agent-sdd/017-counting-what-machines-can-check/thumbnail.png' | relative_url }})
 
