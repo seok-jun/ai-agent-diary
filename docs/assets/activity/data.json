@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "timezone": "Asia/Seoul",
   "codex": {
-    "asOf": "2026-10-17",
+    "asOf": "2026-10-18",
     "summary": {
-      "lifetimeTokens": 6588860601,
+      "lifetimeTokens": 6628435334,
       "peakDailyTokens": 385210248,
       "longestRunningTurnSec": 14297,
-      "currentStreakDays": 19,
-      "longestStreakDays": 19
+      "currentStreakDays": 20,
+      "longestStreakDays": 20
     },
     "daily": [
       {
@@ -510,13 +510,17 @@
       {
         "date": "2026-10-16",
         "tokens": 385210248
+      },
+      {
+        "date": "2026-10-17",
+        "tokens": 39574733
       }
     ]
   },
   "github": {
-    "asOf": "2026-10-17",
+    "asOf": "2026-10-18",
     "from": "2026-02-04",
-    "through": "2026-10-16",
+    "through": "2026-10-17",
     "daily": [
       {
         "date": "2026-02-04",
@@ -2808,6 +2812,15 @@
         "date": "2026-10-16",
         "commits": 6,
         "mergedPrs": 6,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-17",
+        "commits": 23,
+        "mergedPrs": 2,
         "closedIssues": 0,
         "measuredCommits": 0,
         "additions": null,
