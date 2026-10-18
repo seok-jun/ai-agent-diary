@@ -1,6 +1,6 @@
 ---
 title: "방법론을 강요하지 않고 공유하는 방법"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 10
 permalink: /series/agent-sdd/010-agentics-sharing-methodology/
 date: 2026-09-13

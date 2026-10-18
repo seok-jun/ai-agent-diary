@@ -1,6 +1,6 @@
 ---
 title: "실험을 멈춘 건 모델이 아니었다"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 14
 permalink: /series/agent-sdd/014-isolation-stopped-the-experiment/
 date: 2026-10-02 14:02:00 +0900

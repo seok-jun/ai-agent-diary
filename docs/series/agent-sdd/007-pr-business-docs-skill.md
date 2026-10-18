@@ -1,6 +1,6 @@
 ---
 title: "business 문서를 PR에서 갱신해보기"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 7
 permalink: /series/agent-sdd/007-pr-business-docs-skill/
 date: 2026-07-14

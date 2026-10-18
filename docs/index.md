@@ -42,8 +42,8 @@ permalink: /
   <div class="series-cards">
     <div class="series-card series-card--grouped">
       <span class="series-card-kicker">Series · 19편</span>
-      <h3><a href="./series/agent-sdd/">Agent SDD 실무 개발</a></h3>
-      <p>AI Agent를 실무 개발에 붙이면서 겪은 일을 쓴 순서대로 정리한 연재입니다. 처음이라면 아래 세 묶음의 첫 글부터 읽으면 됩니다.</p>
+      <h3><a href="./series/agent-sdd/">Agent SDD 개발 일지</a></h3>
+      <p>AI Agent를 회사 일과 개인 프로젝트에 붙이면서 겪은 일을 쓴 순서대로 정리한 연재입니다. 처음이라면 아래 세 묶음의 첫 글부터 읽으면 됩니다.</p>
       <ol class="series-groups">
         <li>
           <span class="series-group-head"><span class="series-group-range">1~4편</span><strong>기초</strong></span>

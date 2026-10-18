@@ -1,6 +1,6 @@
 ---
 title: "가드레일 하나만 빼고 돌려봤다"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 13
 permalink: /series/agent-sdd/013-removing-one-guardrail/
 date: 2026-10-02 14:01:00 +0900

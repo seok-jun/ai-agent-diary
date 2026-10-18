@@ -1,6 +1,6 @@
 ---
 title: "드디어 방법론 분리 진행"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 18
 permalink: /series/agent-sdd/018-connecting-methodology-from-outside/
 date: 2026-10-16 12:00:00 +0900

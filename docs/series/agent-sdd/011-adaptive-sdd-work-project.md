@@ -1,6 +1,6 @@
 ---
 title: "Adaptive SDD를 실무 프로젝트에 다시 적용하면서 손본 것들"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 11
 permalink: /series/agent-sdd/011-adaptive-sdd-work-project/
 date: 2026-09-21

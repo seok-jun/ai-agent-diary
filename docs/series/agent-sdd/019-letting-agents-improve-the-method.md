@@ -1,6 +1,6 @@
 ---
 title: "Agent 방법론 자기개선 과연 잘 될까?"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 19
 permalink: /series/agent-sdd/019-letting-agents-improve-the-method/
 date: 2026-10-16 12:30:00 +0900

@@ -1,6 +1,6 @@
 ---
 title: "열세 번 돌리고, 판정을 다시 봤다"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 16
 permalink: /series/agent-sdd/016-rechecking-the-verdict/
 date: 2026-10-13 14:00:00 +0900

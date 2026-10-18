@@ -1,6 +1,6 @@
 ---
 title: "규칙을 기계에 넘기려고 세어 봤다"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 17
 permalink: /series/agent-sdd/017-counting-what-machines-can-check/
 date: 2026-10-13 14:01:00 +0900

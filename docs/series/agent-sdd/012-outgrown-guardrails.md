@@ -1,6 +1,6 @@
 ---
 title: "모델은 좋아졌는데 가드레일은 그대로였다"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 12
 permalink: /series/agent-sdd/012-outgrown-guardrails/
 date: 2026-10-02 14:00:00 +0900

@@ -1,6 +1,6 @@
 ---
 title: "멀티 Agent 개발을 실제로 운영해보고 정리한 것들"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 9
 permalink: /series/agent-sdd/009-adaptive-agentic-sdd/
 date: 2026-09-01
