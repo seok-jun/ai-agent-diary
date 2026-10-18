@@ -19,13 +19,13 @@ Codex·Claude Code와 함께 쌓은 사용 기록, 그리고 GitHub에 남긴 �
         <article class="ad-source ad-source--codex" aria-labelledby="activity-codex-name">
           <header class="ad-source-head"><span class="ad-key ad-key--codex" aria-hidden="true"></span><h3 id="activity-codex-name">Codex</h3><span id="activity-codex-asof" class="ad-muted"></span></header>
           <strong id="activity-codex-total" class="ad-total">—</strong>
-          <p class="ad-muted">프로필 전체 기록 · 토큰</p>
+          <p class="ad-muted">프로필 전체 기록 · 캐시 토큰 포함</p>
           <dl id="activity-codex-facts" class="ad-facts"></dl>
         </article>
         <article class="ad-source ad-source--claude" aria-labelledby="activity-claude-name">
           <header class="ad-source-head"><span class="ad-key ad-key--claude" aria-hidden="true"></span><h3 id="activity-claude-name">Claude Code</h3><span id="activity-claude-asof" class="ad-muted"></span></header>
           <strong id="activity-claude-total" class="ad-total">—</strong>
-          <p id="activity-claude-range" class="ad-muted">이 PC에 남은 기록부터 수집 · 토큰</p>
+          <p id="activity-claude-range" class="ad-muted">이 PC에 남은 기록부터 수집 · 캐시 토큰 포함</p>
           <dl id="activity-claude-facts" class="ad-facts"></dl>
         </article>
       </div>
@@ -42,6 +42,7 @@ Codex·Claude Code와 함께 쌓은 사용 기록, 그리고 GitHub에 남긴 �
     </div>
     <section class="ad-section" aria-labelledby="activity-tokens-heading">
       <h2 id="activity-tokens-heading" class="ad-heading">AI 토큰</h2>
+      <p class="ad-muted ad-section-note">두 도구 모두 캐시 토큰을 포함한 값입니다. 긴 대화에서 이전 맥락을 다시 읽는 캐시 토큰이 대부분을 차지합니다.</p>
       <div id="activity-token-kpis" class="ad-kpis"></div>
       <figure class="ad-chart-card">
         <figcaption class="ad-chart-head"><span id="activity-token-chart-title">일별 토큰</span><span class="ad-legend"><span><i class="ad-key ad-key--codex"></i>Codex</span><span><i class="ad-key ad-key--claude"></i>Claude Code</span></span></figcaption>
@@ -88,12 +89,12 @@ Codex·Claude Code와 함께 쌓은 사용 기록, 그리고 GitHub에 남긴 �
 
 **Codex**
 
-- 비공식 `codex-usage-analyzer`가 보고한 **Codex 프로필 누적 사용량**입니다. 요금제 잔여 한도, 청구 금액, API 사용량 또는 생산성을 뜻하지 않습니다. 일별 경계는 도구가 제공한 날짜를 그대로 사용합니다.
+- 비공식 `codex-usage-analyzer`가 보고한 **Codex 프로필 누적 사용량**입니다. 요금제 잔여 한도, 청구 금액, API 사용량 또는 생산성을 뜻하지 않습니다. **캐시 토큰을 포함**하며 Codex 계정 사용량은 캐시를 따로 구분해 제공하지 않습니다. 일별 경계는 도구가 제공한 날짜를 그대로 사용합니다.
 - 연속 활동과 최장 작업은 마지막 수집 시점의 프로필 수치입니다. 페이지를 열었다고 자동으로 갱신되지 않습니다. 초기 기록은 사용자가 제공한 2026년 10월 16일 스냅샷입니다.
 
 **Claude Code**
 
-- 이 PC의 **Claude Code 로컬 대화 기록**에 남은 응답별 사용량(입력·출력·캐시 생성·캐시 읽기)을 한국 시간 날짜로 합산한 값입니다. 같은 응답이 여러 기록에 반복되면 한 번만 셉니다.
+- 이 PC의 **Claude Code 로컬 대화 기록**에 남은 응답별 사용량(입력·출력·캐시 생성·캐시 읽기)을 한국 시간 날짜로 합산한 값으로, **캐시 토큰을 포함**합니다. 같은 응답이 여러 기록에 반복되면 한 번만 셉니다.
 - Claude Code는 오래된 기록을 지우므로, 첫 수집 전에 지워진 기록은 포함되지 않고 이미 공개한 날짜의 값은 줄이지 않습니다. claude.ai 채팅, 다른 PC, 청구 금액은 포함하지 않습니다.
 
 **GitHub**

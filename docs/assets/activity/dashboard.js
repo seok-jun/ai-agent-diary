@@ -229,7 +229,7 @@
       el("claude-asof").textContent = a ? a.asOf + " 기준" : "";
       el("claude-total").title = a ? count(a.summary.totalTokens) + " 토큰" : "";
       if (a) {
-        el("claude-range").textContent = (a.daily.length ? a.daily[0].date + "부터 " : "") + "이 PC에 남은 기록 · 토큰";
+        el("claude-range").textContent = (a.daily.length ? a.daily[0].date + "부터 " : "") + "이 PC에 남은 기록 · 캐시 토큰 포함";
         facts(el("claude-facts"), [
           ["정확한 값", count(a.summary.totalTokens)],
           ["하루 최대", count(a.summary.peakDailyTokens)],

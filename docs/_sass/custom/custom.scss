@@ -31,6 +31,7 @@ $archive-accent: #059669;
   .ad-visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .ad-section { margin: 2.25rem 0 0; }
   .ad-heading { margin: 0 0 0.75rem; padding: 0; font-size: 1.1rem; font-weight: 700; }
+  .ad-section-note { margin: -0.4rem 0 0.75rem; }
   .ad-key { display: inline-block; flex: none; width: 0.65rem; height: 0.65rem; border-radius: 3px; vertical-align: baseline; }
   .ad-key--codex { background: var(--ad-codex); }
   .ad-key--claude { background: var(--ad-claude); }
