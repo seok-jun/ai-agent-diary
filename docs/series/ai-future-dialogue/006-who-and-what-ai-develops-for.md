@@ -5,14 +5,14 @@ nav_order: 6
 permalink: /series/ai-future-dialogue/006-who-and-what-ai-develops-for/
 date: 2026-06-10
 description: "AI는 무엇을 위해, 누구를 위해 발전하는가. 기술 발전의 방향과 수혜자를 묻는 AI 미래 연재 6편."
-image: /assets/images/ai-future-dialogue/006-who-and-what-ai-develops-for/thumbnail.png
+image: /assets/images/ai-future-dialogue/thumbnail.jpg
 ---
 
 # 6편. AI는 무엇을 위해, 누구를 위해 발전하는가
 
 _2026.06.10 게시_
 
-![6편. AI는 무엇을 위해, 누구를 위해 발전하는가]({{ '/assets/images/ai-future-dialogue/006-who-and-what-ai-develops-for/thumbnail.png' | relative_url }})
+![6편. AI는 무엇을 위해, 누구를 위해 발전하는가]({{ '/assets/images/ai-future-dialogue/thumbnail.jpg' | relative_url }})
 
 ## 답이 없는 질문
 

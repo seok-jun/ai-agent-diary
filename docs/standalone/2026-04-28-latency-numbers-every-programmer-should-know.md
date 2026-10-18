@@ -6,14 +6,14 @@ permalink: /standalone/2026-04-28-latency-numbers-every-programmer-should-know/
 date: 2026-04-28
 description: "Jeff Dean의 'Latency Numbers Every Programmer Should Know'를 한국어로 정리하고 최신 감각으로 되짚은 참고 자료."
 summary: "Jeff Dean의 지연 숫자를 한국어로 정리하고 최신 감각으로 되짚은 참고 자료."
-image: /assets/images/standalone/2026-04-28-latency-numbers-every-programmer-should-know/thumbnail.png
+image: /assets/images/standalone/2026-04-28-latency-numbers-every-programmer-should-know/thumbnail.jpg
 ---
 
 # Latency Numbers Every Programmer Should Know 정리
 
 _2026.04.28 게시_
 
-![Latency Numbers Every Programmer Should Know 정리]({{ '/assets/images/standalone/2026-04-28-latency-numbers-every-programmer-should-know/thumbnail.png' | relative_url }})
+![Latency Numbers Every Programmer Should Know 정리]({{ '/assets/images/standalone/2026-04-28-latency-numbers-every-programmer-should-know/thumbnail.jpg' | relative_url }})
 
 원본 계열 자료는 Jeff Dean이 정리한 숫자를 기반으로 하며, Peter Norvig도 유사한 맥락의 내용을 언급한 바 있습니다. ([Gist][1])
 

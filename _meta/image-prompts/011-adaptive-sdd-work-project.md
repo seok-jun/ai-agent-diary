@@ -1,7 +1,7 @@
 # 11편 섬네일 생성 기록
 
 - 생성 방식: 내장 `image_gen` 도구
-- 게시 자산: `docs/assets/images/agent-sdd/011-adaptive-sdd-work-project/thumbnail.png`
+- 게시 자산: `docs/assets/images/agent-sdd/011-adaptive-sdd-work-project/thumbnail.jpg`
 - 용도: 글 상단 및 Open Graph / Twitter 공유 이미지
 
 ## 최종 프롬프트

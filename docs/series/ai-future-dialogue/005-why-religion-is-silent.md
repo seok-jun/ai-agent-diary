@@ -5,14 +5,14 @@ nav_order: 5
 permalink: /series/ai-future-dialogue/005-why-religion-is-silent/
 date: 2026-06-10
 description: "AI가 던지는 실존적 질문 앞에서 종교가 침묵하는 이유를 탐색하는 AI 미래 연재 5편."
-image: /assets/images/ai-future-dialogue/005-why-religion-is-silent/thumbnail.png
+image: /assets/images/ai-future-dialogue/thumbnail.jpg
 ---
 
 # 5편. 종교는 왜 침묵하는가
 
 _2026.06.10 게시_
 
-![5편. 종교는 왜 침묵하는가]({{ '/assets/images/ai-future-dialogue/005-why-religion-is-silent/thumbnail.png' | relative_url }})
+![5편. 종교는 왜 침묵하는가]({{ '/assets/images/ai-future-dialogue/thumbnail.jpg' | relative_url }})
 
 ## 빼먹은 변수
 

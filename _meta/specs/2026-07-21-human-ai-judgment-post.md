@@ -15,7 +15,7 @@
 ## 영향 파일
 
 - `docs/standalone/2026-07-21-human-ai-judgment.md`
-- `docs/assets/images/standalone/2026-07-21-human-ai-judgment/thumbnail.png`
+- `docs/assets/images/standalone/2026-07-21-human-ai-judgment/thumbnail.jpg`
 - `docs/standalone/README.md`
 - `docs/index.md`
 

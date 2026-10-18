@@ -6,14 +6,14 @@ permalink: /standalone/2026-05-07-controlling-ai-coding-agents/
 date: 2026-05-07
 description: "AI 코딩 에이전트를 신뢰하되 통제하는 실무 원칙 — 에이전트를 안전하게 다루기 위한 지침 정리."
 summary: "신뢰하되 통제하는 실무 원칙 — 에이전트를 안전하게 다루는 지침."
-image: /assets/images/standalone/2026-05-07-controlling-ai-coding-agents/thumbnail.png
+image: /assets/images/standalone/2026-05-07-controlling-ai-coding-agents/thumbnail.jpg
 ---
 
 # AI 코딩 에이전트를 제대로 통제하는 방법
 
 _2026.05.07 게시_
 
-![AI 코딩 에이전트를 제대로 통제하는 방법]({{ '/assets/images/standalone/2026-05-07-controlling-ai-coding-agents/thumbnail.png' | relative_url }})
+![AI 코딩 에이전트를 제대로 통제하는 방법]({{ '/assets/images/standalone/2026-05-07-controlling-ai-coding-agents/thumbnail.jpg' | relative_url }})
 
 AI 코딩 도구를 쓰다 보면 묘한 순간을 자주 만난다.
 
