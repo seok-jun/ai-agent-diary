@@ -12,7 +12,8 @@ permalink: /
 <div class="series-hero">
   <div class="series-eyebrow"><span>seok jun의 개인 기술 블로그</span><span>최근 업데이트 {{ latest_page.date | date: "%Y.%m.%d" }} · 글 {{ dated_pages.size }}편</span></div>
   <h1 class="series-hero-title"><img src="{{ '/assets/images/brand/wordmark.svg' | relative_url }}" alt="AI Agent Diary" width="640" height="150"></h1>
-  <p>AI 코딩 에이전트를 실무에 붙이면서 남긴 기록입니다. 개발 방법론, 검증, 문서화, 그리고 그 과정에서 마주친 판단들.</p>
+  <p>AI 코딩 에이전트를 회사 일과 개인 프로젝트에 붙이면서 남긴 기록입니다. 개발 방법론, 검증, 문서화, 그리고 그 과정에서 마주친 판단들.</p>
+  <p id="home-activity" class="series-hero-stats" data-source="{{ '/assets/activity/data.json' | relative_url }}" hidden><span class="hs-label">최근 30일</span><span class="hs-values"><span>병합 PR <b data-ha="prs">—</b></span><span>완료 이슈 <b data-ha="issues">—</b></span><span>AI 토큰 <b data-ha="tokens">—</b> <small data-ha="tokens-note">캐시 포함</small></span><small data-ha="asof"></small></span></p>
   <p class="series-hero-about"><a href="./about/">글쓴이 소개 →</a> · <a href="./activity/">AI 개발 활동 →</a></p>
 </div>
 
@@ -37,13 +38,15 @@ permalink: /
   </div>
 </section>
 
+<script src="{{ '/assets/activity/home-summary.js' | relative_url }}" defer></script>
+
 <section class="series-section">
   <h2>시리즈</h2>
   <div class="series-cards">
     <div class="series-card series-card--grouped">
       <span class="series-card-kicker">Series · 19편</span>
-      <h3><a href="./series/agent-sdd/">Agent SDD 실무 개발</a></h3>
-      <p>AI Agent를 실무 개발에 붙이면서 겪은 일을 쓴 순서대로 정리한 연재입니다. 처음이라면 아래 세 묶음의 첫 글부터 읽으면 됩니다.</p>
+      <h3><a href="./series/agent-sdd/">Agent SDD 개발 일지</a></h3>
+      <p>AI Agent를 회사 일과 개인 프로젝트에 붙이면서 겪은 일을 쓴 순서대로 정리한 연재입니다. 처음이라면 아래 세 묶음의 첫 글부터 읽으면 됩니다.</p>
       <ol class="series-groups">
         <li>
           <span class="series-group-head"><span class="series-group-range">1~4편</span><strong>기초</strong></span>
@@ -130,9 +133,4 @@ permalink: /
       </span>
     </a>
   </div>
-</section>
-
-<section class="series-section">
-  <h2>Velog에도 게시</h2>
-  <p class="series-origin">이 사이트가 정본이며, 같은 글을 Velog에도 게시합니다.<br>Velog · <a href="https://velog.io/@hiha12ha/posts">@hiha12ha/posts</a><br>RSS · <a href="https://v2.velog.io/rss/@hiha12ha">v2.velog.io/rss/@hiha12ha</a></p>
 </section>

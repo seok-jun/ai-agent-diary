@@ -1,5 +1,5 @@
 ---
-title: "Agent SDD 실무 개발"
+title: "Agent SDD 개발 일지"
 nav_order: 2
 has_children: true
 has_toc: false
@@ -9,9 +9,9 @@ last_modified_at: 2026-10-16
 
 <div class="series-hero">
   <div class="series-eyebrow"><span>Series · 연재</span><span>총 19편</span></div>
-  <h1>Agent SDD 실무 개발</h1>
-  <p>AI Agent를 실무 개발에 안정적으로 적용하기 위한 연재입니다. 작업의 위험도에 맞춰 절차를 조절하는 방법부터 명세 기반 구현 흐름, 백로그를 이용한 세션 연속성, 개발 완료 후 문서 정리, 도메인 문서로 Agent의 탐색을 줄이는 실험, SDD 문서 뼈대를 skill로 고정하려다 마주친 지시-예시 충돌, PR에서 business 문서를 안전하게 갱신하는 절차, Skill Eval을 이용한 검증, 멀티 Agent 작업 격리와 검증 Gate 운영, 그리고 방법론을 강요하지 않고 공유하기 위해 프로젝트 공통 규칙과 개발 방법론을 분리한 구상, 실무 재적용에서 다듬은 리뷰 요청·스냅샷·사람 실행 검증, 모델이 좋아진 뒤 기존 가드레일이 여전히 필요한지 다시 재보고, 그 실험의 채점기까지 다시 검사하고, 늘어난 산문 규칙 가운데 기계가 판정할 수 있는 것을 세어 넘기고, 방법론을 프로젝트 밖으로 빼서 연결하고, Agent가 실제 작업 관측으로 방법론을 고치게 한 과정까지 다룹니다.</p>
-  <p>시리즈에서 사용한 규칙과 Skill은 <a href="https://github.com/seok-jun/agent-sdd-kit">agent-sdd-kit</a>으로, 워크플로 전체는 <a href="https://github.com/seok-jun/adaptive-agentic-sdd-ko">adaptive-agentic-sdd-ko</a>로 공개했습니다.</p>
+  <h1>Agent SDD 개발 일지</h1>
+  <p>AI 코딩 에이전트를 회사 일과 개인 프로젝트에 붙이면서 남긴 기록입니다. 처음에는 절차를 하나씩 더해 가며 Agent를 붙잡았고, 모델이 좋아진 뒤에는 그 절차가 아직 필요한지 다시 재고 있습니다. 처음이라면 <a href="./001-ai-task-grading/">1편</a>부터, 최근 이야기는 <a href="./012-outgrown-guardrails/">12편</a>부터 읽으면 됩니다.</p>
+  <p>시리즈에서 사용한 규칙과 Skill은 <a href="https://github.com/seok-jun/agent-sdd-kit">agent-sdd-kit</a>으로, 워크플로 전체는 <a href="https://github.com/seok-jun/adaptive-agentic-sdd">adaptive-agentic-sdd</a>로 공개했습니다.</p>
 </div>
 
 <section class="series-group-section">
@@ -176,5 +176,3 @@ last_modified_at: 2026-10-16
     </a>
   </div>
 </section>
-
-<p class="series-note">1편에서 작업 등급을 정하고, 2편에서 Agent 작업 절차를 구성한 뒤, 3편에서 세션이 끊겨도 작업을 이어가는 방법으로, 4편에서 개발이 끝난 뒤 문서를 정리하는 방법으로, 5편에서 도메인 문서가 Agent의 탐색을 실제로 줄이는지 측정하고, 6편에서 그 문서 뼈대를 skill로 고정할 때 생기는 지시-예시 충돌을 살펴봅니다. 7편에서는 PR의 실제 구현을 기준으로 business 문서를 안전하게 갱신하는 절차까지 확장하고, 8편에서는 Skill의 트리거와 실행 절차를 Eval로 검증합니다. 9편에서는 멀티 Agent를 실제 운영하며 작업 격리, 제한된 탐색, 위험도별 검증 Gate로 확장합니다. 10편에서는 이렇게 만든 방법론을 다른 개발자에게 강요하지 않고 공유하는 구조를 고민합니다. 11편에서는 Adaptive SDD를 실무 프로젝트에 다시 적용하며 무엇을 넘기고 무엇을 돌려받을지 정리합니다. 12편부터는 모델이 좋아진 뒤의 이야기입니다. 12편에서 기존 가드레일이 걸림돌이 된 건 아닌지 의심하게 된 과정과 먼저 재보기로 한 이유를 적고, 13편에서 보조 절차 하나만 빼고 비교한 첫 실험과 판정을 보류한 이유를, 14편에서 그 실험을 두 번 멈춘 격리 문제를 다룹니다. 15편에서는 다시 돌리려고 새로 만든 실험장과, 실제 모델로 끝까지 돌린 두 쌍의 결과를 다룹니다. 16편에서는 아직 쓰지 않은 과제로 돌린 마지막 한 쌍과, 15편 진단 과제의 판정을 검사별로 다시 본 결과를 다룹니다. 17편에서는 산문 규칙 370줄과 실제 사고 기록을 세어 보고, 기계 판정으로 넘긴 것과 넘기지 않은 것을 정리합니다. 18편에서는 방법론을 프로젝트 밖으로 빼는 연결을 만들고 실제로 어디서 읽히는지 따라가며, 19편에서는 Agent가 실제 작업 관측을 근거로 방법론을 고치게 한 결과를 다룹니다. 순서대로 읽기를 권합니다.</p>

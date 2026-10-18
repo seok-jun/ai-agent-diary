@@ -328,7 +328,7 @@ AI가 기능을 하나 끝내면 바로 다음 것을 시키고 싶어진다. �
 
 - [Kent Beck: Software Engineering in the Age of AI — Prodacity 2026](https://www.youtube.com/watch?v=F8fBgDCf2Y4) — 강연 영상. Features/Futures 그림은 22분·26분 전후, Effort에서 Mission으로 이어지는 그림은 46분 전후 화면을 확인했다.
 - [Rise8 공식 강연 전문과 요약](https://www.rise8.us/videos/kent-beck-software-engineering-in-the-age-of-ai) — 발언의 맥락을 확인한 자료다.
-- [Adaptive Agentic SDD — 한국어 소개](https://github.com/seok-jun/adaptive-agentic-sdd-ko) — 방법론 소개와 도입 안내다.
+- [Adaptive Agentic SDD](https://github.com/seok-jun/adaptive-agentic-sdd) — 방법론 소개와 도입 안내다. 한국어판은 1.0 미리보기 브랜치의 [`ko/`](https://github.com/seok-jun/adaptive-agentic-sdd/tree/v1-preview/ko)에 있다.
 - [Adaptive Agentic SDD — Workflow](https://github.com/seok-jun/adaptive-agentic-sdd/blob/33e44645e43ac50cad62031fb534c064b5d5a1d8/docs/workflow.md), [Risk Grades](https://github.com/seok-jun/adaptive-agentic-sdd/blob/33e44645e43ac50cad62031fb534c064b5d5a1d8/docs/risk-grades.md) — 비교에 사용한 공개 v0.2 기준 문서. 이후 변경과 구분할 수 있도록 확인한 커밋에 연결했다.
 - `my-honey-chat`의 공통 파서 분리 작업(2026-08-29, PR #54) — 비공개 프로젝트의 실제 사례. 7절에 변경 전후 호출과 모듈 배치를 발췌했다.
 

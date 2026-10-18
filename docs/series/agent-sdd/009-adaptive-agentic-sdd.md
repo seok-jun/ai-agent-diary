@@ -1,6 +1,6 @@
 ---
 title: "멀티 Agent 개발을 실제로 운영해보고 정리한 것들"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 9
 permalink: /series/agent-sdd/009-adaptive-agentic-sdd/
 date: 2026-09-01
@@ -273,7 +273,6 @@ Small 수정까지 매번 별도 Agent를 붙이면 오히려 비용만 늘어�
 
 전체 흐름과 템플릿은 아래 저장소에 정리해뒀다.
 
-- [Adaptive Agentic SDD — 한국어](https://github.com/seok-jun/adaptive-agentic-sdd-ko)
 - [Adaptive Agentic SDD — English](https://github.com/seok-jun/adaptive-agentic-sdd)
 
 ---

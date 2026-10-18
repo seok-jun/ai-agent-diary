@@ -1,6 +1,6 @@
 ---
 title: "예시가 지시보다 강할 때가 있다"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 6
 permalink: /series/agent-sdd/006-example-stronger-than-instruction/
 date: 2026-07-09

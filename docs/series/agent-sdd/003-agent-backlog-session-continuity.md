@@ -1,6 +1,6 @@
 ---
 title: "죽은 Agent 세션, 백로그로 살리는 법"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 3
 permalink: /series/agent-sdd/003-agent-backlog-session-continuity/
 date: 2026-07-02

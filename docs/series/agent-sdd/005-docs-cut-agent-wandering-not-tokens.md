@@ -1,6 +1,6 @@
 ---
 title: "문서는 토큰 청구서를 크게 줄이지 않는다 — 대신 Agent가 헤매는 시간을 줄인다"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 5
 permalink: /series/agent-sdd/005-docs-cut-agent-wandering-not-tokens/
 date: 2026-07-06

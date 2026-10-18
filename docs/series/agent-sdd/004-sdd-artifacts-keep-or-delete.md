@@ -1,6 +1,6 @@
 ---
 title: "개발이 끝난 SDD 문서, 지울 것과 도메인에 남길 것"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 4
 permalink: /series/agent-sdd/004-sdd-artifacts-keep-or-delete/
 date: 2026-07-05

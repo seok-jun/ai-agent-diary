@@ -1,6 +1,6 @@
 ---
 title: "다시 실험하려고 실험장부터 만들었다"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 15
 permalink: /series/agent-sdd/015-rebuilding-experiment-environment/
 date: 2026-10-06

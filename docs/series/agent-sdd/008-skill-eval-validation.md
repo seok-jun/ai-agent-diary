@@ -1,6 +1,6 @@
 ---
 title: "Skill 검증을 위한 Eval, 직접 돌려보았다"
-parent: Agent SDD 실무 개발
+parent: Agent SDD 개발 일지
 nav_order: 8
 permalink: /series/agent-sdd/008-skill-eval-validation/
 date: 2026-07-22

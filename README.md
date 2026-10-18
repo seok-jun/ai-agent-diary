@@ -10,7 +10,7 @@ AI Agent 개발, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기�
 ## 문서 구성
 
 - [전체 글 목록](./docs/index.md)
-- [Agent SDD 실무 개발](./docs/series/agent-sdd/README.md) — AI Agent 실무 적용을 다룬 19편의 연재
+- [Agent SDD 개발 일지](./docs/series/agent-sdd/README.md) — AI Agent를 회사 일과 개인 프로젝트에 붙이며 쓴 19편의 연재
 - [단독 글](./docs/standalone/README.md) — 개발 및 AI 활용에 관한 독립 문서 10편
 - [AI에게 물어본 인간의 미래](./docs/series/ai-future-dialogue/README.md) — 프롤로그와 본편 7편으로 구성된 연재
 - [소개](./docs/about.md) — 글쓴이와 이 사이트에서 다루는 내용
@@ -32,10 +32,3 @@ AI Agent 개발, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기�
 
 - [Jekyll](https://jekyllrb.com/) + [Just the Docs](https://just-the-docs.com/) 테마
 - 소스는 `docs/` 폴더, 배포는 GitHub Actions (`.github/workflows/pages.yml`)
-
-## Velog에도 게시
-
-이 저장소의 GitHub Pages 사이트가 정본이며, 같은 글을 Velog에도 게시합니다.
-
-- Velog: https://velog.io/@hiha12ha/posts
-- RSS: https://v2.velog.io/rss/@hiha12ha
