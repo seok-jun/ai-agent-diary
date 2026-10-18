@@ -19,7 +19,7 @@
   <rect x="548" y="44" width="248" height="300" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.2"/>
 
   <text class="ph" x="24" y="30">① 서명 승인을 쓸 때</text>
-  <text class="ph" x="286" y="30">② 지금 앱</text><text class="dt" x="356" y="30">10/15~</text>
+  <text class="ph" x="286" y="30">② 지금 프로젝트 규칙</text><text class="dt" x="432" y="30">10/15~</text>
   <text class="ph" x="548" y="30">③ 방법론 공통</text><text class="dt" x="652" y="30">10/16~</text>
 
   <!-- panel 1: stages with signature gates -->
