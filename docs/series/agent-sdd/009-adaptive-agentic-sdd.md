@@ -273,7 +273,6 @@ Small 수정까지 매번 별도 Agent를 붙이면 오히려 비용만 늘어�
 
 전체 흐름과 템플릿은 아래 저장소에 정리해뒀다.
 
-- [Adaptive Agentic SDD — 한국어](https://github.com/seok-jun/adaptive-agentic-sdd-ko)
 - [Adaptive Agentic SDD — English](https://github.com/seok-jun/adaptive-agentic-sdd)
 
 ---

@@ -13,6 +13,6 @@ description: "AI Agent Diary를 쓰는 사람과 이 사이트에서 다루는 �
 
 ## 링크
 
-- **방법론 저장소** — [adaptive-agentic-sdd](https://github.com/seok-jun/adaptive-agentic-sdd) ([한국어판](https://github.com/seok-jun/adaptive-agentic-sdd-ko)). 연재에서 다듬은 Adaptive SDD 워크플로의 현재 기준이다.
+- **방법론 저장소** — [adaptive-agentic-sdd](https://github.com/seok-jun/adaptive-agentic-sdd) ([1.0 미리보기 한국어판](https://github.com/seok-jun/adaptive-agentic-sdd/tree/v1-preview/ko)). 연재에서 다듬은 Adaptive SDD 워크플로의 현재 기준이다.
 - **블로그 저장소** — [seok-jun/ai-agent-diary](https://github.com/seok-jun/ai-agent-diary)
 - **Velog** — [@hiha12ha](https://velog.io/@hiha12ha/posts). 이 사이트가 정본이고, 같은 글을 Velog에도 게시한다.

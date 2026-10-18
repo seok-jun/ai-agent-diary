@@ -247,5 +247,4 @@ changed
 
 - [문서는 토큰 청구서를 크게 줄이지 않는다 — 대신 Agent가 헤매는 시간을 줄인다]({{ '/series/agent-sdd/005-docs-cut-agent-wandering-not-tokens/' | relative_url }})
 - [멀티 Agent 개발을 실제로 운영해보고 정리한 것들]({{ '/series/agent-sdd/009-adaptive-agentic-sdd/' | relative_url }})
-- [Adaptive Agentic SDD — 한국어](https://github.com/seok-jun/adaptive-agentic-sdd-ko)
 - [Adaptive Agentic SDD — English](https://github.com/seok-jun/adaptive-agentic-sdd)

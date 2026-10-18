@@ -11,7 +11,7 @@ last_modified_at: 2026-10-16
   <div class="series-eyebrow"><span>Series · 연재</span><span>총 19편</span></div>
   <h1>Agent SDD 개발 일지</h1>
   <p>AI 코딩 에이전트를 회사 일과 개인 프로젝트에 붙이면서 남긴 기록입니다. 처음에는 절차를 하나씩 더해 가며 Agent를 붙잡았고, 모델이 좋아진 뒤에는 그 절차가 아직 필요한지 다시 재고 있습니다. 처음이라면 <a href="./001-ai-task-grading/">1편</a>부터, 최근 이야기는 <a href="./012-outgrown-guardrails/">12편</a>부터 읽으면 됩니다.</p>
-  <p>시리즈에서 사용한 규칙과 Skill은 <a href="https://github.com/seok-jun/agent-sdd-kit">agent-sdd-kit</a>으로, 워크플로 전체는 <a href="https://github.com/seok-jun/adaptive-agentic-sdd-ko">adaptive-agentic-sdd-ko</a>로 공개했습니다.</p>
+  <p>시리즈에서 사용한 규칙과 Skill은 <a href="https://github.com/seok-jun/agent-sdd-kit">agent-sdd-kit</a>으로, 워크플로 전체는 <a href="https://github.com/seok-jun/adaptive-agentic-sdd">adaptive-agentic-sdd</a>로 공개했습니다.</p>
 </div>
 
 <section class="series-group-section">
