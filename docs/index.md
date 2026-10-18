@@ -12,7 +12,8 @@ permalink: /
 <div class="series-hero">
   <div class="series-eyebrow"><span>seok jun의 개인 기술 블로그</span><span>최근 업데이트 {{ latest_page.date | date: "%Y.%m.%d" }} · 글 {{ dated_pages.size }}편</span></div>
   <h1 class="series-hero-title"><img src="{{ '/assets/images/brand/wordmark.svg' | relative_url }}" alt="AI Agent Diary" width="640" height="150"></h1>
-  <p>AI 코딩 에이전트를 실무에 붙이면서 남긴 기록입니다. 개발 방법론, 검증, 문서화, 그리고 그 과정에서 마주친 판단들.</p>
+  <p>AI 코딩 에이전트를 회사 일과 개인 프로젝트에 붙이면서 남긴 기록입니다. 개발 방법론, 검증, 문서화, 그리고 그 과정에서 마주친 판단들.</p>
+  <p id="home-activity" class="series-hero-stats" data-source="{{ '/assets/activity/data.json' | relative_url }}" hidden><span class="hs-label">최근 30일</span><span class="hs-values"><span>병합 PR <b data-ha="prs">—</b></span><span>완료 이슈 <b data-ha="issues">—</b></span><span>AI 토큰 <b data-ha="tokens">—</b> <small data-ha="tokens-note">캐시 포함</small></span><small data-ha="asof"></small></span></p>
   <p class="series-hero-about"><a href="./about/">글쓴이 소개 →</a> · <a href="./activity/">AI 개발 활동 →</a></p>
 </div>
 
@@ -36,6 +37,8 @@ permalink: /
     {% endfor %}
   </div>
 </section>
+
+<script src="{{ '/assets/activity/home-summary.js' | relative_url }}" defer></script>
 
 <section class="series-section">
   <h2>시리즈</h2>

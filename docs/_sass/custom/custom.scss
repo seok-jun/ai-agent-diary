@@ -472,6 +472,48 @@ body {
   margin-top: 0;
 }
 
+// Home hero: one line of last-30-day numbers, filled by home-summary.js.
+.series-hero .series-hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.75rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.series-hero .series-hero-stats[hidden] {
+  display: none;
+}
+
+.series-hero-stats .hs-label {
+  padding: 0.1rem 0.5rem;
+  border: 1px solid rgba(74, 222, 128, 0.35);
+  border-radius: 999px;
+  color: #86efac;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.series-hero-stats .hs-values {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.9rem;
+}
+
+.series-hero-stats b {
+  color: #f8fafc;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.series-hero-stats small {
+  color: #94a3b8;
+  font-size: 0.72rem;
+}
+
 .series-row-meta {
   display: flex;
   align-items: center;
