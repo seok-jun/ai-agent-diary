@@ -4,6 +4,7 @@ parent: Agent SDD 개발 일지
 nav_order: 3
 permalink: /series/agent-sdd/003-agent-backlog-session-continuity/
 date: 2026-07-02
+last_modified_at: 2026-10-18
 description: "맥락이 끊긴 Agent 세션을 백로그에 남긴 보류 결정과 후속 작업으로 되살려 세션 연속성을 확보하는 방법."
 summary: "끊긴 세션을 백로그의 보류 결정·후속 작업으로 되살려 연속성을 확보하다."
 image: /assets/images/agent-sdd/003-agent-backlog-session-continuity/thumbnail.png
@@ -418,5 +419,3 @@ AI Agent는 코드를 빠르게 만든다.
 나는 그 역할을 백로그가 해준다고 본다.
 
 결국 이 방식은 Agent에게 모든 걸 기억하라고 요구하는 대신, 기억해야 할 걸 파일로 남기는 것뿐이다. 다음 세션도, 다음 Agent도 그 파일을 기준으로 시작한다.
-
-지금 내가 쓰는 방법은 이거다.
