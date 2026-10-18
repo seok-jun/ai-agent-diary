@@ -4,6 +4,7 @@ parent: "단독 글"
 nav_order: 9
 permalink: /standalone/2026-04-28-latency-numbers-every-programmer-should-know/
 date: 2026-04-28
+last_modified_at: 2026-10-18
 description: "Jeff Dean의 'Latency Numbers Every Programmer Should Know'를 한국어로 정리하고 최신 감각으로 되짚은 참고 자료."
 summary: "Jeff Dean의 지연 숫자를 한국어로 정리하고 최신 감각으로 되짚은 참고 자료."
 image: /assets/images/standalone/2026-04-28-latency-numbers-every-programmer-should-know/thumbnail.jpg
@@ -15,7 +16,7 @@ _2026.04.28 게시_
 
 ![Latency Numbers Every Programmer Should Know 정리]({{ '/assets/images/standalone/2026-04-28-latency-numbers-every-programmer-should-know/thumbnail.jpg' | relative_url }})
 
-원본 계열 자료는 Jeff Dean이 정리한 숫자를 기반으로 하며, Peter Norvig도 유사한 맥락의 내용을 언급한 바 있습니다. ([Gist][1])
+원본 계열 자료는 Jeff Dean이 정리한 숫자를 기반으로 하며, Peter Norvig도 유사한 맥락의 내용을 언급한 바 있다. ([Gist][1])
 
 ---
 
@@ -559,5 +560,5 @@ CPU 내부에서 끝나는가?
 - Latency Numbers Every Programmer Should Know, Jeff Dean / Peter Norvig 계열 정리 ([Gist][1])
 - Napkin Math: 시스템 성능 추정을 위한 숫자와 기법 모음 ([GitHub][2])
 
-[1]: https://gist.github.com/jboner/2841832?utm_source=chatgpt.com "Latency Numbers Every Programmer Should Know"
-[2]: https://github.com/sirupsen/napkin-math?utm_source=chatgpt.com "sirupsen/napkin-math: Techniques and numbers for ..."
+[1]: https://gist.github.com/jboner/2841832 "Latency Numbers Every Programmer Should Know"
+[2]: https://github.com/sirupsen/napkin-math "sirupsen/napkin-math"

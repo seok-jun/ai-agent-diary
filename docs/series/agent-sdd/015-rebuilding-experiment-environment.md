@@ -4,6 +4,7 @@ parent: Agent SDD 개발 일지
 nav_order: 15
 permalink: /series/agent-sdd/015-rebuilding-experiment-environment/
 date: 2026-10-06
+last_modified_at: 2026-10-18
 description: "격리 때문에 두 번 멈춘 하네스 비교 실험을 다시 돌리려고, 실행마다 새 환경을 만들고 푸는 곳과 채점하는 곳을 나눴다. 실제 호출 열한 번 중 일곱 번은 비교까지 가지 못했다. 끝까지 간 두 쌍에서 확인한 것과 아직 모르는 것을 정리한 기록."
 summary: "실행마다 새 환경을 만들고 푸는 곳과 채점하는 곳을 나눈 실험장과, 끝까지 간 두 쌍에서 확인한 것."
 image: /assets/images/agent-sdd/015-rebuilding-experiment-environment/thumbnail.png
@@ -12,6 +13,9 @@ image: /assets/images/agent-sdd/015-rebuilding-experiment-environment/thumbnail.
 # 다시 실험하려고 실험장부터 만들었다
 
 _2026.10.06 게시_
+
+**이후 변경** · 이 글의 진단 과제 판정은 [16편]({{ '/series/agent-sdd/016-rechecking-the-verdict/' | relative_url }})에서 검사별로 다시 봤다. 취소·재시도 실패는 실패라고 보기 어렵거나 요구사항을 어떻게 읽느냐에 따라 달라졌고, 확실하게 남은 건 A의 예외 하나다. 본문은 그때 기록으로 그대로 둔다.
+{: .update-notice }
 
 ![다시 실험하려고 실험장부터 만들었다 — 푸는 곳은 실행마다 새 환경, 채점하는 곳은 별도의 새 환경으로 분리]({{ '/assets/images/agent-sdd/015-rebuilding-experiment-environment/thumbnail.png' | relative_url }})
 

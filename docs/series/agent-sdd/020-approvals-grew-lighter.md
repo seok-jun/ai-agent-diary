@@ -4,7 +4,7 @@ parent: Agent SDD 개발 일지
 nav_order: 20
 permalink: /series/agent-sdd/020-approvals-grew-lighter/
 date: 2026-10-18 12:00:00 +0900
-description: "Agent가 승인을 건너뛰고, 혼자 검토하던 나는 병목이 되어 의무감으로 승인했다. 키 서명으로 단단하게 만들었더니 클라우드에서는 승인 자체를 못 했다. 그래서 승인 절차를 줄이고 확인과 테스트 쪽으로 돌렸고, 방법론에서도 설계 단계 승인을 하네스 공통에서 빼고 사람 판단 세 요건만 남겼다."
+description: "Agent는 승인을 건너뛰고, 혼자 검토하던 나는 병목이 되어 의무감으로 승인했다. 키 서명으로 단단하게 만들자 클라우드에서는 승인을 못 했다. 그래서 확인과 테스트 쪽으로 돌렸고, 설계 단계 승인은 하네스 공통에서 빼고 사람 판단 세 요건만 남겼다."
 summary: "승인을 단단하게 만들수록 가벼워지고 막히기만 해서, 설계 단계 승인을 공통에서 빼고 사람 판단 세 요건만 남긴 과정."
 image: /assets/images/agent-sdd/020-approvals-grew-lighter/thumbnail.png
 ---

@@ -5,7 +5,7 @@ nav_order: 6
 permalink: /series/agent-sdd/006-example-stronger-than-instruction/
 date: 2026-07-09
 last_modified_at: 2026-07-28
-description: "SDD 문서 뼈대를 매번 같은 형태로 찍어내려고 sdd-doc-scaffold skill을 만들었다가, skill이 매크로가 아니라 Agent가 해석하는 문서라는 사실을 확인한 기록. skill 안에서 지시가 서로 충돌하고, 채워질 예시 값이 그대로 복사되는 문제를 v1.x → v2 → v2-fix로 좁혀갔다."
+description: "SDD 문서 뼈대를 찍어내려고 sdd-doc-scaffold skill을 만들었다가, skill이 매크로가 아니라 Agent가 해석하는 문서라는 걸 확인한 기록. 지시 충돌과 그대로 복사되는 예시 값을 v1.x → v2 → v2-fix로 좁혀갔다."
 summary: "SDD 문서 뼈대를 skill로 고정하려다, skill 안의 지시 충돌과 그대로 복사되는 예시 값을 v1.x → v2 → v2-fix로 좁혀간 기록."
 image: /assets/images/agent-sdd/006-example-stronger-than-instruction/thumbnail.png
 ---
