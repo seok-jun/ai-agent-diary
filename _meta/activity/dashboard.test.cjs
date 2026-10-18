@@ -1,6 +1,6 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const {bounds, select, history, comparison} = require("../../docs/assets/activity/dashboard.js");
+const {bounds, select, history, comparison, niceMax, tokenTotal} = require("../../docs/assets/activity/dashboard.js");
 const data = {codex: {asOf: "2026-10-16", daily: [{date: "2026-09-30", tokens: 10}, {date: "2026-10-01", tokens: 20}]},
   github: {from: "2026-10-01", through: "2026-10-02", daily: [
     {date: "2026-10-01", commits: 1, mergedPrs: 2, closedIssues: 3, additions: 4, deletions: 5, measuredCommits: 1},
@@ -112,4 +112,20 @@ test("comparison can use Claude Code or the combined token total", () => {
   assert.equal(comparison(sample, "all", "", "total").tokens, 50);
   assert.equal(comparison(data, "all", "", "claude").tokens, null);
   assert.equal(comparison(data, "all", "", "total").tokens, null);
+});
+
+test("chart axis maximum rounds up to a clean number", () => {
+  assert.equal(niceMax(0), 1);
+  assert.equal(niceMax(7), 10);
+  assert.equal(niceMax(29), 50);
+  assert.equal(niceMax(385210248), 500000000);
+  assert.equal(niceMax(1293574512), 2000000000);
+  assert.equal(niceMax(200), 200);
+});
+
+test("token total is missing only when neither tool was collected", () => {
+  assert.equal(tokenTotal({tokens: null, claudeTokens: null}), null);
+  assert.equal(tokenTotal({tokens: 5, claudeTokens: null}), 5);
+  assert.equal(tokenTotal({tokens: 0, claudeTokens: 7}), 7);
+  assert.equal(tokenTotal({tokens: 5, claudeTokens: 7}), 12);
 });
