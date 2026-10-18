@@ -25,7 +25,7 @@ Codex·Claude Code와 함께 쌓은 사용 기록, 그리고 GitHub에 남긴 �
         <article class="ad-source ad-source--claude" aria-labelledby="activity-claude-name">
           <header class="ad-source-head"><span class="ad-key ad-key--claude" aria-hidden="true"></span><h3 id="activity-claude-name">Claude Code</h3><span id="activity-claude-asof" class="ad-muted"></span></header>
           <strong id="activity-claude-total" class="ad-total">—</strong>
-          <p id="activity-claude-range" class="ad-muted">이 PC에 남은 기록부터 수집 · 캐시 토큰 포함</p>
+          <p id="activity-claude-range" class="ad-muted">개인 개발용 기록 · 캐시 토큰 포함</p>
           <dl id="activity-claude-facts" class="ad-facts"></dl>
         </article>
       </div>
@@ -94,8 +94,8 @@ Codex·Claude Code와 함께 쌓은 사용 기록, 그리고 GitHub에 남긴 �
 
 **Claude Code**
 
-- 이 PC의 **Claude Code 로컬 대화 기록**에 남은 응답별 사용량(입력·출력·캐시 생성·캐시 읽기)을 한국 시간 날짜로 합산한 값으로, **캐시 토큰을 포함**합니다. 같은 응답이 여러 기록에 반복되면 한 번만 셉니다.
-- Claude Code는 오래된 기록을 지우므로, 첫 수집 전에 지워진 기록은 포함되지 않고 이미 공개한 날짜의 값은 줄이지 않습니다. claude.ai 채팅, 다른 PC, 청구 금액은 포함하지 않습니다.
+- **개인 개발용 Claude Code 대화 기록**에 남은 응답별 사용량(입력·출력·캐시 생성·캐시 읽기)을 한국 시간 날짜로 합산한 값으로, **캐시 토큰을 포함**합니다. 같은 응답이 여러 기록에 반복되면 한 번만 셉니다.
+- Claude Code는 오래된 기록을 지우므로, 첫 수집 전에 지워진 기록은 포함되지 않고 이미 공개한 날짜의 값은 줄이지 않습니다. claude.ai 채팅, 개인 개발용 외 기록, 청구 금액은 포함하지 않습니다.
 
 **GitHub**
 
