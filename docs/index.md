@@ -131,8 +131,3 @@ permalink: /
     </a>
   </div>
 </section>
-
-<section class="series-section">
-  <h2>Velog에도 게시</h2>
-  <p class="series-origin">이 사이트가 정본이며, 같은 글을 Velog에도 게시합니다.<br>Velog · <a href="https://velog.io/@hiha12ha/posts">@hiha12ha/posts</a><br>RSS · <a href="https://v2.velog.io/rss/@hiha12ha">v2.velog.io/rss/@hiha12ha</a></p>
-</section>

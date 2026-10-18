@@ -666,13 +666,6 @@ body {
   text-decoration: underline;
 }
 
-.series-origin {
-  margin: 0.4rem 0 0;
-  color: $archive-muted;
-  font-size: 0.92rem;
-  line-height: 1.7;
-}
-
 @media (max-width: 720px) {
   .series-cards {
     grid-template-columns: 1fr;

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 이 저장소의 정체
 
-이 저장소는 **애플리케이션이 아니라** Velog 블로그 글을 위키처럼 탐색하도록 재정리한 Jekyll 문서 사이트다. 모든 Jekyll 소스는 `docs/`에 있고, 나머지(`README.md`, `_meta/`, `AGENTS.md`)는 GitHub 탐색용일 뿐 빌드되는 사이트에 포함되지 않는다. 본문은 한국어이며, 별도 요청이 없으면 한국어 문장과 출처 표기를 그대로 보존한다.
+이 저장소는 **애플리케이션이 아니라** 개인 기술 블로그 글을 위키처럼 탐색하도록 정리한 Jekyll 문서 사이트다. 모든 Jekyll 소스는 `docs/`에 있고, 나머지(`README.md`, `_meta/`, `AGENTS.md`)는 GitHub 탐색용일 뿐 빌드되는 사이트에 포함되지 않는다. 본문은 한국어이며, 별도 요청이 없으면 한국어 문장과 출처 표기를 그대로 보존한다.
 
 `AGENTS.md`(한국어)가 규칙을 더 자세히 다루는 권위 있는 기여 가이드다. 이 파일에 없는 내용은 `AGENTS.md`를 참고한다.
 
