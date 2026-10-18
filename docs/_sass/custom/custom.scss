@@ -36,9 +36,13 @@ $archive-accent: #059669;
   input, select { min-height: 2.5rem; max-width: 100%; padding: 0.4rem; border: 1px solid #acbdb2; border-radius: 0.4rem; background: white; color: #20392a; font: inherit; }
   input:focus-visible, select:focus-visible, .activity-table-wrap:focus-visible { outline: 3px solid #267146; outline-offset: 3px; }
   .activity-chart { padding: 1rem; border: 1px solid #d7e3db; border-radius: 0.8rem; background: #fff; }
+  .activity-chart-panel + .activity-chart-panel { margin-top: 1.5rem; }
+  .activity-chart-panel h3 { margin: 0 0 0.75rem; font-size: 0.85rem; color: #20392a; }
   .activity-bars { height: 150px; display: flex; align-items: flex-end; gap: 3px; border-bottom: 1px solid #acbdb2; }
   .activity-bar { flex: 1; min-width: 0; background: #29844a; border-radius: 3px 3px 0 0; }
   .activity-bar--missing { background: #dce4df; }
+  .activity-bars--mergedPrs .activity-bar:not(.activity-bar--missing) { background: #376fb2; }
+  .activity-bars--closedIssues .activity-bar:not(.activity-bar--missing) { background: #9566b5; }
   .activity-chart-axis { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.65rem; color: #526159; }
   .activity-table-wrap { max-height: 30rem; overflow: auto; margin-bottom: 2rem; }
   .activity-table { display: table; min-width: 38rem; width: 100%; font-size: 0.75rem; margin: 0; }

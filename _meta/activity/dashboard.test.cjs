@@ -1,6 +1,6 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const {bounds, select, history} = require("../../docs/assets/activity/dashboard.js");
+const {bounds, select, history, comparison} = require("../../docs/assets/activity/dashboard.js");
 const data = {codex: {asOf: "2026-10-16", daily: [{date: "2026-09-30", tokens: 10}, {date: "2026-10-01", tokens: 20}]},
   github: {from: "2026-10-01", through: "2026-10-02", daily: [
     {date: "2026-10-01", commits: 1, mergedPrs: 2, closedIssues: 3, additions: 4, deletions: 5, measuredCommits: 1},
@@ -35,4 +35,51 @@ test("unknown line measurements are never represented as zero", () => {
   other.github.daily[1].additions = null;
   other.github.daily[1].deletions = null;
   assert.equal(select(other, "month", "2026-10").additions, null);
+});
+
+test("comparison clips both sources to the same dates", () => {
+  const result = comparison(data, "all", "");
+  assert.equal(result.from, "2026-10-01");
+  assert.equal(result.through, "2026-10-02");
+  assert.equal(result.tokens, 20); // September tokens are outside GitHub coverage.
+  assert.equal(result.mergedPrs, 2);
+  assert.equal(result.closedIssues, 3);
+  assert.equal(result.prsPerMillion, 100000);
+  assert.equal(comparison(data, "month", "2026-10").tokens, 20);
+});
+
+test("rates use total counts divided by total tokens, not daily rate averages", () => {
+  const sample = structuredClone(data);
+  sample.codex.daily = [{date: "2026-10-01", tokens: 1000000}, {date: "2026-10-02", tokens: 3000000}];
+  sample.github.daily[1].mergedPrs = 6;
+  assert.equal(comparison(sample, "all", "").prsPerMillion, 2);
+  assert.equal(comparison(sample, "day", "2026-10-01").prsPerMillion, 2);
+  assert.equal(comparison(sample, "all", "").issuesPerMillion, 0.75);
+});
+
+test("zero tokens are distinct from missing coverage and zero outcomes", () => {
+  const zero = comparison(data, "day", "2026-10-02");
+  assert.equal(zero.tokens, 0);
+  assert.equal(zero.prsPerMillion, null);
+  const sample = structuredClone(data);
+  sample.codex.daily.push({date: "2026-10-02", tokens: 1000000});
+  assert.equal(comparison(sample, "day", "2026-10-02").prsPerMillion, 0);
+  for (const missing of [{...data, codex: null}, {...data, github: null},
+    {...data, codex: {...data.codex, daily: []}},
+    {...data, github: {...data.github, daily: []}}]) {
+    assert.equal(comparison(missing, "all", "").tokens, null);
+  }
+  assert.equal(comparison(data, "month", "2026-09").from, null);
+  assert.equal(comparison(data, "day", "2026-10-03").tokens, null);
+});
+
+test("partial months and Codex end dates constrain the comparison", () => {
+  const sample = structuredClone(data);
+  sample.codex.asOf = "2026-10-01";
+  sample.github.daily[1].mergedPrs = 50;
+  const result = comparison(sample, "month", "2026-10");
+  assert.equal(result.from, "2026-10-01");
+  assert.equal(result.through, "2026-10-01");
+  assert.equal(result.mergedPrs, 2);
+  assert.equal(comparison(sample, "day", "2026-10-02").tokens, null);
 });

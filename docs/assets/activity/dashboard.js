@@ -3,6 +3,8 @@
   "use strict";
   const format = new Intl.NumberFormat("ko-KR");
   const count = value => value == null ? "—" : format.format(value);
+  const rateFormat = new Intl.NumberFormat("ko-KR", {maximumFractionDigits: 3});
+  const rate = value => value == null ? "—" : value > 0 && value < 0.001 ? "0.001 미만" : rateFormat.format(value);
   const sum = (rows, key) => rows.reduce((total, row) => total + row[key], 0);
   function bounds(mode, value) {
     if (mode === "all") return ["0000-01-01", "9999-12-31"];
@@ -49,7 +51,25 @@
       .map(r => r.date.slice(0, 7)));
     return Array.from(months).sort().reverse().map(month => ({label: month, ...select(data, "month", month)}));
   }
-  if (typeof module !== "undefined" && module.exports) module.exports = {bounds, select, history};
+  function comparison(data, mode, value) {
+    const [requestedStart, requestedEnd] = bounds(mode, value);
+    const c = data.codex;
+    const g = data.github;
+    const empty = {from: null, through: null, tokens: null, mergedPrs: null,
+      closedIssues: null, prsPerMillion: null, issuesPerMillion: null};
+    if (!c?.daily.length || !g?.daily.length) return empty;
+    const from = [requestedStart, c.daily[0].date, g.from].sort().pop();
+    const through = [requestedEnd, c.asOf, g.through].sort()[0];
+    if (from > through) return empty;
+    const tokens = sum(c.daily.filter(r => from <= r.date && r.date <= through), "tokens");
+    const github = g.daily.filter(r => from <= r.date && r.date <= through);
+    const mergedPrs = sum(github, "mergedPrs");
+    const closedIssues = sum(github, "closedIssues");
+    return {from, through, tokens, mergedPrs, closedIssues,
+      prsPerMillion: tokens > 0 ? mergedPrs / tokens * 1000000 : null,
+      issuesPerMillion: tokens > 0 ? closedIssues / tokens * 1000000 : null};
+  }
+  if (typeof module !== "undefined" && module.exports) module.exports = {bounds, select, history, comparison};
   if (typeof document === "undefined") return;
   const root = document.getElementById("activity-dashboard");
   if (!root) return;
@@ -111,10 +131,18 @@
           card("사용 토큰", count(selected.tokens), selected.tokens === null ? "미수집" : "선택 기간"),
           card("커밋", count(selected.commits), "기본 브랜치 · 본인 작성"),
           card("병합 PR", count(selected.mergedPrs), "본인 작성 PR"),
-          card("완료 이슈", count(selected.closedIssues), "본인 작성 · completed"),
-          card("추가 / 삭제 줄", selected.additions === null ? "—" : "+" + count(selected.additions) + " / −" + count(selected.deletions), selected.additions === null ? "변경량 미수집" : "병합 제외 · " + count(selected.measured) + "개 커밋 측정")
+          card("완료 이슈", count(selected.closedIssues), "본인 작성 · completed")
         );
         const rows = history(data, mode, value);
+        const compared = comparison(data, mode, value);
+        el("comparison-note").textContent = compared.from
+          ? "공통 수집 기간 " + compared.from + " ~ " + compared.through + " · 이 기간의 총건수 ÷ 총토큰 × 100만"
+          : "선택한 기간에 두 기록이 함께 수집된 날짜가 없습니다.";
+        const rateDetail = !compared.from ? "공통 수집 기간 없음" : compared.tokens === 0 ? "사용 토큰이 0이므로 계산하지 않음" : "공통 기간 합계 기준";
+        el("rates").replaceChildren(
+          card("100만 토큰당 병합 PR", rate(compared.prsPerMillion), rateDetail),
+          card("100만 토큰당 완료 이슈", rate(compared.issuesPerMillion), rateDetail)
+        );
         el("table-caption").textContent = mode === "all" ? "월별 내역 · 일부 수집된 월은 * 표시" : value + " 내역";
         const body = rows.map(row => {
           const tr = node("tr");
@@ -122,32 +150,39 @@
           heading.scope = "row";
           tr.append(heading);
           [row.tokens, row.commits, row.mergedPrs, row.closedIssues].forEach(v => tr.append(node("td", count(v))));
-          tr.append(node("td", row.additions === null ? "—" : "+" + count(row.additions) + " / −" + count(row.deletions)));
           return tr;
         });
         el("history").replaceChildren(...body);
-        draw(rows.slice().reverse());
-        el("chart-note").textContent = mode === "all" ? "월별 합계 · 정확한 숫자는 아래 표에서 확인할 수 있습니다." : "일별 사용량 · 빈 날짜는 미수집입니다. 정확한 숫자는 아래 표에서 확인할 수 있습니다.";
+        const chartRows = rows.slice().reverse().map(row => ({label: row.label,
+          ...comparison(data, mode === "all" ? "month" : "day", row.label)}));
+        draw(chartRows);
+        el("chart-note").textContent = (mode === "all" ? "월별" : "일별") + " 공통 기간 합계 · 세 그래프의 날짜 순서는 같고 세로축 단위·최댓값은 다릅니다. 빈 구간은 미수집입니다.";
       }
       function draw(rows) {
         const chart = el("chart");
         chart.replaceChildren();
-        if (!rows.some(r => r.tokens !== null)) {
-          chart.append(node("p", "이 기간의 Codex 기록이 없습니다."));
+        if (!rows.some(r => r.from !== null)) {
+          chart.append(node("p", "이 기간에는 비교할 공통 수집 기록이 없습니다."));
           return;
         }
-        const max = Math.max(...rows.map(r => r.tokens || 0), 1);
-        const bars = node("div", undefined, "activity-bars");
-        bars.setAttribute("aria-hidden", "true");
-        for (const row of rows) {
-          const bar = node("span", undefined, "activity-bar" + (row.tokens === null ? " activity-bar--missing" : ""));
-          bar.style.height = (row.tokens === null ? 2 : Math.max(2, row.tokens / max * 100)) + "%";
-          bar.title = row.label + ": " + (row.tokens === null ? "미수집" : count(row.tokens) + " 토큰");
-          bars.append(bar);
+        for (const [key, title, unit] of [["tokens", "사용 토큰", "토큰"], ["mergedPrs", "병합 PR", "건"], ["closedIssues", "완료 이슈", "건"]]) {
+          const panel = node("div", undefined, "activity-chart-panel");
+          panel.append(node("h3", title));
+          const peak = Math.max(...rows.map(r => r[key] || 0));
+          const bars = node("div", undefined, "activity-bars activity-bars--" + key);
+          bars.setAttribute("role", "img");
+          bars.setAttribute("aria-label", title + " 추이. " + rows.map(row => row.label + ": " + (row[key] === null ? "미수집" : count(row[key]) + " " + unit)).join("; "));
+          for (const row of rows) {
+            const bar = node("span", undefined, "activity-bar" + (row[key] === null ? " activity-bar--missing" : ""));
+            bar.style.height = (row[key] === null ? 2 : row[key] / Math.max(peak, 1) * 100) + "%";
+            bar.title = row.label + ": " + (row[key] === null ? "미수집" : count(row[key]) + " " + unit);
+            bars.append(bar);
+          }
+          const axis = node("div", undefined, "activity-chart-axis");
+          axis.append(node("span", rows[0].label), node("span", "0 ~ " + count(peak) + " " + unit), node("span", rows[rows.length-1].label));
+          panel.append(bars, axis);
+          chart.append(panel);
         }
-        const axis = node("div", undefined, "activity-chart-axis");
-        axis.append(node("span", rows[0].label), node("span", "최대 " + count(max)), node("span", rows[rows.length-1].label));
-        chart.append(bars, axis);
       }
       ["period", "day", "month"].forEach(id => el(id).addEventListener("change", render));
       render();
