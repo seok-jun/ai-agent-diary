@@ -142,6 +142,24 @@ Simon Willison이 [lethal trifecta](https://simonwillison.net/2025/Jun/16/the-le
 - 표준 라이브러리만 쓰는 파일 하나다.
 - 누락이 있어도 종료 코드는 항상 0이다. 알려 줄 뿐 절차를 멈추지 않는다.
 
+진입점은 이게 전부다. 입력이 깨져 있어도, 예상 못 한 예외가 나도 결과 한 줄을 찍고 0을 돌려준다.
+
+```python
+def main(argv=None):
+    parser = QuietParser(add_help=False, allow_abbrev=False)
+    parser.add_argument("--records", required=True)
+    try:
+        line = result_line(evaluate(load_records(parser.parse_args(argv).records)))
+    except Unavailable as error:
+        line = result_line(reason=str(error))
+    except Exception as error:  # every failure is reported, never raised
+        line = result_line(reason=type(error).__name__)
+    print(line)
+    return 0
+```
+
+`evaluate`는 위 표의 네 항목을 `I1`~`I4`로 보고, 각각 `confirmed`, `missing`, `undetermined` 중 하나를 낸다. 스크립트 맨 위 설명에도 "`confirmed`는 기록에 그 항목이 있다는 뜻이지, 일을 했다는 증거가 아니다"라고 적어 뒀다.
+
 그런데 리뷰에서 웃긴 게 나왔다. 기록을 읽는 정규식 몇 개가 입력이 길어지면 시간이 제곱으로 늘어서, 크기 상한에 가까운 입력에서는 수십 분 동안 멈출 수 있었다. "절차를 멈추지 않는다"는 점검이 절차를 멈출 뻔한 거다. 정규식을 고친 뒤에는 약 1.9MB짜리 입력도 0.27초에 끝났다.
 
 ---
@@ -151,6 +169,16 @@ Simon Willison이 [lethal trifecta](https://simonwillison.net/2025/Jun/16/the-le
 이틀 동안 실제 작업 15건이 끝나면서 점검이 돌았다.
 
 ![실제 종료 점검 15회의 결과 히트맵. 시작 원본 누락 7회, 다음 판단 누락 2회, 재조회 식별 누락 6회, 이전 관측 누락 8회. 네 항목 모두 있음은 3회]({{ '/assets/images/agent-sdd/019-letting-agents-improve-the-method/check-runs.svg' | relative_url }})
+
+종료 기록에 실제로 남은 줄은 이런 모양이다.
+
+```text
+observation-check rules=v1 I1=confirmed I2=confirmed I3=confirmed I4=confirmed
+observation-check rules=v1 I1=missing I2=confirmed I3=confirmed I4=missing
+observation-check rules=v1 I1=confirmed I2=missing I3=confirmed I4=missing
+```
+
+이 줄 뒤에 "첫 실행 결과이고 다시 돌리지 않았다", "기록 형식 진단이지 준수의 증거가 아니다" 같은 말이 붙은 기록도 있었다.
 
 네 항목이 모두 "있음"으로 나온 건 3건뿐이다. 숫자만 보면 엉망이지만, 이걸 그대로 "Agent가 안 했다"로 읽으면 안 된다. 점검은 정해진 형식을 찾는 거라서, 표시 형식이 달라 못 읽은 것과 정말로 빠진 것이 섞여 있다. 손 시험에서 본 "표시 방식 다섯 가지"가 그대로 나온 셈이다. 이 둘을 가르는 일은 아직 안 했다.
 
