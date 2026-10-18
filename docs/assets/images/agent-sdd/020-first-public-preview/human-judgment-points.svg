@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 360" width="820" height="360" role="img" aria-label="사람이 판단하는 자리의 이동. 1 서명 승인을 쓸 때: 큰 작업은 현황 뒤와 계획 뒤에 서명 승인을 받고, 병합은 승인 원본을 다시 검사한 뒤 Agent가 했다. 2 지금 앱(10월 15일부터): 현황, 계획, 구현은 독립 리뷰 조건만 맞으면 이어서 진행하고, 사람이 판단해야 하는 미해결 질문이 생기면 멈춘다. 큰 작업의 병합은 사람이 한다. 3 방법론 공통(10월 16일부터): 세 요건만 남는다. 미해결 사람 판단 질문에서 멈춘다, 사람이 판단하는 지점을 프로젝트가 명시한다, Agent는 사람이 하지 않은 결정을 만들지 않는다. 판단 지점을 어디에 둘지는 프로젝트가 고른다" font-family='Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif'>
+  <defs>
+    <style>
+      .ph { font-size: 14px; font-weight: 700; fill: #1f2328; }
+      .dt { font-size: 12px; fill: #57606a; }
+      .bt { font-size: 13px; font-weight: 700; }
+      .tx { font-size: 12px; fill: #424a53; }
+      .cp { font-size: 12.5px; fill: #1f2328; }
+    </style>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="820" height="360" fill="#ffffff"/>
+
+  <!-- panel frames -->
+  <rect x="24" y="44" width="248" height="300" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.2"/>
+  <rect x="286" y="44" width="248" height="300" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.2"/>
+  <rect x="548" y="44" width="248" height="300" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.2"/>
+
+  <text class="ph" x="24" y="30">① 서명 승인을 쓸 때</text>
+  <text class="ph" x="286" y="30">② 지금 앱</text><text class="dt" x="356" y="30">10/15~</text>
+  <text class="ph" x="548" y="30">③ 방법론 공통</text><text class="dt" x="652" y="30">10/16~</text>
+
+  <!-- panel 1: stages with signature gates -->
+  <rect x="44" y="60" width="208" height="30" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text class="tx" x="148" y="80" text-anchor="middle">현황 (AS-IS)</text>
+  <line x1="148" y1="90" x2="148" y2="100" stroke="#57606a" stroke-width="1.4"/>
+  <rect x="44" y="100" width="208" height="28" rx="6" fill="#fff8c5" stroke="#d4a72c"/>
+  <text class="bt" x="148" y="119" text-anchor="middle" fill="#7d4e00">사람 서명 승인</text>
+  <line x1="148" y1="128" x2="148" y2="138" stroke="#57606a" stroke-width="1.4"/>
+  <rect x="44" y="138" width="208" height="30" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text class="tx" x="148" y="158" text-anchor="middle">계획 (PLAN)</text>
+  <line x1="148" y1="168" x2="148" y2="178" stroke="#57606a" stroke-width="1.4"/>
+  <rect x="44" y="178" width="208" height="28" rx="6" fill="#fff8c5" stroke="#d4a72c"/>
+  <text class="bt" x="148" y="197" text-anchor="middle" fill="#7d4e00">사람 서명 승인</text>
+  <line x1="148" y1="206" x2="148" y2="216" stroke="#57606a" stroke-width="1.4"/>
+  <rect x="44" y="216" width="208" height="30" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text class="tx" x="148" y="236" text-anchor="middle">구현 · 리뷰</text>
+  <line x1="148" y1="246" x2="148" y2="256" stroke="#57606a" stroke-width="1.4"/>
+  <rect x="44" y="256" width="208" height="30" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text class="tx" x="148" y="276" text-anchor="middle">병합: 승인 다시 검사 뒤 Agent</text>
+  <text class="cp" x="44" y="312">단계마다 승인이 돌아온다</text>
+  <text class="cp" x="44" y="332">키가 없는 환경에서는 멈춘다</text>
+
+  <!-- panel 2: app now -->
+  <rect x="306" y="60" width="208" height="30" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text class="tx" x="410" y="80" text-anchor="middle">현황 (AS-IS)</text>
+  <line x1="410" y1="90" x2="410" y2="104" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah)"/>
+  <rect x="306" y="106" width="208" height="30" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text class="tx" x="410" y="126" text-anchor="middle">계획 (PLAN)</text>
+  <line x1="410" y1="136" x2="410" y2="150" stroke="#57606a" stroke-width="1.4" marker-end="url(#ah)"/>
+  <rect x="306" y="152" width="208" height="30" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text class="tx" x="410" y="172" text-anchor="middle">구현 · 리뷰</text>
+  <text class="dt" x="410" y="198" text-anchor="middle">독립 리뷰 조건만 맞으면 이어서</text>
+  <rect x="306" y="208" width="208" height="36" rx="6" fill="#ffffff" stroke="#d4a72c" stroke-dasharray="5 3"/>
+  <text class="tx" x="410" y="231" text-anchor="middle">미해결 질문이 생기면 멈추고 묻는다</text>
+  <rect x="306" y="254" width="208" height="32" rx="6" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/>
+  <text class="bt" x="410" y="275" text-anchor="middle" fill="#1a7f37">큰 작업의 병합: 사람</text>
+  <text class="cp" x="306" y="312">승인은 질문이 생길 때만</text>
+  <text class="cp" x="306" y="332">병합 하나는 사람이 한다</text>
+
+  <!-- panel 3: common minimum -->
+  <rect x="568" y="60" width="208" height="52" rx="6" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/>
+  <text class="bt" x="580" y="81" fill="#1a7f37">① 멈추고 묻기</text>
+  <text class="tx" x="580" y="100">미해결 사람 판단 질문에서</text>
+  <rect x="568" y="120" width="208" height="52" rx="6" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/>
+  <text class="bt" x="580" y="141" fill="#1a7f37">② 지점 명시</text>
+  <text class="tx" x="580" y="160">사람이 판단하는 곳을 프로젝트가</text>
+  <rect x="568" y="180" width="208" height="66" rx="6" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.4"/>
+  <text class="bt" x="580" y="201" fill="#1a7f37">③ 결정을 만들지 않기</text>
+  <text class="tx" x="580" y="220">리뷰·테스트 통과, 침묵은</text>
+  <text class="tx" x="580" y="237">사람의 결정이 아니다</text>
+  <rect x="568" y="256" width="208" height="30" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text class="tx" x="672" y="276" text-anchor="middle">설계 승인 · 병합 · 배포 중 고르기</text>
+  <text class="cp" x="568" y="312">공통에는 세 요건만</text>
+  <text class="cp" x="568" y="332">지점은 프로젝트가 고른다</text>
+</svg>
