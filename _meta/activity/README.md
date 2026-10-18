@@ -1,6 +1,6 @@
 # AI 개발 활동 수집
 
-Windows에서 Codex 토큰과 GitHub 개발 활동을 갱신하는 원클릭 도구입니다.
+Windows에서 Codex·Claude Code 토큰과 GitHub 개발 활동을 갱신하는 원클릭 도구입니다.
 
 ## 실행
 
@@ -17,6 +17,7 @@ Windows에서 Codex 토큰과 GitHub 개발 활동을 갱신하는 원클릭 도
 
 - GitHub ID·저장소 목록은 **집계용 키로 자동 조회**합니다. '전체'는 **그 키가 접근 가능한 저장소 전체**이며, 다른 소유자·조직의 비공개 저장소는 별도 권한이 필요할 수 있습니다.
 - 키는 PC 사용자 계정에 암호화해 저장하고, **숫자·날짜 통계만** 블로그에 공개합니다. Private 저장소 이름·제목·메시지는 게시하지 않습니다. 다만 활동량과 날짜 자체는 공개됩니다.
+- Claude Code 토큰은 이 PC의 Claude Code 대화 기록(`CLAUDE_CONFIG_DIR`, `%USERPROFILE%\.claude`)에서 날짜별 합계만 읽습니다. 기록 폴더가 없으면 건너뜁니다. Claude Code는 기본적으로 30일 지난 기록을 지우므로, **매일 자동 실행**을 켜 두거나 Claude Code 설정의 `cleanupPeriodDays`를 늘려야 빈 날짜가 생기지 않습니다.
 - 외부 분석 도구 [codex-usage-analyzer 0.4.1](https://github.com/postmelee/codex-usage-analyzer)을 사용합니다. 인증 정보는 공유하지 마세요.
 - 작업은 기존 GitHub Pages 배포를 사용합니다. PC가 꺼져 있으면 갱신이 지연됩니다.
 

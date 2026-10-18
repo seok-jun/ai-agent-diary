@@ -19,6 +19,10 @@ KST = dt.timezone(dt.timedelta(hours=9))
 SUMMARY = ("lifetimeTokens", "peakDailyTokens", "longestRunningTurnSec",
            "currentStreakDays", "longestStreakDays")
 COUNTS = ("commits", "mergedPrs", "closedIssues", "measuredCommits")
+CLAUDE_SUMMARY = ("totalTokens", "peakDailyTokens", "activeDays")
+CLAUDE_USAGE = ("input_tokens", "output_tokens",
+                "cache_creation_input_tokens", "cache_read_input_tokens")
+TOP_LEVEL = ("schemaVersion", "timezone", "codex", "claude", "github")
 MAX_INT = 9007199254740991  # JavaScript safe integer
 
 
@@ -98,8 +102,72 @@ def sanitize_codex(raw):
     return {"asOf": as_of, "summary": summary, "daily": daily}
 
 
+def claude_document(as_of, totals):
+    """Build the public Claude block from {date: tokens}; summary is derived only."""
+    daily = [{"date": date(day), "tokens": number(tokens)}
+             for day, tokens in sorted(totals.items()) if tokens > 0]
+    require(len(daily) <= 10000 and all(row["date"] <= as_of for row in daily))
+    return {"asOf": date(as_of), "summary": {
+        "totalTokens": number(sum(row["tokens"] for row in daily)),
+        "peakDailyTokens": max((row["tokens"] for row in daily), default=0),
+        "activeDays": len(daily)}, "daily": daily}
+
+
+def transcripts(config_dir):
+    folder = private_file(config_dir) / "projects"
+    return sorted(folder.rglob("*.jsonl")) if folder.is_dir() else []
+
+
+def scan_claude(files):
+    """Daily KST token totals from Claude Code transcripts; nothing else is kept."""
+    responses = {}
+    for index, path in enumerate(files):
+        with open(path, encoding="utf-8", errors="replace") as stream:
+            for line_no, line in enumerate(stream):
+                try:
+                    entry = json.loads(line)
+                except ValueError:
+                    continue  # A session may be mid-write; skip its partial line.
+                if type(entry) is not dict or entry.get("type") != "assistant":
+                    continue
+                message = entry.get("message")
+                require(type(message) is dict)
+                if message.get("model") == "<synthetic>":
+                    continue  # Locally generated notices, not API responses.
+                usage = message.get("usage")
+                require(type(usage) is dict)
+                values = tuple(number(usage.get(field)) for field in CLAUDE_USAGE)
+                day = timestamp(entry.get("timestamp")).date().isoformat()
+                # Streaming writes one line per content block, and resumed or
+                # forked sessions copy earlier responses into new files.
+                ids = (message.get("id"), entry.get("requestId"))
+                key = ids if all(type(v) is str and v for v in ids) else (index, line_no)
+                previous = responses.get(key)
+                if previous:
+                    values = tuple(map(max, previous[1], values))
+                    day = min(day, previous[0])
+                responses[key] = (day, values)
+    require(len(responses) > 0)
+    totals = {}
+    for day, values in responses.values():
+        totals[day] = totals.get(day, 0) + sum(values)
+    return totals
+
+
+def collect_claude(config_dirs, previous=None, as_of=None):
+    files = [path for folder in config_dirs for path in transcripts(folder)]
+    require(len(files) > 0)
+    totals = scan_claude(files)
+    as_of = date(as_of or dt.datetime.now(KST).date().isoformat())
+    if previous is not None:
+        # Claude Code prunes old transcripts; never let a deletion lower a day.
+        for row in previous["daily"]:
+            totals[row["date"]] = max(totals.get(row["date"], 0), row["tokens"])
+    return claude_document(as_of, totals)
+
+
 def validate(data):
-    keys(data, ("schemaVersion", "timezone", "codex", "github"))
+    keys(data, TOP_LEVEL)
     require(type(data["schemaVersion"]) is int and data["schemaVersion"] == 1
             and data["timezone"] == "Asia/Seoul")
     codex = data["codex"]
@@ -115,6 +183,17 @@ def validate(data):
             "dailyUsageBuckets": [{"startDate": r["date"], "tokens": r["tokens"]}
                                   for r in codex["daily"]]})
         require(sanitized == codex)
+    claude = data["claude"]
+    if claude is not None:
+        keys(claude, ("asOf", "summary", "daily"))
+        keys(claude["summary"], CLAUDE_SUMMARY)
+        require(type(claude["daily"]) is list)
+        totals = {}
+        for row in claude["daily"]:
+            keys(row, ("date", "tokens"))
+            require(date(row["date"]) not in totals and number(row["tokens"]) > 0)
+            totals[row["date"]] = row["tokens"]
+        require(claude_document(claude["asOf"], totals) == claude)
     github = data["github"]
     if github is not None:
         keys(github, ("asOf", "from", "through", "daily"))
@@ -146,8 +225,13 @@ def days(start, end):
 def load_public(path=None):
     path = OUTPUT if path is None else path
     if not path.exists():
-        return {"schemaVersion": 1, "timezone": "Asia/Seoul", "codex": None, "github": None}
-    return validate(decode(path.read_text(encoding="utf-8")))
+        return {"schemaVersion": 1, "timezone": "Asia/Seoul", "codex": None,
+                "claude": None, "github": None}
+    data = decode(path.read_text(encoding="utf-8"))
+    if type(data) is dict and "claude" not in data:
+        data["claude"] = None  # Files published before the Claude source existed.
+    validate(data)
+    return {key: data[key] for key in TOP_LEVEL}
 
 
 def save_public(data, path=None):
@@ -354,6 +438,9 @@ def parser():
     source = codex.add_mutually_exclusive_group(required=True)
     source.add_argument("--input", help="Private JSON file outside checkout")
     source.add_argument("--analyzer", help="Already installed, trusted executable path")
+    claude = commands.add_parser("claude", help="Local Claude Code transcripts")
+    claude.add_argument("--config-dir", action="append", required=True,
+                        help="Claude Code config folder outside checkout (repeatable)")
     auto = commands.add_parser("github-auto",
                                help="Automatically collect every token-accessible repository")
     auto.add_argument("--through",
@@ -394,6 +481,9 @@ def update(args):
             require(process.returncode == 0)
             raw = process.stdout.decode("utf-8-sig")
         data["codex"] = sanitize_codex(decode(raw))
+    elif args.command == "claude":
+        data["claude"] = collect_claude(args.config_dir, data["claude"])
+        print("Claude Code collected: %d active days." % data["claude"]["summary"]["activeDays"])
     elif args.command == "github-auto":
         # Align GitHub daily stats to the oldest *live* Codex activity bucket.
         # No username, repository list or start date is requested from the user.
