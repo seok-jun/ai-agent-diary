@@ -4,7 +4,7 @@ parent: Agent SDD 개발 일지
 nav_order: 13
 permalink: /series/agent-sdd/013-removing-one-guardrail/
 date: 2026-10-02 14:01:00 +0900
-description: "가드레일이 과하다는 느낌을 확인하려고, 보조 절차 하나만 넣고 빼는 비교를 네 번 돌렸다. 세 번이 통과했지만 판정은 보류한 이유와, 결과를 보기 전에 판정 규칙부터 적어둔 이유."
+description: "하네스의 가드레일이 과하다는 느낌을 확인하려고, 보조 절차 하나만 넣고 빼는 비교를 네 번 돌렸다. 세 번이 통과했지만 판정은 보류한 이유와, 결과를 보기 전에 판정 규칙부터 적어둔 이유."
 summary: "보조 절차 하나만 넣고 빼는 비교를 네 번 돌리고, 세 번 통과에도 판정을 보류한 기록."
 image: /assets/images/agent-sdd/013-removing-one-guardrail/thumbnail.png
 ---

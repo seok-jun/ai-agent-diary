@@ -4,7 +4,7 @@ parent: Agent SDD 개발 일지
 nav_order: 14
 permalink: /series/agent-sdd/014-isolation-stopped-the-experiment/
 date: 2026-10-02 14:02:00 +0900
-description: "가드레일 비교 실험이 두 번 멈췄다. 두 번 다 모델이 못해서가 아니라 실험 환경의 격리 때문이었다. 사전 검사는 통과했는데 왜 실제로는 막혔는지, 멈춘 뒤에 무엇을 지켰는지 정리한 기록."
+description: "하네스의 가드레일 하나를 넣고 빼는 비교 실험이 두 번 멈췄다. 두 번 다 모델이 못해서가 아니라 실험 환경의 격리 때문이었다. 사전 검사는 통과했는데 왜 실제로는 막혔는지, 멈춘 뒤에 무엇을 지켰는지 정리한 기록."
 summary: "가드레일 비교 실험을 두 번 멈춘 것이 모델이 아니라 격리였던 이유와, 멈춘 뒤에 지킨 것."
 image: /assets/images/agent-sdd/014-isolation-stopped-the-experiment/thumbnail.png
 ---
