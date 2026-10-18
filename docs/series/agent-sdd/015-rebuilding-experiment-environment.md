@@ -4,7 +4,8 @@ parent: Agent SDD 개발 일지
 nav_order: 15
 permalink: /series/agent-sdd/015-rebuilding-experiment-environment/
 date: 2026-10-06
-description: "격리 때문에 두 번 멈춘 실험을 다시 돌리려고, 실행마다 새 환경을 만들고 푸는 곳과 채점하는 곳을 나눴다. 실제 호출 열한 번 중 일곱 번은 비교까지 가지 못했다. 끝까지 간 두 쌍에서 확인한 것과 아직 모르는 것을 정리한 기록."
+description: "격리 때문에 두 번 멈춘 하네스 비교 실험을 다시 돌리려고, 실행마다 새 환경을 만들고 푸는 곳과 채점하는 곳을 나눴다. 실제 호출 열한 번 중 일곱 번은 비교까지 가지 못했다. 끝까지 간 두 쌍에서 확인한 것과 아직 모르는 것을 정리한 기록."
+summary: "실행마다 새 환경을 만들고 푸는 곳과 채점하는 곳을 나눈 실험장과, 끝까지 간 두 쌍에서 확인한 것."
 image: /assets/images/agent-sdd/015-rebuilding-experiment-environment/thumbnail.png
 ---
 

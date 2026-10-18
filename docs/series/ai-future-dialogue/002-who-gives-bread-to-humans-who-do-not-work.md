@@ -5,14 +5,14 @@ nav_order: 2
 permalink: /series/ai-future-dialogue/002-who-gives-bread-to-humans-who-do-not-work/
 date: 2026-06-10
 description: "노동이 사라진 시대에 누가 인간을 먹여 살리는가. 분배와 생존의 문제를 짚는 AI 미래 연재 2편."
-image: /assets/images/ai-future-dialogue/002-who-gives-bread-to-humans-who-do-not-work/thumbnail.png
+image: /assets/images/ai-future-dialogue/thumbnail.jpg
 ---
 
 # 2편. 일하지 않는 인간에게 누가 빵을 주는가
 
 _2026.06.10 게시_
 
-![2편. 일하지 않는 인간에게 누가 빵을 주는가]({{ '/assets/images/ai-future-dialogue/002-who-gives-bread-to-humans-who-do-not-work/thumbnail.png' | relative_url }})
+![2편. 일하지 않는 인간에게 누가 빵을 주는가]({{ '/assets/images/ai-future-dialogue/thumbnail.jpg' | relative_url }})
 
 ## 불변의 법칙
 

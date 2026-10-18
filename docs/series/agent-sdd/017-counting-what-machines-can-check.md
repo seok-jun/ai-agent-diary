@@ -4,7 +4,8 @@ parent: Agent SDD 개발 일지
 nav_order: 17
 permalink: /series/agent-sdd/017-counting-what-machines-can-check/
 date: 2026-10-13 14:01:00 +0900
-description: "방법론의 산문이 너무 많아져서, 기계가 판단할 수 있는 건 기계에 넘기기로 했다. 넘기기 전에 규칙 370줄과 실제 사고 기록을 세어 봤더니, 온전히 넘길 수 있는 건 16줄이었고 제일 많이 터진 문제는 애초에 넘길 수 없는 거였다."
+description: "하네스의 산문 규칙이 너무 많아져서, 기계가 판단할 수 있는 건 기계에 넘기기로 했다. 넘기기 전에 규칙 370줄과 실제 사고 기록을 세어 봤더니, 온전히 넘길 수 있는 건 16줄이었고 제일 많이 터진 문제는 애초에 넘길 수 없는 거였다."
+summary: "규칙 370줄 중 온전히 판정 가능한 건 16줄이었고, 사고 기록에서 가장 많은 유형은 애초에 기계로 넘길 수 없는 것이었다."
 image: /assets/images/agent-sdd/017-counting-what-machines-can-check/thumbnail.png
 ---
 

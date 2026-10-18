@@ -4,7 +4,8 @@ parent: Agent SDD 개발 일지
 nav_order: 18
 permalink: /series/agent-sdd/018-connecting-methodology-from-outside/
 date: 2026-10-16 12:00:00 +0900
-description: "Agent 작업 규칙을 앱 저장소 밖으로 빼서 라이브러리처럼 버전만 적어 두려고 했다. 세 OS에서 검사까지 마친 연결 도구는 정작 앱이 쓰지 않았고, 분리 전에 먼저 이어 본 시험 연결은 생각보다 깊게 엮여 있었다. 그걸 하나씩 끊어 낸 기록."
+description: "하네스의 작업 규칙을 앱 저장소 밖으로 빼서 라이브러리처럼 버전만 적어 두려고 했다. 세 OS에서 검사까지 마친 연결 도구는 정작 앱이 쓰지 않았고, 분리 전에 먼저 이어 본 시험 연결은 생각보다 깊게 엮여 있었다. 그걸 하나씩 끊어 낸 기록."
+summary: "버전만 적어 두는 연결을 만들었지만 앱은 그 길을 쓰지 않았다. 먼저 이어 본 시험 연결을 하나씩 끊어 내며 다시 분리한 과정."
 image: /assets/images/agent-sdd/018-connecting-methodology-from-outside/thumbnail.png
 ---
 

@@ -6,71 +6,16 @@ has_toc: false
 permalink: /standalone/
 ---
 
+{%- assign standalone_posts = site.pages | where: "parent", page.title | sort: "nav_order" -%}
+
 <div class="series-hero">
-  <div class="series-eyebrow"><span>Standalone · 단독 글</span><span>총 10편</span></div>
+  <div class="series-eyebrow"><span>Standalone · 단독 글</span><span>총 {{ standalone_posts.size }}편</span></div>
   <h1>단독 글</h1>
   <p>특정 시리즈에 속하지 않는 개발 및 AI 활용 관련 단독 글을 모았습니다. 관심 있는 주제부터 자유롭게 읽으세요.</p>
 </div>
 
 <div class="series-index series-index--flat">
-  <a class="series-row" href="./2026-10-08-kent-beck-features-futures/">
-    <span class="series-body">
-      <span class="series-row-head"><span class="series-row-title">기능은 늘었는데, 왜 고치기는 어려워졌을까 — 켄트 백의 AI 시대 개발 이야기</span><span class="series-date">2026.10.08</span></span>
-      <span class="series-row-desc">Features와 Futures 그래프를 쉽게 풀고, 명세·검증·다음 변경의 관계를 Adaptive Agentic SDD와 비교.</span>
-    </span>
-  </a>
-  <a class="series-row" href="./2026-10-02-why-ai-agents-need-evals/">
-    <span class="series-body">
-      <span class="series-row-head"><span class="series-row-title">감으로는 고칠 수 없다 — AI 에이전트에 Eval이 필요한 이유</span><span class="series-date">2026.10.02</span></span>
-      <span class="series-row-desc">Anthropic의 evals 가이드를 바탕으로, AI 에이전트에 왜 시험지가 필요한지를 비유와 도식, 표로 풀어 정리.</span>
-    </span>
-  </a>
-  <a class="series-row" href="./2026-10-02-ai-native-sdlc-playbook/">
-    <span class="series-body">
-      <span class="series-row-head"><span class="series-row-title">코드는 더 이상 병목이 아니다 — AI-Native SDLC 쉽게 읽기</span><span class="series-date">2026.10.02</span></span>
-      <span class="series-row-desc">Anthropic의 AI-native SDLC 플레이북을 도식과 표로 풀어, 여섯 단계가 하나의 고리가 되는 방식을 정리.</span>
-    </span>
-  </a>
-  <a class="series-row" href="./2026-07-28-agent-scaffolding-history/">
-    <span class="series-body">
-      <span class="series-row-head"><span class="series-row-title">흡수된 것들과 흡수되지 않은 하나 — 에이전트 도구사 3년</span><span class="series-date">2026.07.28</span></span>
-      <span class="series-row-desc">모델의 약점을 보정하던 구조물이 어떻게 흡수되고 걷혔는지, 끝까지 남는 검증층은 무엇인지.</span>
-    </span>
-  </a>
-  <a class="series-row" href="./2026-07-24-agent-skill-getting-started/">
-    <span class="series-body">
-      <span class="series-row-head"><span class="series-row-title">매번 붙여넣던 지시를 폴더 하나로 — Agent Skill 입문</span><span class="series-date">2026.07.24</span></span>
-      <span class="series-row-desc">Skill이 무엇이고 왜 그렇게 생겼는지, 처음 하나 만들어보는 것까지.</span>
-    </span>
-  </a>
-  <a class="series-row" href="./2026-07-24-ai-engineer-worlds-fair-2026-agentic-engineering/">
-    <span class="series-body">
-      <span class="series-row-head"><span class="series-row-title">AI Engineer World's Fair 2026, Agentic Engineering 세션에서 나온 이야기들</span><span class="series-date">2026.07.24</span></span>
-      <span class="series-row-desc">여덟 개 세션을 통해 Harness, Skill, Agentic SDLC, Eval, Sandbox의 흐름을 짚는다.</span>
-    </span>
-  </a>
-  <a class="series-row" href="./2026-07-21-human-ai-judgment/">
-    <span class="series-body">
-      <span class="series-row-head"><span class="series-row-title">이해하지 못하는 결정을 승인한다는 것</span><span class="series-date">2026.07.21</span></span>
-      <span class="series-row-desc">AI가 판단하고 인간이 승인할 때, 검증 능력과 책임은 누구에게 남는지 묻다.</span>
-    </span>
-  </a>
-  <a class="series-row" href="./2026-05-07-controlling-ai-coding-agents/">
-    <span class="series-body">
-      <span class="series-row-head"><span class="series-row-title">AI 코딩 에이전트를 제대로 통제하는 방법</span><span class="series-date">2026.05.07</span></span>
-      <span class="series-row-desc">신뢰하되 통제하는 실무 원칙 — 에이전트를 안전하게 다루는 지침.</span>
-    </span>
-  </a>
-  <a class="series-row" href="./2026-04-28-latency-numbers-every-programmer-should-know/">
-    <span class="series-body">
-      <span class="series-row-head"><span class="series-row-title">Latency Numbers Every Programmer Should Know 정리</span><span class="series-date">2026.04.28</span></span>
-      <span class="series-row-desc">Jeff Dean의 지연 숫자를 한국어로 정리하고 최신 감각으로 되짚은 참고 자료.</span>
-    </span>
-  </a>
-  <a class="series-row" href="./2026-04-28-ai-slop-copy-paste-risk/">
-    <span class="series-body">
-      <span class="series-row-head"><span class="series-row-title">AI-slop은 새로운 문제가 아니다. 더 위험해진 복붙 문제다</span><span class="series-date">2026.04.28</span></span>
-      <span class="series-row-desc">더 빠르고 그럴듯하게 확장된 복붙 문제, 그 위험과 대응.</span>
-    </span>
-  </a>
+  {%- for post in standalone_posts %}
+  {% include post-row.html post=post %}
+  {%- endfor %}
 </div>

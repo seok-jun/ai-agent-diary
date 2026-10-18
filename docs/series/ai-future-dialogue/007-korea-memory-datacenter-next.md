@@ -5,14 +5,14 @@ nav_order: 7
 permalink: /series/ai-future-dialogue/007-korea-memory-datacenter-next/
 date: 2026-06-10
 description: "메모리와 데이터센터를 축으로, 한국이 AI 시대의 자원 공급지로 남을지 그다음을 그릴지 전망하는 AI 미래 연재 7편."
-image: /assets/images/ai-future-dialogue/007-korea-memory-datacenter-next/thumbnail.png
+image: /assets/images/ai-future-dialogue/thumbnail.jpg
 ---
 
 # 7편. 한국은 우라늄 광산이 될 것인가 — 메모리, 데이터센터, 그리고 그 다음
 
 _2026.06.10 게시_
 
-![7편. 한국은 우라늄 광산이 될 것인가 — 메모리, 데이터센터, 그리고 그 다음]({{ '/assets/images/ai-future-dialogue/007-korea-memory-datacenter-next/thumbnail.png' | relative_url }})
+![7편. 한국은 우라늄 광산이 될 것인가 — 메모리, 데이터센터, 그리고 그 다음]({{ '/assets/images/ai-future-dialogue/thumbnail.jpg' | relative_url }})
 
 이 편의 수치는 2026년 상반기 기준이며, 출처는 본문에 표기했다. 산업 전망은 빠르게 변하므로 시점에 유의해서 읽어주시길.
 

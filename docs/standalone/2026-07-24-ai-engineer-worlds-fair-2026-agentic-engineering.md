@@ -5,6 +5,7 @@ nav_order: 6
 permalink: /standalone/2026-07-24-ai-engineer-worlds-fair-2026-agentic-engineering/
 date: 2026-07-24
 description: "AI Engineer World's Fair 2026의 Agentic Engineering 세션 여덟 개를 Harness, Skill, Agentic SDLC, Eval, Sandbox 관점에서 정리한 글."
+summary: "여덟 개 세션을 통해 Harness, Skill, Agentic SDLC, Eval, Sandbox의 흐름을 짚는다."
 ---
 
 # AI Engineer World's Fair 2026, Agentic Engineering 세션에서 나온 이야기들

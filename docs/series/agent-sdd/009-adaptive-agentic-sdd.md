@@ -5,14 +5,15 @@ nav_order: 9
 permalink: /series/agent-sdd/009-adaptive-agentic-sdd/
 date: 2026-09-01
 description: "기존 SDD 방식에 멀티 Agent 병렬 개발, 작업 격리, 검증 Gate를 실제로 적용해보면서 바뀐 운영 방식을 정리한 기록."
-image: /assets/images/agent-sdd/009-adaptive-agentic-sdd/thumbnail.png
+summary: "멀티 Agent 병렬 개발과 작업 격리, 위험도별 검증 Gate를 실제 운영하며 바뀐 기준을 정리한 기록."
+image: /assets/images/agent-sdd/009-adaptive-agentic-sdd/thumbnail.jpg
 ---
 
 # 멀티 Agent 개발을 실제로 운영해보고 정리한 것들
 
 _2026.09.01 게시_
 
-![Adaptive Agentic SDD]({{ '/assets/images/agent-sdd/009-adaptive-agentic-sdd/thumbnail.png' | relative_url }})
+![Adaptive Agentic SDD]({{ '/assets/images/agent-sdd/009-adaptive-agentic-sdd/thumbnail.jpg' | relative_url }})
 
 예전 글에서 멀티 Agent 병렬 개발을 다음 단계로 적어둔 적이 있다.
 
@@ -192,7 +193,7 @@ Trade-off Capture   O
 
 ## 지금은 이런 흐름으로 보고 있다
 
-![멀티 Agent 실전 운영 흐름]({{ '/assets/images/agent-sdd/009-adaptive-agentic-sdd/workflow.png' | relative_url }})
+![멀티 Agent 실전 운영 흐름]({{ '/assets/images/agent-sdd/009-adaptive-agentic-sdd/workflow.jpg' | relative_url }})
 
 예전에는 SDD를 하나의 긴 절차처럼 보는 느낌이 강했다.
 

@@ -5,14 +5,14 @@ nav_order: 4
 permalink: /series/ai-future-dialogue/004-humans-after-scarcity/
 date: 2026-06-10
 description: "결핍이 사라진 세계에서 인간이 여전히 인간일 이유가 있는지 묻는 AI 미래 연재 4편."
-image: /assets/images/ai-future-dialogue/004-humans-after-scarcity/thumbnail.png
+image: /assets/images/ai-future-dialogue/thumbnail.jpg
 ---
 
 # 4편. 결핍이 사라진 인간은 인간일 필요가 있을까
 
 _2026.06.10 게시_
 
-![4편. 결핍이 사라진 인간은 인간일 필요가 있을까]({{ '/assets/images/ai-future-dialogue/004-humans-after-scarcity/thumbnail.png' | relative_url }})
+![4편. 결핍이 사라진 인간은 인간일 필요가 있을까]({{ '/assets/images/ai-future-dialogue/thumbnail.jpg' | relative_url }})
 
 ## 질문이 닿은 곳
 

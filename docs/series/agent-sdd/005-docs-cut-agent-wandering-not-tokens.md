@@ -5,6 +5,7 @@ nav_order: 5
 permalink: /series/agent-sdd/005-docs-cut-agent-wandering-not-tokens/
 date: 2026-07-06
 description: "코드에 비즈니스 경계가 없을 때 business 문서로 경계를 만들고, 설계 단계까지 Agent의 탐색 왕복이 줄어드는지 n=1로 측정한 기록. 문서는 토큰을 크게 줄이지 않았지만, 문서 자체가 현행 코드와 어긋나 있다는 사실을 드러냈다."
+summary: "코드에 경계가 없을 때 business 문서로 경계를 만들고, 설계 단계까지 Agent의 탐색 왕복이 줄어드는지 n=1로 측정한 기록."
 image: /assets/images/agent-sdd/005-docs-cut-agent-wandering-not-tokens/thumbnail.png
 ---
 

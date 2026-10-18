@@ -5,6 +5,7 @@ nav_order: 10
 permalink: /series/agent-sdd/010-agentics-sharing-methodology/
 date: 2026-09-13
 description: "여러 파트가 함께 개발하는 프로젝트에서 방법론을 프로젝트에 심으면 안 쓰는 사람에게도 딸려간다. 모두가 지켜야 할 공통 규칙과 개발자가 선택하는 방법론을 분리하고, .agentics로 연결 정보만 남기는 아이디어."
+summary: "모두가 지켜야 할 공통 규칙과 개발자가 선택하는 방법론을 가르고, .agentics로 연결 정보만 프로젝트에 남기는 구상."
 image: /assets/images/agent-sdd/010-agentics-sharing-methodology/thumbnail.png
 ---
 

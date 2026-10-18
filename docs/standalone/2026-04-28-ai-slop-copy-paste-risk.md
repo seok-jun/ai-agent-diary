@@ -5,14 +5,15 @@ nav_order: 10
 permalink: /standalone/2026-04-28-ai-slop-copy-paste-risk/
 date: 2026-04-28
 description: "AI-slop은 새로운 문제가 아니라 더 빠르고 그럴듯하게 확장된 복붙 문제다. 그 위험과 대응을 정리한 글."
-image: /assets/images/standalone/2026-04-28-ai-slop-copy-paste-risk/thumbnail.png
+summary: "더 빠르고 그럴듯하게 확장된 복붙 문제, 그 위험과 대응."
+image: /assets/images/standalone/2026-04-28-ai-slop-copy-paste-risk/thumbnail.jpg
 ---
 
 # AI-slop은 새로운 문제가 아니다. 더 위험해진 복붙 문제다
 
 _2026.04.28 게시_
 
-![AI-slop은 새로운 문제가 아니다. 더 위험해진 복붙 문제다]({{ '/assets/images/standalone/2026-04-28-ai-slop-copy-paste-risk/thumbnail.png' | relative_url }})
+![AI-slop은 새로운 문제가 아니다. 더 위험해진 복붙 문제다]({{ '/assets/images/standalone/2026-04-28-ai-slop-copy-paste-risk/thumbnail.jpg' | relative_url }})
 
 > AI-slop은 완전히 새로운 문제가 아니라, 과거의 복붙 문제가 더 빠르고, 더 그럴듯하고, 더 큰 단위로 확장된 형태에 가깝다.
 

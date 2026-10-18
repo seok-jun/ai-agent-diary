@@ -5,14 +5,14 @@ nav_order: 0
 permalink: /series/ai-future-dialogue/000-prologue/
 date: 2026-06-10
 description: "AI에게 인간의 미래를 직접 물어본 대화 연재의 프롤로그. 도파민, 노동, 통치, 결핍, 종교, 그리고 한국의 자리까지 이어지는 질문들."
-image: /assets/images/ai-future-dialogue/000-prologue/thumbnail.png
+image: /assets/images/ai-future-dialogue/thumbnail.jpg
 ---
 
 # AI에게 물어본 인간의 미래 — 프롤로그
 
 _2026.06.10 게시_
 
-![AI에게 물어본 인간의 미래 — 프롤로그]({{ '/assets/images/ai-future-dialogue/000-prologue/thumbnail.png' | relative_url }})
+![AI에게 물어본 인간의 미래 — 프롤로그]({{ '/assets/images/ai-future-dialogue/thumbnail.jpg' | relative_url }})
 
 > 작성 시점: 2026년 6월. AI 산업과 통계는 빠르게 변하므로, 이 글의 수치와 전망은 이 시점 기준이다.
 

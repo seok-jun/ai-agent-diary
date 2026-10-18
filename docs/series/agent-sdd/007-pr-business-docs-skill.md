@@ -5,14 +5,15 @@ nav_order: 7
 permalink: /series/agent-sdd/007-pr-business-docs-skill/
 date: 2026-07-14
 description: "PR의 diff와 호출 관계를 따라 오래된 business 문서를 찾고, 실제 구현을 기준으로 안전하게 갱신하는 Skill을 만든 첫 실행 기록. 영향 범위 탐색과 저장 전 검증이 문서 작성 자체보다 중요했다."
-image: /assets/images/agent-sdd/007-pr-business-docs-skill/thumbnail.png
+summary: "diff와 호출 관계로 갱신 대상을 찾고, 코드 근거 확인과 저장 전 검증으로 business 문서를 안전하게 최신화한 첫 실행 기록."
+image: /assets/images/agent-sdd/007-pr-business-docs-skill/thumbnail.jpg
 ---
 
 # business 문서를 PR에서 갱신해보기
 
 _2026.07.14 게시_
 
-![business 문서를 PR에서 갱신해보기]({{ '/assets/images/agent-sdd/007-pr-business-docs-skill/thumbnail.png' | relative_url }})
+![business 문서를 PR에서 갱신해보기]({{ '/assets/images/agent-sdd/007-pr-business-docs-skill/thumbnail.jpg' | relative_url }})
 
 레거시 시스템을 운영하다 보면 같은 비즈니스 로직을 반복해서 분석하게 된다.
 

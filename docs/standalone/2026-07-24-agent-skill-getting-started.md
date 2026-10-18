@@ -6,6 +6,7 @@ permalink: /standalone/2026-07-24-agent-skill-getting-started/
 date: 2026-07-24
 last_modified_at: 2026-07-28
 description: "Skill이 무엇이고 왜 그렇게 생겼는지, 처음 하나 만들어보는 것까지. Skill을 한 번도 써보지 않은 사람을 위한 정리."
+summary: "Skill이 무엇이고 왜 그렇게 생겼는지, 처음 하나 만들어보는 것까지."
 ---
 
 # 매번 붙여넣던 지시를 폴더 하나로 — Agent Skill 입문
