@@ -127,6 +127,26 @@ _2026.10.16 게시_
 
 이제 앱은 규칙 저장소의 커밋과 해시를 고정해서 읽는다. 맞지 않으면 최신판으로 대신하지 않고 멈춘다. 처음 계획한 "버전만 적어 둔다"에 겨우 가까워졌다.
 
+앱 쪽에 남은 고정 파일은 지금 이렇게 생겼다. 저장소 이름은 글에서 쓰는 이름으로 바꾸고, 긴 해시와 반복 항목은 줄였다.
+
+```json
+{
+  "schema_version": 1,
+  "repository": "<앱 전용 규칙 저장소>",
+  "commit": "0bb32050dd42…",
+  "manifest": { "path": "manifest.json", "sha256": "30665649…" },
+  "common_lock": { "path": "references/common.lock.json", "sha256": "413d359c…" },
+  "product_text_transport": "utf8-lf-v1",
+  "managed_files": {
+    ".agents/skills/finishing-issues/SKILL.md": "d0b02c8c…",
+    ".claude/skills/finishing-issues/SKILL.md": "573386ec…",
+    "tools/workflow_connection.py": "2dcff31e…"
+  }
+}
+```
+
+`pom.xml`에 버전 한 줄을 적는 것보다는 길다. 규칙 저장소의 commit 하나, 그 안의 목록 파일 두 개의 해시, 그리고 앱에 실제로 복사돼 있는 Skill·도구 파일의 해시를 같이 고정한다. `product_text_transport`는 위에서 말한 줄바꿈 문제 때문에 생긴 항목이다. 내용을 LF 바이트로 맞춘 뒤에 해시를 잰다는 뜻이다.
+
 재미있는 건, 확인해 보니 연구 저장소의 규칙과 앱 쪽 사본이 벌써 파일 하나가 달랐다는 거다. 동기화가 깨진 게 아니라 각자 갖게 되면서 생긴 차이다. 앞으로 연구 저장소에서 고친 걸 앱 쪽 사본으로 옮기려면 따로 변경을 해야 한다. 이게 분리의 비용이다.
 
 참고로 이 블로그 저장소도 공통 이슈 분류 기준은 같은 규칙 저장소의 고정 커밋에서 읽는다.
@@ -146,7 +166,33 @@ _2026.10.16 게시_
 
 `execv`는 미리 알지 못했고, 실제로 문제가 발견됐다. 이 도구는 격리 옵션 없이 실행되면, 그 옵션을 붙여 자기 자신을 다시 실행한다. Linux나 macOS에서는 `execv`가 현재 프로세스를 새 프로세스로 바꾸니 결과 코드가 그대로 전달된다. 그런데 Windows에서는 새 프로세스를 띄우고 원래 프로세스는 바로 성공(0)으로 끝나 버린다([Python 문서](https://docs.python.org/3.12/library/os.html#os.execv)).
 
-문제가 된 건 Skill 문서에 적힌 호출 형태 그대로 실행한 경우였다. 그래서 주로 쓰는 Windows에서 "버전 검증에 실패하면 멈춘다"는 조건이 동작하지 않았다. 검증이 실패해도 성공으로 기록될 수 있는 상태였다. 지금 고치는 중이다.
+문제가 된 건 Skill 문서에 적힌 호출 형태 그대로 실행한 경우였다. 그래서 주로 쓰는 Windows에서 "버전 검증에 실패하면 멈춘다"는 조건이 동작하지 않았다. 검증이 실패해도 성공으로 기록될 수 있는 상태였다.
+
+이슈에 적어 둔 재현 결과는 이랬다.
+
+| Windows에서, 문서에 적힌 호출 형태로 | 그때 | 기대 |
+|:---|:---|:---|
+| `resolve`에 없는 항목을 지정 | **exit 0**, 출력 없음 | `BLOCKED` 출력 뒤 exit 1 |
+| `verify` 정상 실행 | 0.07초 만에 exit 0, 결과 JSON은 20~35초 뒤에 따로 도착 | 출력이 끝난 뒤 exit 0 |
+
+이 글을 올린 날 오전에 고쳤다. 고친 부분은 이렇다.
+
+```diff
+     _bootstrap_os=sys.modules.get('os')
+     if _bootstrap_os is None: raise RuntimeError('isolated product bootstrap unavailable')
+-    _bootstrap_os.execv(sys.executable,[sys.executable,'-I','-B',*sys.argv])
++    _bootstrap_argv=[sys.executable,'-I','-B',*sys.argv]
++    if _bootstrap_os.name=='nt':
++        # spawnv uses the Windows CRT command line, not an argv array. Quote
++        # every argument, doubling backslashes before quotes and at the end.
++        def _bootstrap_quote(argument):
++            ...
++        raise SystemExit(_bootstrap_os.spawnv(_bootstrap_os.P_WAIT,sys.executable,
++            [_bootstrap_quote(argument) for argument in _bootstrap_argv]))
++    _bootstrap_os.execv(sys.executable,_bootstrap_argv)
+```
+
+Windows에서만 `spawnv(P_WAIT, …)`로 자식 프로세스가 끝날 때까지 기다리고, 자식의 종료 코드를 그대로 돌려준다. POSIX 쪽은 원래대로 `execv`다. 한 줄 고치는 문제처럼 보였는데, `spawnv`는 인자를 배열이 아니라 Windows 명령줄 문자열로 넘기기 때문에 따옴표와 역슬래시 처리를 따로 넣어야 했다. 같은 부트스트랩이 도구 네 개에 들어 있어서 넷 다 고쳤다.
 
 ---
 

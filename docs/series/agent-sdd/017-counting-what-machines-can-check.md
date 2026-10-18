@@ -65,6 +65,21 @@ _2026.10.13 게시_
 
 같은 말도 여러 번 나왔다. "새 commit에는 이전 통과와 승인을 넘겨받지 않는다"는 문장이 워크플로 문서 한 곳에서만 다섯 번이 넘는다. Skill 일곱 개 파일에 "하지 않는다"가 172번 나온다.
 
+실제로 어떻게 생겼는지 워크플로 문서의 한 문단을 그대로 옮기면 이렇다. 이 문단 하나가 한 줄이다.
+
+```text
+AS-IS/PLAN finding 반영으로 approval-affecting candidate가 바뀌면 새 commit을 같은
+Issue branch에 push하고 새 SHA를 review target으로 사용한다. 이전 SHA의 PASS를 새
+revision의 PASS로 자동 승계하지 않는다. 검토 근거 재사용은 아래 의미·영향 판정과
+current-target 재확인 chain을 따르며 approval-affecting revision에는 새 Human approval이
+필요하다. review PASS는 Human approval이 아니며, 같은 exact SHA를 target으로 한 approval
+marker 전에는 다음 phase로 진행하지 않는다. push 실패, remote branch에서 exact SHA가
+확인되지 않음, remote 원문 조회 실패 중 하나라도 발생하면 (…) 중단한다. (…)
+이 단계에서 PR이나 draft PR을 만들지 않는다. (…)
+```
+
+재검토, 승인, push 실패 처리, PR 생성 금지가 한 문단에 다 들어 있다. 같은 문서의 다른 두 곳에도 "이전 PASS를 복사하지 않는다", "이전 Route나 approval을 새 revision에 재사용하지 않는다"가 다른 말로 또 나온다.
+
 왜 지켜야 하는지 적힌 규칙도 적었다. Skill 쪽 규칙 묶음 약 100개 중 76개는 이유 없이 의무만 적혀 있었다.
 
 이유가 없는 규칙들을 이슈 기록에서 거꾸로 찾아보니, 상당수가 특정 사고 뒤에 덧붙은 거였다.
@@ -137,6 +152,16 @@ _2026.10.13 게시_
 
 16줄도 겹치는 걸 합치면 9개 규칙이다. 대부분 기록 형식이었다. 등급 값이 정해진 값 중 하나인지, 이슈 본문과 라벨이 맞는지, 끝난 작업의 설계 문서를 지웠는지, PR에 이슈를 닫는 참조가 있는지 같은 것들이다.
 
+분류 목록에서 묶음마다 한 줄씩 뽑아 보면 차이가 보인다. 규칙 문장은 분류한 Agent가 원문을 줄여 적은 것이다.
+
+| ID | 묶음 | 입력 | 규칙 | 못 잡는 것 |
+|:---|:---:|:---|:---|:---|
+| W035 | 1 | 플랫폼 | 이슈 본문의 Priority·등급 값과 대응 라벨은 항상 일치해야 한다 | 없음 |
+| W061 | 2 | 자기 신고 | 미해결 차단 finding이 하나라도 있으면 승인 요청과 다음 단계를 중단한다 | 미해결 수를 Agent가 적는다. finding을 낮은 등급으로 바꿔 0을 만들 수 있다 |
+| W020 | 3 | - | 경로·심볼·제목으로 범위를 좁혀 필요한 부분만 읽고, 저장소 전체 탐색을 하지 않는다 | - |
+
+W035는 GitHub가 주는 값만 보면 된다. W061은 판정식은 쓸 수 있는데, 판정에 쓰는 "미해결 수"를 검사받는 Agent가 적는다. W020은 "필요한 부분"이 무엇인지부터 판단이다.
+
 정작 사고가 났던 쪽은 하나도 없었다. 승인이 구현보다 먼저였는지, 리뷰어가 작성자와 다른지, 검증 결과가 지금 commit의 것인지, 위험한 명령을 막았는지.
 
 판정하는 방법을 못 적어서가 아니었다. 문제는 **판정에 쓰는 기록을 누가 만드느냐**였다.
@@ -199,6 +224,27 @@ _2026.10.13 게시_
 전에는 승인 표시가 이슈 댓글이라 Agent도 쓸 수 있었다. 지금은 사람이 자기 키로 서명한 태그만 승인으로 본다. 키 암호구는 Agent에게 넘기지 않고, 어디에도 캐시하지 않는다. Agent가 서명을 만들 수 없으니, 승인이 있는지와 내 키로 서명됐는지는 기계가 확인할 수 있게 됐다.
 
 요금제를 올리거나 GitHub 계정을 나누지 않고 한 방법이다. 지금 Large 이상 작업의 승인 지점(Large 2번, Epic 3번)은 이걸로 하고 있다. 확인 도구는 증거를 보여줄 뿐이고, 서명 메시지가 무엇을 승인하는지와 키 지문이 맞는지는 내가 직접 본다.
+
+확인 도구가 하는 일은 GitHub API로 태그를 읽어서, 서명이 유효한지와 태그가 기대한 commit을 가리키는지까지만 보는 것이다. 마지막에 돌려주는 값을 보면 도구가 어디서 멈추는지가 드러난다.
+
+```python
+return {
+    "status": "evidence_only_human_checks_required",
+    "target_commit": expected_commit,
+    "github_verification": {"verified": True, "reason": "valid", ...},
+    "signing_key_fingerprint": signing_fingerprint,
+    "message": message,
+    # …
+    "human_checks": ["match message to requested document, revision, stage, and scope",
+                     "compare actual signing key with independently held expected fingerprint"],
+    "limits": ["exit 0 means evidence collected, not approval",
+               "SSH metadata parsing is not local cryptographic verification",
+               "GitHub verification time is not human approval time",
+               "remote ref may change after this observation"],
+}
+```
+
+종료 코드 0은 "승인됐다"가 아니라 "증거를 모았다"는 뜻이다. 사람이 볼 두 가지와 도구의 한계를 결과에 같이 담아서, 이 출력을 읽는 Agent가 이걸 승인으로 넓혀 읽지 못하게 했다.
 
 병합 강제는 일부러 하지 않았다. 비공개 저장소에서 main 보호 규칙을 쓰려면 유료 요금제가 필요하다. 서명 승인은 서명 없는 병합까지 막지는 않는다. 그 부분은 아직 사람이 지킨다.
 
