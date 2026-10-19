@@ -5,7 +5,7 @@ has_children: true
 has_toc: false
 permalink: /series/agent-sdd/
 description: "AI 코딩 에이전트를 회사 일과 개인 프로젝트에 붙이면서, 모델 바깥의 절차·검사·규칙인 하네스를 직접 만들고 다시 재 본 연재."
-last_modified_at: 2026-10-18
+last_modified_at: 2026-10-19
 ---
 
 {%- assign series_posts = site.pages | where: "parent", page.title | sort: "nav_order" -%}
@@ -52,7 +52,7 @@ last_modified_at: 2026-10-18
     <h2>방법론과 재검증</h2>
     <span>9~{{ last_post.nav_order }}편</span>
   </div>
-  <p class="series-group-intro">멀티 Agent 운영을 방법론으로 묶어 공유하고, 실무에 다시 적용하고, 모델이 좋아진 뒤 가드레일, 요즘 말로 하네스를 다시 재본 과정.</p>
+  <p class="series-group-intro">멀티 Agent 운영을 방법론으로 묶어 공유하고, 실무에 다시 적용하고, 모델이 좋아진 뒤 하네스를 다시 재본 과정.</p>
   <div class="series-index">
     {%- for post in group_posts %}
     {% include post-row.html post=post number=true %}
@@ -72,7 +72,7 @@ last_modified_at: 2026-10-18
       </thead>
       <tbody>
         <tr><td>하네스(harness)</td><td>모델 바깥에서 Agent를 붙잡는 절차·검사·규칙 전체. 이 연재에서 만든 방법론이 여기에 해당합니다.</td><td><a href="./012-outgrown-guardrails/">12편</a></td></tr>
-        <tr><td>가드레일</td><td>하네스 가운데 Agent가 자주 틀리던 자리에 하나씩 세운 절차. 명세, 현행 분석, 변경 계획, 백로그, 독립 리뷰 같은 것입니다.</td><td><a href="./012-outgrown-guardrails/">12편</a></td></tr>
+        <tr><td>하네스의 구성 요소</td><td>명세, 현행 분석, 변경 계획, 백로그, 독립 리뷰 같은 개별 절차. 통제와 보조 절차를 구분해 필요성을 판단합니다.</td><td><a href="./012-outgrown-guardrails/">12편</a></td></tr>
         <tr><td>통제 (헬멧)</td><td>권한, 수정 범위, 승인, 꼭 돌려야 하는 검증. 작업의 위험에 맞춰 거는 것이라 모델이 좋아져도 그대로 둡니다.</td><td><a href="./012-outgrown-guardrails/">12편</a></td></tr>
         <tr><td>보조 절차 (보조바퀴)</td><td>모델의 약점을 메우려고 넣은 절차. 지금도 필요한지 다시 재 보는 대상입니다.</td><td><a href="./013-removing-one-guardrail/">13편</a></td></tr>
         <tr><td>앱 저장소</td><td>실제로 만들고 있는 안드로이드 앱. 17편에서는 "실무 프로젝트"라고 불렀습니다.</td><td><a href="./018-connecting-methodology-from-outside/">18편</a></td></tr>

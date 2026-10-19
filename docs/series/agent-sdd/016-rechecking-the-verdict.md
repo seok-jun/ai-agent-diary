@@ -7,6 +7,7 @@ date: 2026-10-13 14:00:00 +0900
 description: "아직 안 쓴 과제로 하네스 비교를 한 쌍 더 돌려봤지만 이번에도 답은 나오지 않았다. 그 과정에서 15편의 판정을 다시 봤더니, 검사 결과는 그대로였지만 몇 칸은 생각보다 근거가 약했다. 짧은 실험 노트."
 summary: "아직 안 쓴 과제로 한 쌍을 더 돌려본 결과와, 15편 진단 과제의 판정을 검사별로 다시 본 이야기."
 image: /assets/images/agent-sdd/016-rechecking-the-verdict/thumbnail.png
+last_modified_at: 2026-10-19
 ---
 
 # 열세 번 돌리고, 판정을 다시 봤다
@@ -75,6 +76,6 @@ B도 목록만 안 썼을 뿐, 고치기 전에 순서와 확인 방법을 먼�
 
 관련 글:
 
-- [가드레일 하나만 빼고 돌려봤다]({{ '/series/agent-sdd/013-removing-one-guardrail/' | relative_url }})
+- [하네스의 보조 절차 하나만 빼고 돌려봤다]({{ '/series/agent-sdd/013-removing-one-guardrail/' | relative_url }})
 - [실험을 멈춘 건 모델이 아니었다]({{ '/series/agent-sdd/014-isolation-stopped-the-experiment/' | relative_url }})
 - [다시 실험하려고 실험장부터 만들었다]({{ '/series/agent-sdd/015-rebuilding-experiment-environment/' | relative_url }})

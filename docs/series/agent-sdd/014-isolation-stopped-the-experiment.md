@@ -4,9 +4,10 @@ parent: Agent SDD 개발 일지
 nav_order: 14
 permalink: /series/agent-sdd/014-isolation-stopped-the-experiment/
 date: 2026-10-02 14:02:00 +0900
-description: "하네스의 가드레일 하나를 넣고 빼는 비교 실험이 두 번 멈췄다. 두 번 다 모델이 못해서가 아니라 실험 환경의 격리 때문이었다. 사전 검사는 통과했는데 왜 실제로는 막혔는지, 멈춘 뒤에 무엇을 지켰는지 정리한 기록."
-summary: "가드레일 비교 실험을 두 번 멈춘 것이 모델이 아니라 격리였던 이유와, 멈춘 뒤에 지킨 것."
+description: "하네스의 보조 절차 하나를 넣고 빼는 비교 실험이 두 번 멈췄다. 두 번 다 모델이 못해서가 아니라 실험 환경의 격리 때문이었다. 사전 검사는 통과했는데 왜 실제로는 막혔는지, 멈춘 뒤에 무엇을 지켰는지 정리한 기록."
+summary: "하네스의 보조 절차 비교 실험을 두 번 멈춘 것이 모델이 아니라 격리였던 이유와, 멈춘 뒤에 지킨 것."
 image: /assets/images/agent-sdd/014-isolation-stopped-the-experiment/thumbnail.png
+last_modified_at: 2026-10-19
 ---
 
 # 실험을 멈춘 건 모델이 아니었다
@@ -130,7 +131,7 @@ _2026.10.02 게시_
 
 기록에 남은 모델 작업 시간은 두 실험을 합쳐서 7분이 안 된다. 실험 환경을 만들고 고치는 데 쓴 시간은 따로 재지 않았는데, 그보다 훨씬 길었다.
 
-가드레일이 과한지 보려고 시작한 일이다. 그런데 정작 실험에 걸어둔 안전장치가 실험을 두 번 세웠다. 좀 웃긴 상황이긴 하다. ㅋㅋ
+하네스의 보조 절차가 과한지 보려고 시작한 일이다. 그런데 정작 실험에 걸어둔 안전장치가 실험을 두 번 세웠다. 좀 웃긴 상황이긴 하다. ㅋㅋ
 
 그래도 그 안전장치를 풀고 돌렸으면 결과를 믿을 수 없었을 것이다. 두 번째 실험에서 그냥 진행했다면 "앞 후보 파일을 읽을 수 있는 상태"로 얻은 결과를 비교라고 내놓게 된다.
 
@@ -146,7 +147,7 @@ _2026.10.02 게시_
 | 실패한 검사도 지우지 않는다 | 나중에 같은 데서 또 넘어진다 |
 | 검사는 "한 번 쓰고 넘어가는 순간"까지 한다 | 두 번 다 거기서 걸렸다 |
 
-모델이 가드레일 없이도 누락을 안 하는지는 아직 모른다. 지금까지 알게 된 건 그걸 재는 일이 생각보다 품이 든다는 것 정도다.
+모델이 하네스의 보조 절차 하나 없이도 누락을 안 하는지는 아직 모른다. 지금까지 알게 된 건 그걸 재는 일이 생각보다 품이 든다는 것 정도다.
 
 다음에는 방법론을 프로젝트 밖에 두고 연결하는 부분을 실제로 만든 이야기를 하려고 한다.
 
@@ -154,7 +155,7 @@ _2026.10.02 게시_
 
 관련 글과 참고 자료:
 
-- [모델은 좋아졌는데 가드레일은 그대로였다]({{ '/series/agent-sdd/012-outgrown-guardrails/' | relative_url }})
-- [가드레일 하나만 빼고 돌려봤다]({{ '/series/agent-sdd/013-removing-one-guardrail/' | relative_url }})
+- [모델은 좋아졌는데 하네스는 그대로였다]({{ '/series/agent-sdd/012-outgrown-guardrails/' | relative_url }})
+- [하네스의 보조 절차 하나만 빼고 돌려봤다]({{ '/series/agent-sdd/013-removing-one-guardrail/' | relative_url }})
 - [멀티 Agent 개발을 실제로 운영해보고 정리한 것들]({{ '/series/agent-sdd/009-adaptive-agentic-sdd/' | relative_url }})
 - Microsoft, [Order of ACEs in a DACL](https://learn.microsoft.com/en-us/windows/win32/secauthz/order-of-aces-in-a-dacl)

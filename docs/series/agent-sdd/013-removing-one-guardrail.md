@@ -1,25 +1,26 @@
 ---
-title: "가드레일 하나만 빼고 돌려봤다"
+title: "하네스의 보조 절차 하나만 빼고 돌려봤다"
 parent: Agent SDD 개발 일지
 nav_order: 13
 permalink: /series/agent-sdd/013-removing-one-guardrail/
 date: 2026-10-02 14:01:00 +0900
-description: "하네스의 가드레일이 과하다는 느낌을 확인하려고, 보조 절차 하나만 넣고 빼는 비교를 네 번 돌렸다. 세 번이 통과했지만 판정은 보류한 이유와, 결과를 보기 전에 판정 규칙부터 적어둔 이유."
+description: "하네스의 보조 절차가 과하다는 느낌을 확인하려고, 보조 절차 하나만 넣고 빼는 비교를 네 번 돌렸다. 세 번이 통과했지만 판정은 보류한 이유와, 결과를 보기 전에 판정 규칙부터 적어둔 이유."
 summary: "보조 절차 하나만 넣고 빼는 비교를 네 번 돌리고, 세 번 통과에도 판정을 보류한 기록."
 image: /assets/images/agent-sdd/013-removing-one-guardrail/thumbnail.png
+last_modified_at: 2026-10-19
 ---
 
-# 가드레일 하나만 빼고 돌려봤다
+# 하네스의 보조 절차 하나만 빼고 돌려봤다
 
 _2026.10.02 게시_
 
-![가드레일 하나만 빼고 돌려봤다 — 조건 A와 B 모두 17/17 통과, 결론은 아직 모른다]({{ '/assets/images/agent-sdd/013-removing-one-guardrail/thumbnail.png' | relative_url }})
+![하네스의 보조 절차 하나만 빼고 돌려봤다 — 조건 A와 B 모두 17/17 통과, 결론은 아직 모른다]({{ '/assets/images/agent-sdd/013-removing-one-guardrail/thumbnail.png' | relative_url }})
 
-[지난 글]({{ '/series/agent-sdd/012-outgrown-guardrails/' | relative_url }})에서 순서를 하나 정했다. 가드레일을 고치기 전에 먼저 재본다. 지금 쓰는 모델이 그 절차 없이도 누락을 안 하는지 보고, 그다음에 줄일지 말지를 정한다.
+[지난 글]({{ '/series/agent-sdd/012-outgrown-guardrails/' | relative_url }})에서 순서를 하나 정했다. 하네스를 고치기 전에 먼저 재본다. 지금 쓰는 모델이 그 절차 없이도 누락을 안 하는지 보고, 그다음에 줄일지 말지를 정한다.
 
 말은 쉬운데 막상 재려고 하니 정할 게 많았다.
 
-그리고 한 가지를 먼저 인정해야 했다. 나는 이미 "가드레일이 과하다"는 쪽으로 기울어 있었다. 그 상태로 실험을 하면 보고 싶은 결과를 보게 된다. 이번 글에 나오는 번거로운 규칙들은 대부분 그걸 막으려고 넣은 것이다.
+그리고 한 가지를 먼저 인정해야 했다. 나는 이미 "하네스의 보조 절차가 과하다"는 쪽으로 기울어 있었다. 그 상태로 실험을 하면 보고 싶은 결과를 보게 된다. 이번 글에 나오는 번거로운 규칙들은 대부분 그걸 막으려고 넣은 것이다.
 
 ---
 
@@ -142,11 +143,11 @@ B에게 "계획하지 마라"고 하지는 않았다. 스스로 목록을 쓰는
 
 완료 조건과 검사를 모델에게 그대로 줬으니, 그 자체가 체크리스트 역할을 했을 수도 있다. 목록을 따로 쓰지 않아도 빠뜨릴 게 없었던 것이다.
 
-![쉬운 과제에서는 가드레일이 있든 없든 통과해서 구분이 안 되고, 차이는 모델이 아슬아슬한 과제에서 난다]({{ '/assets/images/agent-sdd/013-removing-one-guardrail/easy-task.svg' | relative_url }})
+![쉬운 과제에서는 하네스의 보조 절차가 있든 없든 통과해서 구분이 안 되고, 차이는 모델이 아슬아슬한 과제에서 난다]({{ '/assets/images/agent-sdd/013-removing-one-guardrail/easy-task.svg' | relative_url }})
 
 지난 글에서 언급한 Anthropic의 하네스 글에도 같은 이야기가 있다. 모델이 좋아지면 "혼자 안정적으로 해내는 범위"가 넓어지고, 보조 장치는 그 범위 바깥에 있는 작업에서만 값을 한다는 것이다. 범위 안쪽 작업으로 재면 뭘 붙이든 떼든 결과가 같다.
 
-그래서 판정은 보류했고, 이 가드레일은 그대로 둔다.
+그래서 판정은 보류했고, 이 보조 절차는 그대로 둔다.
 
 ---
 
@@ -170,7 +171,7 @@ B에게 "계획하지 마라"고 하지는 않았다. 스스로 목록을 쓰는
 
 관련 글과 참고 자료:
 
-- [모델은 좋아졌는데 가드레일은 그대로였다]({{ '/series/agent-sdd/012-outgrown-guardrails/' | relative_url }})
+- [모델은 좋아졌는데 하네스는 그대로였다]({{ '/series/agent-sdd/012-outgrown-guardrails/' | relative_url }})
 - [문서는 토큰 청구서를 크게 줄이지 않는다 — 대신 Agent가 헤매는 시간을 줄인다]({{ '/series/agent-sdd/005-docs-cut-agent-wandering-not-tokens/' | relative_url }})
 - [Skill 검증을 위한 Eval, 직접 돌려보았다]({{ '/series/agent-sdd/008-skill-eval-validation/' | relative_url }})
 - [감으로는 고칠 수 없다 — AI 에이전트에 Eval이 필요한 이유]({{ '/standalone/2026-10-02-why-ai-agents-need-evals/' | relative_url }})

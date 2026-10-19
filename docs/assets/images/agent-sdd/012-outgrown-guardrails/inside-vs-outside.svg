@@ -23,7 +23,7 @@
   <rect x="60" y="132" width="94" height="38" rx="6" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.3" /><text class="cn" x="107.0" y="155.5" text-anchor="middle">코드</text>
   <rect x="164" y="132" width="94" height="38" rx="6" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.3" /><text class="cn" x="211.0" y="155.5" text-anchor="middle">업무 문서</text>
   <rect x="268" y="132" width="94" height="38" rx="6" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.3" /><text class="cn" x="315.0" y="155.5" text-anchor="middle">프로젝트 규칙</text>
-  <rect x="60" y="184" width="302" height="50" rx="6" fill="#fff8c5" stroke="#d4a72c" stroke-width="1.3" /><text class="cn" x="211.0" y="213.5" text-anchor="middle">방법론 (등급 · 절차 · 가드레일)</text>
+  <rect x="60" y="184" width="302" height="50" rx="6" fill="#fff8c5" stroke="#d4a72c" stroke-width="1.3" /><text class="cn" x="211.0" y="213.5" text-anchor="middle">하네스 (등급 · 절차 · 검사)</text>
   <text class="gt" x="44" y="282">방법론을 바꾸면 프로젝트 규칙 검토가</text>
   <text class="gt" x="44" y="302">같이 따라온다</text>
 

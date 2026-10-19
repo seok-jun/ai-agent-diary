@@ -4,7 +4,7 @@ parent: Agent SDD 개발 일지
 nav_order: 15
 permalink: /series/agent-sdd/015-rebuilding-experiment-environment/
 date: 2026-10-06
-last_modified_at: 2026-10-18
+last_modified_at: 2026-10-19
 description: "격리 때문에 두 번 멈춘 하네스 비교 실험을 다시 돌리려고, 실행마다 새 환경을 만들고 푸는 곳과 채점하는 곳을 나눴다. 실제 호출 열한 번 중 일곱 번은 비교까지 가지 못했다. 끝까지 간 두 쌍에서 확인한 것과 아직 모르는 것을 정리한 기록."
 summary: "실행마다 새 환경을 만들고 푸는 곳과 채점하는 곳을 나눈 실험장과, 끝까지 간 두 쌍에서 확인한 것."
 image: /assets/images/agent-sdd/015-rebuilding-experiment-environment/thumbnail.png
@@ -138,7 +138,7 @@ _2026.10.06 게시_
 
 호출은 쌍마다 두 번씩만 열었다. 실패해도 그 두 번에서 빼고, 같은 쌍을 다시 부르지 않았다. 다만 13·14편처럼 전체 횟수를 처음에 정해두고 지킨 것은 아니다. 실험장을 고칠 때마다 다음 쌍을 새로 열었다.
 
-그래서 앞의 일곱 번은 가드레일 비교가 아니라 실행기를 맞추는 과정으로 적는다.
+그래서 앞의 일곱 번은 하네스의 보조 절차 비교가 아니라 실행기를 맞추는 과정으로 적는다.
 
 모델은 GPT-6.1 Sol, 추론 수준은 xhigh였다. A와 B의 차이는 13편과 같다.
 
@@ -223,7 +223,7 @@ A가 떨어진 세 검사는 과거의 당시 구현이 떨어지는 세 검사�
 | 진단 과제에서는 목록을 쓴 쪽도 요구를 놓쳤다 | 어떤 보조가 이 누락을 줄이는가 |
 | 끝까지 간 두 쌍에서는 실험장이 멈추지 않았다 | 마감과 명령 한도가 결과에 얼마나 섞였는가 |
 
-가드레일을 빼도 된다는 답은 여전히 못 얻었다.
+이 보조 절차를 빼도 된다는 답은 여전히 못 얻었다.
 
 이 실험장으로 이어서 돌릴 계획은 아직 잡지 않았다. 열어둔 호출은 다 썼다. 다음에 잰다면 아직 쓰지 않은 다른 작업과 새 한도를 먼저 정해야 한다.
 
@@ -235,7 +235,7 @@ A가 떨어진 세 검사는 과거의 당시 구현이 떨어지는 세 검사�
 
 관련 글과 참고 자료:
 
-- [모델은 좋아졌는데 가드레일은 그대로였다]({{ '/series/agent-sdd/012-outgrown-guardrails/' | relative_url }})
-- [가드레일 하나만 빼고 돌려봤다]({{ '/series/agent-sdd/013-removing-one-guardrail/' | relative_url }})
+- [모델은 좋아졌는데 하네스는 그대로였다]({{ '/series/agent-sdd/012-outgrown-guardrails/' | relative_url }})
+- [하네스의 보조 절차 하나만 빼고 돌려봤다]({{ '/series/agent-sdd/013-removing-one-guardrail/' | relative_url }})
 - [실험을 멈춘 건 모델이 아니었다]({{ '/series/agent-sdd/014-isolation-stopped-the-experiment/' | relative_url }})
 - Microsoft, [Windows Sandbox](https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/)
