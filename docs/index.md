@@ -3,6 +3,7 @@ title: "AI Agent Diary"
 layout: home
 nav_order: 1
 permalink: /
+last_modified_at: 2026-10-19
 ---
 
 {% assign dated_pages = site.pages | where_exp: "item", "item.date != nil" | where_exp: "item", "item.parent != 'AI에게 물어본 인간의 미래'" | sort: "date" | reverse %}
@@ -63,7 +64,7 @@ permalink: /
         </li>
         <li>
           <span class="series-group-head"><span class="series-group-range">9~{{ last_series_post.nav_order }}편</span><strong>방법론과 재검증</strong></span>
-          <span class="series-group-desc">멀티 Agent 운영을 방법론으로 묶어 공유하고, 실무에 다시 적용하고, 모델이 좋아진 뒤 가드레일, 요즘 말로 하네스를 다시 재본 과정.</span>
+          <span class="series-group-desc">멀티 Agent 운영을 방법론으로 묶어 공유하고, 실무에 다시 적용하고, 모델이 좋아진 뒤 하네스를 다시 재본 과정.</span>
           <a class="series-group-link" href="./series/agent-sdd/009-adaptive-agentic-sdd/">여기부터 →</a>
         </li>
       </ol>

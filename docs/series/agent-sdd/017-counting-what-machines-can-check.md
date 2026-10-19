@@ -4,7 +4,7 @@ parent: Agent SDD 개발 일지
 nav_order: 17
 permalink: /series/agent-sdd/017-counting-what-machines-can-check/
 date: 2026-10-13 14:01:00 +0900
-last_modified_at: 2026-10-18
+last_modified_at: 2026-10-19
 description: "하네스의 산문 규칙이 너무 많아져서, 기계가 판단할 수 있는 건 기계에 넘기기로 했다. 넘기기 전에 규칙 370줄과 실제 사고 기록을 세어 봤더니, 온전히 넘길 수 있는 건 16줄이었고 제일 많이 터진 문제는 애초에 넘길 수 없는 거였다."
 summary: "규칙 370줄 중 온전히 판정 가능한 건 16줄이었고, 사고 기록에서 가장 많은 유형은 애초에 기계로 넘길 수 없는 것이었다."
 image: /assets/images/agent-sdd/017-counting-what-machines-can-check/thumbnail.png
@@ -27,13 +27,13 @@ _2026.10.13 게시_
 
 ## 산문이 너무 많아진 것 같았다
 
-[12편]({{ '/series/agent-sdd/012-outgrown-guardrails/' | relative_url }})에서 모델은 좋아졌는데 가드레일은 그대로라는 얘기를 했다. 가드레일이 걸림돌이 된 건 아닌지 재보자고 했고, 13~16편은 그걸 재려고 실험장을 만들고 고친 기록이다.
+[12편]({{ '/series/agent-sdd/012-outgrown-guardrails/' | relative_url }})에서 모델은 좋아졌는데 하네스는 그대로라는 얘기를 했다. 하네스가 걸림돌이 된 건 아닌지 재보자고 했고, 13~16편은 그걸 재려고 실험장을 만들고 고친 기록이다.
 
 그런데 실험을 준비하면서 계속 걸리는 게 있었다.
 
 방법론 문서가 점점 길어지고 있었다. 사고가 하나 나면 규칙이 하나 늘었고, 규칙이 늘면 예외가 붙었다. Agent가 이걸 다 읽고 이해한 다음에 작업한다는 게 점점 무리처럼 느껴졌다. 지시를 놓치거나 문서마다 다르게 받아들이는 일도 보였다.
 
-생각해보면 실험도 같은 전제 위에 있었다. A에게는 목록을 쓰라고 하고 B에게는 안 쓰라고 하는 것도, 결국 Agent가 글로 된 지시를 읽고 그대로 한다는 걸 깔고 있다. 그런데 읽어야 할 글 자체가 너무 많아서 제대로 안 읽힌다면, 가드레일 하나를 넣고 빼서 차이를 보는 것도 의미가 흐려진다.
+생각해보면 실험도 같은 전제 위에 있었다. A에게는 목록을 쓰라고 하고 B에게는 안 쓰라고 하는 것도, 결국 Agent가 글로 된 지시를 읽고 그대로 한다는 걸 깔고 있다. 그런데 읽어야 할 글 자체가 너무 많아서 제대로 안 읽힌다면, 하네스의 보조 절차 하나를 넣고 빼서 차이를 보는 것도 의미가 흐려진다.
 
 그래서 방향을 다시 잡았다.
 
@@ -275,6 +275,6 @@ return {
 
 관련 글:
 
-- [모델은 좋아졌는데 가드레일은 그대로였다]({{ '/series/agent-sdd/012-outgrown-guardrails/' | relative_url }})
+- [모델은 좋아졌는데 하네스는 그대로였다]({{ '/series/agent-sdd/012-outgrown-guardrails/' | relative_url }})
 - [다시 실험하려고 실험장부터 만들었다]({{ '/series/agent-sdd/015-rebuilding-experiment-environment/' | relative_url }})
 - [열세 번 돌리고, 판정을 다시 봤다]({{ '/series/agent-sdd/016-rechecking-the-verdict/' | relative_url }})

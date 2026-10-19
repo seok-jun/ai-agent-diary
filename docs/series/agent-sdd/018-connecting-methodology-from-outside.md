@@ -7,6 +7,7 @@ date: 2026-10-16 12:00:00 +0900
 description: "하네스의 작업 규칙을 앱 저장소 밖으로 빼서 라이브러리처럼 버전만 적어 두려고 했다. 세 OS에서 검사까지 마친 연결 도구는 정작 앱이 쓰지 않았고, 분리 전에 먼저 이어 본 시험 연결은 생각보다 깊게 엮여 있었다. 그걸 하나씩 끊어 낸 기록."
 summary: "버전만 적어 두는 연결을 만들었지만 앱은 그 길을 쓰지 않았다. 먼저 이어 본 시험 연결을 하나씩 끊어 내며 다시 분리한 과정."
 image: /assets/images/agent-sdd/018-connecting-methodology-from-outside/thumbnail.png
+last_modified_at: 2026-10-19
 ---
 
 # 드디어 방법론 분리 진행
@@ -222,6 +223,6 @@ Windows에서만 `spawnv(P_WAIT, …)`로 자식 프로세스가 끝날 때까�
 관련 글과 참고 자료:
 
 - [방법론을 강요하지 않고 공유하는 방법]({{ '/series/agent-sdd/010-agentics-sharing-methodology/' | relative_url }})
-- [모델은 좋아졌는데 가드레일은 그대로였다]({{ '/series/agent-sdd/012-outgrown-guardrails/' | relative_url }})
+- [모델은 좋아졌는데 하네스는 그대로였다]({{ '/series/agent-sdd/012-outgrown-guardrails/' | relative_url }})
 - [규칙을 기계에 넘기려고 세어 봤다]({{ '/series/agent-sdd/017-counting-what-machines-can-check/' | relative_url }})
 - Python, [os.rename](https://docs.python.org/3.12/library/os.html#os.rename), [os.execv](https://docs.python.org/3.12/library/os.html#os.execv)
