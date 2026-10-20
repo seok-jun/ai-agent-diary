@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "timezone": "Asia/Seoul",
   "codex": {
-    "asOf": "2026-10-18",
+    "asOf": "2026-10-20",
     "summary": {
-      "lifetimeTokens": 6628435334,
+      "lifetimeTokens": 6984086357,
       "peakDailyTokens": 385210248,
       "longestRunningTurnSec": 14297,
-      "currentStreakDays": 20,
-      "longestStreakDays": 20
+      "currentStreakDays": 22,
+      "longestStreakDays": 22
     },
     "daily": [
       {
@@ -514,13 +514,21 @@
       {
         "date": "2026-10-17",
         "tokens": 39574733
+      },
+      {
+        "date": "2026-10-18",
+        "tokens": 342301549
+      },
+      {
+        "date": "2026-10-19",
+        "tokens": 13349474
       }
     ]
   },
   "claude": {
-    "asOf": "2026-10-18",
+    "asOf": "2026-10-20",
     "summary": {
-      "totalTokens": 6558424073,
+      "totalTokens": 6732808469,
       "peakDailyTokens": 1293574512,
       "activeDays": 30
     },
@@ -643,14 +651,14 @@
       },
       {
         "date": "2026-10-18",
-        "tokens": 39924809
+        "tokens": 214309205
       }
     ]
   },
   "github": {
-    "asOf": "2026-10-18",
+    "asOf": "2026-10-20",
     "from": "2026-02-04",
-    "through": "2026-10-17",
+    "through": "2026-10-19",
     "daily": [
       {
         "date": "2026-02-04",
@@ -2951,6 +2959,24 @@
         "date": "2026-10-17",
         "commits": 60,
         "mergedPrs": 19,
+        "closedIssues": 10,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-18",
+        "commits": 86,
+        "mergedPrs": 13,
+        "closedIssues": 6,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-19",
+        "commits": 5,
+        "mergedPrs": 4,
         "closedIssues": 10,
         "measuredCommits": 0,
         "additions": null,
