@@ -1,7 +1,7 @@
 ---
 title: "Anthropic은 코드 리뷰를 어떻게 할까?"
 parent: "단독 글"
-nav_order: 1
+nav_order: 2
 permalink: /standalone/2026-10-20-ai-agent-review/
 date: 2026-10-20
 summary: "Claude Code 팀의 검증 계층·리뷰 수렴·사람의 역할을 살펴보고, 내 리뷰 경험과 비교."

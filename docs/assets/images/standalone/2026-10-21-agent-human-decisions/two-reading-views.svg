@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="770" viewBox="0 0 960 770" role="img" aria-labelledby="title"><title id="title">같은 근거, 서로 다른 읽기 방식</title>
+<rect width="960" height="770" fill="#FFFFFF"/>
+<text x="40" y="56.4" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="30" font-weight="700" text-anchor="start">03  같은 근거, 서로 다른 읽기 방식</text>
+<text x="40" y="95.6" fill="#657681" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="20" font-weight="400" text-anchor="start">상세와 요약을 나누되, 판단의 근거는 연결한다</text>
+<polyline points="480,215 480,247 255,247 255,280" fill="none" stroke="#328399" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="255.0,280.0 250.7,271.0 259.3,271.0" fill="#328399"/>
+<polyline points="480,247 705,247 705,280" fill="none" stroke="#BC8936" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="705.0,280.0 700.7,271.0 709.3,271.0" fill="#BC8936"/>
+<polyline points="255,352 255,396" fill="none" stroke="#328399" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="255.0,396.0 250.7,387.0 259.3,387.0" fill="#328399"/>
+<polyline points="705,352 705,396" fill="none" stroke="#BC8936" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="705.0,396.0 700.7,387.0 709.3,387.0" fill="#BC8936"/>
+<polyline points="255,508 255,551" fill="none" stroke="#328399" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="255.0,551.0 250.7,542.0 259.3,542.0" fill="#328399"/>
+<polyline points="705,508 705,551" fill="none" stroke="#BC8936" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="705.0,551.0 700.7,542.0 709.3,542.0" fill="#BC8936"/>
+<polyline points="705,633 705,680 900,680 900,168 790,168" fill="none" stroke="#BC8936" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="790.0,168.0 799.0,163.7 799.0,172.3" fill="#BC8936"/>
+<polyline points="875,452 925,452 925,128 790,128" fill="none" stroke="#657681" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 6"/>
+<polygon points="790.0,128.0 799.0,123.7 799.0,132.3" fill="#657681"/>
+<rect x="170" y="125" width="620" height="90" rx="16" fill="#F0EBF8" stroke="#9B83BA" stroke-width="2"/>
+<text x="480.0" y="179.88" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="26" font-weight="700" text-anchor="middle">같은 요구 · 변경 대상 · 검증 근거</text>
+<rect x="85" y="281" width="340" height="71" rx="16" fill="#E7F3F7" stroke="#328399" stroke-width="2"/>
+<text x="255.0" y="326.0" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle">Agent가 읽는 영역</text>
+<rect x="535" y="281" width="340" height="71" rx="16" fill="#FBE8BE" stroke="#BC8936" stroke-width="2"/>
+<text x="705.0" y="326.0" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle">사람이 보는 영역</text>
+<rect x="85" y="397" width="340" height="111" rx="16" fill="#E7F3F7" stroke="#328399" stroke-width="2"/>
+<text x="255.0" y="443.74" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="23" font-weight="700" text-anchor="middle">상세 조건 · 코드 위치</text>
+<text x="255.0" y="478.74" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="23" font-weight="400" text-anchor="middle">실행 결과</text>
+<rect x="535" y="397" width="340" height="111" rx="16" fill="#FBE8BE" stroke="#BC8936" stroke-width="2"/>
+<text x="705.0" y="443.74" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="23" font-weight="700" text-anchor="middle">결론 · 변경 전후</text>
+<text x="705.0" y="478.74" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="23" font-weight="400" text-anchor="middle">선택지 · 미확인 사항</text>
+<rect x="85" y="552" width="340" height="81" rx="16" fill="#E7F3F7" stroke="#328399" stroke-width="2"/>
+<text x="255.0" y="601.62" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="24" font-weight="700" text-anchor="middle">구현·검증을 이어감</text>
+<rect x="535" y="552" width="340" height="81" rx="16" fill="#FBE8BE" stroke="#BC8936" stroke-width="2"/>
+<text x="705.0" y="601.62" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="24" font-weight="700" text-anchor="middle">확인하고 판단</text>
+<text x="605" y="717.6" fill="#BC8936" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="20" font-weight="400" text-anchor="start">결정·수정 사항 반영</text>
+<text x="810" y="232.96" fill="#657681" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="17" font-weight="400" text-anchor="start">원문 확인</text>
+<text x="40" y="745.6" fill="#657681" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="20" font-weight="400" text-anchor="start">보기 편해졌다는 사실이, 실제로 읽고 이해했다는 증거는 아니다</text>
+</svg>

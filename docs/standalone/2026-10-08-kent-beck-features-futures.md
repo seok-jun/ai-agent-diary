@@ -1,7 +1,7 @@
 ---
 title: "기능은 늘었는데, 왜 고치기는 어려워졌을까 — 켄트 백의 AI 시대 개발 이야기"
 parent: "단독 글"
-nav_order: 2
+nav_order: 3
 permalink: /standalone/2026-10-08-kent-beck-features-futures/
 date: 2026-10-08
 last_modified_at: 2026-10-19

@@ -1,7 +1,7 @@
 ---
 title: "Latency Numbers Every Programmer Should Know 정리"
 parent: "단독 글"
-nav_order: 10
+nav_order: 11
 permalink: /standalone/2026-04-28-latency-numbers-every-programmer-should-know/
 date: 2026-04-28
 last_modified_at: 2026-10-18

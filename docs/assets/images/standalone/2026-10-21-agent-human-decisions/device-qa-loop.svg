@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="830" viewBox="0 0 960 830" role="img" aria-labelledby="title"><title id="title">이슈 종료 전에 이어가는 실기기 QA</title>
+<rect width="960" height="830" fill="#FFFFFF"/>
+<text x="40" y="56.4" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="30" font-weight="700" text-anchor="start">02  이슈 종료 전에 이어가는 실기기 QA</text>
+<text x="40" y="95.6" fill="#657681" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="20" font-weight="400" text-anchor="start">사람의 관찰을 Agent의 디버깅과 수정으로 연결한다</text>
+<polyline points="345,186 345,225" fill="none" stroke="#657681" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="345.0,225.0 340.7,216.0 349.3,216.0" fill="#657681"/>
+<polyline points="345,295 345,335" fill="none" stroke="#657681" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="345.0,335.0 340.7,326.0 349.3,326.0" fill="#657681"/>
+<polyline points="345,405 345,452" fill="none" stroke="#657681" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="345.0,452.0 340.7,443.0 349.3,443.0" fill="#657681"/>
+<polyline points="490,493 650,493" fill="none" stroke="#BC8936" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="650.0,493.0 641.0,497.3 641.0,488.7" fill="#BC8936"/>
+<polyline points="780,535 780,603" fill="none" stroke="#328399" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="780.0,603.0 775.7,594.0 784.3,594.0" fill="#328399"/>
+<polyline points="780,675 780,741 938,741 938,260 535,260" fill="none" stroke="#328399" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="535.0,260.0 544.0,255.7 544.0,264.3" fill="#328399"/>
+<polyline points="345,535 345,627" fill="none" stroke="#328399" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="345.0,627.0 340.7,618.0 349.3,618.0" fill="#328399"/>
+<rect x="155" y="116" width="380" height="70" rx="16" fill="#E7F3F7" stroke="#328399" stroke-width="2"/>
+<text x="345.0" y="160.5" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle">Agent가 구현</text>
+<rect x="155" y="226" width="380" height="69" rx="16" fill="#FFF" stroke="#D5DFE4" stroke-width="2"/>
+<text x="345.0" y="270.0" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle">실기기에 설치</text>
+<rect x="155" y="336" width="380" height="69" rx="16" fill="#FBE8BE" stroke="#BC8936" stroke-width="2"/>
+<text x="345.0" y="380.0" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle">사람이 사용하며 QA</text>
+<rect x="200" y="453" width="290" height="82" rx="16" fill="#FFF" stroke="#D5DFE4" stroke-width="2"/>
+<text x="345.0" y="502.36" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="22" font-weight="700" text-anchor="middle">수정할 문제가 남았는가?</text>
+<rect x="650" y="453" width="260" height="82" rx="16" fill="#FBE8BE" stroke="#BC8936" stroke-width="2"/>
+<text x="780.0" y="502.36" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="22" font-weight="700" text-anchor="middle">증상·기대 동작 전달</text>
+<rect x="650" y="604" width="260" height="71" rx="16" fill="#E7F3F7" stroke="#328399" stroke-width="2"/>
+<text x="780.0" y="647.86" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Agent가 디버깅·수정</text>
+<rect x="155" y="628" width="380" height="82" rx="16" fill="#EAF4EC" stroke="#70A57C" stroke-width="2"/>
+<text x="345.0" y="660.12" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="24" font-weight="700" text-anchor="middle">확인 결과를 남기고</text>
+<text x="345.0" y="696.12" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="24" font-weight="400" text-anchor="middle">이슈 종료</text>
+<text x="546" y="479.6" fill="#BC8936" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="20" font-weight="400" text-anchor="start">있음</text>
+<text x="368" y="584.6" fill="#328399" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="20" font-weight="400" text-anchor="start">종료 가능한 상태</text>
+<text x="660" y="227.72" fill="#328399" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="19" font-weight="400" text-anchor="start">수정본 설치 → 재QA</text>
+<text x="40" y="794.6" fill="#657681" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="20" font-weight="400" text-anchor="start">확인한 범위에서의 완료이며, 이후 문제가 없다는 보장은 아니다</text>
+</svg>

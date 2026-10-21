@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="840" viewBox="0 0 960 840" role="img" aria-labelledby="title"><title id="title">의도와 가정을 맞추는 SDD</title>
+<rect width="960" height="840" fill="#FFFFFF"/>
+<text x="40" y="56.4" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="30" font-weight="700" text-anchor="start">01  의도와 가정을 맞추는 SDD</text>
+<text x="40" y="95.6" fill="#657681" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="20" font-weight="400" text-anchor="start">같은 일을 이해하고 있는지, 구현 전후로 다시 확인한다</text>
+<polyline points="455,178 455,211" fill="none" stroke="#657681" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="455.0,211.0 450.7,202.0 459.3,202.0" fill="#657681"/>
+<polyline points="455,283 455,323" fill="none" stroke="#657681" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="455.0,323.0 450.7,314.0 459.3,314.0" fill="#657681"/>
+<polyline points="455,419 455,462" fill="none" stroke="#657681" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="455.0,462.0 450.7,453.0 459.3,453.0" fill="#657681"/>
+<polyline points="585,503 683,503" fill="none" stroke="#BC8936" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="683.0,503.0 674.0,507.3 674.0,498.7" fill="#BC8936"/>
+<polyline points="785,462 785,370 665,370" fill="none" stroke="#BC8936" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="665.0,370.0 674.0,365.7 674.0,374.3" fill="#BC8936"/>
+<polyline points="455,544 455,615" fill="none" stroke="#328399" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="455.0,615.0 450.7,606.0 459.3,606.0" fill="#328399"/>
+<polyline points="455,687 455,725" fill="none" stroke="#328399" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="455.0,725.0 450.7,716.0 459.3,716.0" fill="#328399"/>
+<polyline points="265,758 100,758 100,370 245,370" fill="none" stroke="#328399" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="245.0,370.0 236.0,374.3 236.0,365.7" fill="#328399"/>
+<rect x="265" y="116" width="380" height="62" rx="16" fill="#FBE8BE" stroke="#BC8936" stroke-width="2"/>
+<text x="455.0" y="156.12" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="24" font-weight="700" text-anchor="middle">사람이 요구·업무 맥락 전달</text>
+<rect x="265" y="212" width="380" height="71" rx="16" fill="#E7F3F7" stroke="#328399" stroke-width="2"/>
+<text x="455.0" y="256.62" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Agent가 현행·요구 분석</text>
+<rect x="245" y="324" width="420" height="95" rx="16" fill="#F0EBF8" stroke="#9B83BA" stroke-width="2"/>
+<text x="455.0" y="362.62" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="24" font-weight="700" text-anchor="middle">현재 동작 · 변경 의도</text>
+<text x="455.0" y="398.62" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="24" font-weight="400" text-anchor="middle">가정 · 미해결 질문</text>
+<rect x="325" y="463" width="260" height="81" rx="16" fill="#FFF" stroke="#D5DFE4" stroke-width="2"/>
+<text x="455.0" y="511.86" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="22" font-weight="700" text-anchor="middle">사람 판단이 필요한가?</text>
+<rect x="685" y="463" width="225" height="81" rx="16" fill="#FBE8BE" stroke="#BC8936" stroke-width="2"/>
+<text x="797.5" y="512.24" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="23" font-weight="700" text-anchor="middle">맥락 보완·선택</text>
+<rect x="265" y="616" width="380" height="71" rx="16" fill="#E7F3F7" stroke="#328399" stroke-width="2"/>
+<text x="455.0" y="660.62" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="24" font-weight="700" text-anchor="middle">합의된 범위에서 구현·검증</text>
+<rect x="265" y="726" width="380" height="65" rx="16" fill="#E7F3F7" stroke="#328399" stroke-width="2"/>
+<text x="455.0" y="767.62" fill="#182D3C" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="24" font-weight="700" text-anchor="middle">새 사실 발견</text>
+<text x="614" y="489.72" fill="#BC8936" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="19" font-weight="400" text-anchor="start">필요</text>
+<text x="788" y="421.84" fill="#BC8936" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="18" font-weight="400" text-anchor="start">갱신</text>
+<text x="478" y="586.72" fill="#328399" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="19" font-weight="400" text-anchor="start">현재 범위에서 진행 가능</text>
+<text x="120" y="693.72" fill="#328399" font-family="Malgun Gothic, Noto Sans KR, sans-serif" font-size="19" font-weight="400" text-anchor="start">다시 확인</text>
+</svg>
