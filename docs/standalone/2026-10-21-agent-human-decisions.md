@@ -6,14 +6,14 @@ permalink: /standalone/2026-10-21-agent-human-decisions/
 date: 2026-10-21
 summary: "SDD와 실기기 QA, 개인 앱과 현업의 경험을 돌아보며 사람이 어떤 결정에 언제 참여해야 하는지 묻다."
 description: "사람의 개발 방법론을 Agent에게 투영하고 있는지 묻다가, 의도 조율과 QA, 설계 승인 경험을 통해 인간 참여의 시점과 총비용을 다시 생각한 기록."
-image: /assets/images/standalone/2026-10-21-agent-human-decisions/thumbnail.png
+image: /assets/images/standalone/2026-10-21-agent-human-decisions/figma-thumbnail.png
 ---
 
 # Agent에게 어디까지 맡길까를 묻다가
 
 _2026.10.21 게시_
 
-![Agent에게 어디까지 맡길까를 묻다가 — 사람은 어떤 결정에, 언제 참여해야 할까]({{ '/assets/images/standalone/2026-10-21-agent-human-decisions/thumbnail.png' | relative_url }})
+![Agent에게 어디까지 맡길까를 묻다가 — 사람은 어떤 결정에, 언제 참여해야 할까]({{ '/assets/images/standalone/2026-10-21-agent-human-decisions/figma-thumbnail.png' | relative_url }})
 
 Agent와 개발 방법론 이야기를 오래 했다.
 
@@ -53,7 +53,7 @@ SDD부터 다시 생각해봤다. 명세를 먼저 쓰고 개발한다는 형식
 
 이 과정을 그림으로 그리면 이렇다. 명세를 가운데 두고, 서로의 이해가 어긋난 부분을 다시 확인한다.
 
-![요구와 업무 맥락을 전달하고 Agent가 분석해 현재 동작·변경 의도·가정·질문을 명세로 꺼낸다. 사람 판단이 필요한 질문은 맥락과 선택을 보완하고, 진행 가능한 범위는 구현·검증하며 새 사실을 다시 명세에 반영한다.]({{ '/assets/images/standalone/2026-10-21-agent-human-decisions/intent-alignment.svg' | relative_url }})
+![요구와 업무 맥락을 전달하고 Agent가 분석해 현재 동작·변경 의도·가정·질문을 명세로 꺼낸다. 사람 판단이 필요한 질문은 맥락과 선택을 보완하고, 진행 가능한 범위는 구현·검증하며 새 사실을 다시 명세에 반영한다.]({{ '/assets/images/standalone/2026-10-21-agent-human-decisions/figma-intent-alignment.png' | relative_url }})
 
 *그림 1. SDD를 통해 의도와 가정을 맞추는 흐름. 모든 작업에 설계 승인을 요구한다는 뜻은 아니다. 사람의 판단이 필요한 질문이 생기면 그 결정에 의존하는 작업을 멈추고, 관련 없는 작업은 계속할 수 있다.*
 
@@ -109,7 +109,7 @@ SDD부터 다시 생각해봤다. 명세를 먼저 쓰고 개발한다는 형식
 
 구현과 검사를 끝내고 이슈를 닫은 뒤, 배포해서 사용하다가 문제를 발견하면 별도 이슈를 여는 흐름이 있었다. 그런데 내가 써보니 더 잘 맞는 흐름은 이쪽이었다. 구현이 끝난 뒤 실제로 써보는 과정을 같은 이슈 안에 넣었다.
 
-![Agent 구현 뒤 실기기에 설치해 사람이 QA한다. 수정할 문제가 있으면 증상과 기대 동작을 전달하고 Agent가 디버깅·수정한 뒤 다시 설치한다. 종료 가능한 상태에서 확인 결과를 남기고 이슈를 닫는다.]({{ '/assets/images/standalone/2026-10-21-agent-human-decisions/device-qa-loop.svg' | relative_url }})
+![Agent 구현 뒤 실기기에 설치해 사람이 QA한다. 수정할 문제가 있으면 증상과 기대 동작을 전달하고 Agent가 디버깅·수정한 뒤 다시 설치한다. 종료 가능한 상태에서 확인 결과를 남기고 이슈를 닫는다.]({{ '/assets/images/standalone/2026-10-21-agent-human-decisions/figma-device-qa-loop.png' | relative_url }})
 
 *그림 2. 개인 Android 앱에서 더 실용적이라고 느꼈던 작업 흐름. 사람은 실제 동작을 관찰하고, Agent는 그 관찰을 바탕으로 원인을 찾고 수정한다. 이슈 종료는 확인한 범위에서의 완료이며, 이후 문제가 없다는 보장은 아니다.*
 
@@ -147,7 +147,7 @@ SDD부터 다시 생각해봤다. 명세를 먼저 쓰고 개발한다는 형식
 
 나누려는 것은 읽는 방식이다. 사람이 보는 설명과 Agent가 사용하는 상세가 서로 다른 사실을 가리키면 안 된다.
 
-![같은 요구·변경 대상·검증 근거에서 Agent용 상세와 사람용 설명을 나눈다. Agent는 상세 조건·코드 위치·실행 결과로 작업을 이어가고, 사람은 결론·전후 차이·선택지·미확인 사항을 보고 판단한다. 필요하면 원문을 확인하며 결정은 공통 근거에 반영한다.]({{ '/assets/images/standalone/2026-10-21-agent-human-decisions/two-reading-views.svg' | relative_url }})
+![같은 요구·변경 대상·검증 근거에서 Agent용 상세와 사람용 설명을 나눈다. Agent는 상세 조건·코드 위치·실행 결과로 작업을 이어가고, 사람은 결론·전후 차이·선택지·미확인 사항을 보고 판단한다. 필요하면 원문을 확인하며 결정은 공통 근거에 반영한다.]({{ '/assets/images/standalone/2026-10-21-agent-human-decisions/figma-two-reading-views.png' | relative_url }})
 
 *그림 3. Agent에게 필요한 상세와 사람에게 필요한 설명을 구분한다. 사람용 설명에는 흐름도와 비교표를 쓰되, 판단에 필요한 불확실성과 원문으로 돌아갈 연결을 남긴다.*
 
