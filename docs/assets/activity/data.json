@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "timezone": "Asia/Seoul",
   "codex": {
-    "asOf": "2026-10-20",
+    "asOf": "2026-11-01",
     "summary": {
-      "lifetimeTokens": 6984086357,
-      "peakDailyTokens": 385210248,
-      "longestRunningTurnSec": 14297,
-      "currentStreakDays": 22,
-      "longestStreakDays": 22
+      "lifetimeTokens": 8645035410,
+      "peakDailyTokens": 709138624,
+      "longestRunningTurnSec": 28564,
+      "currentStreakDays": 34,
+      "longestStreakDays": 34
     },
     "daily": [
       {
@@ -473,7 +473,7 @@
       },
       {
         "date": "2026-10-07",
-        "tokens": 8230446
+        "tokens": 8204161
       },
       {
         "date": "2026-10-08",
@@ -485,52 +485,100 @@
       },
       {
         "date": "2026-10-10",
-        "tokens": 81324751
+        "tokens": 79278753
       },
       {
         "date": "2026-10-11",
-        "tokens": 174169352
+        "tokens": 168260794
       },
       {
         "date": "2026-10-12",
-        "tokens": 382523191
+        "tokens": 379052035
       },
       {
         "date": "2026-10-13",
-        "tokens": 296367357
+        "tokens": 286764711
       },
       {
         "date": "2026-10-14",
-        "tokens": 249988559
+        "tokens": 227596312
       },
       {
         "date": "2026-10-15",
-        "tokens": 346241444
+        "tokens": 318570618
       },
       {
         "date": "2026-10-16",
-        "tokens": 385210248
+        "tokens": 347208036
       },
       {
         "date": "2026-10-17",
-        "tokens": 39574733
+        "tokens": 35239831
       },
       {
         "date": "2026-10-18",
-        "tokens": 342301549
+        "tokens": 334755213
       },
       {
         "date": "2026-10-19",
-        "tokens": 13349474
+        "tokens": 12244262
+      },
+      {
+        "date": "2026-10-20",
+        "tokens": 69819698
+      },
+      {
+        "date": "2026-10-21",
+        "tokens": 68677578
+      },
+      {
+        "date": "2026-10-22",
+        "tokens": 19975097
+      },
+      {
+        "date": "2026-10-23",
+        "tokens": 167763200
+      },
+      {
+        "date": "2026-10-24",
+        "tokens": 709138624
+      },
+      {
+        "date": "2026-10-25",
+        "tokens": 207047958
+      },
+      {
+        "date": "2026-10-26",
+        "tokens": 25699188
+      },
+      {
+        "date": "2026-10-27",
+        "tokens": 105529007
+      },
+      {
+        "date": "2026-10-28",
+        "tokens": 168483146
+      },
+      {
+        "date": "2026-10-29",
+        "tokens": 41751652
+      },
+      {
+        "date": "2026-10-30",
+        "tokens": 63494423
+      },
+      {
+        "date": "2026-10-31",
+        "tokens": 135675860
       }
     ]
   },
   "claude": {
-    "asOf": "2026-10-20",
+    "asOf": "2026-11-01",
     "summary": {
-      "totalTokens": 6732808469,
+      "totalTokens": 6972313987,
       "peakDailyTokens": 1293574512,
-      "activeDays": 30
+      "activeDays": 32
     },
     "daily": [
       {
@@ -652,13 +700,21 @@
       {
         "date": "2026-10-18",
         "tokens": 214309205
+      },
+      {
+        "date": "2026-10-31",
+        "tokens": 221607850
+      },
+      {
+        "date": "2026-11-01",
+        "tokens": 17897668
       }
     ]
   },
   "github": {
-    "asOf": "2026-10-20",
+    "asOf": "2026-11-01",
     "from": "2026-02-04",
-    "through": "2026-10-19",
+    "through": "2026-10-31",
     "daily": [
       {
         "date": "2026-02-04",
@@ -2978,6 +3034,114 @@
         "commits": 5,
         "mergedPrs": 4,
         "closedIssues": 10,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-20",
+        "commits": 1,
+        "mergedPrs": 1,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-21",
+        "commits": 4,
+        "mergedPrs": 1,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-22",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-23",
+        "commits": 25,
+        "mergedPrs": 8,
+        "closedIssues": 5,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-24",
+        "commits": 28,
+        "mergedPrs": 4,
+        "closedIssues": 2,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-25",
+        "commits": 12,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-26",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-27",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-28",
+        "commits": 2,
+        "mergedPrs": 2,
+        "closedIssues": 2,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-29",
+        "commits": 4,
+        "mergedPrs": 5,
+        "closedIssues": 2,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-30",
+        "commits": 2,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-10-31",
+        "commits": 21,
+        "mergedPrs": 8,
+        "closedIssues": 2,
         "measuredCommits": 0,
         "additions": null,
         "deletions": null
