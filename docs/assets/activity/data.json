@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "timezone": "Asia/Seoul",
   "codex": {
-    "asOf": "2026-11-01",
+    "asOf": "2026-11-07",
     "summary": {
-      "lifetimeTokens": 8645035410,
+      "lifetimeTokens": 10143574790,
       "peakDailyTokens": 709138624,
       "longestRunningTurnSec": 28564,
-      "currentStreakDays": 34,
-      "longestStreakDays": 34
+      "currentStreakDays": 40,
+      "longestStreakDays": 40
     },
     "daily": [
       {
@@ -570,15 +570,39 @@
       {
         "date": "2026-10-31",
         "tokens": 135675860
+      },
+      {
+        "date": "2026-11-01",
+        "tokens": 229780065
+      },
+      {
+        "date": "2026-11-02",
+        "tokens": 317765463
+      },
+      {
+        "date": "2026-11-03",
+        "tokens": 621133799
+      },
+      {
+        "date": "2026-11-04",
+        "tokens": 181599624
+      },
+      {
+        "date": "2026-11-05",
+        "tokens": 71981710
+      },
+      {
+        "date": "2026-11-06",
+        "tokens": 76278719
       }
     ]
   },
   "claude": {
-    "asOf": "2026-11-01",
+    "asOf": "2026-11-07",
     "summary": {
-      "totalTokens": 6972313987,
+      "totalTokens": 7064361905,
       "peakDailyTokens": 1293574512,
-      "activeDays": 32
+      "activeDays": 34
     },
     "daily": [
       {
@@ -708,13 +732,21 @@
       {
         "date": "2026-11-01",
         "tokens": 17897668
+      },
+      {
+        "date": "2026-11-05",
+        "tokens": 2847483
+      },
+      {
+        "date": "2026-11-07",
+        "tokens": 89200435
       }
     ]
   },
   "github": {
-    "asOf": "2026-11-01",
+    "asOf": "2026-11-07",
     "from": "2026-02-04",
-    "through": "2026-10-31",
+    "through": "2026-11-06",
     "daily": [
       {
         "date": "2026-02-04",
@@ -3013,7 +3045,7 @@
       },
       {
         "date": "2026-10-17",
-        "commits": 60,
+        "commits": 62,
         "mergedPrs": 19,
         "closedIssues": 10,
         "measuredCommits": 0,
@@ -3040,7 +3072,7 @@
       },
       {
         "date": "2026-10-20",
-        "commits": 1,
+        "commits": 4,
         "mergedPrs": 1,
         "closedIssues": 0,
         "measuredCommits": 0,
@@ -3049,7 +3081,7 @@
       },
       {
         "date": "2026-10-21",
-        "commits": 4,
+        "commits": 5,
         "mergedPrs": 1,
         "closedIssues": 0,
         "measuredCommits": 0,
@@ -3121,7 +3153,7 @@
       },
       {
         "date": "2026-10-29",
-        "commits": 4,
+        "commits": 6,
         "mergedPrs": 5,
         "closedIssues": 2,
         "measuredCommits": 0,
@@ -3139,9 +3171,63 @@
       },
       {
         "date": "2026-10-31",
-        "commits": 21,
+        "commits": 46,
         "mergedPrs": 8,
         "closedIssues": 2,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-11-01",
+        "commits": 32,
+        "mergedPrs": 12,
+        "closedIssues": 9,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-11-02",
+        "commits": 6,
+        "mergedPrs": 6,
+        "closedIssues": 2,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-11-03",
+        "commits": 9,
+        "mergedPrs": 7,
+        "closedIssues": 5,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-11-04",
+        "commits": 1,
+        "mergedPrs": 1,
+        "closedIssues": 1,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-11-05",
+        "commits": 1,
+        "mergedPrs": 1,
+        "closedIssues": 1,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-11-06",
+        "commits": 6,
+        "mergedPrs": 0,
+        "closedIssues": 0,
         "measuredCommits": 0,
         "additions": null,
         "deletions": null
