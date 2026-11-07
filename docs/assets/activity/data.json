@@ -600,7 +600,7 @@
   "claude": {
     "asOf": "2026-11-07",
     "summary": {
-      "totalTokens": 7064361905,
+      "totalTokens": 7083310857,
       "peakDailyTokens": 1293574512,
       "activeDays": 34
     },
@@ -739,7 +739,7 @@
       },
       {
         "date": "2026-11-07",
-        "tokens": 89200435
+        "tokens": 108149387
       }
     ]
   },
