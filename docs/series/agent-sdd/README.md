@@ -5,7 +5,7 @@ has_children: true
 has_toc: false
 permalink: /series/agent-sdd/
 description: "AI 코딩 에이전트를 회사 일과 개인 프로젝트에 붙이면서, 모델 바깥의 절차·검사·규칙인 하네스를 직접 만들고 다시 재 본 연재."
-last_modified_at: 2026-11-01
+last_modified_at: 2026-11-07
 ---
 
 {%- assign series_posts = site.pages | where: "parent", page.title | sort: "nav_order" -%}
@@ -79,7 +79,7 @@ last_modified_at: 2026-11-01
         <tr><td>연구 저장소</td><td>차세대 규칙을 설계하고 실험하는 비공개 저장소. 13~16편의 실험도 여기서 했습니다. 어떤 프로젝트도 직접 읽지 않습니다.</td><td><a href="./018-connecting-methodology-from-outside/">18편</a></td></tr>
         <tr><td>앱 전용 규칙 저장소</td><td>앱이 실제로 쓰는 Agent 작업 규칙을 앱 밖으로 떼어 따로 담은 저장소.</td><td><a href="./018-connecting-methodology-from-outside/">18편</a></td></tr>
         <tr><td>agent-sdd-kit</td><td>1~7편에서 쓴 작업 등급 규칙과 Skill 두 개를 공개용으로 정리한 저장소.</td><td><a href="./007-pr-business-docs-skill/">7편</a></td></tr>
-        <tr><td>adaptive-agentic-sdd</td><td>멀티 Agent 운영 워크플로 전체를 방법론으로 묶어 공개한 저장소. 21·22편의 v1 preview도 여기에 냈습니다.</td><td><a href="./009-adaptive-agentic-sdd/">9편</a></td></tr>
+        <tr><td>adaptive-agentic-sdd</td><td>멀티 Agent 운영 워크플로 전체를 방법론으로 묶어 공개한 저장소. 21·22편의 v1 preview와 23편의 1.0도 여기에 냈습니다.</td><td><a href="./009-adaptive-agentic-sdd/">9편</a></td></tr>
       </tbody>
     </table>
   </div>
