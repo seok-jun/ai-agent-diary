@@ -6,11 +6,14 @@ permalink: /series/agent-sdd/022-first-task-from-the-readme/
 date: 2026-11-07 10:00:00 +0900
 description: "공개 방법론을 v1.0.0-preview.7까지 내고 README를 처음 온 사람 기준으로 다시 썼다. 새 Agent에게 README만 주고 첫 작업까지 시켜 보니, 규칙을 지킨 쪽은 멈추고 추측한 쪽은 끝까지 갔다. 그 자리에서 모델 규칙을 바꿨고, 처음 돌린 행동 평가는 답안지가 보이는 상태였다는 것도 알게 됐다."
 summary: "README를 다시 쓰고 새 Agent에게 그것만 주고 첫 작업까지 시켜 본 기록. 멈춘 자리에서 바꾼 규칙, macOS 확인, 답안지가 보였던 행동 평가."
+image: /assets/images/agent-sdd/022-first-task-from-the-readme/thumbnail.png
 ---
 
 # README만 보고 첫 작업까지 가게 해 봤다
 
 _2026.11.07 게시 · 11월 1일에 써 둔 글_
+
+![README만 보고 첫 작업까지 가게 해 봤다 — README만 주고 시킨 네 번 중 Claude Code는 모델 이름을 근거로 추측해 끝까지 갔고, Codex는 한 번은 샌드박스에서 커밋이 막혔고, 한 번은 규칙대로 구현 직전에 멈췄다. 모델 규칙을 바꾼 뒤 Codex가 끝까지 갔다]({{ '/assets/images/agent-sdd/022-first-task-from-the-readme/thumbnail.png' | relative_url }})
 
 [지난 글]({{ '/series/agent-sdd/021-published-twice-in-two-hours/' | relative_url }})에서 방법론을 처음 공개하고 두 시간 만에 preview.2를 다시 낸 이야기를 적었다.
 

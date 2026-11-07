@@ -26,7 +26,8 @@
 - 숫자는 공개 저장소 `main`(`da6f1cc` 이후)과 `v1.0.0`·`v1.0.1` 태그의 `CHANGELOG.md`, `docs/releases/`, `docs/eval-results/`에 있는 것만 쓴다. 저장소 밖 사실은 작성자가 확인한 방문 통계뿐이다.
 - 효과(결과·재작업·비용)를 재지 않았다는 점, Large 멈춤이 예제 프로젝트 규칙을 따른 결과라는 점, Claude Code 실행이 그 Agent의 자체 보고라는 점을 흐리지 않는다.
 - 비공개 제품·저장소 이름, 회사 일, 로컬 경로를 쓰지 않는다.
-- 썸네일은 만들지 않았다.
+- 썸네일(`thumbnail.png`, 2400×1260)은 기존 연재 썸네일 구성(큰 제목·파란 강조·편수·오른쪽 일러스트)을 따라 새로 만들었다. 본문 그림은 구조도 `outside-the-project.svg`와, 공개 저장소 `docs/assets/demo.svg`(실제 Codex 실행 두 건을 줄인 애니메이션)의 사본 `demo.svg`.
+- 작성자 피드백(글이 많고 썸네일이 없음)에 따라 본문을 약 30% 줄이고 텍스트 트리를 그림으로 바꿨다.
 
 ## 본문 숫자와 근거
 
@@ -35,7 +36,6 @@
 | 1.0 11/6, 1.0.1 다음 날 아침 | 태그 `v1.0.0` 2026-11-06 19:49 KST, `v1.0.1` 2026-11-07 08:48 KST |
 | 방문 4명, 스타 0개 | 작성자 확인(GitHub traffic, 2026-11-07) |
 | preview.8은 태그 없이 1.0 | `docs/releases/preview.8.md` |
-| 파일 223개 리뷰, Claude 157개, 나머지 GPT-6.1 Sol | `docs/releases/1.0.0.md` Final review |
 | 간결 경로, 임시 파일 범위, 이전 시험의 OS 임시 폴더 | `docs/releases/1.0.1.md`, `docs/eval-results/2026-11-06-small-route/README.md` |
 | 다섯 언어, 첫 시도 3/5, 환경 문제 두 건, 4.5~5.7분, SUMMARY 한 번 | `docs/eval-results/2026-11-06-small-route/README.md` |
 | 체험 스크립트 약 5초, 오프라인, 폴더 밖 쓰기 없음, READY 확인 | `try/setup.py`, README 빠른 시작 |
