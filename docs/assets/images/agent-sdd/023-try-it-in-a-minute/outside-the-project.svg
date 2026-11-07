@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 340" width="820" height="340" role="img" aria-label="1.0의 구조. 제품 저장소에는 기존 코드와 문서, AGENTS.md가 그대로 있고, 방법론과의 연결은 세 줄짜리 .agentics/default.yaml 하나뿐이다. 그 파일은 팀이 소유하고 고치는 별도 저장소의 특정 커밋을 가리킨다. 팀 절차 저장소에는 Skill 네 개와 절차, 이 프로젝트에 맞춘 설정 문서가 있다. 공개 방법론은 처음 시작할 때 복사해 가는 출발점이고, 계속 따라갈 의무는 없다. 작업에 방법론을 골랐을 때만 읽기 전용 도구가 연결을 확인해 READY를 돌려주고, 고르지 않은 세션은 절차를 읽지 않는다" font-family='Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif'>
+  <defs>
+    <style>
+      .bt { font-size: 14px; font-weight: 700; }
+      .tx { font-size: 12.5px; fill: #424a53; }
+      .mono { font-size: 12px; fill: #24292f; font-family: Consolas, "SFMono-Regular", Menlo, monospace; }
+      .cp { font-size: 12px; fill: #57606a; }
+    </style>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+    <marker id="ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2f6fdf"/>
+    </marker>
+  </defs>
+  <rect width="820" height="340" fill="#ffffff"/>
+
+  <!-- public methodology -->
+  <rect x="300" y="18" width="220" height="52" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.4"/>
+  <text class="bt" x="410" y="40" text-anchor="middle" fill="#24292f">공개 방법론</text>
+  <text class="cp" x="410" y="58" text-anchor="middle">처음 시작할 때의 출발점</text>
+  <path d="M520,44 C620,44 650,70 650,96" fill="none" stroke="#8c959f" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ah)"/>
+  <text class="cp" x="604" y="34">복사해 가서 고쳐 씀</text>
+
+  <!-- product repository -->
+  <rect x="24" y="100" width="340" height="200" rx="12" fill="#ffffff" stroke="#57606a" stroke-width="1.4"/>
+  <text class="bt" x="44" y="128" fill="#24292f">제품 저장소</text>
+  <text class="cp" x="132" y="128">기존 프로젝트</text>
+  <rect x="44" y="142" width="300" height="34" rx="7" fill="#f6f8fa"/>
+  <text class="tx" x="58" y="164">src/ · tests/ · docs/   그대로</text>
+  <rect x="44" y="184" width="300" height="34" rx="7" fill="#f6f8fa"/>
+  <text class="tx" x="58" y="206">AGENTS.md   그대로, 아무것도 안 더함</text>
+  <rect x="44" y="226" width="300" height="56" rx="7" fill="#ddf4ff" stroke="#2f6fdf" stroke-width="1.4"/>
+  <text class="mono" x="58" y="246">.agentics/default.yaml</text>
+  <text class="tx" x="58" y="268">새로 생기는 건 세 줄짜리 연결 하나</text>
+
+  <!-- link -->
+  <path d="M344,254 L452,254" fill="none" stroke="#2f6fdf" stroke-width="1.8" marker-end="url(#ahb)"/>
+  <text class="cp" x="400" y="228" text-anchor="middle" fill="#2f6fdf">팀 절차</text>
+  <text class="cp" x="400" y="244" text-anchor="middle" fill="#2f6fdf">커밋을 가리킴</text>
+
+  <!-- team workflow -->
+  <rect x="456" y="100" width="340" height="200" rx="12" fill="#fff8c5" stroke="#d4a72c" stroke-width="1.4"/>
+  <text class="bt" x="476" y="128" fill="#7d4e00">팀 절차 저장소</text>
+  <text class="cp" x="580" y="128">팀이 소유하고 고침</text>
+  <rect x="476" y="142" width="300" height="34" rx="7" fill="#ffffff"/>
+  <text class="tx" x="490" y="164">Skill 네 개와 등급별 절차</text>
+  <rect x="476" y="184" width="300" height="34" rx="7" fill="#ffffff"/>
+  <text class="tx" x="490" y="206">이 프로젝트에 맞춘 설정 문서</text>
+  <rect x="476" y="226" width="300" height="56" rx="7" fill="#ffffff"/>
+  <text class="tx" x="490" y="248">작업에 <tspan font-weight="700">골랐을 때만</tspan> 읽는다</text>
+  <text class="tx" x="490" y="268">연결이 확인되면 READY, 아니면 멈춤</text>
+
+  <text class="cp" x="410" y="326" text-anchor="middle">방법론을 고르지 않은 세션은 팀 절차를 읽지 않는다</text>
+</svg>
