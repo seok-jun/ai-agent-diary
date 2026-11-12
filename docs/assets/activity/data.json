@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "timezone": "Asia/Seoul",
   "codex": {
-    "asOf": "2026-11-07",
+    "asOf": "2026-11-12",
     "summary": {
-      "lifetimeTokens": 10143574790,
+      "lifetimeTokens": 10266768378,
       "peakDailyTokens": 709138624,
       "longestRunningTurnSec": 28564,
-      "currentStreakDays": 40,
-      "longestStreakDays": 40
+      "currentStreakDays": 1,
+      "longestStreakDays": 41
     },
     "daily": [
       {
@@ -593,16 +593,28 @@
       },
       {
         "date": "2026-11-06",
-        "tokens": 76278719
+        "tokens": 82666403
+      },
+      {
+        "date": "2026-11-07",
+        "tokens": 29521074
+      },
+      {
+        "date": "2026-11-09",
+        "tokens": 11091247
+      },
+      {
+        "date": "2026-11-11",
+        "tokens": 76193583
       }
     ]
   },
   "claude": {
-    "asOf": "2026-11-07",
+    "asOf": "2026-11-12",
     "summary": {
-      "totalTokens": 7083310857,
+      "totalTokens": 7427918760,
       "peakDailyTokens": 1293574512,
-      "activeDays": 34
+      "activeDays": 38
     },
     "daily": [
       {
@@ -739,14 +751,30 @@
       },
       {
         "date": "2026-11-07",
-        "tokens": 108149387
+        "tokens": 249607712
+      },
+      {
+        "date": "2026-11-08",
+        "tokens": 144410267
+      },
+      {
+        "date": "2026-11-09",
+        "tokens": 11113437
+      },
+      {
+        "date": "2026-11-11",
+        "tokens": 24724286
+      },
+      {
+        "date": "2026-11-12",
+        "tokens": 22901588
       }
     ]
   },
   "github": {
-    "asOf": "2026-11-07",
+    "asOf": "2026-11-12",
     "from": "2026-02-04",
-    "through": "2026-11-06",
+    "through": "2026-11-11",
     "daily": [
       {
         "date": "2026-02-04",
@@ -3228,6 +3256,51 @@
         "commits": 6,
         "mergedPrs": 0,
         "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-11-07",
+        "commits": 36,
+        "mergedPrs": 14,
+        "closedIssues": 1,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-11-08",
+        "commits": 6,
+        "mergedPrs": 6,
+        "closedIssues": 5,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-11-09",
+        "commits": 1,
+        "mergedPrs": 1,
+        "closedIssues": 1,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-11-10",
+        "commits": 0,
+        "mergedPrs": 0,
+        "closedIssues": 0,
+        "measuredCommits": 0,
+        "additions": null,
+        "deletions": null
+      },
+      {
+        "date": "2026-11-11",
+        "commits": 14,
+        "mergedPrs": 8,
+        "closedIssues": 2,
         "measuredCommits": 0,
         "additions": null,
         "deletions": null
