@@ -4,6 +4,7 @@ parent: "단독 글"
 nav_order: 1
 permalink: /standalone/2026-11-12-behavior-explorer/
 date: 2026-11-12
+image: /assets/images/standalone/2026-11-12-behavior-explorer/thumbnail-text.png
 summary: "Agent가 만든 문서를 읽다 지쳐서, 필요한 동작만 골라 직접 넘겨 보는 스킬을 만든 이유와 한 번 해 본 결과."
 description: "개발이 재미없어진 이유를 따라가다 이해가 만들어지던 과정이 빠졌다는 걸 알았고, 선택적 이해와 두 실행 비교 화면을 스킬로 만들어 한 사례에 써 본 기록."
 ---
@@ -11,6 +12,8 @@ description: "개발이 재미없어진 이유를 따라가다 이해가 만들�
 # 읽을 문서가 너무 많아서, 두 실행을 나란히 놓고 봤다
 
 _2026.11.12 게시_
+
+![Agent가 쓴 문서, 읽다가 지쳤다 — AI Agent들이 쏟아내는 문서 더미 앞에서 망연자실한 개발자]({{ '/assets/images/standalone/2026-11-12-behavior-explorer/thumbnail-text.png' | relative_url }})
 
 요즘 개발이 예전만큼 재미있지 않았다.
 
