@@ -11,7 +11,7 @@ AI Agent 개발, SDD, 개발 방법론, 그리고 AI 시대에 대한 이야기�
 
 - [전체 글 목록](./docs/index.md)
 - [Agent SDD 개발 일지](./docs/series/agent-sdd/README.md) — AI Agent를 회사 일과 개인 프로젝트에 붙이며 쓴 23편의 연재
-- [단독 글](./docs/standalone/README.md) — 개발 및 AI 활용에 관한 독립 문서 10편
+- [단독 글](./docs/standalone/README.md) — 개발 및 AI 활용에 관한 독립 문서 13편
 - [AI에게 물어본 인간의 미래](./docs/series/ai-future-dialogue/README.md) — 프롤로그와 본편 7편으로 구성된 연재
 - [소개](./docs/about.md) — 글쓴이와 이 사이트에서 다루는 내용
 - [AI 개발 활동](./docs/activity.md) — Codex 토큰과 GitHub 합산 집계 ([Windows 원클릭 업데이트 안내](./_meta/activity/README.md), 실행 파일: `update-activity.cmd`)

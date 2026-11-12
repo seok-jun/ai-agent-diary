@@ -1,7 +1,7 @@
 ---
 title: "Agent에게 어디까지 맡길까를 묻다가"
 parent: "단독 글"
-nav_order: 1
+nav_order: 2
 permalink: /standalone/2026-10-21-agent-human-decisions/
 date: 2026-10-21
 summary: "SDD와 실기기 QA, 개인 앱과 현업의 경험을 돌아보며 사람이 어떤 결정에 언제 참여해야 하는지 묻다."
