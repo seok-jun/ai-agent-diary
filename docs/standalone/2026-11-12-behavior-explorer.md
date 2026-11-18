@@ -1,7 +1,7 @@
 ---
 title: "읽을 문서가 너무 많아서, 두 실행을 나란히 놓고 봤다"
 parent: "단독 글"
-nav_order: 1
+nav_order: 2
 permalink: /standalone/2026-11-12-behavior-explorer/
 date: 2026-11-12
 image: /assets/images/standalone/2026-11-12-behavior-explorer/thumbnail-text.png
