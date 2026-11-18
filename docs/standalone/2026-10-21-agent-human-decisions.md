@@ -10,6 +10,7 @@ image: /assets/images/standalone/2026-10-21-agent-human-decisions/figma-thumbnai
 ---
 
 # Agent에게 어디까지 맡길까를 묻다가
+{: .no_toc }
 
 _2026.10.21 게시_
 
@@ -32,6 +33,15 @@ Agent와 개발 방법론 이야기를 오래 했다.
 내가 남기려는 절차는 누구에게 필요한 걸까. Agent에게 필요한가, 내가 이해하려고 필요한가. 아니면 둘이 같은 일을 하고 있다는 걸 확인하려고 필요한가.
 
 > 이 글에 적은 내 경험은 각 프로젝트와 환경에서 겪은 것이다. 같은 작업을 조건을 나눠 비교한 실험은 아니다.
+
+<details open markdown="block">
+  <summary>목차</summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+---
 
 ## 명세는 어긋남을 꺼내두는 자리였다
 

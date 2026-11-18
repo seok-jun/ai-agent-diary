@@ -10,6 +10,7 @@ image: /assets/images/standalone/2026-10-20-ai-agent-review/thumbnail-claude.png
 ---
 
 # Anthropic은 코드 리뷰를 어떻게 할까?
+{: .no_toc }
 
 _2026.10.20 게시_
 
@@ -22,6 +23,15 @@ _2026.10.20 게시_
 Anthropic은 Claude Code 코드의 약 90%를 Claude가 작성한다고 밝힌 바 있다. 이 글에서는 6월부터 9월까지 Claude Code 코드베이스에 병합된 PR이 두 배 이상 늘었고, 그중 되돌려야 했던 PR의 비율은 40% 넘게 감소했다고 보고한다. 코드 대부분을 기계가 읽게 하면서 사람의 주의력을 어디에 쓸지 조정하고, 실수를 쉽게 되돌리는 체계를 함께 갖춘 결과다. 여러 변화가 함께 이루어진 내부 운영 결과이므로, 특정 리뷰 기법 하나의 효과로 읽지는 않았다.
 
 아래는 원문의 절 순서를 따라 정리했다. 각 절에서는 Anthropic의 운영을 먼저 설명하고, 직접 연결되는 경험이 있는 곳에만 **내 경험**을 덧붙였다. 내 기록에는 코드 리뷰뿐 아니라 구현 전 설계 리뷰도 포함된다.
+
+<details open markdown="block">
+  <summary>목차</summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+---
 
 ## 1. 코드 리뷰의 목적을 다시 생각하다
 

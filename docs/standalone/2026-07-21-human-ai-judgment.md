@@ -10,12 +10,22 @@ image: /assets/images/standalone/2026-07-21-human-ai-judgment/thumbnail.jpg
 ---
 
 # 이해하지 못하는 결정을 승인한다는 것
+{: .no_toc }
 
 _2026.07.21 게시_
 
 ![이해하지 못하는 결정을 승인한다는 것]({{ '/assets/images/standalone/2026-07-21-human-ai-judgment/thumbnail.jpg' | relative_url }})
 
 > 인간은 언제까지 AI의 최종 판단자일 수 있을까.
+
+<details open markdown="block">
+  <summary>목차</summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+---
 
 ## AI의 틀린 답은 왜 그럴듯한가
 

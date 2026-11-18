@@ -10,6 +10,7 @@ image: /assets/images/standalone/2026-05-07-controlling-ai-coding-agents/thumbna
 ---
 
 # AI 코딩 에이전트를 제대로 통제하는 방법
+{: .no_toc }
 
 _2026.05.07 게시_
 
@@ -26,6 +27,13 @@ Claude Code, Codex, Cursor 같은 AI 코딩 에이전트가 강력해진 것은 
 > AI가 건드리면 안 되는 코드를 건드리지 않게 만들 수 있는가?
 
 이 문제의식에서 나온 대표적인 방식이 `CLAUDE.md`이고, Codex에서는 같은 역할을 `AGENTS.md`가 담당한다.
+
+<details open markdown="block">
+  <summary>목차</summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ---
 
