@@ -1,7 +1,7 @@
 ---
 title: "AI Engineer World's Fair 2026, Agentic Engineering 세션에서 나온 이야기들"
 parent: "단독 글"
-nav_order: 9
+nav_order: 10
 permalink: /standalone/2026-07-24-ai-engineer-worlds-fair-2026-agentic-engineering/
 date: 2026-07-24
 description: "AI Engineer World's Fair 2026의 Agentic Engineering 세션 여덟 개를 Harness, Skill, Agentic SDLC, Eval, Sandbox 관점에서 정리한 글."
@@ -9,6 +9,7 @@ summary: "여덟 개 세션을 통해 Harness, Skill, Agentic SDLC, Eval, Sandbo
 ---
 
 # AI Engineer World's Fair 2026, Agentic Engineering 세션에서 나온 이야기들
+{: .no_toc }
 
 _2026.07.24 게시_
 
@@ -19,6 +20,13 @@ _2026.07.24 게시_
 먼저 밝혀둘 것이 있다. **나는 이 행사에 직접 참석하지 않았다.** 공식 일정 페이지에 공개된 세션 소개문, 발표사가 공개한 기술 문서, 공개된 트랙 영상을 기준으로 정리했다. 세션 초록이 없는 경우에는 해당 회사가 공개한 문서로 보완했고, 어디까지가 확인된 내용이고 어디부터가 해석인지는 각 항목과 글 마지막 표에 구분해 두었다.
 
 전체를 관통하는 주제를 한 줄로 요약하면 이렇다. **모델 성능보다 그 모델을 감싸는 실행 구조(Harness)와 운영 체계로 논의가 옮겨갔다.**
+
+<details open markdown="block">
+  <summary>목차</summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "읽을 문서가 너무 많아서, 두 실행을 나란히 놓고 봤다"
 parent: "단독 글"
-nav_order: 1
+nav_order: 2
 permalink: /standalone/2026-11-12-behavior-explorer/
 date: 2026-11-12
 image: /assets/images/standalone/2026-11-12-behavior-explorer/thumbnail-text.png
@@ -10,6 +10,7 @@ description: "개발이 재미없어진 이유를 따라가다 이해가 만들�
 ---
 
 # 읽을 문서가 너무 많아서, 두 실행을 나란히 놓고 봤다
+{: .no_toc }
 
 _2026.11.12 게시_
 
@@ -20,6 +21,15 @@ _2026.11.12 게시_
 처음에는 내가 코드를 직접 안 써서 그런 줄 알았다. 코드를 보면서 개발하던 때가 더 재미있었다는 이야기를 Agent와 하다가, 원인이 다른 데 있다는 걸 알았다.
 
 코드를 못 써서가 아니었다. **Agent가 만들어내는 문서를 너무 많이 읽어야 해서**였다.
+
+<details open markdown="block">
+  <summary>목차</summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+---
 
 ## 이해가 만들어지던 과정이 빠졌다
 

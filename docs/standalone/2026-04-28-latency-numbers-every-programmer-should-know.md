@@ -1,7 +1,7 @@
 ---
 title: "Latency Numbers Every Programmer Should Know 정리"
 parent: "단독 글"
-nav_order: 12
+nav_order: 13
 permalink: /standalone/2026-04-28-latency-numbers-every-programmer-should-know/
 date: 2026-04-28
 last_modified_at: 2026-10-18
@@ -11,12 +11,20 @@ image: /assets/images/standalone/2026-04-28-latency-numbers-every-programmer-sho
 ---
 
 # Latency Numbers Every Programmer Should Know 정리
+{: .no_toc }
 
 _2026.04.28 게시_
 
 ![Latency Numbers Every Programmer Should Know 정리]({{ '/assets/images/standalone/2026-04-28-latency-numbers-every-programmer-should-know/thumbnail.jpg' | relative_url }})
 
 원본 계열 자료는 Jeff Dean이 정리한 숫자를 기반으로 하며, Peter Norvig도 유사한 맥락의 내용을 언급한 바 있다. ([Gist][1])
+
+<details open markdown="block">
+  <summary>목차</summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ---
 
